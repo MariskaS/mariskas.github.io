@@ -1,0 +1,22 @@
+﻿
+nav ul,
+nav li,
+nav li > a {
+	position: relative;
+	display: block;
+}
+
+
+/* Menu vertical
+------------------------------------------------------------------------------------------------ Menu vertical */
+.menu-v {
+	margin: 0;
+	list-style: none;
+}
+
+.menu-v li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+}
+

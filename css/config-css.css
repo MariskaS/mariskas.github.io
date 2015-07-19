@@ -1,0 +1,17 @@
+﻿
+/*засунуть в бандл (выпилить css c @import)*/
+
+@import url('reset.css');
+@import url('../bootstrap-3.3.4/css/bootstrap.min.css');
+@import url('../bootstrap-3.3.4/css/bootstrap-theme.min.css');
+@import url('bootstrap-custom.css');
+@import url('layout.css');
+@import url('menu.css');
+@import url('blockquote.css');
+@import url('gallery.css');
+@import url('../glyphicons/glyphicons.css');
+
+/*only todayspb.com*/
+
+
+
