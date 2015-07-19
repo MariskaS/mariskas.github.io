@@ -22,45 +22,58 @@ body.bg-volonter{
 
 
 body {
-	background: #ece9e2;
+	background: #1e1e1e;
 	overflow-x: hidden;
 }
 
 .layout {
 	width: 100%;
 	position: relative;
-	/*padding-left: 50px;*/
-	-webkit-transition: 250ms ease;
-	-o-transition: 250ms ease;
-	-moz-transition: 250ms ease;
-	transition: 250ms ease;
+	padding-left: 60px;
 }
 
 .side-left {
 	box-sizing: border-box;
 	position: fixed;
 	top: 0;
-	/*left: -200px;*/
-	left: -250px;
-	width: 250px;
+	left: 0;
+	width: 60px;
 	height: 100%;
 	overflow-y: auto;
 	background: #1e1e1e;
 	color: #f5f5f5;
 	padding: 20px;
 	z-index: 2;
-	-webkit-transition: 250ms ease;
-	-o-transition: 250ms ease;
-	-moz-transition: 250ms ease;
-	transition: 250ms ease;
 }
+.show-nav .side-left {
+	width: 260px;
+	left: -260px;
+}
+.show-nav .layout{padding-left: 0;}
 
 .show-nav .layout,
 .show-nav .side-left {
-	-moz-transform: translate3d(250px, 0, 0);
-	-webkit-transform: translate3d(250px, 0, 0);
-	transform: translate3d(250px, 0, 0);
+	-moz-transform: translate3d(260px, 0, 0);
+	-webkit-transform: translate3d(260px, 0, 0);
+	transform: translate3d(260px, 0, 0);
 }
+.navbar-default {
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+.navbar-fixed-top {left: 60px;}
+.show-nav .navbar-fixed-top {left: 0;}
+
+.side-left-form,
+.side-left .menu-v li .icon-20 + span {display: none;}
+
+.show-nav .side-left-form {display: block;}
+.show-nav .side-left .menu-v li .icon-20 + span {display: inline-block;}
+
+.side-left nav {margin-top: 50px;}
+
+
 
 .footer,
 section  {padding: 30px 0;}
