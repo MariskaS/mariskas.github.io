@@ -1,6 +1,6 @@
 ﻿
 /* if voloter.html */
-body.bg-volonter{
+.no-slider{
 	background-image: url(../i/bg.svg);
 	/*background-image: url(../i/volonter.jpg);*/
 	background-position: top center;
@@ -11,13 +11,13 @@ body.bg-volonter{
 	background-color: #061524;
 }
 
-.bg-volonter section.first {
+.no-slider section.first {
 	background-color: transparent;
 	padding-bottom: 60px;
 	color: white;
 }
 
-.bg-volonter section.first a {color: gold;}
+.no-slider section.first a {color: gold;}
 /* END voloter.html */
 
 
@@ -43,7 +43,7 @@ body {
 	background: #1e1e1e;
 	color: #f5f5f5;
 	padding: 20px;
-	z-index: 2;
+	z-index: 9999;
 }
 .show-nav .side-left {
 	width: 260px;
@@ -79,7 +79,7 @@ body {
 section  {padding: 30px 0;}
 
 .footer  {background-color: #f8f9fa}
-section  {background-color: white}
+section  {background-color: white;}
 
 
 /*@media (min-width: 768px){
