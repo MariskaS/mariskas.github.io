@@ -1,0 +1,15 @@
+/* Menu vertical
+------------------------------------------------------------------------------------------------ Menu vertical */
+.menu-v {
+  margin: 0;
+  list-style: none;
+}
+.menu-v li .icon-20 {
+  padding: 30px;
+  margin-right: 20px;
+}
+.menu-v li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+}
