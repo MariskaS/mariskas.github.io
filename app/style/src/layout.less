@@ -1,5 +1,6 @@
+
 /* if voloter.html */
-.no-slider {
+.no-slider{
   background-image: url(../../i/bg.svg);
   /*background-image: url(../i/volonter.jpg);*/
   background-position: top center;
@@ -8,25 +9,28 @@
   background-size: cover;
   -moz-background-size: cover;
   background-color: #061524;
+  & section.first {
+    background-color: transparent;
+    padding-bottom: 60px;
+    color: white;
+    & a {color: gold;}
+  }
 }
-.no-slider section.first {
-  background-color: transparent;
-  padding-bottom: 60px;
-  color: white;
-}
-.no-slider section.first a {
-  color: gold;
-}
+
 /* END voloter.html */
+
+
 body {
   background: #1e1e1e;
   overflow-x: hidden;
 }
+
 .layout {
   width: 100%;
   position: relative;
   padding-left: 60px;
 }
+
 .side-left {
   box-sizing: border-box;
   position: fixed;
@@ -44,9 +48,8 @@ body {
   width: 260px;
   left: -260px;
 }
-.show-nav .layout {
-  padding-left: 0;
-}
+.show-nav .layout{padding-left: 0;}
+
 .show-nav .layout,
 .show-nav .side-left {
   -moz-transform: translate3d(260px, 0, 0);
@@ -58,32 +61,19 @@ body {
   -moz-transition: none;
   transition: none;
 }
-.navbar-fixed-top {
-  left: 60px;
-}
-.show-nav .navbar-fixed-top {
-  left: 0;
-}
+.navbar-fixed-top {left: 60px;}
+.show-nav .navbar-fixed-top {left: 0;}
+
 .side-left-form,
-.side-left .menu-v li .icon-20 + span {
-  display: none;
-}
-.show-nav .side-left-form {
-  display: block;
-}
-.show-nav .side-left .menu-v li .icon-20 + span {
-  display: inline-block;
-}
-.side-left nav {
-  margin-top: 50px;
-}
+.side-left .menu-v li .icon-20 + span {display: none;}
+
+.show-nav .side-left-form {display: block;}
+.show-nav .side-left .menu-v li .icon-20 + span {display: inline-block;}
+
+.side-left nav {margin-top: 50px;}
+
 .footer,
-section {
-  padding: 30px 0;
-}
-.footer {
-  background-color: #f8f9fa;
-}
-section {
-  background-color: white;
-}
+section  {padding: 30px 0;}
+
+.footer  {background-color: #f8f9fa}
+section  {background-color: white;}
