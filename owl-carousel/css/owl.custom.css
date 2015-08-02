@@ -1,0 +1,90 @@
+
+.owl-item:first-child {box-shadow: -20px 0 20px rgba(0, 0, 0, 0.2);}
+.owl-item:last-child  {box-shadow: 20px 0 20px rgba(0, 0, 0, 0.2);}
+
+.owl-carousel {
+	background: url(../i/bg_owl.png);
+	background-size: cover;
+
+	position: relative;
+	overflow: hidden
+}
+
+.owl-carousel .item img {
+	display: block;
+	width: 100%;
+	height: auto;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*owl-controls
+------------------------------------------------------------------ owl-controls*/
+
+/*pagination*/
+.owl-controls .owl-page{
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+
+.owl-controls {
+	position: absolute;
+	top: 60px;
+	right: 10px;
+}
+
+.owl-controls .owl-page span{
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 5px;
+	background: #777;
+	background: rgba(255,255,255,0.5);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.owl-controls .owl-page.active span {
+	background-color: #FFF;
+	cursor: default;
+}
+
+/* buttons: next / prev */
+.owl-controls .owl-buttons{display: none;}
+
+/* owl-item-content
+------------------------------------------------------------------ owl-item-content */
+.owl-item-content {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+	color: white;
+	font-size: 20px;
+	text-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+
+.owl-item-content .row {
+	position: relative;
+	padding-top: 3em;
+}
+
+/* mouse grab icon */
+
+.owl-wrapper {cursor:-webkit-grab}
+
+.owl-wrapper.grabbing {cursor:url(../i/grabbing.png) 8 8, move;}
+
+/* preloading images
+------------------------------------------------------------------ preloading images */
+
+.owl-item.loading{
+	min-height: 150px;
+	background: url(../i/AjaxLoader.gif) no-repeat center center
+}

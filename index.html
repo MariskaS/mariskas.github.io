@@ -1,151 +1,665 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8" />
-  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <title>БФ «СЕГОДНЯ»</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Благотворительный фонд «СЕГОДНЯ»" />
-  <meta name="keywords" content="благотворительность, фонд, пожертвования, сегодня" />
-  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>БФ «СЕГОДНЯ»</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Благотворительный фонд «СЕГОДНЯ»" />
+    <meta name="keywords" content="благотворительность, фонд, пожертвования, сегодня" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
 
-  <link rel="stylesheet" href="app/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="app/bootstrap.custom/bootstrap.custom.css"/>
-  <link rel="stylesheet" href="app/style/dist/config.css"/>
-  <link rel="stylesheet" href="app/glyphicons/glyphicons.css"/>
+    <!--[if lt IE 9]>
+    <link href="css/ie8.css" rel="stylesheet" />
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
 
-  <script src="app/js/jquery.min.js"></script>
-  <script src="app/js/ui.js"></script>
-  <script src="app/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <link href="style/css/config.css" rel="stylesheet" />
+
+    <link href="glyphicons/glyphicons.css" rel="stylesheet" />
+
+    <link href="owl-carousel/css/owl.carousel.css" rel="stylesheet" />
+    <link href="owl-carousel/css/owl.custom.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/kendo/kendo.all.js"></script>
+    <script type="text/javascript" src="Scripts/kendo/router.js"></script>
 </head>
-<body>
+
+<body class="bg">
+
+<aside class="sidebar-right">
+    <div class="side-left-form">
+        <label>Написать нам</label>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Имя" />
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email" />
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+        </form>
+    </div>
+</aside><!-- Side-right -->
 <div class="layout">
-  <nav id="mainNav" class="navbar navbar-default affix navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" id="menuVertical" href="#"><i class="icon-20 i-option-vertical"></i></a>
-        <a class="navbar-brand" href="#/view1">
-          <!--<img alt="БФ Cегодня" src="...">-->БФ Cегодня
-        </a>
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div><!--navbar-header-->
-      <nav class="navbar-collapse bs-navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Подопечные</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Как помочь? <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Адресная помощь</a></li>
-              <li><a href="#">Общая помощь</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Помощь хрустальным людям</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Финансовая помощь</a></li>
-              <li class="divider"></li>
-              <li><a href="/volonter.html" target="_blank">Стать волонтером</a></li>
-            </ul>
-          </li>
+    <div class="overlay"></div>
+
+    <div class="sidebar-left">
+        <ul class="nav nav-sidebar">
+            <li><a href="#" id="menuLeft" class="collapse-nav toggle-nav-collapse" title="Open/Close"><i class="icon-20 i-activity"></i></a></li>
+            <li>
+                <a href="/" data-toggle="tooltip" data-placement="right" title="Благодарности">
+                    <i class="icon-20 i-adjust"></i><span>Благодарности</span>
+                </a>
+            </li>
+            <li>
+                <a href="/" data-toggle="tooltip" data-placement="right"  title="Новости">
+                    <i class="icon-20 i-adjust"></i><span>Новости</span>
+                </a>
+            </li>
+            <li>
+                <a href="/" data-toggle="tooltip" data-placement="right"  title="Мероприятия">
+                    <i class="icon-20 i-adjust"></i><span>Мероприятия</span>
+                </a>
+            </li>
+            <li>
+                <a href="/" data-toggle="tooltip" data-placement="right"  title="Что сделанно">
+                    <i class="icon-20 i-adjust"></i><span>Что сделанно</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="/" data-toggle="tooltip" data-placement="right"  title="Отчеты">
+                    <i class="icon-20 i-adjust"></i><span>Отчеты</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="/" data-toggle="tooltip" data-placement="right"  title="Справочник">
+                    <i class="icon-20 i-adjust"></i><span>Справочник</span>
+                </a>
+            </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li data-toggle="tooltip" data-placement="left" title="Стать волонтером">
-            <a href="#"><i class="icon-20 i-shield" data-toggle="modal" data-target="#volonterModal"></i></a>
-          </li>
-          <li data-toggle="tooltip" data-placement="bottom" title="Если Вам нужна помощь"><a href="#"><i class="icon-20 i-heart-empty"></i></a></li>
-          <li data-toggle="tooltip" data-placement="left" title="Форум"><a href="#"><i class="icon-20 i-chat"></i></a></li>
-        </ul>
-      </nav><!-- .navbar-collapse -->
-    </div>
-  </nav><!--navbar-fixed-top-->
+    </div><!-- Side-left -->
 
-  <!--[if lt IE 7]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+    <header>
+        <nav id="mainNav" class="navbar navbar-default affix navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">БФ <span>Cегодня</span></a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div><!--navbar-header-->
+                <nav class="navbar-collapse bs-navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" id="aboutUs">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Подопечные</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Как помочь? <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Адресная помощь</a></li>
+                                <li><a href="#">Общая помощь</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Помощь хрустальным людям</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Финансовая помощь</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/volonter.html" target="_blank">Стать волонтером</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li data-toggle="tooltip" data-placement="left" title="Стать волонтером">
+                            <a href="#"><i class="icon-20 i-shield" data-toggle="modal" data-target="#volonterModal"></i></a>
+                        </li>
+                        <li data-toggle="tooltip" data-placement="bottom" title="Если Вам нужна помощь">
+                            <a href="#"><i class="icon-20 i-heart-empty" data-toggle="modal" data-target="#needHelpModal"></i></a>
+                        </li>
+                        <li id="menuRight" data-toggle="tooltip" data-placement="left" title="Форум"><a href="#"><i class="icon-20 i-chat"></i></a></li>
+                    </ul>
+                </nav><!-- .navbar-collapse -->
+            </div>
+        </nav><!-- navbar-fixed-top -->
+    </header>
 
-  <div ng-view></div>
+    <div id="view" class="content-wrapper">
+        <!-- owl_carousel -->
+        <!--section>
+            <div id="owl_carousel" class="owl-carousel">
+                <div class="item">
+                    <img src="http://riotdesign.eu/assets/img/home-slider/bg-goodssolutions-960x650.jpg" alt="The Last of us" />
+                    <div class="container owl-item-content">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-5">
+                                <h2><a href="#">Title</a></h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://riotdesign.eu/assets/img/home-slider/bg-viamasini80-960x650.jpg" alt="GTA V" />
+                    <div class="container owl-item-content">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-5">
+                                <h2><a href="#">Title</a></h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="http://riotdesign.eu/assets/img/home-slider/bg-bancacambiano-960x650.jpg" alt="GTA V" />
+                    <div class="container owl-item-content">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-5">
+                                <h2><a href="#">Title</a></h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section-->
+        <section class="first">
+            <div class="container-fluid">
+                <h2><a href="#">Title</a></h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+        </section>
+        <!--О нас-->
+        <section>
+            <div class="container-fluid">
+                <h1>О нас</h1>
+                <div class="row">
+                    <div class="col-md-6">
 
-  <div>Angular seed app: v<span app-version></span></div>
-  <footer class="footer">
-    <div class="container-fluid">
-      <div class="media">
-        <div class="media-left media-middle">
-          <a href="#">
-            <img class="media-object img-circle"
-                 src="//todayspb.com/uploads/posts/2014-11/1417070881_9.jpg"
-                 data-holder-rendered="true"
-                 style="width: 140px; height: 140px;"
-                 alt="Директор фонда СЕГОДНЯ Свистунова Надежда Владимировна" />
-          </a>
+                    </div>
+                    <div class="col-md-6">
+                        <!--<iframe width="400" height="360" src="//www.youtube.com/embed/jHM66xYeHxI" frameborder="0" allowfullscreen=""></iframe>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Наши подопечные-->
+        <section>
+            <div class="container-fluid">
+                <h1>Наши подопечные</h1>
+                <div class="row">
+                    <div id="gallery">
+                        <figure class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="gallery-box">
+                                <div class="gallery-img-box">
+                                    <div class="gallery-img">
+                                        <img src="i/test/1_min.jpg" class="img-circle" />
+                                    </div>
+                                </div>
+                                <figcaption>
+                                    <h2>Бажутина Виктория <small>СПб</small></h2>
+                                    <p>
+                                        <strong>ДИАГНОЗ</strong> - <span>Spina bifida, нижний вялый парапарез, вывих бедра слева</span>
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#wardDetail">Подробнее...</button>
+                                </figcaption>
+                            </div>
+                        </figure>
+                        <figure class="col-md-3 col-sm-3 col-xs-12">
+                            <div class="gallery-box">
+                                <div class="gallery-img-box">
+                                    <div class="gallery-img">
+                                        <img src="i/test/avatar_default.jpg" class="img-circle" />
+                                    </div>
+                                </div>
+                                <figcaption>
+                                    <h2>Title <small>город</small></h2>
+                                    <p>
+                                        <strong>ДИАГНОЗ</strong> - <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#wardDetail">Подробнее...</button>
+                                </figcaption>
+                            </div>
+                        </figure>
+                        <figure class="col-md-3 col-sm-3 col-xs-12 ">
+                            <div class="gallery-box">
+                                <div class="gallery-img-box">
+                                    <div class="gallery-img">
+                                        <img src="i/test/avatar_default.jpg" class="img-circle" />
+                                    </div>
+                                </div>
+                                <figcaption>
+                                    <h2>Title <small>город</small></h2>
+                                    <p>
+                                        <strong>ДИАГНОЗ</strong> - <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#wardDetail">Подробнее...</button>
+                                </figcaption>
+                            </div>
+                        </figure>
+                        <figure class="col-md-3 col-sm-3 col-xs-12 ">
+                            <div class="gallery-box">
+                                <div class="gallery-img-box">
+                                    <div class="gallery-img">
+                                        <img src="i/test/avatar_default.jpg" class="img-circle" />
+                                    </div>
+                                </div>
+                                <figcaption>
+                                    <h2>Title <small>город</small></h2>
+                                    <p>
+                                        <strong>ДИАГНОЗ</strong> - <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                    </p>
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#wardDetail">Подробнее...</button>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div><!-- #view -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="media">
+                <div class="media-left media-middle">
+                    <a href="#">
+                        <img class="media-object img-circle"
+                             src="//todayspb.com/uploads/posts/2014-11/1417070881_9.jpg"
+                             data-holder-rendered="true"
+                             style="width: 140px; height: 140px;"
+                             alt="Директор фонда СЕГОДНЯ Свистунова Надежда Владимировна" />
+                    </a>
+                </div>
+                <div class="media-body media-middle">
+                    <h4 class="media-heading" id="middle-aligned-media">Директор фонда</h4>
+                    <p>Свистунова Надежда Владимировна</p>
+                    <p><a title="vk" href="//vk.com/nadezda_svistunova" target="_blank">vk.com/nadezda_svistunova</a> <a href="mailto:info@todayspb.com">info@todayspb.com</a></p>
+                </div>
+            </div>
+            <hr />
+            <p>
+                © 2015 БФ "СЕГОДНЯ"
+            </p>
         </div>
-        <div class="media-body media-middle">
-          <h4 class="media-heading" id="middle-aligned-media">Директор фонда</h4>
-          <p>Свистунова Надежда Владимировна</p>
-          <p><a title="vk" href="//vk.com/nadezda_svistunova" target="_blank">vk.com/nadezda_svistunova</a> <a href="mailto:info@todayspb.com">info@todayspb.com</a></p>
+    </footer>
+</div><!--layout-->
+
+<div class="modal fade" id="wardDetail" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Бажутина Виктория</h4>
+            </div>
+            <div class="modal-body">
+                <img src="i/test/1.jpg" />
+                <h4>Диагноз</h4>
+                <p>Spina bifida, нижний вялый парапарез, вывих бедра слева</p>
+                <h4>История</h4>
+                <p>
+                    <i>
+                        "Наша Виктория родилась в 2009 г. с диагнозом: Spina bifida, нижний вялый парапарез. Когда ей был 1 месяц, грыжу удалили. Врачи нас сразу предупредили о последствиях. Слава Богу. что нас оперировал нейрохирург с золотыми руками. Все прошло хорошо. До 3х лет мы проходили реабилитацию. Когда обратились в институт им. Турнера, нам сразу был поставлен диагноз: вывих бедра слева. В 3 года сделали операцию по вывиху бедра. Сейчас нам 5 лет. Ходим в ортезах. Самостоятельно еще не можем ходить, только с помощью ходунков. На улице мы ездим на коляске. Но дело в том. что коляска у нас еще обычная, детская. В ИПР нам прописали кресло-коляску с ручным приводом базовую прогулочную для детей-инвалидов. Нам такая коляска не подходит. Вот и просим помощи у добрых людей, в приобретении кресло-коляски прогулочной "ЭКО-БАГГИ" . Такая коляска стоит 29.000 т.р.. Сумма не такая уж и большая, но в нашей семье нет возможности приобрести ее. Работает папа один, я осуществляю уход за Викой. В семье есть еще старший ребенок 10 лет. Мы еще платим ипотеку за квартиру. Возможности нет в приобретении коляски. Очень прошу о помощи. Заранее всем говорю, огромное спасибо, кто откликнется на мою просьбу! "
+                    </i>
+                </p>
+
+                <h4>Как помочь</h4>
+
+                <div class="alert alert-warning" role="alert">
+                    <p>
+                        При переводе пожертвований большая просьба написать об этом директору фонда
+                        Надежде Свистуновой <a href="mailto:info@todayspb.com">info@todayspb.com</a>
+                    </p>
+                </div>
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_1" aria-expanded="true" aria-controls="collapseOne">
+                                    Яндекс Вместе
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse_1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <iframe class="iframe" src="https://money.yandex.ru/fastpay/form/9147ee9ec5a5409d92f4c1cf024d30b1" style="width: 100%; height: 341px;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_2" aria-expanded="false" aria-controls="collapseTwo">
+                                    Передать денежные средства родителям
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse_2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                TAB 2 - Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_3" aria-expanded="false" aria-controls="collapseTwo">
+                                    Перечислить деньги на счет фонда «СЕГОДНЯ»
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse_3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <ins>Наши реквизиты:</ins>
+                                <ul class="list-unstyled">
+                                    <li>Северо-Западный банк ОАО «Сбербанк России»</li>
+                                    <li>БИК: 044030653, ИНН: 7804291024, КПП: 780401001</li>
+                                    <li>р/сч: 40703810855080000713</li>
+                                    <li>к/сч: 30101810500000000653</li>
+                                    <li>Юридический адрес: РФ, 195265, г. Санкт-Петербург, ул. Черкасова, д. 5, корп.1, кв.39</li>
+                                    <li>Директор фонда: Свистунова Надежда Владимировна</li>
+                                </ul>
+                                <p>Оплачивать можно <strong>всеми</strong> видами платежей: через операциониста, терминал, c банковских карт, электронными деньгами, с помощью штрих-кода и т.д.</p>
+                                <p>Mожно использовать функцию <strong>"автоплатежи"</strong> - раз в месяц с банковской карты будет списываться указанная сумма.</p>
+                                <p>
+                                    Также на ресурсе <strong>"Яндекс Вместе"</strong>, сервисе онлайн-платежей,
+                                    есть удобная платежная страничка по адресной помощи нашим подопечным - <a href="//vmeste.yandex.ru/todayspb25" target="_blank">Программа адресной помощи</a>.
+                                </p>
+                                <p>
+                                    <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        Как перевести средства через терминал сбербанка?
+                                    </a>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="well">
+                                        <ol>
+                                            <li>выбрать "Платежи в нашем регионе"</li>
+                                            <li>поиск получателя платежа</li>
+                                            <li>поиск по ИНН</li>
+                                            <li>ввести ИНН: 7804291024</li>
+                                            <li>появится надпись БФ "Сегодня" - благотворительный взнос -выбрать</li>
+                                            <li>проверить реквизиты</li>
+                                            <li>ввести ФИО</li>
+                                            <li>ввести адрес</li>
+                                            <li>сумму, которую будете перечислять</li>
+                                            <li>подтвердить реквизиты</li>
+                                            <li>проверить - продолжить.</li>
+                                        </ol>
+                                          <span>
+                                            Перечень карт, по которым принимаются переводы с использованием устройств самообслуживания Банка:
+                                            MasterCard ОАО «Сбербанк России», Visa ОАО «Сбербанк России», Visa Electron ОАО «Сбербанк России», Maestro ОАО «Сбербанк России»,
+                                            ПРО 100 ОАО «Сбербанк России»
+                                          </span>
+                                    </div>
+                                </div>
+                                Если возникли вопросы, пишите нам - <a href="mailto:info@todayspb.com">info@todayspb.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
-      </div>
-      <hr />
-      <p>
-        © 2015 БФ "СЕГОДНЯ"
-      </p>
     </div>
-  </footer>
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
+</div><!-- Modal #gallery детальная подопечного -->
+
+<div class="modal fade" id="volonterModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Как стать волонтером</h4>
+            </div>
+            <div class="modal-body">
+                <h2>Благотворительный фонд «СЕГОДНЯ»</h2>
+                <p>
+                    создан в феврале 2014 года для того, чтобы помогать людям с тяжелыми заболеваниями,
+                    находящимся в трудной жизненной ситуации.
+                </p>
+                <p>
+                    Фонд осуществляет работу по реализации
+                    помощи - инвалидам, детям находящимся в реанимации, детям оставшимся без
+                    попечения родителей и семьям попавшим в трудную жизненную ситуацию.
+                </p>
+                <h3>Как стать волонтером?</h3>
+                <p>
+                    Заполните <i class="icon-20 i-download-alt"></i><a href="//todayspb.com/Anketa_volontera.doc">анкету волонтера</a>
+                    и пришлите на почту <a href="mailto:info@todayspb.com">info@todayspb.com</a>
+                </p>
+                <div class="page-header">
+                    <h1>Ищем волонтеров</h1>
+                </div>
+                <p><strong>Ищем в команду</strong> ответственных, честных и добросовестных.</p>
+                <ul>
+                    <li>
+                        <p>
+                            с <strong>организаторскими</strong> способностями,
+                            готовыми посвящать немного свободного
+                            времени для разработки и реализации
+                            программ помощи
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            со знанием <strong>иностранных языков</strong> для
+                            осуществления переводов, и др. помощи
+                        </p>
+                    </li>
+                    <li><p><strong>фандрайзер</strong> - специалист для привлечения денежных средств</p></li>
+                    <li><p><strong>по связям с общественностью</strong> - специалист пиар-отдела</p></li>
+                    <li>
+                        <p>помощь с <strong>организацией акций</strong>, <strong>флеш-мобов</strong> и других мероприятий</p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>помощь он-лайн</strong> - помогать распространять информацию о фонде, о программах,
+                            о помощи конкретному человеку и оказывать иную информационную поддержку;
+                            также помощь тех, кто готов поделиться полезной информацией на нашем форуме;
+                            модерировать сообщества в соц.сетях, помогать с написанием текстов и проч.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            которые будет заниматься самыми приятными вещами в
+                            фонде - организовывать поздравления наших подопечных с днём рождения и другими праздниками
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Координатор</strong> - для организации адресной помощи подопечным фонда. Желательно с опытом работы
+                            в привлечении адресной помощи нуждающимся, адекватность, соответствие цели фонда,
+                            компетенция, ответственность, исполнительность.<br />
+                            Основная задача: написание объявлений о помощи подопечным (умение писать тексты),
+                            размещение в интернет-ресурсах фонда, общение с людьми - подопечными и помогающими, обеспечение обратной связи и отчетности.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Флористы, художники, творческие люди</strong>
+                        </p>
+                    </li>
+                </ul>
+                <blockquote class="blockquote-warning">
+                    <h4>Требования к волонтерам</h4>
+                    <ol>
+                        <li>Не опаздывать на занятия.</li>
+                        <li>Желательно иметь свои флористические инструменты (секатор, флористические ножницы).</li>
+                    </ol>
+                    <footer class="text-warning">Цветы и дополнительные материалы флористу предоставляются бесплатно. По желанию флорист может приобрести их самостоятельно.</footer>
+                </blockquote>
+                <div class="page-header">
+                    <h2>Проводим обучение флористике и батику</h2>
+                </div>
+                <p>
+                    Индивидуальные и групповые творческие занятия для детей и взрослых.
+                    Развиваем художественно-эстетический вкус и творческие способности.<br />
+                    Больше о занятиях можно узнать в группе
+                    <a href="//vk.com/pro_bono_florists">Pro bono "Флористика людям"</a>
+                    и на сайте <a href="//blossoming.ru/">blossoming.ru</a>.
+                </p>
+                <p>
+                    Для записи на курс, заполните
+                    <i class="icon-20 i-download-alt"></i><a href="//todayspb.com/engine/download.php?id=7">анкету</a>
+                    и пришлите на почту <a href="mailto:blossoming.ru@gmail.com">blossoming.ru@gmail.com</a>
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>«Флористика людям» <small>занятия по флористике и декорированию</small></h3>
+                        <p>
+                            На занятиях учимся ухаживать за цветами, составляем букеты,
+                            композиции, делаем венки и флорариумы.<br />
+                            Работаем со срезанными и горшечными цветами, природными и искусственными материалами.<br />
+                            Учимся сочетать цветы, различные текстуры и материалы.
+                        </p>
+                        <p>«Флористика людям» – это творчество, игра и учеба.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Занятия по рисованию и батику</h3>
+                        <p>На занятиях рисуем, фантазируем, придумываем сюжеты. Изучаем цвета, формы, учимся работать с кистями.</p>
+                        <strong>Используем:</strong>
+                        <ul>
+                            <li>цветные и акварельные карандаши</li>
+                            <li>акварель, гуашь, акриловые краски</li>
+                            <li>пастель</li>
+                            <li>фломастеры</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div><!-- Modal стать волонтером -->
+
+<div class="modal fade" id="needHelpModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Если вам нужна помощь</h4>
+            </div>
+            <div class="modal-body">
+                <h2>Благотворительный фонд "СЕГОДНЯ"</h2>
+                <p>зарегистрирован в феврале 2014 года, поэтому прием в подопечные временно ограничен.</p>
+                <p>
+                    Вы можете также обратиться в другие благотворительные фонды за помощью.<br />
+                    Посмотреть списки фондов можно на нашем <a href="todayspb.com/forum/index.php" target="_blank">форуме</a> в разделах по заболеваниям.
+                </p>
+                <h4>Мы будем рады Вам помочь и в этом состоит наша задача!</h4>
+                <p> Но, просим Вас проявить терпение, так как сбор средств-это большой труд и может занимать не мало времени.</p>
+                <div class="text-right text-muted"><i>С уважением, БФ «СЕГОДНЯ»</i></div>
+                <div class="page-header">
+                    <h3>Чтобы стать нашим подопечным вам необходимо</h3>
+                </div>
+                <p>
+                    <strong>1.</strong> Заполнить <i class="icon-20 i-download-alt"></i><a href="todayspb.com/zayavlenie.doc">заявление</a> и отправить
+                    на почту <a href="mailto:info@todayspb.com">info@todayspb.com</a>
+                    <div class="text-danger">все пункты заполнения формы являются обязательными и обсуждению не подлежат</div>
+                </p>
+                <p><strong>2.</strong> Предоставить документы:</p>
+                <ol>
+                    <li>Письмо законного представителя ребенка,с разъяснением какая именно помощь нужна.</li>
+                    <li>Ксерокопии паспортов обоих родителей ребенка, с пропиской,ИНН родителей.</li>
+                    <li>Ксерокопии свидетельства о рождении ребенка, свидетельство об инвалидности (если есть).</li>
+                    <li>Справка о доходах (2 НДФЛ) работающих родителей.</li>
+                    <li>Медицинские документы, подтверждающие диагнозы и состояние ребенка, рекомендации к лечению,<br /> приобретению
+                        <a tabindex="0"
+                           role="button"
+                           data-toggle="popover"
+                           data-trigger="focus"
+                           title="ТСР это"
+                           data-content="Технические средства реабилитации людей с ограничениями жизнедеятельности">TCP</a>&nbsp;&ndash;&nbsp;свежие!
+                    </li>
+                    <li>Счет на лечение, приобретение ТСР, медицинских препаратов.</li>
+                    <li>Фотографии ребенка в неформальной обстановке хорошего качества.</li>
+                    <li>Контактные телефоны, адреса электронной почты и адреса обоих родителей.</li>
+                    <li>
+                        Перечень благотворительных организаций, частных благотворителей, наличие групп по
+                        сбору средств в социальных сетях, государственные инстанции, куда
+                        Вы обращались за помощью и результаты Ваших обращений-копии.
+                    </li>
+                    <li>В случае, если ребенок взят под опеку-копии свидетельства об опекунстве или разрешение на передачу ребенка.</li>
+                    <li>Заявление и договор, оформленные и подписанные лично законным представителем ребенка.</li>
+                </ol>
+                <div class="page-header">
+                    <h3>На ваши вопросы ответят</h3>
+                </div>
+                <p>
+                    <strong>Эксперт Фонда -</strong> Гусева Светлана Александровна <a href="mailto:lily-07@inbox.ru">lily-07@inbox.ru</a>
+                    или тел.:<a href="tel:89215553807">8(921)555-38-07</a>
+                </p>
+                <p><strong>Директор Фонда -</strong> Свистунова Надежда Владимировна <a href="mailto:info@todayspb.com">info@todayspb.com</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
 
-<aside class="side-left" id="sideLeft">
-  <nav>
-    <ul class="menu-v">
-      <li role="presentation" class="active"><a href="#"><i class="icon-20 i-heart-empty"></i><span>Благодарности</span></a></li>
-      <li role="presentation"><a href="#/view2"><i class="icon-20 i-heart-empty"></i><span>Новости</span></a></li>
-      <li role="presentation"><a href="#"><i class="icon-20 i-heart-empty"></i><span>Мероприятия</span></a></li>
-    </ul>
-  </nav>
+<a href="#0" class="fa-icon fa-white cd-top"></a>
 
-  <nav>
-    <ul class="menu-v">
-      <li role="presentation" class="active"><a href="#"><i class="icon-20 i-heart-empty"></i><span>Что сделанно?</span></a></li>
-      <li role="presentation"><a href="#"><i class="icon-20 i-heart-empty"></i><span>Выписки и Отчеты</span></a></li>
-      <li role="presentation"><a href="#"><i class="icon-20 i-heart-empty"></i><span>Полезное</span></a></li>
-    </ul>
-  </nav>
+<script src="owl-carousel/js/owl.carousel.js"></script>
+<script>
+    $(function () {
+        $("#owl_carousel").owlCarousel({
+            navigation: true,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true
+            // "singleItem:true" is a shortcut for:
+            // items : 1,
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+        });
+    });
+</script>
 
-  <div class="side-left-form">
-    <label>Написать нам</label>
-    <form>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Имя" />
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Email" />
-      </div>
-      <div class="form-group">
-        <textarea class="form-control" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-block">Отправить</button>
-    </form>
-  </div>
-</aside><!--Side-left-->
-
-  <script src="app/bower_components/angular/angular.js"></script>
-  <script src="app/bower_components/angular-route/angular-route.js"></script>
-  <script src="app/app.js"></script>
-  <script src="app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="app/view1/view1.js"></script>
-  <script src="app/view2/view2.js"></script>
-  <script src="app/components/version/version.js"></script>
-  <script src="app/components/version/version-directive.js"></script>
-  <script src="app/components/version/interpolate-filter.js"></script>
+<script src="Scripts/ui.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Scripts/scrollToTop/scrollToTop.js"></script>
 </body>
 </html>
