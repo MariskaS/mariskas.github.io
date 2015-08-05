@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bb4b901-faa3-42ee-908c-694ca10b329a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/i/bg.jpg" afterPath="$PROJECT_DIR$/i/bg.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/config.css" afterPath="$PROJECT_DIR$/style/css/config.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/layout.css" afterPath="$PROJECT_DIR$/style/css/layout.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/less/layout.less" afterPath="$PROJECT_DIR$/style/less/layout.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/sidebar-right.css" afterPath="$PROJECT_DIR$/style/css/sidebar-right.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/less/sidebar-right.less" afterPath="$PROJECT_DIR$/style/less/sidebar-right.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mariskas.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar-right.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sidebar-right.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/less/sidebar-right.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6158068">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -85,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/less/layout.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.18660812">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -183,8 +181,8 @@
         <option value="$PROJECT_DIR$/template/news/news.html" />
         <option value="$PROJECT_DIR$/Scripts/testTemplate.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/style/less/layout.less" />
         <option value="$PROJECT_DIR$/style/less/sidebar-right.less" />
+        <option value="$PROJECT_DIR$/style/less/layout.less" />
       </list>
     </option>
   </component>
@@ -1018,18 +1016,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/less/layout.less">
+    <entry file="file://$PROJECT_DIR$/style/less/sidebar-right.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/less/sidebar-right.less">
+    <entry file="file://$PROJECT_DIR$/style/less/layout.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6158068">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.18660812">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
         </state>
       </provider>
