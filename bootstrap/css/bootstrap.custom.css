@@ -104,6 +104,9 @@ blockquote {font-size: 14px;}
 	display: inline-block;
 }
 
+.sidebar-left .nav-sidebar li  {white-space: nowrap;}
+.sidebar-left .nav-sidebar li i + span {padding-left: 20px;}
+
 @media(min-width:768px) {
 	.navbar-default {
 		border-color: rgba(255,255,255,.3);
@@ -142,3 +145,5 @@ blockquote {font-size: 14px;}
 	.navbar-default.affix .nav>li>a:focus:hover {color: #f05f40;}
 }
 
+
+.nav>li>a:focus, .nav>li>a:hover{background-color: transparent;}

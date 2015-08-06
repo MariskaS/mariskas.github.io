@@ -36,8 +36,8 @@
     <script type="text/javascript" src="Scripts/kendo/router.js"></script>
 </head>
 
-<body class="bg">
-
+<body>
+<div class="bg"></div>
 <aside class="sidebar-right">
     <div class="side-left-form">
         <label>Написать нам</label>
@@ -92,51 +92,48 @@
 </aside><!-- Side-left -->
 <div class="layout">
     <div class="overlay"></div>
-    <header>
-        <nav id="mainNav" class="navbar navbar-default affix navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">БФ <span>Cегодня</span></a>
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div><!--navbar-header-->
-                <nav class="navbar-collapse bs-navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#" id="aboutUs">О нас</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Подопечные</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Как помочь? <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Адресная помощь</a></li>
-                                <li><a href="#">Общая помощь</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Помощь хрустальным людям</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Финансовая помощь</a></li>
-                                <li class="divider"></li>
-                                <li><a href="/volonter.html" target="_blank">Стать волонтером</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li data-toggle="tooltip" data-placement="left" title="Стать волонтером">
-                            <a href="#"><i class="icon-20 i-shield" data-toggle="modal" data-target="#volonterModal"></i></a>
-                        </li>
-                        <li data-toggle="tooltip" data-placement="bottom" title="Если Вам нужна помощь">
-                            <a href="#"><i class="icon-20 i-heart-empty" data-toggle="modal" data-target="#needHelpModal"></i></a>
-                        </li>
-                        <li id="menuRight" data-toggle="tooltip" data-placement="left" title="Форум"><a href="#"><i class="icon-20 i-chat"></i></a></li>
-                    </ul>
-                </nav><!-- .navbar-collapse -->
-            </div>
-        </nav><!-- navbar-fixed-top -->
-    </header>
-
+    <nav id="mainNav" class="navbar navbar-default affix navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">БФ <span>Cегодня</span></a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div><!--navbar-header-->
+            <nav class="navbar-collapse bs-navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" id="aboutUs">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Подопечные</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Как помочь? <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Адресная помощь</a></li>
+                            <li><a href="#">Общая помощь</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Помощь хрустальным людям</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Финансовая помощь</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/volonter.html" target="_blank">Стать волонтером</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li data-toggle="tooltip" data-placement="left" title="Стать волонтером">
+                        <a href="#"><i class="icon-20 i-shield" data-toggle="modal" data-target="#volonterModal"></i></a>
+                    </li>
+                    <li data-toggle="tooltip" data-placement="bottom" title="Если Вам нужна помощь">
+                        <a href="#"><i class="icon-20 i-heart-empty" data-toggle="modal" data-target="#needHelpModal"></i></a>
+                    </li>
+                    <li id="menuRight" data-toggle="tooltip" data-placement="left" title="Форум"><a href="#"><i class="icon-20 i-chat"></i></a></li>
+                </ul>
+            </nav><!-- .navbar-collapse -->
+        </div>
+    </nav><!-- navbar-fixed-top -->
     <div id="view" class="content-wrapper">
         <!-- owl_carousel -->
         <!--section>

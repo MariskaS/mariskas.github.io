@@ -1,35 +1,19 @@
 
 body {
   overflow-x: hidden;
-  &.bg{
-    background-image: url(../../i/bg.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -moz-background-size: cover;
-    background-color: #061524;
     & .first{
       background: transparent;
       padding: 60px 0 100px 0;
       color: white;
     }
-  }
 }
+
 
 .footer,
 section {
   padding: 30px 0;
   background: white;
 }
-
-
-
-
-.footer,
-.content-wrapper {padding-left: 52px;}
-
-.content-wrapper {overflow-x: hidden;}
 
 .layout {
   padding: 0;
@@ -41,3 +25,22 @@ section {
   transition: 250ms ease;
 }
 
+.bg{
+  background-image: url(../../i/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-filter: url(#blur);
+  filter: url(#blur);
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  -webkit-transition: 1s -webkit-filter linear;
+  transition: 1s filter linear;
+  background-color: #061524;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+}
