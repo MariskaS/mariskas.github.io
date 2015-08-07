@@ -2,6 +2,65 @@
 
 	var router = new kendo.Router(); //router - маршрутизатор(управляет маршрутами приложения)
 
+	/* Top menu */
+	router.route("/volonter", function () {
+		$.ajax({
+			url: "template/volonter/volonter.html",
+			success: function (data) {
+				// hide preloader
+				// render content
+
+				var volonter = new kendo.View(
+					data, { model: kendo.observable({ foo: "Как стать волонтером ?" }) });
+
+				$("#view").html(volonter.render())
+			},
+			error: function () {
+				// hide preloader
+				// show error
+			}
+		});
+	});
+
+	router.route("/finhelp", function () {
+		$.ajax({
+			url: "template/finhelp/finhelp.html",
+			success: function (data) {
+				// hide preloader
+				// render content
+
+				var finhelp = new kendo.View(
+					data, { model: kendo.observable({ foo: "Финансовая помощь" }) });
+
+				$("#view").html(finhelp.render())
+			},
+			error: function () {
+				// hide preloader
+				// show error
+			}
+		});
+	});
+
+	router.route("/crystalPeople", function () {
+		$.ajax({
+			url: "template/crystalPeople/crystalPeople.html",
+			success: function (data) {
+				// hide preloader
+				// render content
+
+				var crystalPeople = new kendo.View(
+					data, { model: kendo.observable({ foo: "Помощь Хрустальным людям" }) });
+
+				$("#view").html(crystalPeople.render())
+			},
+			error: function () {
+				// hide preloader
+				// show error
+			}
+		});
+	});
+
+	/* Left menu */
 	router.route("/thanks", function () {
 		$.ajax({
 			url: "template/thanks/thanks.html",
@@ -119,6 +178,23 @@
 
 	router.start();
 
+	/* Top menu */
+	$("#volonter").click(function (e) {
+		e.preventDefault();
+		router.navigate("/volonter");
+	});
+
+	$("#finhelp").click(function (e) {
+		e.preventDefault();
+		router.navigate("/finhelp");
+	});
+
+	$("#crystalPeople").click(function (e) {
+		e.preventDefault();
+		router.navigate("/crystalPeople");
+	});
+
+	/* Left menu */
 	$("#thanks").click(function (e) {
 		e.preventDefault();
 		router.navigate("/thanks");
@@ -148,4 +224,5 @@
 		e.preventDefault();
 		router.navigate("/directory");
 	});
+
 });
