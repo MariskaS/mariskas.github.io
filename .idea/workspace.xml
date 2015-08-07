@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bb4b901-faa3-42ee-908c-694ca10b329a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/volonter/volonter.html" afterPath="$PROJECT_DIR$/template/volonter/volonter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/kendo/router.js" afterPath="$PROJECT_DIR$/Scripts/kendo/router.js" />
     </list>
     <ignored path="mariskas.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finhelp.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/template/finhelp/finhelp.html">
+      <file leaf-file-name="finhelp.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/finHelp/finhelp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57651246">
-              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+            <state vertical-scroll-proportion="-9.490566">
+              <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
               <folding>
                 <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
                 <element signature="n#p#4;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
@@ -129,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scripts/kendo/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.074074">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.38361046">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -177,7 +177,6 @@
         <option value="$PROJECT_DIR$/style/less/sidebar-left.less" />
         <option value="$PROJECT_DIR$/template/finHelp/finHelp" />
         <option value="$PROJECT_DIR$/template/finhelp/finhelp" />
-        <option value="$PROJECT_DIR$/Scripts/kendo/router.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/less/config.less" />
         <option value="$PROJECT_DIR$/bootstrap/css/bootstrap.custom.css" />
@@ -186,6 +185,7 @@
         <option value="$PROJECT_DIR$/style/less/box.less" />
         <option value="$PROJECT_DIR$/template/volonter/volonter.html" />
         <option value="$PROJECT_DIR$/template/finhelp/finhelp.html" />
+        <option value="$PROJECT_DIR$/Scripts/kendo/router.js" />
       </list>
     </option>
   </component>
@@ -309,7 +309,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="finhelp" />
+              <option name="myItemId" value="finHelp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -953,14 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/kendo/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.074074">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/volonter/volonter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0">
@@ -969,15 +961,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/finhelp/finhelp.html">
+    <entry file="file://$PROJECT_DIR$/template/finHelp/finhelp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57651246">
-          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        <state vertical-scroll-proportion="-9.490566">
+          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
             <element signature="n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
             <element signature="n#p#4;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/kendo/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38361046">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

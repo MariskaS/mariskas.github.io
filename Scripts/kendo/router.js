@@ -24,7 +24,7 @@
 
 	router.route("/finhelp", function () {
 		$.ajax({
-			url: "template/finhelp/finhelp.html",
+			url: "template/finHelp/finhelp.html",
 			success: function (data) {
 				// hide preloader
 				// render content
