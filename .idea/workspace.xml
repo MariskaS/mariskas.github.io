@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bb4b901-faa3-42ee-908c-694ca10b329a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/less/box.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/crystalPeople/crystalPeople.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/finhelp/finhelp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/volonter/volonter.html" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\bootstrap\css\bootstrap-theme.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.custom.css" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap.custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/config.css" afterPath="$PROJECT_DIR$/style/css/config.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/less/config.less" afterPath="$PROJECT_DIR$/style/less/config.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/layout.css" afterPath="$PROJECT_DIR$/style/css/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/less/layout.less" afterPath="$PROJECT_DIR$/style/less/layout.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/kendo/router.js" afterPath="$PROJECT_DIR$/Scripts/kendo/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/sidebar-left.css" afterPath="$PROJECT_DIR$/style/css/sidebar-left.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/less/sidebar-left.less" afterPath="$PROJECT_DIR$/style/less/sidebar-left.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="8bb4b901-faa3-42ee-908c-694ca10b329a" name="Default" comment="" />
     <ignored path="mariskas.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="box.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="box.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/less/box.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2218268">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state vertical-scroll-proportion="-2.8867924">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -109,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finhelp.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="finhelp.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/finhelp/finhelp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1509433">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="101" selection-end-column="115" />
+            <state vertical-scroll-proportion="0.7580071">
+              <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
               <folding>
                 <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
                 <element signature="n#p#10;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
@@ -146,8 +130,8 @@
       <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/kendo/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.425926">
-              <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
+            <state vertical-scroll-proportion="-10.074074">
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -193,13 +177,13 @@
         <option value="$PROJECT_DIR$/template/volonter/volonter.html" />
         <option value="$PROJECT_DIR$/template/finhelp/finhelp" />
         <option value="$PROJECT_DIR$/Scripts/kendo/router.js" />
-        <option value="$PROJECT_DIR$/template/finhelp/finhelp.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/less/config.less" />
         <option value="$PROJECT_DIR$/bootstrap/css/bootstrap.custom.css" />
         <option value="$PROJECT_DIR$/style/less/layout.less" />
         <option value="$PROJECT_DIR$/template/crystalPeople/crystalPeople.html" />
         <option value="$PROJECT_DIR$/style/less/box.less" />
+        <option value="$PROJECT_DIR$/template/finhelp/finhelp.html" />
       </list>
     </option>
   </component>
@@ -287,11 +271,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -305,7 +285,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finhelp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -863,18 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/finhelp/finhelp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1509433">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="101" selection-end-column="115" />
-          <folding>
-            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#p#10;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/ui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.444445">
@@ -898,14 +870,6 @@
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/kendo/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.425926">
-          <caret line="183" column="25" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,9 +935,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/less/box.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2218268">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state vertical-scroll-proportion="-2.8867924">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/kendo/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.074074">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/finhelp/finhelp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7580071">
+          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
+            <element signature="n#p#10;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
