@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8bb4b901-faa3-42ee-908c-694ca10b329a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap.custom.css" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap.custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/box.css" afterPath="$PROJECT_DIR$/style/css/box.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/less/box.less" afterPath="$PROJECT_DIR$/style/less/box.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/config.css" afterPath="$PROJECT_DIR$/style/css/config.css" />
     </list>
     <ignored path="mariskas.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,11 +127,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.custom.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap.custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41535777">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="box.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style/less/box.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.68118465">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -177,7 +190,6 @@
         <option value="$PROJECT_DIR$/template/events/events.html" />
         <option value="$PROJECT_DIR$/template/directory/directory.html" />
         <option value="$PROJECT_DIR$/template/finHelp/finhelp.html" />
-        <option value="$PROJECT_DIR$/style/less/box.less" />
         <option value="$PROJECT_DIR$/template/crystalPeople/crystalPeople.html" />
         <option value="$PROJECT_DIR$/Scripts/kendo/router.js" />
         <option value="$PROJECT_DIR$/template/crystalPeople/crystalpeople.html" />
@@ -185,6 +197,7 @@
         <option value="$PROJECT_DIR$/template/fullHelp/fullHelp.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/bootstrap/css/bootstrap.custom.css" />
+        <option value="$PROJECT_DIR$/style/less/box.less" />
       </list>
     </option>
   </component>
@@ -903,14 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/less/box.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1320753">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/less/layout.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.056604">
@@ -1010,8 +1015,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41535777">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/less/box.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68118465">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding />
         </state>
       </provider>

@@ -5,12 +5,15 @@ a:focus {
 }
 
 @media(max-width:500px) {
+
 	h1 {font-size: 28px;}
 	h1 {font-size: 22px;}
 	h3 {font-size: 20px;}
+
+	.list-unstyled {margin-left: 0;}
 }
 
-.list-unstyled {margin-left: 0;}
+
 
 /* .blockquote
 ------------------------------------------------------------------------------------------------ .blockquote */
