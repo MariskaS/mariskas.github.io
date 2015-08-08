@@ -3,17 +3,56 @@
 	var router = new kendo.Router(); //router - маршрутизатор(управляет маршрутами приложения)
 
 	/* Top menu */
-	router.route("/volonter", function () {
+
+	router.route("/addressHelp", function () {
 		$.ajax({
-			url: "template/volonter/volonter.html",
+			url: "template/addressHelp/addressHelp.html",
 			success: function (data) {
 				// hide preloader
 				// render content
 
-				var volonter = new kendo.View(
-					data, { model: kendo.observable({ foo: "Как стать волонтером ?" }) });
+				var addressHelp = new kendo.View(
+					data, { model: kendo.observable({ foo: "Адресная помощь" }) });
 
-				$("#view").html(volonter.render())
+				$("#view").html(addressHelp.render())
+			},
+			error: function () {
+				// hide preloader
+				// show error
+			}
+		});
+	});
+
+	router.route("/fullHelp", function () {
+		$.ajax({
+			url: "template/fullHelp/fullHelp.html",
+			success: function (data) {
+				// hide preloader
+				// render content
+
+				var fullHelp = new kendo.View(
+					data, { model: kendo.observable({ foo: "Общая помощь" }) });
+
+				$("#view").html(fullHelp.render())
+			},
+			error: function () {
+				// hide preloader
+				// show error
+			}
+		});
+	});
+
+	router.route("/crystalPeople", function () {
+		$.ajax({
+			url: "template/crystalPeople/crystalPeople.html",
+			success: function (data) {
+				// hide preloader
+				// render content
+
+				var crystalPeople = new kendo.View(
+					data, { model: kendo.observable({ foo: "Помощь Хрустальным людям" }) });
+
+				$("#view").html(crystalPeople.render())
 			},
 			error: function () {
 				// hide preloader
@@ -41,17 +80,17 @@
 		});
 	});
 
-	router.route("/crystalPeople", function () {
+	router.route("/volonter", function () {
 		$.ajax({
-			url: "template/crystalPeople/crystalPeople.html",
+			url: "template/volonter/volonter.html",
 			success: function (data) {
 				// hide preloader
 				// render content
 
-				var crystalPeople = new kendo.View(
-					data, { model: kendo.observable({ foo: "Помощь Хрустальным людям" }) });
+				var volonter = new kendo.View(
+					data, { model: kendo.observable({ foo: "Как стать волонтером ?" }) });
 
-				$("#view").html(crystalPeople.render())
+				$("#view").html(volonter.render())
 			},
 			error: function () {
 				// hide preloader
@@ -59,6 +98,7 @@
 			}
 		});
 	});
+
 
 	/* Left menu */
 	router.route("/thanks", function () {
@@ -179,9 +219,19 @@
 	router.start();
 
 	/* Top menu */
-	$("#volonter").click(function (e) {
+	$("#addressHelp").click(function (e) {
 		e.preventDefault();
-		router.navigate("/volonter");
+		router.navigate("/addressHelp");
+	});
+
+	$("#fullHelp").click(function (e) {
+		e.preventDefault();
+		router.navigate("/fullHelp");
+	});
+
+	$("#crystalPeople").click(function (e) {
+		e.preventDefault();
+		router.navigate("/crystalPeople");
 	});
 
 	$("#finhelp").click(function (e) {
@@ -189,10 +239,12 @@
 		router.navigate("/finhelp");
 	});
 
-	$("#crystalPeople").click(function (e) {
+	$("#volonter").click(function (e) {
 		e.preventDefault();
-		router.navigate("/crystalPeople");
+		router.navigate("/volonter");
 	});
+
+
 
 	/* Left menu */
 	$("#thanks").click(function (e) {

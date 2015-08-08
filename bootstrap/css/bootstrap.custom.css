@@ -4,6 +4,12 @@ a:focus {
 	outline-offset: 0;
 }
 
+@media(max-width:500px) {
+	h1 {font-size: 28px;}
+	h1 {font-size: 22px;}
+	h3 {font-size: 20px;}
+}
+
 /* .blockquote
 ------------------------------------------------------------------------------------------------ .blockquote */
 
@@ -34,6 +40,13 @@ blockquote {font-size: 14px;}
 .carousel-caption h3{
 	margin-top: 0;
 }
+/*.pager
+----------------------------------------------------------------------------------------------- .pager */
+.pager li>a, .pager li>span {
+	padding: 5px 10px;
+	border: 0;
+}
+
 
 /* .media
 ------------------------------------------------------------------------------------------------ .media */
@@ -42,6 +55,9 @@ blockquote {font-size: 14px;}
 	width: 100px;
 }
 
+@media(max-width:500px) {
+	.media-left {display: none;}
+}
 
 
 /* .carousel-caption align ------------------------------------ */
@@ -54,7 +70,10 @@ blockquote {font-size: 14px;}
 /* Modal
 ------------------------------------------------------------------------------------------------ Modal */
 
-.modal-body > img {width: 100%;}
+.modal-body > img {
+	width: 100%;
+	margin-bottom: 15px;
+}
 
 .modal          {z-index: 99999;}
 
@@ -84,25 +103,27 @@ blockquote {font-size: 14px;}
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {color: #eb3812;}
 
-.navbar-default .nav > li>a,
-.navbar-default .nav>li>a:focus {
+.navbar-default .nav > li > a{display: block;}
+
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 700;
 	color: #222;
 }
 
-.navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {color: #f05f40;}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {color: #f05f40;}
 
 .navbar-default .nav > li.active>a,
-.navbar-default .nav>li.active>a:focus {
+.navbar-default .nav > li.active > a:focus {
 	color: #f05f40!important;
 	background-color: transparent;
 }
 
-.navbar-default .nav > li.active>a:hover,
-.navbar-default .nav>li.active>a:focus:hover {background-color: transparent;}
+.navbar-default .nav > li.active >a:hover,
+.navbar-default .nav> li.active > a:focus:hover {background-color: transparent;}
 
 .navbar-brand,
 .navbar-nav > li > a {

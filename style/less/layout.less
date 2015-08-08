@@ -8,14 +8,22 @@ body {
     }
 }
 
-
-
 .list li {margin-bottom: 10px;}
+
+@media(max-width:500px) {
+  ol, ul   {margin-left: -20px;}
+  .list li {margin-bottom: 6px;}
+}
 
 .footer,
 section {
   padding: 30px;
   background: white;
+}
+
+@media(max-width:500px) {
+  .footer,
+  section {padding: 10px 0;}
 }
 
 .layout {
