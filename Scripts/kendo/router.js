@@ -204,7 +204,7 @@
 				// render content
 
 				var directory = new kendo.View(
-					data, { model: kendo.observable({ foo: "Справочник" }) });
+					data, { model: kendo.observable({ foo: "Полезные материалы" }) });
 
 				$("#view").html(directory.render())
 			},
