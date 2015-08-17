@@ -10,12 +10,12 @@
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="D:\MScherbakova\DEV\mariskas.github.io\style\css" />
+                    <option name="path" value="D:\MScherbakova\DEV\mariskas.github.io\src\style\css" />
                   </CssDirectory>
                 </list>
               </option>
               <option name="id" value="0" />
-              <option name="lessDirPath" value="D:\MScherbakova\DEV\mariskas.github.io\style\less" />
+              <option name="lessDirPath" value="D:\MScherbakova\DEV\mariskas.github.io\src\style\less" />
               <option name="name" value="less" />
             </LessProfile>
           </value>

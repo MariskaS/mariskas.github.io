@@ -1,0 +1,43 @@
+
+/* float
+-------------------------------------------------------------------------------------------- float*/
+.left  {float: left;}
+.right {float: right;}
+
+/* dl
+-------------------------------------------------------------------------------------------- dl*/
+dl {
+  margin-top: 0;
+  margin-bottom: 10px;
+  &:after,
+  &:before {
+    display: table;
+    content: " ";
+    clear: both;
+  }
+}
+
+dt, dd {
+  display: block;
+  margin: 0;
+  padding: 12px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class*='dl-h-'] {
+  & dt {
+    float: left;
+    overflow: hidden;
+    text-overflow:  ellipsis;
+  }
+}
+
+.dl-h-40 {
+  dt {max-width: 40px;}
+  dd {
+    padding-left: 40px;
+    border-bottom: 1px solid #eee;
+  }
+}

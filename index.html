@@ -32,16 +32,16 @@
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
 
-    <link href="style/css/config.css" rel="stylesheet" />
+    <link href="src/style/css/config.css" rel="stylesheet" />
 
-    <link href="glyphicons/glyphicons.css" rel="stylesheet" />
+    <link href="src/glyphicons/glyphicons.css" rel="stylesheet" />
 
-    <link href="owl-carousel/css/owl.carousel.css" rel="stylesheet" />
-    <link href="owl-carousel/css/owl.custom.css" rel="stylesheet" />
+    <link href="src/owl-carousel/css/owl.carousel.css" rel="stylesheet" />
+    <link href="src/owl-carousel/css/owl.custom.css" rel="stylesheet" />
 
-    <script type="text/javascript" src="Scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="Scripts/kendo/kendo.all.js"></script>
-    <script type="text/javascript" src="Scripts/kendo/router.js"></script>
+    <script type="text/javascript" src="src/Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="src/Scripts/kendo/kendo.all.js"></script>
+    <script type="text/javascript" src="src/Scripts/kendo/router.js"></script>
 </head>
 
 <body>
@@ -64,39 +64,45 @@
     </div>
 </aside><!-- Side-right -->
 <aside class="sidebar-left">
-    <ul class="nav nav-sidebar">
-        <li><a href="#" id="menuLeft" class="collapse-nav toggle-nav-collapse" title="Open/Close"><i class="icon-20 i-activity"></i></a></li>
-        <li>
-            <a href="/" id="thanks" data-toggle="tooltip" data-placement="right" title="Благодарности">
-                <i class="icon-20 i-adjust"></i><span>Благодарности</span>
-            </a>
-        </li>
-        <li>
-            <a href="/" id="news" data-toggle="tooltip" data-placement="right"  title="Новости">
-                <i class="icon-20 i-adjust"></i><span>Новости</span>
-            </a>
-        </li>
-        <li>
-            <a href="/" id="events" data-toggle="tooltip" data-placement="right"  title="Мероприятия">
-                <i class="icon-20 i-adjust"></i><span>Мероприятия</span>
-            </a>
-        </li>
-        <li>
-            <a href="/" id="whatToDo" data-toggle="tooltip" data-placement="right"  title="Что сделанно">
-                <i class="icon-20 i-adjust"></i><span>Что сделанно</span>
-            </a>
-        </li>
-        <li class="">
-            <a href="/" id="reports" data-toggle="tooltip" data-placement="right"  title="Отчеты">
-                <i class="icon-20 i-adjust"></i><span>Отчеты</span>
-            </a>
-        </li>
-        <li class="">
-            <a href="/" id="directory" data-toggle="tooltip" data-placement="right"  title="Справочник">
-                <i class="icon-20 i-adjust"></i><span>Полезное</span>
-            </a>
-        </li>
-    </ul>
+    <nav>
+        <ul class="nav nav-sidebar">
+            <li><a href="#" id="menuLeft" class="collapse-nav toggle-nav-collapse" title="Open/Close"><i class="icon-20 i-activity"></i></a></li>
+            <li>
+                <a href="/" id="thanks" data-toggle="tooltip" data-placement="right" title="Благодарности">
+                    <i class="icon-20 i-adjust"></i><span>Благодарности</span>
+                </a>
+            </li>
+            <li>
+                <a href="/" id="news" data-toggle="tooltip" data-placement="right"  title="Новости">
+                    <i class="icon-20 i-adjust"></i><span>Новости</span>
+                </a>
+            </li>
+            <li>
+                <a href="/" id="events" data-toggle="tooltip" data-placement="right"  title="Мероприятия">
+                    <i class="icon-20 i-adjust"></i><span>Мероприятия</span>
+                </a>
+            </li>
+            <li>
+                <a href="/" id="whatToDo" data-toggle="tooltip" data-placement="right"  title="Что сделанно">
+                    <i class="icon-20 i-adjust"></i><span>Что сделанно</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="/" id="reports" data-toggle="tooltip" data-placement="right"  title="Отчеты">
+                    <i class="icon-20 i-adjust"></i><span>Отчеты</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="/" id="directory" data-toggle="tooltip" data-placement="right"  title="Справочник">
+                    <i class="icon-20 i-adjust"></i><span>Полезное</span>
+                </a>
+            </li>
+        </ul>
+        <!-- /top-link-block -->
+        <a href="#top" id="top-link-block" class="back-to-top hidden" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+            <i class="icon-20 i-circle-arrow-top"></i>
+        </a>
+    </nav>
 </aside><!-- Side-left -->
 <div class="layout">
     <div class="overlay"></div>
@@ -354,28 +360,31 @@
     </div>
 </div>
 
-<a href="#0" class="fa-icon fa-white cd-top"></a>
 
-<script src="owl-carousel/js/owl.carousel.js"></script>
+<script src="src/owl-carousel/js/owl.carousel.js"></script>
 <script>
     $(function () {
-        $("#owl_carousel").owlCarousel({
-            navigation: true,
-            slideSpeed: 300,
-            paginationSpeed: 400,
-            singleItem: true
-            // "singleItem:true" is a shortcut for:
-            // items : 1,
-            // itemsDesktop : false,
-            // itemsDesktopSmall : false,
-            // itemsTablet: false,
-            // itemsMobile : false
-        });
+        //$("#owl_carousel").owlCarousel({
+        //navigation: true,
+        //slideSpeed: 300,
+        //paginationSpeed: 400,
+        //singleItem: true
+        // "singleItem:true" is a shortcut for:
+        // items : 1,
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+        //});
+        if ( ($(window).height() + 100) < $(document).height() ) {
+            $('#top-link-block').removeClass('hidden').affix({
+                offset: {top:100}
+            });
+        }
     });
 </script>
 
-<script src="Scripts/ui.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="Scripts/scrollToTop/scrollToTop.js"></script>
+<script src="src/Scripts/ui.js"></script>
+<script src="src/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -206,7 +206,12 @@
 				var directory = new kendo.View(
 					data, { model: kendo.observable({ foo: "Полезные материалы" }) });
 
-				$("#view").html(directory.render())
+				$("#view").html(directory.render());
+
+				$('.sidebar-right-doc').on("click", "li > a", function(){ //вешаем обработчик на .sidebar-right-doc через on это позволит функции находить вновь созданные li через js
+					$(".sidebar-right-doc li").removeClass('active');
+					$(this).closest('li').addClass('active');
+				});
 			},
 			error: function () {
 				// hide preloader
