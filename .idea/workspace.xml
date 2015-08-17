@@ -2,78 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bb4b901-faa3-42ee-908c-694ca10b329a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/style/less/bootstrap-custom.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/style/less/typography.less" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\Scripts\scrollToTop\cd-top-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\Scripts\scrollToTop\scrollToTop.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\Scripts\scrollToTop\scrollToTop.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\bootstrap\css\bootstrap.custom.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\bootstrap\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\blockquote.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\box.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\config.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\gallery.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\kendo.common.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\layout.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\menu.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\reset.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\sidebar\sidebar-left.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\css\sidebar\sidebar-right.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\less\blockquote.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\less\box.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\less\config.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\less\layout.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\less\menu.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\less\reset.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\less\sidebar\sidebar-left.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\style\less\sidebar\sidebar-right.less" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/addressHelp/addressHelp.html" afterPath="$PROJECT_DIR$/template/addressHelp/addressHelp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/directory/directory.html" afterPath="$PROJECT_DIR$/template/directory/directory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/events/events.html" afterPath="$PROJECT_DIR$/template/events/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/fullHelp/fullHelp.html" afterPath="$PROJECT_DIR$/template/fullHelp/fullHelp.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lessc/lessc.xml" afterPath="$PROJECT_DIR$/.idea/lessc/lessc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/news/news.html" afterPath="$PROJECT_DIR$/template/news/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/thanks/thanks.html" afterPath="$PROJECT_DIR$/template/thanks/thanks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/what_to_do/what_to_do.html" afterPath="$PROJECT_DIR$/template/what_to_do/what_to_do.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\Scripts\jquery.min.js" afterPath="$PROJECT_DIR$/src/Scripts/jquery.min.js" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\Scripts\kendo\kendo.all.js" afterPath="$PROJECT_DIR$/src/Scripts/kendo/kendo.all.js" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\Scripts\kendo\router.js" afterPath="$PROJECT_DIR$/src/Scripts/kendo/router.js" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\Scripts\testTemplate.js" afterPath="$PROJECT_DIR$/src/Scripts/testTemplate.js" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\Scripts\ui.js" afterPath="$PROJECT_DIR$/src/Scripts/ui.js" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\glyphicons\fonts\glyphicons-regular.eot" afterPath="$PROJECT_DIR$/src/glyphicons/fonts/glyphicons-regular.eot" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\glyphicons\fonts\glyphicons-regular.svg" afterPath="$PROJECT_DIR$/src/glyphicons/fonts/glyphicons-regular.svg" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\glyphicons\fonts\glyphicons-regular.ttf" afterPath="$PROJECT_DIR$/src/glyphicons/fonts/glyphicons-regular.ttf" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\glyphicons\fonts\glyphicons-regular.woff" afterPath="$PROJECT_DIR$/src/glyphicons/fonts/glyphicons-regular.woff" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\glyphicons\fonts\glyphicons-regular.woff2" afterPath="$PROJECT_DIR$/src/glyphicons/fonts/glyphicons-regular.woff2" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\glyphicons\glyphicons-ie7.css" afterPath="$PROJECT_DIR$/src/glyphicons/glyphicons-ie7.css" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\glyphicons\glyphicons.css" afterPath="$PROJECT_DIR$/src/glyphicons/glyphicons.css" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\i\bg.jpg" afterPath="$PROJECT_DIR$/src/i/bg.jpg" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\i\bg.svg" afterPath="$PROJECT_DIR$/src/i/bg.svg" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\i\logo-min.png" afterPath="$PROJECT_DIR$/src/i/logo-min.png" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\i\overlay.png" afterPath="$PROJECT_DIR$/src/i/overlay.png" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\i\partners\avatar.png" afterPath="$PROJECT_DIR$/src/i/avatar.png" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\i\test\1.jpg" afterPath="$PROJECT_DIR$/src/i/test/1.jpg" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\i\test\1_min.jpg" afterPath="$PROJECT_DIR$/src/i/test/1_min.jpg" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\i\test\avatar_default.jpg" afterPath="$PROJECT_DIR$/src/i/test/avatar_default.jpg" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\i\volonter.jpg" afterPath="$PROJECT_DIR$/src/i/volonter.jpg" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\owl-carousel\css\owl.carousel.css" afterPath="$PROJECT_DIR$/src/owl-carousel/css/owl.carousel.css" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\owl-carousel\css\owl.custom.css" afterPath="$PROJECT_DIR$/src/owl-carousel/css/owl.custom.css" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\owl-carousel\i\AjaxLoader.gif" afterPath="$PROJECT_DIR$/src/owl-carousel/i/AjaxLoader.gif" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\owl-carousel\i\bg_owl.png" afterPath="$PROJECT_DIR$/src/owl-carousel/i/bg_owl.png" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\owl-carousel\i\fullimage1.jpg" afterPath="$PROJECT_DIR$/src/owl-carousel/i/fullimage1.jpg" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\owl-carousel\i\fullimage2.jpg" afterPath="$PROJECT_DIR$/src/owl-carousel/i/fullimage2.jpg" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\owl-carousel\i\grabbing.png" afterPath="$PROJECT_DIR$/src/owl-carousel/i/grabbing.png" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\owl-carousel\js\owl.carousel.js" afterPath="$PROJECT_DIR$/src/owl-carousel/js/owl.carousel.js" />
-      <change type="MOVED" beforePath="D:\MScherbakova\DEV\mariskas.github.io\template\crystalPeople\crystalPeople.html" afterPath="$PROJECT_DIR$/template/crystalPeople/crystalpeople.html" />
     </list>
     <ignored path="mariskas.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,15 +27,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.603773">
-              <caret line="208" column="22" selection-start-line="208" selection-start-column="22" selection-end-line="208" selection-end-column="22" />
+            <state vertical-scroll-proportion="-3.8301888">
+              <caret line="139" column="86" selection-start-line="139" selection-start-column="86" selection-end-line="139" selection-end-column="86" />
               <folding>
                 <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#ul#0;n#nav#0;n#aside#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#6978#10359#0" expanded="false" />
+                <element signature="e#7029#10410#0" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1439719161933" expanded="true" signature="1021:1285" placeholder="..." />
+                <marker date="1439771956981" expanded="true" signature="1021:1285" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -125,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/template/thanks/thanks.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.0">
-              <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -155,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6003717">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -247,7 +177,6 @@
         <option value="$PROJECT_DIR$/src/style/less/bootstrap.custom.less" />
         <option value="$PROJECT_DIR$/src/bootstrap/css/bootstrap.custom.css" />
         <option value="$PROJECT_DIR$/src/style/less/scroll_to_top" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/style/less/sidebar/sidebar-left.less" />
         <option value="$PROJECT_DIR$/template/addressHelp/addressHelp.html" />
         <option value="$PROJECT_DIR$/template/fullHelp/fullHelp.html" />
@@ -257,6 +186,7 @@
         <option value="$PROJECT_DIR$/src/style/less/typography.less" />
         <option value="$PROJECT_DIR$/src/style/less/bootstrap-custom.less" />
         <option value="$PROJECT_DIR$/template/thanks/thanks.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -663,10 +593,10 @@
           <folding>
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#nav#0;n#aside#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6978#10359#0" expanded="false" />
+            <element signature="e#7029#10410#0" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1439719161933" expanded="true" signature="1021:1285" placeholder="..." />
+            <marker date="1439771956981" expanded="true" signature="1021:1285" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -726,10 +656,10 @@
           <folding>
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#nav#0;n#aside#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6978#10359#0" expanded="false" />
+            <element signature="e#7029#10410#0" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1439719161933" expanded="true" signature="1021:1285" placeholder="..." />
+            <marker date="1439771956981" expanded="true" signature="1021:1285" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -748,10 +678,10 @@
           <folding>
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#nav#0;n#aside#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6978#10359#0" expanded="false" />
+            <element signature="e#7029#10410#0" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1439719161933" expanded="true" signature="1021:1285" placeholder="..." />
+            <marker date="1439771956981" expanded="true" signature="1021:1285" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -770,10 +700,10 @@
           <folding>
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#nav#0;n#aside#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6978#10359#0" expanded="false" />
+            <element signature="e#7029#10410#0" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1439719161933" expanded="true" signature="1021:1285" placeholder="..." />
+            <marker date="1439771956981" expanded="true" signature="1021:1285" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -785,10 +715,10 @@
           <folding>
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#nav#0;n#aside#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6978#10359#0" expanded="false" />
+            <element signature="e#7029#10410#0" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1439719161933" expanded="true" signature="1021:1285" placeholder="..." />
+            <marker date="1439771956981" expanded="true" signature="1021:1285" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -800,10 +730,10 @@
           <folding>
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#nav#0;n#aside#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6978#10359#0" expanded="false" />
+            <element signature="e#7029#10410#0" expanded="false" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1439719161933" expanded="true" signature="1021:1285" placeholder="..." />
+            <marker date="1439771956981" expanded="true" signature="1021:1285" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -955,33 +885,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.603773">
-          <caret line="208" column="22" selection-start-line="208" selection-start-column="22" selection-end-line="208" selection-end-column="22" />
-          <folding>
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#nav#0;n#aside#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6978#10359#0" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1439719161933" expanded="true" signature="1021:1285" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/style/less/bootstrap-custom.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.528302">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/less/layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.3396225">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1013,10 +920,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8301888">
+          <caret line="139" column="86" selection-start-line="139" selection-start-column="86" selection-end-line="139" selection-end-column="86" />
+          <folding>
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#nav#0;n#aside#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7029#10410#0" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1439771956981" expanded="true" signature="1021:1285" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/less/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.3396225">
+          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/template/thanks/thanks.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0">
-          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -1024,7 +954,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6003717">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
           <folding />
         </state>
       </provider>
