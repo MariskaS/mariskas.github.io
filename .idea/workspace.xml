@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bb4b901-faa3-42ee-908c-694ca10b329a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/css/bootstrap-custom.css" afterPath="$PROJECT_DIR$/src/style/css/bootstrap-custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/less/bootstrap-custom.less" afterPath="$PROJECT_DIR$/src/style/less/bootstrap-custom.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/css/config.css" afterPath="$PROJECT_DIR$/src/style/css/config.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/glyphicons/glyphicons.css" afterPath="$PROJECT_DIR$/src/glyphicons/glyphicons.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/css/layout.css" afterPath="$PROJECT_DIR$/src/style/css/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/less/layout.less" afterPath="$PROJECT_DIR$/src/style/less/layout.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/css/sidebar/sidebar-left.css" afterPath="$PROJECT_DIR$/src/style/css/sidebar/sidebar-left.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style/less/sidebar/sidebar-left.less" afterPath="$PROJECT_DIR$/src/style/less/sidebar/sidebar-left.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Scripts/ui.js" afterPath="$PROJECT_DIR$/src/Scripts/ui.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mariskas.github.io.iws" />
@@ -48,6 +45,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="layout.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/style/less/layout.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.1132076">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ui.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Scripts/ui.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,21 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar-left.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sidebar-left.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/style/less/sidebar/sidebar-left.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6792455">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.8588375">
+              <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-custom.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap-custom.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/style/less/bootstrap-custom.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81449634">
-              <caret line="171" column="17" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
+            <state vertical-scroll-proportion="-2.487805">
+              <caret line="144" column="18" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -134,16 +141,16 @@
         <option value="$PROJECT_DIR$/template/addressHelp/addressHelp.html" />
         <option value="$PROJECT_DIR$/template/fullHelp/fullHelp.html" />
         <option value="$PROJECT_DIR$/template/directory/directory.html" />
-        <option value="$PROJECT_DIR$/src/style/less/layout.less" />
         <option value="$PROJECT_DIR$/src/style/less/config.less" />
         <option value="$PROJECT_DIR$/src/style/less/typography.less" />
         <option value="$PROJECT_DIR$/template/thanks/thanks.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/glyphicons/glyphicons.css" />
-        <option value="$PROJECT_DIR$/src/style/less/sidebar/sidebar-left.less" />
         <option value="$PROJECT_DIR$/src/Scripts/ui.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/style/less/bootstrap-custom.less" />
+        <option value="$PROJECT_DIR$/src/style/less/layout.less" />
+        <option value="$PROJECT_DIR$/src/style/less/sidebar/sidebar-left.less" />
       </list>
     </option>
   </component>
@@ -882,14 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/less/layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/thanks/thanks.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -946,14 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/less/sidebar/sidebar-left.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6792455">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Scripts/ui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.574074">
@@ -979,8 +970,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/style/less/bootstrap-custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81449634">
-          <caret line="171" column="17" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
+        <state vertical-scroll-proportion="-2.487805">
+          <caret line="144" column="18" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/less/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1132076">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/less/sidebar/sidebar-left.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8588375">
+          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
           <folding />
         </state>
       </provider>
