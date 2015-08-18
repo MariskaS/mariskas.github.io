@@ -9,7 +9,7 @@
 		url(fonts/glyphicons-regular.svg#glyphiconsregular) format('svg')
 }
 
-[class^="icon-"] {
+[class*="icon-"] {
 	top: 1px;
 	font-style: normal;
 	font-weight: normal;
@@ -17,6 +17,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
+	vertical-align: middle;
 
 	display: inline-block;
 	*display: inline;

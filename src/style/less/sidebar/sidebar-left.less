@@ -9,7 +9,7 @@
 /* ----------------------------------------------------------------- */
 
 .sidebar-left {
-  width: 52px;
+  width: 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,32 +21,43 @@
     margin: 0;
     position: fixed;
     top: 50px;
-    width: 52px;
+    width: 40px;
     overflow: hidden;
-    & li a {
-    color: lightgray;
+    .transition;
+    & li {
+        white-space: nowrap;
+        & i + span {padding-left: 15px;}
+
+        & a {
+          color: lightgray;
+          padding: 10px 8px;
+            &:hover,
+            &:focus{color: #1b1b1b;}
+            &.collapse-nav {
+              left: 0;
+              color: white;
+                &:first-child,
+                &:first-child:hover {
+                color: #1b1b1b;
+                background-color: #e7e7e7;
+          }
+        }
+      }
     }
-  }
-  & .collapse-nav {
-    left: 0px;
-    color: #FFF;
-    background: #888888;
   }
 }
 
-.show-sidebar-left .content-wrapper {
-  padding-left: 200px;
-}
+.show-sidebar-left .content-wrapper {padding-left: 200px;}
 
 .show-sidebar-left .sidebar-left {
   width: 200px;
-  &  nav         {width: inherit;}
-  & .nav-sidebar {width: inherit;}
+  &  nav,
+  & .nav-sidebar {width: 200px;}
 }
 
 
 .content-wrapper {
-  padding-left: 52px;
+  padding-left: 40px;
   overflow-x: hidden;
 }
 

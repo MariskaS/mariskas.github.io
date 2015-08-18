@@ -1,4 +1,11 @@
 
+
+.transition-35s{
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
 a:focus {
   outline: none;
   outline-offset: 0;
@@ -89,9 +96,7 @@ blockquote {font-size: 14px;}
   border-color: rgba(34,34,34,.05);
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
   background-color: #fff;
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
+  .transition-35s;
 
   & .navbar-header .navbar-brand {
     text-shadow: none;
@@ -104,15 +109,11 @@ blockquote {font-size: 14px;}
     &:focus {color: #eb3812;}
   }
 
-  & .nav > li.active > a{
-    color: #f05f40!important;
+  & .nav > li.active > a {
+    color: #f05f40 !important;
     background-color: transparent;
-    &:hover {background-color: transparent;}
-    &:focus {
-      color: #f05f40!important;
-      background-color: transparent;
-      &:hover {background-color: transparent;}
-    }
+    &:hover,
+    &:focus {background-color: transparent;}
   }
 
   & .nav > li > a{
@@ -121,14 +122,8 @@ blockquote {font-size: 14px;}
     font-size: 13px;
     font-weight: 700;
     color: #222;
-    &:hover{color: #f05f40;}
-    &:focus{
-      text-transform: uppercase;
-      font-size: 13px;
-      font-weight: 700;
-      color: #222;
-      &:hover {color: #f05f40;}
-    }
+    &:hover,
+    &:focus{color: white;}
   }
 }
 
@@ -137,54 +132,23 @@ blockquote {font-size: 14px;}
   display: inline-block;
 }
 
-.sidebar-left .nav-sidebar li  {
-  white-space: nowrap;
-  & i + span {padding-left: 20px;}
-}
-
 @media(min-width:768px) {
   .navbar-default {
     border-color: rgba(255,255,255,.3);
     background-color: transparent;
     background-image: none;
-    & .navbar-header .navbar-brand {
-      color: rgba(255,255,255,.7);
-      &:hover,
-      &:focus{color: #fff;};
-    }
-
-    & .nav > li > a {
-      color: rgba(255,255,255,.7);
-      &:hover {
-        color: #fff;
-        background-color: transparent;
-      }
-      &:focus {
-        color: rgba(255,255,255,.7);
-        background-color: transparent;
-        &:hover {
-          color: #fff;
-          background-color: transparent;
-        }
-      }
-    }
-
+    & .nav > li > a {color: rgba(255,255,255,.6);}
     &.affix {
       border-color: rgba(34,34,34,.05);
       background-color: #fff;
+      & .nav > li > a {
+        color: #222;
+          &:hover {color: #f05f40;}
+      }
       & .navbar-header .navbar-brand {
         font-size: 14px;
         color: #f05f40;
-        &:hover,
-        &:focus{color: #eb3812;}
-      }
-      & .nav > li > a{
-        color: #222;
-        &:hover {color: #f05f40;}
-        &:focus {
-          color: #222;
-          &:hover {color: #f05f40;}
-        }
+        &:hover {color: #eb3812;}
       }
     }
   }
@@ -195,17 +159,17 @@ blockquote {font-size: 14px;}
 .back-to-top.affix-top {
   position: absolute;
   bottom: -82px;
-  left: 10px;
+  left: 4px;
 }
 
 .back-to-top.affix {
-  position: fixed;
+  position: absolute;
   bottom: 18px;
-  left: 10px;
+  left: 4px;
 }
 
 .back-to-top [class*='icon-']{
-  color: lightgrey;
+  color: #e7e7e7;
   font-size: 28px;
 }
 

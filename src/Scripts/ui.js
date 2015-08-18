@@ -26,6 +26,7 @@ $(function () {
 	$("#menuRight").click(function (e) {
 		e.preventDefault();
 		$("body").toggleClass("show-sidebar-right");
+		$("body").removeClass("show-sidebar-left");
 	});
 
 	$(".overlay").click(function () {
