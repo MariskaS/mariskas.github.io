@@ -23,16 +23,6 @@ $(function () {
 		$("body").toggleClass("show-sidebar-left");
 	});
 
-	$("#menuRight").click(function (e) {
-		e.preventDefault();
-		$("body").toggleClass("show-sidebar-right");
-		$("body").removeClass("show-sidebar-left");
-	});
-
-	$(".overlay").click(function () {
-		$("body").removeClass("show-sidebar-right");
-	});
-
 	//carousel
 		$('.carousel').carousel({
 			interval: 6000

@@ -46,62 +46,56 @@
 
 <body>
 <div class="bg"></div>
-<aside class="sidebar-right">
-    <div class="side-left-form">
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Имя" />
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email" />
-            </div>
-            <div class="form-group">
-                <textarea class="form-control" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Отправить</button>
-        </form>
-    </div>
-</aside><!-- Side-right -->
 <aside class="sidebar-left">
-    <nav>
-        <ul class="nav nav-sidebar">
-            <li><a href="#" id="menuLeft" class="collapse-nav toggle-nav-collapse" title="Open/Close"><i class="icon-20 i-option-vertical"></i></a></li>
-            <li>
-                <a href="/" id="thanks" data-toggle="tooltip" data-placement="right" title="Благодарности">
-                    <i class="icon-20 i-certificate"></i><span>Благодарности</span>
-                </a>
-            </li>
-            <li>
-                <a href="/" id="news" data-toggle="tooltip" data-placement="right"  title="Новости">
-                    <i class="icon-20 i-newspaper"></i><span>Новости</span>
-                </a>
-            </li>
-            <li>
-                <a href="/" id="events" data-toggle="tooltip" data-placement="right"  title="Мероприятия">
-                    <i class="icon-20 i-pin-flag"></i><span>Мероприятия</span>
-                </a>
-            </li>
-            <li>
-                <a href="/" id="whatToDo" data-toggle="tooltip" data-placement="right"  title="Что сделанно">
-                    <i class="icon-20 i-history"></i><span>Что сделанно</span>
-                </a>
-            </li>
-            <li class="">
-                <a href="/" id="reports" data-toggle="tooltip" data-placement="right"  title="Отчеты">
-                    <i class="icon-20 i-notes-2"></i><span>Отчеты</span>
-                </a>
-            </li>
-            <li class="">
-                <a href="/" id="directory" data-toggle="tooltip" data-placement="right"  title="Полезные материалы">
-                    <i class="icon-20 i-circle-info"></i><span>Полезное</span>
-                </a>
-            </li>
-        </ul>
-        <!-- /top-link-block -->
-        <a href="#top" id="top-link-block" class="back-to-top hidden" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-            <i class="icon-20 i-circle-arrow-top"></i>
-        </a>
-    </nav>
+    <div>
+        <nav>
+            <ul class="nav nav-sidebar">
+                <li><a href="#" id="menuLeft" class="collapse-nav toggle-nav-collapse" title="Open/Close"><i class="icon-20 i-option-vertical"></i></a></li>
+                <li>
+                    <a href="/" id="thanks" data-toggle="tooltip" data-placement="right" title="Благодарности">
+                        <i class="icon-20 i-certificate"></i><span>Благодарности</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" id="news" data-toggle="tooltip" data-placement="right"  title="Новости">
+                        <i class="icon-20 i-newspaper"></i><span>Новости</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" id="events" data-toggle="tooltip" data-placement="right"  title="Мероприятия">
+                        <i class="icon-20 i-pin-flag"></i><span>Мероприятия</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" id="whatToDo" data-toggle="tooltip" data-placement="right"  title="Что сделанно">
+                        <i class="icon-20 i-history"></i><span>Что сделанно</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" id="reports" data-toggle="tooltip" data-placement="right"  title="Отчеты">
+                        <i class="icon-20 i-notes-2"></i><span>Отчеты</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" id="directory" data-toggle="tooltip" data-placement="right"  title="Полезные материалы">
+                        <i class="icon-20 i-circle-info"></i><span>Полезное</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-items">
+            <div class="sidebar-item social">
+                <a href="#">vk</a>
+                <a href="#">t.</a>
+                <a href="#">f</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- /top-link-block -->
+    <a href="#top" id="top-link-block" class="back-to-top hidden" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="icon-20 i-circle-arrow-top"></i>
+    </a>
 </aside><!-- Side-left -->
 <div class="layout">
     <div class="overlay"></div>
@@ -135,9 +129,9 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Стать подопечным</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#needHelpModal">Стать подопечным</a></li>
                     <li><a href="#">Форум</a></li>
-                    <li><a href="#" id="menuRight">Написать нам</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#messageForm">Написать нам</a></li>
                 </ul>
             </nav><!-- .navbar-collapse -->
         </div>
@@ -355,6 +349,41 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="messageForm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Написать нам</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Имя" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                </form>
+                <div class="page-header">
+                    <h3>На ваши вопросы ответят</h3>
+                </div>
+                <p>
+                    <strong>Эксперт Фонда -</strong> Гусева Светлана Александровна <a href="mailto:lily-07@inbox.ru">lily-07@inbox.ru</a>
+                    или тел.:<a href="tel:89215553807">8(921)555-38-07</a>
+                </p>
+                <p><strong>Директор Фонда -</strong> Свистунова Надежда Владимировна <a href="mailto:info@todayspb.com">info@todayspb.com</a></p>
+            </div>
+            <div class="modal-footer">
+                <a type="button" class="btn" data-dismiss="modal">Отмена</a>
+                <button type="submit" class="btn btn-primary">Отправить</button>
             </div>
         </div>
     </div>

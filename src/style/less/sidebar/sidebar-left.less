@@ -18,29 +18,31 @@
   background: #1b1b1b;
   z-index: 9999;
 
-  & .nav-sidebar {
-    margin: 0;
+  & > div {
     position: fixed;
     top: 50px;
     width: 40px;
     overflow: hidden;
     .transition;
-    & li {
-        white-space: nowrap;
-        & i + span {padding-left: 15px;}
+      & .nav-sidebar{
+        margin: 0;
+        & li {
+          white-space: nowrap;
+          & i + span {padding-left: 15px;}
 
-        & a {
-          color: lightgray;
-          padding: 10px 8px;
+          & a {
+            color: lightgray;
+            padding: 10px 8px;
             &:hover,
             &:focus{color: #1b1b1b;}
             &.collapse-nav {
               left: 0;
               color: white;
-                &:first-child,
-                &:first-child:hover {
+              &:first-child,
+              &:first-child:hover {
                 color: #1b1b1b;
                 background-color: #e7e7e7;
+            }
           }
         }
       }
@@ -52,8 +54,7 @@
 
 .show-sidebar-left .sidebar-left {
   width: 200px;
-  &  nav,
-  & .nav-sidebar {width: 200px;}
+  & > div {width: 200px;}
 }
 
 
