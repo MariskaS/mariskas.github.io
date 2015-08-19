@@ -9,7 +9,7 @@
 		url(fonts/glyphicons-regular.svg#glyphiconsregular) format('svg')
 }
 
-[class*="icon-"] {
+[class*="g-icon-"] {
 	top: 1px;
 	font-style: normal;
 	font-weight: normal;
@@ -26,17 +26,17 @@
 }
 
 /*Icon size*/
-.icon-20 {
+.g-icon-20 {
 	font-size: 14px;
 	width: 20px;
 }
 
-.icon-30 {
+.g-icon-30 {
 	font-size: 20px;
 	width: 30px;
 }
 
-.icon-40 {
+.g-icon-40 {
 	font-size: 30px;
 	width: 40px;
 }
