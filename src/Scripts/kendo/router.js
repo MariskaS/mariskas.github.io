@@ -158,25 +158,6 @@
 		});
 	});
 
-	router.route("/what_to_do", function () {
-		$.ajax({
-			url: "template/what_to_do/what_to_do.html",
-			success: function (data) {
-				// hide preloader
-				// render content
-
-				var whatToDo = new kendo.View(
-					data, { model: kendo.observable({ foo: "Что сделанно" }) });
-
-				$("#view").html(whatToDo.render())
-			},
-			error: function () {
-				// hide preloader
-				// show error
-			}
-		});
-	});
-
 	router.route("/reports", function () {
 		$.ajax({
 			url: "template/reports/reports.html",
@@ -185,7 +166,7 @@
 				// render content
 
 				var reports = new kendo.View(
-					data, { model: kendo.observable({ foo: "Отчеты" }) });
+					data, { model: kendo.observable({ foo: "Отчетная документакия фонда" }) });
 
 				$("#view").html(reports.render())
 			},
@@ -265,11 +246,6 @@
 	$("#events").click(function (e) {
 		e.preventDefault();
 		router.navigate("/events");
-	});
-
-	$("#whatToDo").click(function (e) {
-		e.preventDefault();
-		router.navigate("/what_to_do");
 	});
 
 	$("#reports").click(function (e) {

@@ -1,4 +1,11 @@
 
+/* h1,h2...
+-------------------------------------------------------------------------------------------- h1,h2...*/
+h5 {margin-bottom: 20px;}
+.text-small {
+  font-size: 12px;
+  line-height: 16px;
+}
 /* float
 -------------------------------------------------------------------------------------------- float*/
 .left  {float: left;}
@@ -32,16 +39,34 @@ dt, dd {
     overflow: hidden;
     text-overflow:  ellipsis;
   }
+  & dd{border-bottom: 1px solid #eee;}
 }
 
 .dl-h-40 {
   dt {max-width: 40px;}
-  dd {
-    padding-left: 40px;
-    border-bottom: 1px solid #eee;
-  }
+  dd {padding-left: 40px;}
 }
 
+.dl-h-210 {
+  dt {max-width: 210px;}
+  dd {padding-left: 210px;}
+}
+
+
+/* ul / ol
+-------------------------------------------------------------------------------------------- ul / ol*/
+.list {
+  &.border li{
+    border-bottom: 1px solid #ddd;
+    &:last-child {border-bottom-color: transparent;}
+  }
+  li{ padding: 1em 0;}
+}
+
+@media(max-width:500px) {
+  ol, ul   {margin-left: -20px;}
+  .list li {margin-bottom: 6px;}
+}
 /* form
 -------------------------------------------------------------------------------------------- form*/
 textarea {
@@ -50,3 +75,4 @@ textarea {
   overflow: hidden;
   overflow-y: auto;
 }
+
