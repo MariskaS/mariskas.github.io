@@ -88,3 +88,22 @@
 	min-height: 150px;
 	background: url(../i/AjaxLoader.gif) no-repeat center center
 }
+
+
+
+
+
+.owl-carousel {background-image: url(../i/bg_owl.png)}
+.owl-carousel .item {
+	display: block;
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.owl-controls{
+	position: absolute;
+	top: 5em;
+	right: 2em;
+}
