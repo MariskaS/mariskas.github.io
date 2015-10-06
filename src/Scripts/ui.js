@@ -27,5 +27,18 @@ $(function () {
 		$('.carousel').carousel({
 			interval: 6000
 		});
+
+	//hover-img
+	$(".hover-img img")
+		.mouseover(function() {
+			var src = $(this).attr("src").match(/[^\.]+/) + "-hover.jpg";
+			$(this).attr("src", src);
+			$(this).animate({'opacity':.7}, 1000);
+		})
+		.mouseout(function() {
+			var src = $(this).attr("src").replace("-hover.jpg", ".jpg");
+			$(this).attr("src", src);
+			$(this).animate({'opacity': 1}, 1000);
+		});
 });
 
