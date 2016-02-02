@@ -1,0 +1,139 @@
+html, body, p, h1   {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #1E5796;
+    text-align: left;
+    font: 13px Tahoma, Helvetica, Geneva, sans-serif;
+    background: #fff;
+}
+
+a {
+    color: #fff;
+    font: 13px Tahoma, Helvetica, Geneva, sans-serif;
+    outline: 0;
+	text-decoration: none;
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+}
+
+p {
+    line-height: 1.5em;
+    margin: 0 10px 1em 20px;
+    text-indent: 0;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 1.8em;
+	margin: 0 0 60px;
+    font-weight: normal;
+}
+
+/* Header */
+
+.header {
+	background-color: #1E5796;
+	color: #fff;
+}
+
+/* Main */
+.main     {
+    position: relative;
+    padding-top: 40px;
+    font-size: 24px;
+}
+
+.wrapper {
+    margin: 0 auto;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+/* Browser - Backgrounds */
+
+.browser  .browser__img{
+	display: block;
+    width: 140px;
+    height: 140px;
+    background: transparent url(../img/browsers-bg.jpg) no-repeat;
+}
+
+/* chrome */
+.chrome .browser__img {
+    background-position: 0 0;
+}
+.chrome:hover  .browser__img  {
+    background-position: 0 -140px;
+}
+
+/* Firefox */
+.firefox .browser__img  {
+    background-position: -140px 0;
+}
+.firefox:hover  .browser__img   {
+    background-position: -140px -140px;
+}
+
+/* Internet Explorer */
+.internetExplorer .browser__img {
+    background-position: -280px 0;
+}
+.internetExplorer:hover  .browser__img   {
+    background-position: -280px -140px;
+}
+
+/* Safari */
+.safari .browser__img {
+    background-position: -420px 0;
+}
+.safari:hover .browser__img {
+   background-position: -420px -140px;
+}
+
+/* Opera */
+.opera .browser__img {
+    background-position: -560px 0;
+}
+.opera:hover .browser__img {
+    background-position: -560px -140px;
+}
+
+
+.browser__name {
+	font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+}
+.browser:hover  .browser__name {
+	color: #ff5722;
+}
+
+/* --- */
+
+table {
+	border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.column {
+    width: 100%;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: left;
+    display: inline-block;
+	*display: inline;
+    zoom: 1;
+}
+
+.columns-five  .column {max-width: 200px;}
+
+
