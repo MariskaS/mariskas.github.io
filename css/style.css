@@ -1,133 +1,38 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-html, body {
-    height: 100%;
-}
-
-body {
-    color: #1E5796;
-    text-align: left;
-    font: 13px Tahoma, Helvetica, Geneva, sans-serif;
-    background: #fff;
-}
-
-a {
-    color: #fff;
-    font: 13px Tahoma, Helvetica, Geneva, sans-serif;
-    outline: 0;
-	text-decoration: none;
-	display: inline-block;
-	*display: inline;
-	zoom:1;
-}
-
-img {
-    border: none;
-    vertical-align: inherit;
-}
-p {
-    line-height: 1.5em;
-    margin: 0 10px 1em 20px;
-    text-indent: 0;
-}
-
-h1 {
-    font-size: 42px;
-    line-height: 1.8em;
-    margin: 40px 0 80px;
-    font-weight: normal;
-}
-
-/* Header */
-.header,
-.main       {clear: both;}
-
-.header {
-	background-color: #1E5796;
-	color: #fff;
-}
-
-/* Main */
-.main     {
-    position: relative;
-    padding-top: 40px;
-    font-size: 24px;
-}
-
-.wrapper {
-    margin: 0 auto;
-    width: 820px;
-	padding: 20px 0;
-	text-align: center;
-}
-
-/* Browsers */
-table.browsers {
-    table-layout: fixed;
-    margin: 0 auto;
-    border-collapse: collapse;
-    margin-bottom: 40px;
-}
-
-/* Browser - Backgrounds */
-.browser {
-    width: 164px;
-    height: 164px;
-}
-
-.browser  .browser__img{
-	display: block;
-    width: 140px;
-    height: 140px;
-    background: transparent url(../img/browsers-bg.jpg) no-repeat;
-}
-
-/* chrome */
-.chrome .browser__img {
-    background-position: 0 0;
-}
-.chrome:hover  .browser__img  {
-    background-position: 0 -140px;
-}
-
-/* Firefox */
-.firefox .browser__img  {
-    background-position: -140px 0;
-}
-.firefox:hover  .browser__img   {
-    background-position: -140px -140px;
-}
-
-/* Internet Explorer */
-.internetExplorer .browser__img {
-    background-position: -280px 0;
-}
-.internetExplorer:hover  .browser__img   {
-    background-position: -280px -140px;
-}
-
-/* Safari */
-.safari .browser__img {
-    background-position: -420px 0;
-}
-.safari:hover .browser__img {
-   background-position: -420px -140px;
-}
-
-/* Opera */
-.opera .browser__img {
-    background-position: -560px 0;
-}
-.opera:hover .browser__img {
-    background-position: -560px -140px;
-}
-
-
-.browser__name {
-	font-size: 17px;
-    text-align: center;
-    padding-top: 10px;
-}
-
+*{margin:0;padding:0}
+html{height:100%;margin-bottom:1px}
+body{color:#333;text-align:left;font:13px Tahoma, Helvetica, Geneva, sans-serif;background:#dbf3fd}
+a {color:#005987;font:13px Tahoma, Helvetica, Geneva, sans-serif;outline:0}
+a:hover{text-decoration:none}
+p{line-height:1.5em;margin:0 10px 1em 20px;text-indent:0}
+h1,h2,h3{color:#f3801f;font-weight:normal}
+h1,h2{font-size:24px;line-height:1.8em;margin:0 0 0.5em 20px}
+h2{margin-top:-120px}
+h3{font-size:18px}
+.wrap{margin:0 auto;width:1000px;}
+.wrap img{border:none;vertical-align:inherit;}
+.header,.main,.footer{clear:both;}
+.header{background:url(../img/h.jpg) no-repeat top;height:158px}
+.brows{width:100%;margin-bottom:20px;}
+.brows td{padding-bottom:130px;}
+.brows td a{font-size:17px}
+tr.brows_name td {text-align:center;}
+.return{position:absolute;top:-110px;left:20px;}
+.return a{color:#f3801f;font:26px Tahoma, Helvetica, Geneva, sans-serif;text-decoration:none}
+.return a:hover{text-decoration:underline}
+.why{width:100%;margin-top:25px;}
+.why p{padding:0;margin:0}
+.main{background:url(../img/bg_span_wol.gif) repeat-y top;position:relative}
+.footer{background:url(../img/f.jpg) no-repeat top;height:131px}
+.td1,.td2,.td3{width:239px;height:119px;vertical-align:top;padding:15px 65px 0 25px;}
+.td1{background:url(../img/td1.jpg) top no-repeat}
+.td2{background:url(../img/td2.jpg) top no-repeat}
+.td3{background:url(../img/td3.jpg) top no-repeat}
+.qtabs{float:right;color:#666;margin:57px 34px 0 0}
+.qtabs ul{list-style:none}
+.qtabs li{float:left;cursor:pointer;padding:0 5px}
+.qtabs li span:hover{text-decoration:underline}
+.qtabs li.open span{color:#f3801f}
+.qtabs li.open p:hover{text-decoration:none}
+.qtwrapper{height:1%}
+.qtcontent{position:absolute;visibility:hidden;width:94%;margin:0 30px;padding:20px 0}
+.qtcurrent{position:relative;overflow:hidden}
