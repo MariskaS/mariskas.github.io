@@ -1,6 +1,12 @@
-html, body, p, h1   {
+
+html, body, div, span, h1, h2, p, ol, ul, li {
     margin: 0;
     padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 html, body {
@@ -23,6 +29,8 @@ a {
 	*display: inline;
 	zoom:1;
 }
+
+ul {list-style: none;}
 
 p {
     line-height: 1.5em;
@@ -59,8 +67,26 @@ h1 {
 
 /* Browser - Backgrounds */
 
+.browsers {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+	width:expression(document.body.clientWidth > 800? "800px": "auto" );
+}
+/* 
+.browsers:after {
+	display: block;
+	content: ' ';
+	clear: both;
+}
+ */
 .browser {
 	position: relative;
+	width: 156px;
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
 }
 
 .browser  .browser__img{
@@ -124,7 +150,7 @@ h1 {
 
 /* Table column*/
 
-table {
+/* table {
 	border-collapse: collapse;
     width: 100%;
     text-align: center;
@@ -134,12 +160,11 @@ table {
     width: 100%;
     vertical-align: top;
 	max-width: 200px;
-	/* IE */
 	width:expression(document.body.clientWidth > 200? "200px": "auto" );
     display: inline-block;
 	*display: inline;
     zoom: 1;
-}
+} */
 
 .browser:hover:before {
     display: block;
