@@ -133,17 +133,12 @@ table {
 .column {
     width: 100%;
     vertical-align: top;
-    font-size: 14px;
-    text-align: left;
-    display: inline-block;
-	*display: inline;
-    zoom: 1;
-}
-
-.columns-five  .column {
 	max-width: 200px;
 	/* IE */
 	width:expression(document.body.clientWidth > 200? "200px": "auto" );
+    display: inline-block;
+	*display: inline;
+    zoom: 1;
 }
 
 .browser:hover:before {
