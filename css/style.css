@@ -134,6 +134,10 @@ table {
     zoom: 1;
 }
 
-.columns-five  .column {max-width: 200px;}
+.columns-five  .column {
+	max-width: 200px;
+	/* IE */
+	width:expression(document.body.clientWidth > 200? "200px": "auto" );
+}
 
 
