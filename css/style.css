@@ -9,9 +9,7 @@ html, body, div, span, h1, h2, p, ol, ul, li {
     background: transparent;
 }
 
-html, body {
-    height: 100%;
-}
+html, body {height: 100%;}
 
 body {
     color: #1E5796;
@@ -33,6 +31,7 @@ a {
 ul {list-style: none;}
 
 p {
+    font-size: 24px;
     line-height: 1.5em;
     margin: 0 10px 1em 20px;
     text-indent: 0;
@@ -56,30 +55,22 @@ h1 {
 .main     {
     position: relative;
     padding-top: 40px;
-    font-size: 24px;
 }
 
 .wrapper {
     margin: 0 auto;
-	padding: 60px 20px;
+	padding: 60px 20px 80px;
 	text-align: center;
 }
 
 /* Browser - Backgrounds */
-
 .browsers {
     width: 100%;
     margin: 0 auto;
     max-width: 800px;
 	width:expression(document.body.clientWidth > 800? "800px": "auto" );
 }
-/* 
-.browsers:after {
-	display: block;
-	content: ' ';
-	clear: both;
-}
- */
+
 .browser {
 	position: relative;
 	width: 156px;
@@ -99,44 +90,24 @@ h1 {
 }
 
 /* chrome */
-.chrome .browser__img {
-    background-position: 0 0;
-}
-.chrome:hover  .browser__img  {
-    background-position: 0 -156px;
-}
+.chrome .browser__img                                        {background-position: 0 0;}
+.chrome:hover  .browser__img                         {background-position: 0 -156px;}
 
 /* Firefox */
-.firefox .browser__img  {
-    background-position: -156px 0;
-}
-.firefox:hover  .browser__img   {
-    background-position: -156px -156px;
-}
+.firefox .browser__img                                      {background-position: -156px 0;}
+.firefox:hover  .browser__img                       {background-position: -156px -156px;}
 
 /* Internet Explorer */
-.internetExplorer .browser__img {
-    background-position: -312px 0;
-}
-.internetExplorer:hover  .browser__img   {
-    background-position: -312px -156px;
-}
+.internetExplorer .browser__img                  {background-position: -312px 0;}
+.internetExplorer:hover  .browser__img   {background-position: -312px -156px;}
 
 /* Safari */
-.safari .browser__img {
-    background-position: -468px 0;
-}
-.safari:hover .browser__img {
-   background-position: -468px -156px;
-}
+.safari .browser__img                                         {background-position: -468px 0;}
+.safari:hover .browser__img                           {background-position: -468px -156px;}
 
 /* Opera */
-.opera .browser__img {
-    background-position: -624px 0;
-}
-.opera:hover .browser__img {
-    background-position: -624px -156px;
-}
+.opera .browser__img                                          {background-position: -624px 0;}
+.opera:hover .browser__img                            {background-position: -624px -156px;}
 
 .browser__name {
 	font-size: 16px;
@@ -144,27 +115,7 @@ h1 {
     margin-top: 10px;
     display: block;
 }
-.browser:hover  .browser__name {
-	color: #ff5722;
-}
-
-/* Table column*/
-
-/* table {
-	border-collapse: collapse;
-    width: 100%;
-    text-align: center;
-	table-layout: fixed;
-}
-.column {
-    width: 100%;
-    vertical-align: top;
-	max-width: 200px;
-	width:expression(document.body.clientWidth > 200? "200px": "auto" );
-    display: inline-block;
-	*display: inline;
-    zoom: 1;
-} */
+.browser:hover  .browser__name {color: #ff5722;}
 
 .browser:hover:before {
     display: block;
