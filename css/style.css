@@ -59,11 +59,17 @@ h1 {
 
 /* Browser - Backgrounds */
 
+.browser {
+	position: relative;
+}
+
 .browser  .browser__img{
+    position: relative;
 	display: block;
-    width: 140px;
-    height: 140px;
-    background: transparent url(../img/browsers-bg.jpg) no-repeat;
+    width: 156px;
+    height: 156px;
+    background: transparent url(../img/browsers-bg.png) no-repeat;
+    z-index: 10;
 }
 
 /* chrome */
@@ -71,41 +77,40 @@ h1 {
     background-position: 0 0;
 }
 .chrome:hover  .browser__img  {
-    background-position: 0 -140px;
+    background-position: 0 -156px;
 }
 
 /* Firefox */
 .firefox .browser__img  {
-    background-position: -140px 0;
+    background-position: -156px 0;
 }
 .firefox:hover  .browser__img   {
-    background-position: -140px -140px;
+    background-position: -156px -156px;
 }
 
 /* Internet Explorer */
 .internetExplorer .browser__img {
-    background-position: -280px 0;
+    background-position: -312px 0;
 }
 .internetExplorer:hover  .browser__img   {
-    background-position: -280px -140px;
+    background-position: -312px -156px;
 }
 
 /* Safari */
 .safari .browser__img {
-    background-position: -420px 0;
+    background-position: -468px 0;
 }
 .safari:hover .browser__img {
-   background-position: -420px -140px;
+   background-position: -468px -156px;
 }
 
 /* Opera */
 .opera .browser__img {
-    background-position: -560px 0;
+    background-position: -624px 0;
 }
 .opera:hover .browser__img {
-    background-position: -560px -140px;
+    background-position: -624px -156px;
 }
-
 
 .browser__name {
 	font-size: 16px;
@@ -117,7 +122,7 @@ h1 {
 	color: #ff5722;
 }
 
-/* --- */
+/* Table column*/
 
 table {
 	border-collapse: collapse;
@@ -139,6 +144,18 @@ table {
 	max-width: 200px;
 	/* IE */
 	width:expression(document.body.clientWidth > 200? "200px": "auto" );
+}
+
+.browser:hover:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url('../img/shadow.png') no-repeat center 18%;
+	z-index: 9;
 }
 
 
