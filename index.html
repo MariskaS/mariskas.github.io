@@ -7,11 +7,19 @@
 	<meta name="keywords" content="Outdated Browser" />
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="img/favicon.ico" />
-	<meta http-equiv="Refresh" content="0; URL=http://mariskas.github.io/index2.html">
 	  <!--[if lt IE 9]>
 			<META HTTP-EQUIV=REFRESH CONTENT="0; URL=http://mariskas.github.io/index2.html">
 		<![endif]-->
+	<script>
+	 window.onload = function(){
+	if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
+		window.alert('This is IE 10');
+	} else {
+		alert("ok");
+	}
+  }
 
+	</script>
 </head>
 <body>
 	Hello world
