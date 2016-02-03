@@ -11,14 +11,11 @@
 			<META HTTP-EQUIV=REFRESH CONTENT="0; URL=http://mariskas.github.io/index2.html">
 		<![endif]-->
 	<script>
-	 window.onload = function(){
-	if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
-		window.alert('This is IE 10');
-	} else {
-		alert("ok");
-	}
-  }
-
+        window.onload = function () {
+            if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
+                self.location = "/OutdatedBrowser/index.html"
+            }
+        }
 	</script>
 </head>
 <body>
