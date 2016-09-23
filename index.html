@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Angular Tour of Heroes</title>
+    <title>Angular QuickStart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-
-    <script src="node_modules/es6-shim/es6-shim.js"></script><!-- Angular 2 полагается на некоторые возможности стандарта ES2015, большая часть из которых уже включена в современные браузеры. Однако некоторым браузерам (таким, как IE11), требуются полифиллы (shim) для поддержки этой функциональности -->
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script> <!--требуются для работы Angular 2-->
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script> <!-- требуются для работы Angular 2 -->
-    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
     <script>
-        System.config({ //настраиваем нечто, что называется System
-            packages: {
-                app: {
-                    format: 'register',
-                    defaultExtension: 'js'
-                }
-            }
-        });
-        System.import('app/boot') // просим его импортировать файл boot
-                .then(null, console.error.bind(console));
+        System.import('app').catch(function(err){ console.error(err); });
     </script>
-
 </head>
-
-<!-- 3. Отобразите приложение -->
+<!-- 3. Display the application -->
 <body>
 <my-app>Loading...</my-app>
-<!-- Когда Angular вызывает функцию bootstrap в boot.js, он читает метаданные AppComponent, находит селектор my-app, обнаруживает тэг с именем my-app и загружает наше приложение в этот тэг -->
 </body>
-
 </html>
