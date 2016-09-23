@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<title>Outdated Browser</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-	<meta name="description" content="Outdated Browser" />
-	<meta name="keywords" content="Outdated Browser" />
-	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" href="img/favicon.ico" />
-	  <!--[if lt IE 10]>
-			<META HTTP-EQUIV=REFRESH CONTENT="0; URL=http://mariskas.github.io/index2.html">
-		<![endif]-->
-	<script>
-        window.onload = function () {
-            if (navigator.appVersion.indexOf("MSIE 10") !== -1) {
-                self.location = "/index2.html"
+    <title>Angular Tour of Heroes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="node_modules/es6-shim/es6-shim.js"></script><!-- Angular 2 полагается на некоторые возможности стандарта ES2015, большая часть из которых уже включена в современные браузеры. Однако некоторым браузерам (таким, как IE11), требуются полифиллы (shim) для поддержки этой функциональности -->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script> <!--требуются для работы Angular 2-->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script> <!-- требуются для работы Angular 2 -->
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <script>
+        System.config({ //настраиваем нечто, что называется System
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
             }
-        }
-	</script>
+        });
+        System.import('app/boot') // просим его импортировать файл boot
+                .then(null, console.error.bind(console));
+    </script>
+
 </head>
+
+<!-- 3. Отобразите приложение -->
 <body>
-	Hello world
+<my-app>Loading...</my-app>
+<!-- Когда Angular вызывает функцию bootstrap в boot.js, он читает метаданные AppComponent, находит селектор my-app, обнаруживает тэг с именем my-app и загружает наше приложение в этот тэг -->
 </body>
+
 </html>
