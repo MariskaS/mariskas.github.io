@@ -1,19 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Hero } from './hero';
-
-const HEROES: Hero[] = [
-    { id: 11, name: 'Mr. Nice' },
-    { id: 12, name: 'Narco' },
-    { id: 13, name: 'Bombasto' },
-    { id: 14, name: 'Celeritas' },
-    { id: 15, name: 'Magneta' },
-    { id: 16, name: 'RubberMan' },
-    { id: 17, name: 'Dynama' },
-    { id: 18, name: 'Dr IQ' },
-    { id: 19, name: 'Magma' },
-    { id: 20, name: 'Tornado' }
-];
-
+import { HeroService } from './hero.service';
 @Component({
     selector: 'my-app',
     template: `
@@ -27,12 +14,21 @@ const HEROES: Hero[] = [
       </li>
     </ul>
     <my-hero-detail [hero]="selectedHero"></my-hero-detail>
-  `
+  `,
+    styleUrls: ['hero-list.component.css'],
+    providers: [HeroService] //массив сервисов который говорит ангуляру создавать новый экземпляр класса HeroService каждый раз когда создается новый appComponent
 })
-export class AppComponent {
+export class AppComponent implements OnInit {  //implements OnInit - импортировали метод OnInit
     title = 'Tour of Heroes';
-    heroes = HEROES;
+    heroes: Hero[]; // Возвращение фиктивного списка героев
     selectedHero: Hero;
+    constructor(private heroService: HeroService) { } //одновременно определяет приватное свойство heroService и идентифицирует его как место внедрения HeroService
+    getHeroes(): void {
+        this.heroService.getHeroes().then(heroes => this.heroes = heroes);
+    }
+    ngOnInit(): void { // вызывается ангуляром вовремя , при создании нашего компонента
+        this.getHeroes();
+    }
     onSelect(hero: Hero): void {
         this.selectedHero = hero;
     }
