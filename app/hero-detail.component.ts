@@ -11,10 +11,12 @@ import { Hero } from './hero';
         <label>name: </label>
         <input [(ngModel)]="hero.name" placeholder="name"/>
       </div>
+      <my-button [customTitle]="buttonTitle"></my-button>
     </div>
   `
 })
-export class HeroDetailComponent {
+export class HeroDetailComponent { 
     @Input()
     hero: Hero;
+    buttonTitle: string = 'Test Button';
 }
