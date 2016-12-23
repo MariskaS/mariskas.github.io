@@ -1,25 +1,891 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Angular QuickStart</title>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="layout.css">
-    <base href="/">
-    <!-- 1. Load libraries -->
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
-    <script>
-        System.import('app').catch(function(err){ console.error(err); });
-    </script>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Убежище мини-приют</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<!-- 3. Display the application -->
-<body>
-<my-app>Loading...</my-app>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Убежище</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Как Помочь?</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#portfolio">Наши Котяшки</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">О нас</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">Наша команда</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Мини-приют для котеек "Убежище"</div>
+            <div class="intro-heading">Мы рады встрече с&nbsp;вами!</div>
+            <a href="#services" class="page-scroll btn btn-xl">Помочь</a>
+        </div>
+    </div>
+</header>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Как помочь?</h2>
+                <h3 class="section-subheading text-muted">
+                    Вступайте в нашу
+                    <a href="https://vk.com/ubezz" target="_blank">группу в vk !</a>
+                    В ней вы найдете актуальную информацию о необходимых лекарствах,
+                    животных которые нуждаются в
+                    <a href="https://vk.com/topic-65702593_35174674" target="_blank">попечителях</a> и прочее.
+                </h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">E-Commerce</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                    architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">Responsive Design</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                    architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">Web Security</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam
+                    architecto quo inventore harum ex magni, dicta impedit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Наши Котяшки</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/djeki-min.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Джеки</h4>
+                    <p class="text-muted">Год рождения - сентябрь 2015</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Startup Framework</h4>
+                    <p class="text-muted">Website Design</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Treehouse</h4>
+                    <p class="text-muted">Website Design</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Golden</h4>
+                    <p class="text-muted">Website Design</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Escape</h4>
+                    <p class="text-muted">Website Design</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Dreams</h4>
+                    <p class="text-muted">Website Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">О нас</h2>
+                <h4 class="service-heading">Несколько слов о финансировании приюта.</h4>
+                <p class="text-muted">
+                    Приют – некоммерческая организация,
+                    существует только на пожертвования отзывчивых людей,
+                    никакой коммерческой деятельности приют не ведет и помощи от государства не получает.
+                    Так что можно смело сказать, что наши кошки живут и находят
+                    себе добрые руки и теплый уютный дом только благодаря тысячам людей
+                    из разных городов и стран – нам помогают из Испании, Италии, Германии,
+                    Казахстана и даже Израиля.
+                    По всем приходам и расходам приюта ведется финансовая отчетность с подтверждающими
+                    документами (соответствующие обновляемые темы в обсуждениях).
+                </p>
+                <p class="text-muted">
+                    За прошедший год, через приют прошли больше двухсот животных,
+                    а свой дом нашли больше 150 кошек, некоторые из которых уехали в другие города и даже страны.
+                </p>
+                <p class="text-muted">
+                    Многие люди недоумевают, зачем тратить столько сил и денег на бездомных животных,
+                    считают, что их численность проще регулировать с помощью усыпления,
+                    что есть много других более нужных и важных проблем в жизни.
+                    Но у нас другое видение этой ситуации – так как мы живем в огромном городе,
+                    в цивилизованной стране, и кошки принимают активное
+                    участие в жизни городской экосистемы (многие даже не догадываются какое),
+                    то разумные люди должны найти путь
+                    гуманного сосуществования и протягивать руку помощи более сильного существа слабому.
+                </p>
+                <p class="text-muted">
+                    На странице нашего приюта <a href="https://vk.com/club65702593" target="_blank">в контакте</a> можно
+                    найти
+                    огромное количество фото- и видеоматериалов,
+                    накопившихся более чем за год работы, почитать наши истории,
+                    поучаствовать в обсуждениях, найти себе животное на пристройство,
+                    узнать о текущих нуждах и проблемах приюта и о том, как можно нам помочь.
+                </p>
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2009-2011</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    В марте 2015г в зоозащитных группах появилась информация о том, что в центре СПб,
+                                    в полуразрушенных зданиях возле Мариинского театра проживает огромный прайд кошек,
+                                    более 60-ти голов. Так как эти здания планировали реконструировать,
+                                    то от кошек хотели избавиться самым простым способом – отравить…
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2011</h4>
+                                <h4 class="subheading">An Agency is Born</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Тогда же была создана группа помощи этим кошкам под
+                                    названием «Лавина кошек Петербурга»,
+                                    руководители группы обратились за помощью
+                                    к частным приютам СПб с просьбой разобрать
+                                    этих животных, несколько приютов откликнулись и
+                                    забрали по несколько животных, но большая часть
+                                    кошек так и оставалась в этих зданиях, а время шло,
+                                    причем не в пользу кошек.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2012</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    В итоге нами было принято решение снять помещение,
+                                    в которое можно было бы забрать большую часть этих
+                                    несчастных обреченных животных. Начинать было очень сложно,
+                                    средств не было, время поджимало, но благодаря помощи
+                                    одних неравнодушных людей мы все-таки нашли подходящее помещение площадью 120м2,
+                                    другие предоставили нам во временное пользование большое количество специальных
+                                    клеток,
+                                    а третьи принесли много нужных вещей для
+                                    обустройства приюта на первое время, и 18 марта мы завезли первую партию жителей.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2014</h4>
+                                <h4 class="subheading">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Кошки были не очень рады таким переменам в их жизни – это были настоящие уличные
+                                    животные,
+                                    которые жили в прайде, умели выживать в сложных условиях годами. К тому же,
+                                    как и все уличные животные, все они были не очень здоровы – лишай,
+                                    ушной клещ, многочисленные вирусные и хронические заболевания…
+                                    Лечить их было крайне сложно – из-за лишая и
+                                    других инфекций их не брали в клиниках на стационар,
+                                    а также мало кто из врачей вообще умел работать с такими дикарями,
+                                    т.к. ветеринары привыкли к ручным домашним кошкам. В этом вопросе нам очень
+                                    повезло найти ветеринарную клинику Ирбис,
+                                    врачи которой управлялись с нашими дикарями.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/5.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2012</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Когда первый шок прошел, и первоначальная работа приюта была налажена,
+                                    встал вопрос о грамотном обустройстве помещения,
+                                    чтобы не допускать распространения инфекций,
+                                    и кошкам жилось более комфортно.
+                                    На помощь к нам пришел молодой парень Иван,
+                                    который построил совершенно бесплатно 3 вольера, зону карантина и ветеринарную
+                                    часть,
+                                    а также помогал по всем мелочам с обустройством помещения.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/6.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2014</h4>
+                                <h4 class="subheading">Phase Two Expansion</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    Количество кошек, проживающих в приюте,
+                                    быстро увеличивалось, нам удалось вывезти всех кошек из «Лавины»,
+                                    а также получалось брать на пристройство других нуждающихся животных,
+                                    в том числе и домашних животных, которые больше не нужны своим хозяевам и
+                                    которых выгоняют на улицу. Это очень расстраивает – до сих пор не понимаю,
+                                    как можно выгонять на улицу животных,
+                                    которые прожили с тобой в квартире несколько лет…
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/about/7.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2012</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    На данный момент, в приюте проживает около 75 животных разных возрастов,
+                                    уход за ними требует много времени и определенной подготовки,
+                                    поэтому нам пришлось нанять 2-х ветеринаров,
+                                    которые лечат животных в рамках приюта,
+                                    когда нет необходимости нахождения в клинике,
+                                    и специалиста по уборке помещения.
+                                    Также нам помогают волонтеры – первое время в приюте работали только они,
+                                    но так как кошек стало очень много,
+                                    силами волонтеров мы уже не могли обходиться.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Будь частью
+                                <br>нашей
+                                <br>истории!</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">О нашей команде</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Наталья Алексеенко</h4>
+                    <p class="text-muted">Хозяйка приюта</p>
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="#"
+                               target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/id2627182"
+                               target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Наталья Никитина</h4>
+                    <p class="text-muted">Админ</p>
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="#"
+                               target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/id18326711"
+                               target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Ирина Додуева</h4>
+                    <p class="text-muted">Админ</p>
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="#"
+                               target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/id646364"
+                               target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="large text-muted">
+                    Kошечкам очень нужна наша с вами помощь,
+                    <a href="https://vk.com/ubezz" target="_blank">присоединяйтесь</a>!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Clients Aside -->
+<aside class="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Contact Us</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required
+                                       data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required
+                                       data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required
+                                       data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your Message *" id="message" required
+                                          data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Your Website 2016</span>
+            </div>
+            <div class="col-md-8">
+                <ul class="list-inline social-buttons">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Portfolio Modals -->
+<!-- Use the modals below to showcase details about your portfolio projects! -->
+
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Джеки</h2>
+                            <p class="item-intro text-muted">Она прекрасна на вид, но опасный охотник по сути.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/djeki.png" alt="">
+                            <p>
+                                Джеки была найдена в лютый мороз там, где для нее не было укрытия. Она ходила по пятам за человеком,
+                                в надежде, что он угостит ее и продлит жизнь еще на день. С виду очень трепетная, Джеки оказалась настоящей пантерой.
+                                В первый же день в приюте она совершила превосходный, в своей уникальности, побег!
+                                Она отодвинула поддон клетки, подняла ее и просочилась в более широкий зазор между прутьев.
+                                Сбежавшую поймали на кошколовку через неделю и посадили в вольер к подросткам.
+                                Она всегда сидела на верхней полке и следила за каждым движением человека.
+                                Сначала, настроженно, потом уже немного расслабившись.
+                                Джеки стала главной женой Джокера, который является командиром и покровителем подростков.
+                                Можно бесконечно говорить о ее красоте и грации, о ее смекалке и инстинктах хищника..
+                                Одно могу сказать наверняка: Начав наблюдать за ней, Вам не захочется оторваться ни на мгновение..
+                            </p>
+                            <p>
+                                Узнать больше о Джеки можно <a href="https://vk.com/page-65702593_50254194" target="_blank">в группе в vk</a>
+                            </p>
+                            <ul class="list-inline">
+                                <li><strong>Пол:</strong> Женский</li>
+                                <li><strong>Характер:</strong> Пантера</li>
+                                <li><strong>Год рождения (примерный):</strong> сентябрь 2015</li>
+                                <li><strong>В приюте:</strong> с 3 января 2016</li>
+                                <li><strong>С другими кошками:</strong> Ладит отлично</li>
+                                <li><strong>Особый уход:</strong> диета RC Hepatic</li>
+                                <li><strong>Стерилизована:</strong> нет</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i>Закрыть</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Heading</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png"
+                                 alt="">
+                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder
+                                for professionals. Startup Framework contains components and complex blocks (PSD+HTML
+                                Bootstrap themes and templates) which can easily be integrated into almost any design.
+                                All of these components are made in the same style, and can easily be integrated into
+                                projects, allowing you to create hundreds of solutions for your future projects.</p>
+                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                            <p>Treehouse is a free PSD web template built by <a
+                                    href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and
+                                spacious design perfect for people or startup companies looking to showcase their apps
+                                or other projects.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a
+                                    href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by
+                                <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and
+                                clean one page web template that was made exclusively for Best PSD Freebies. This
+                                template has a great portfolio, timeline, and meet your team sections that can be easily
+                                modified to fit your needs.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a
+                                    href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                            <p>Escape is a free PSD web template built by <a
+                                    href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page
+                                web template that was designed with agencies in mind. This template is ideal for those
+                                looking for a simple one page solution to describe your business and offer your
+                                services.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a
+                                    href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Modal 6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                            <p>Dreams is a free PSD web template built by <a
+                                    href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern
+                                one page web template designed for almost any purpose. It’s a beautiful template that’s
+                                designed with the Bootstrap framework in mind.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a
+                                    href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.
+                            </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                    class="fa fa-times"></i> Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/agency.min.js"></script>
+
 </body>
+
 </html>
