@@ -471,7 +471,7 @@ section h3.section-subheading {
     margin-left: -50px;
   }
   .timeline > li .timeline-image h4 {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 16px;
     line-height: 18px;
   }
@@ -494,7 +494,7 @@ section h3.section-subheading {
     margin-left: -75px;
   }
   .timeline > li .timeline-image h4 {
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 30px;
     line-height: 26px;
   }
@@ -542,6 +542,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
+  color: #dcdcdc;
   background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -710,10 +711,12 @@ ul.social-buttons li a:active {
 ::-moz-selection {
   text-shadow: none;
   background: #39c2d7;
+  color: #fff;
 }
 ::selection {
   text-shadow: none;
   background: #39c2d7;
+  color: #fff;
 }
 img::selection {
   background: transparent;
