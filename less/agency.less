@@ -5,7 +5,6 @@
 
 body {
     overflow-x: hidden;
-    .body-font;
 }
 
 .text-muted {
@@ -85,7 +84,6 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent;
     .navbar-brand {
         color: @theme-primary;
-        .script-font;
         &:hover,
         &:focus,
         &:active,
@@ -178,7 +176,6 @@ header {
         padding-top: 100px;
         padding-bottom: 50px;
         .intro-lead-in {
-            .serif-font;
             font-style: italic;
             font-size: 22px;
             line-height: 22px;
@@ -200,7 +197,6 @@ header {
             padding-top: 300px;
             padding-bottom: 200px;
             .intro-lead-in {
-                .serif-font;
                 font-style: italic;
                 font-size: 40px;
                 line-height: 40px;
@@ -228,7 +224,6 @@ section {
     }
     h3.section-subheading {
         font-size: 16px;
-        .serif-font;
         text-transform: none;
         font-style: italic;
         font-weight: 400;
@@ -302,7 +297,6 @@ section {
                 margin: 0;
             }
             p {
-                .serif-font;
                 font-style: italic;
                 font-size: 16px;
                 margin: 0;
@@ -660,7 +654,6 @@ ul.social-buttons {
         }
         p.item-intro {
             margin: 20px 0 30px;
-            .serif-font;
             font-style: italic;
             font-size: 16px;
         }
@@ -736,3 +729,27 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @theme-primary;
 }
+
+// Messages
+.c-message {
+    padding: 8px 10px;
+    border-left: 4px solid transparent;
+
+    &__danger {
+        border-left-color: #ce4844;
+        background-color: #f2dede;
+        a {
+            color: #ce4844;
+        }
+    }
+
+    &__info {
+        border-left-color: #25a4b8;
+        background-color: #f0f8f9;
+        a {
+            color: #25a4b8;
+        }
+    }
+}
+
+
