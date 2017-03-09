@@ -1,0 +1,23 @@
+@import "../common/variables";
+$color-placeholder: #c2c2c2;
+
+// Placeholder
+::-webkit-input-placeholder {
+    color: $color-placeholder !important;
+}
+::-moz-placeholder {
+    color: $color-placeholder !important;
+}
+:-ms-input-placeholder {
+    color: $color-placeholder !important;
+}
+:-moz-placeholder {
+    color: $color-placeholder !important;
+}
+
+// Textarea
+.today-textarea {
+    &--no-resize {
+        resize: none;
+    }
+}

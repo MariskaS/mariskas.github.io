@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Убежище мини-приют</title>
+    <title>Сегодня</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/config.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,19 +37,26 @@
 <body id="page-top" class="index">
 
 <!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+<nav id="mainNav" class="today-main-navbar navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
+        <div class="today-main-header navbar-header page-scroll">
+            <button type="button"
+                    class="today-main-header__toggle navbar-toggle"
+                    data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top"><i>Убежище</i></a>
+            <a class="today-main-header__brand navbar-brand page-scroll"
+               href="#page-top">
+                <img src="img/logos/logo-today.png"
+                     class="today-main-header__logo img-responsive img-centered"
+                     alt="Сегодня">
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="today-main-header__nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a href="#page-top"></a>
@@ -58,7 +65,7 @@
                     <a class="page-scroll" href="#services">Как Помочь?</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Наши Котяшки</a>
+                    <a class="page-scroll" href="#portfolio">Наши Подопечные</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#about">О нас</a>
@@ -80,7 +87,7 @@
 <header>
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Мини-приют для котеек "Убежище"</div>
+            <div class="intro-lead-in">БП "Сегодня"</div>
             <div class="intro-heading">Мы рады встрече с&nbsp;вами!</div>
             <a href="#services" class="page-scroll btn btn-xl">Помочь</a>
         </div>
@@ -95,10 +102,9 @@
                 <h2 class="section-heading">Как помочь?</h2>
                 <h3 class="section-subheading text-muted">
                     Вступайте в нашу
-                    <a href="https://vk.com/ubezz" target="_blank">группу в vk !</a><br>
+                    <a href="https://vk.com/fond_segodnya" target="_blank">группу в vk !</a><br>
                     В ней вы найдете актуальную информацию о необходимых лекарствах,
-                    животных которые нуждаются в
-                    <a href="https://vk.com/topic-65702593_35174674" target="_blank">попечителях</a> и прочее.
+                    наших подопечных, отчеты и прочее.
                 </h3>
             </div>
         </div>
@@ -108,7 +114,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-rub fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Финансы</h4>
+                <h4 class="today-title--small">Финансы</h4>
                 <p class="text-muted">
                     Ваши пожертвования помогают оплачивать аренду, уборку, лечение кошек в клиниках...<br>
                     <a href="" data-toggle="modal" data-target="#finance">Подробнее...</a>
@@ -181,7 +187,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Товары</h4>
+                <h4 class="today-title--small">Товары</h4>
                 <p class="text-muted">
                     В приюте есть список "постоянных нужд", которым мы всегда крайне рады...<br>
                     <a href="" data-toggle="modal" data-target="#goods">Подробнее...</a>
@@ -334,7 +340,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Стать попечителем</h4>
+                <h4 class="today-title--small">Стать попечителем</h4>
                 <p class="text-muted">
                     Можно выбрать любую котейку из представленных ниже или
                     <a href="https://vk.com/topic-65702593_35174674" target="_blank">в нашей группе в vk</a>...<br>
@@ -401,7 +407,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-users fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Пиар</h4>
+                <h4 class="today-title--small">Пиар</h4>
                 <p class="text-muted">
                     Самая основная задача приюта - найти кошечкам дом и ответственных хозяев...<br>
                     <a href="" data-toggle="modal" data-target="#piar">Подробнее...</a>
@@ -467,7 +473,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-car fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Автоволонтеры</h4>
+                <h4 class="today-title--small">Автоволонтеры</h4>
                 <p class="text-muted">
                     Очень часто приюту нужно что-то или кого-то отвезти в приют...<br>
                     <a href="" data-toggle="modal" data-target="#avto">Подробнее...</a>
@@ -509,7 +515,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-life-ring fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">Адаптация</h4>
+                <h4 class="today-title--small">Адаптация</h4>
                 <p class="text-muted">
                     Как Вы понимаете, не все бездомные кошки, а точнее большинство, не совсем ручные...<br>
                     <a href="" data-toggle="modal" data-target="#adaptation">Подробнее...</a>
@@ -600,11 +606,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Наши Котяшки</h2>
+                <h2 class="section-heading">Наши Подопечные</h2>
                 <h3 class="section-subheading text-muted">
-                    Кошки, которые никому не нужны ...<br>
-                    Посмотреть всех котяшек можно
-                    <a href="https://vk.com/album-65702593_232238612" target="_blank">тут</a>
+                    Дети, которым нужна наша с вами помощь ...
                 </h3>
             </div>
         </div>
@@ -616,277 +620,11 @@
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/djeki-min.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/ragim-min.jpg" class="img-responsive" alt="">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Джеки</h4>
-                    <p class="text-muted">Год рождения - сентябрь 2015</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/perseya-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Персея</h4>
-                    <p class="text-muted">Год рождения - 2004</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/runai-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Руна</h4>
-                    <p class="text-muted">Год рождения - 2010</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/dart-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Дарт</h4>
-                    <p class="text-muted">Год рождения - 2012</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/nikol-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Николь</h4>
-                    <p class="text-muted">Год рождения - 2013</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/djoker-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Джокер</h4>
-                    <p class="text-muted">Год рождения - июнь 2015</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/panda-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Панда</h4>
-                    <p class="text-muted">Год рождения - 2015</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/laviniya-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Лавиния</h4>
-                    <p class="text-muted">Год рождения - 2014</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/shantal-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Шанталь</h4>
-                    <p class="text-muted">Год рождения - 2012</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/mafiya-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Мафия</h4>
-                    <p class="text-muted">Год рождения - 2012</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/marietta-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Мариетта</h4>
-                    <p class="text-muted">Год рождения - 2013</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/kitness-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Китнесс</h4>
-                    <p class="text-muted">Год рождения - 2015</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/gizma-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Гизма</h4>
-                    <p class="text-muted">Год рождения - 2015</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/bretanni-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Бриттани</h4>
-                    <p class="text-muted">Год рождения - 2013</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/beata-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Беата</h4>
-                    <p class="text-muted">Год рождения - 2011</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal16" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/alba-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Альба</h4>
-                    <p class="text-muted">Год рождения - 2009</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal17" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/zlata-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Злата</h4>
-                    <p class="text-muted">Год рождения - 2013</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal18" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/liza-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Лиза</h4>
-                    <p class="text-muted">Год рождения - 2008</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal19" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/savanna-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Саванна</h4>
-                    <p class="text-muted">Год рождения - 2015</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal20" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/kostya-min.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Констанция</h4>
-                    <p class="text-muted">Год рождения - 2012</p>
+                    <h4>Тагилаев Рагим</h4>
+                    <p class="text-muted">Год рождения - 10.08.2007</p>
                 </div>
             </div>
         </div>
@@ -899,41 +637,23 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">О нас</h2>
-                <h4 class="service-heading">Несколько слов о финансировании приюта.</h4>
                 <p class="text-muted">
-                    Приют – некоммерческая организация,
-                    существует только на пожертвования отзывчивых людей,
-                    никакой коммерческой деятельности приют не ведет и помощи от государства не получает.
-                    Так что можно смело сказать, что наши кошки живут и находят
-                    себе добрые руки и теплый уютный дом только благодаря тысячам людей
-                    из разных городов и стран – нам помогают из Испании, Италии, Германии,
-                    Казахстана и даже Израиля.
-                    По всем приходам и расходам приюта ведется финансовая отчетность с подтверждающими
-                    документами (соответствующие обновляемые темы в обсуждениях).
+                    Программа &laquo;СЕГОДНЯ&raquo; осуществляет благотворительную помощь детям с&nbsp;тяжелыми
+                    заболеваниями,
+                    семьи которых находятся в&nbsp;трудной жизненной ситуации (неполные, многодетные, приемные,
+                    малообеспеченные).
+                    Программа занимается организацией лечебно-восстановительных
+                    занятий в&nbsp;рамках проекта &laquo;Реабилитация&raquo;,
+                    а&nbsp;также различных мероприятий в&nbsp;рамках проекта
+                    &laquo;Праздник СЕГОДНЯ&raquo; на&nbsp;территории г.Санкт-Петербург.
                 </p>
+                <h4 class="today-title--small">Мы ведем работу по следующим направлениям</h4>
                 <p class="text-muted">
-                    За прошедший год, через приют прошли больше двухсот животных,
-                    а свой дом нашли больше 150 кошек, некоторые из которых уехали в другие города и даже страны.
+                    <span>«Реабилитация»</span><br/>
+                    <span>«Праздник СЕГОДНЯ»</span><br/>
+                    <span>Психологическая поддержка (в разработке)</span>
                 </p>
-                <p class="text-muted">
-                    Многие люди недоумевают, зачем тратить столько сил и денег на бездомных животных,
-                    считают, что их численность проще регулировать с помощью усыпления,
-                    что есть много других более нужных и важных проблем в жизни.
-                    Но у нас другое видение этой ситуации – так как мы живем в огромном городе,
-                    в цивилизованной стране, и кошки принимают активное
-                    участие в жизни городской экосистемы (многие даже не догадываются какое),
-                    то разумные люди должны найти путь
-                    гуманного сосуществования и протягивать руку помощи более сильного существа слабому.
-                </p>
-                <p class="text-muted">
-                    На странице нашего приюта <a href="https://vk.com/club65702593" target="_blank">в контакте</a> можно
-                    найти
-                    огромное количество фото- и видеоматериалов,
-                    накопившихся более чем за год работы, почитать наши истории,
-                    поучаствовать в обсуждениях, найти себе животное на пристройство,
-                    узнать о текущих нуждах и проблемах приюта и о том, как можно нам помочь.
-                </p>
-                <hr/>
+                <hr class="today-hr--large"/>
             </div>
         </div>
         <div class="row">
@@ -1124,57 +844,32 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                    <h4>Наталья Алексеенко</h4>
-                    <p class="text-muted">Директор приюта</p>
+                    <img src="img/team/nadya.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Епишина Надежда Владимировна</h4>
+                    <p class="text-muted">Создатель благотворительной программы "СЕГОДНЯ"</p>
                     <ul class="list-inline social-buttons">
                         <li>
-                            <a href="https://vk.com/id2627182"
-                               target="_blank"><i class="fa fa-vk"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                    <h4>Наталья Никитина</h4>
-                    <p class="text-muted">Пиар и пристройство</p>
-                    <ul class="list-inline social-buttons">
-                        <li>
-                            <a href="https://vk.com/id18326711"
-                               target="_blank"><i class="fa fa-vk"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                    <h4>Ирина Додуева</h4>
-                    <p class="text-muted">Пиар и пристройство</p>
-                    <ul class="list-inline social-buttons">
-                        <li>
-                            <a href="https://vk.com/id646364"
+                            <a href="https://vk.com/nadezda_epishina"
                                target="_blank"><i class="fa fa-vk"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">
-                    Kошечкам очень нужна наша с вами помощь,
-                    <a href="https://vk.com/ubezz" target="_blank">присоединяйтесь</a>!
-                </p>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <p class="large text-muted">
+                Детям очень нужна наша с вами помощь,
+                <a href="https://vk.com/fond_segodnya" target="_blank">присоединяйтесь</a>!
+            </p>
         </div>
+    </div>
     </div>
 </section>
 
 <!-- Clients Aside -->
-<aside class="clients">
+<aside class="today-clients">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-6">
@@ -1211,51 +906,47 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <p>
-                    <strong>Директор приюта</strong> - Наталья Алексеенко
-                    <a href="mailto:89062593488">8 (906) 259 34 88</a>&nbsp;|&nbsp;<a href="https://vk.com/id2627182" target="_blank">vk</a>
+                <p class="today-color--grey-light">
+                    <span><strong>Создатель благотворительной программы</strong> - Епишина Надежда Владимировна</span>&nbsp;
+                    <a href="mailto:89062593488">8 (906) 259 34 88</a>&nbsp;|&nbsp;<a
+                        href="https://vk.com/nadezda_epishina" target="_blank">vk</a>
                 </p>
-                <p>
-                    <strong>Пиар и пристройство</strong> - Ирина Додуева
-                    <a href="mailto:89523676908">8 (952) 367 69 08</a>&nbsp;|&nbsp;<a href="https://vk.com/id646364" target="_blank">vk</a>
-                </p>
-                <p>
-                    <strong>Пиар и пристройство</strong> - Элина Валиева
-                    <a href="mailto:89817826469">8 (981) 782 64 69</a>&nbsp;|&nbsp;<a href="https://vk.com/id411804" target="_blank">vk</a>
-                </p>
-                <!--<form name="sentMessage" id="contactForm" novalidate>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-6">-->
-                            <!--<div class="form-group">-->
-                                <!--<input type="text" class="form-control" placeholder="Your Name *" id="name" required-->
-                                       <!--data-validation-required-message="Please enter your name.">-->
-                                <!--<p class="help-block text-danger"></p>-->
-                            <!--</div>-->
-                            <!--<div class="form-group">-->
-                                <!--<input type="email" class="form-control" placeholder="Your Email *" id="email" required-->
-                                       <!--data-validation-required-message="Please enter your email address.">-->
-                                <!--<p class="help-block text-danger"></p>-->
-                            <!--</div>-->
-                            <!--<div class="form-group">-->
-                                <!--<input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required-->
-                                       <!--data-validation-required-message="Please enter your phone number.">-->
-                                <!--<p class="help-block text-danger"></p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-6">-->
-                            <!--<div class="form-group">-->
-                                <!--<textarea class="form-control" placeholder="Your Message *" id="message" required-->
-                                          <!--data-validation-required-message="Please enter a message."></textarea>-->
-                                <!--<p class="help-block text-danger"></p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="clearfix"></div>-->
-                        <!--<div class="col-lg-12 text-center">-->
-                            <!--<div id="success"></div>-->
-                            <!--<button type="submit" class="btn btn-xl">Send Message</button>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</form>-->
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Имя *" id="name" required
+                                       data-validation-required-message="Введите имя">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email *" id="email" required
+                                       data-validation-required-message="Введите email">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Контактный номер *" id="phone"
+                                       required
+                                       data-validation-required-message="Введите ваш контактный номер">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <textarea class="today-textarea--no-resize form-control"
+                                      placeholder="Сообщение *"
+                                      id="message" required
+                                      data-validation-required-message="Введите сообщение"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Напишите нам</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -1265,12 +956,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Copyright &copy; Мини-приют для котеек "Убежище" 2016</span>
+                <span class="copyright">Copyright &copy; БП "Сегодня" 2017</span>
             </div>
             <div class="col-md-8">
                 <ul class="list-inline social-buttons text-right">
                     <li>
-                        <a href="https://www.facebook.com/priut2015/"
+                        <a href="https://www.facebook.com/fond.segodnya/"
                            class="text-center"
                            target="_blank"><i class="fa fa-facebook"></i></a>
                     </li>
@@ -1280,7 +971,7 @@
                            target="_blank"><i class="fa fa-instagram"></i></a>
                     </li>
                     <li>
-                        <a href="https://vk.com/ubezz"
+                        <a href="https://vk.com/fond_segodnya"
                            class="text-center"
                            target="_blank"><i class="fa fa-vk"></i></a>
                     </li>
@@ -1294,7 +985,7 @@
 <!-- Use the modals below to showcase details about your portfolio projects! -->
 
 <!-- Portfolio Modal 1 -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="today-portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -1304,1051 +995,71 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Джеки</h2>
-                            <p class="item-intro text-muted">Она прекрасна на вид, но опасный охотник по сути.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/djeki.png" alt="">
-                            <p>
-                                Джеки была найдена в лютый мороз там, где для нее не было укрытия. Она ходила по пятам
-                                за человеком,
-                                в надежде, что он угостит ее и продлит жизнь еще на день. С виду очень трепетная, Джеки
-                                оказалась настоящей пантерой.
-                                В первый же день в приюте она совершила превосходный, в своей уникальности, побег!
-                                Она отодвинула поддон клетки, подняла ее и просочилась в более широкий зазор между
-                                прутьев.
-                                Сбежавшую поймали на кошколовку через неделю и посадили в вольер к подросткам.
-                                Она всегда сидела на верхней полке и следила за каждым движением человека.
-                                Сначала, настроженно, потом уже немного расслабившись.
-                                Джеки стала главной женой Джокера, который является командиром и покровителем
-                                подростков.
-                                Можно бесконечно говорить о ее красоте и грации, о ее смекалке и инстинктах хищника..
-                                Одно могу сказать наверняка: Начав наблюдать за ней, Вам не захочется оторваться ни на
-                                мгновение..
-                            </p>
-                            <p>
-                                Узнать больше о Джеки можно <a href="https://vk.com/page-65702593_50254194"
-                                                               target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Пантера</li>
-                                <li><strong>Год рождения (примерный):</strong> сентябрь 2015</li>
-                                <li><strong>В приюте:</strong> с 3 января 2016</li>
-                                <li><strong>С другими кошками:</strong> Ладит отлично</li>
-                                <li><strong>Особый уход:</strong> диета RC Hepatic</li>
-                                <li><strong>Стерилизована:</strong> нет</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2>Тагилаев Рагим</h2>
+                    <p class="item-intro text-muted">
+                        Родился: <span>10.08.2007</span>,
+                        Город: <span>Санкт-Петербург</span>
+                    </p>
+                    <p class="item-intro text-muted">
+                        Диагноз: <span>Несовершенный остеогенез</span>
+                    </p>
+                    <img class="img-responsive" src="img/portfolio/ragim.jpg" alt="">
+                    <h3>История</h3>
+                    <p>
+                        Родился Рагимчик на 2 недели позже срока, переношенным, совсем крошечным и почти без волос, что
+                        было для меня удивительно,
+                        ведь мой старший сын родился с роскошной шевелюрой. Но больше меня удивили его глаза,
+                        вернее его склеры, которые были насыщенного, почти синего цвета. Тогда я еще не знала о страшной
+                        болезни, с которой родился мой долгожданный и такой любимый малыш.
+                        Так случилось, что на момент его рождения я осталась одна с девятилетнем сыном.
+                        Но меня не пугала эта ситуация, я знала, что справлюсь. По-настоящему я испугалась,
+                        когда в возрасте пяти месяцев у Рагимчика произошел перелом левого бедра.
+                        Как гром среди ясного неба прозвучали слова доктора в травмпункте:
+                        " Перелом левого бедра со смешением ". Я не могла поверить...
+                        Нас уложили в больницу, на вытяжение. А дома остался девятилетний сын один...
+                        Я буквально разрывалась между детьми. Друзья и знакомые помогали нам чем могли.
+                        Спустя некоторое время после снятия гипса, произошел второй перелом и начался настоящий
+                        кошмар, до десяти переломов в год: ноги, руки, пальцы, ключицы...'после второго перелома
+                        ему и поставили диагноз: " Несовершенный Остеогенез ", с которым я не могла смириться...
 
-<!-- Portfolio Modal 2 -->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Персея</h2>
-                            <p class="item-intro text-muted">Ласковая, болтливая и обжора.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/perseya.png"
-                                 alt="">
-                            <p>
-                                Персея была домашней, нашли в снегу (думали, что шапка, а оказалось - кошка).
-                                У нее были очевидные
-                                проблемы со здоровьем, из-за чего видимо хозяева выкинули наидобрейшую кошку на мороз..
-                            </p>
-                            <p>
-                                Эта Старушка тот еще гиперактивный и сверхпрожорливый живчик!
-                                На следующий день после операции выглядела так, словно ее и не было!
-                                Нет, опухоль конечно же удалили, но скакала и болтала Персея похлеще многих котят :)
-                                Вообще мадам очень деловая, при этом ориентирована
-                                на человека - обожает гладиться, кушать и разговаривать (зачастую требует все и сразу).
-                            </p>
-                            <p>
-                                Узнать больше о Персеи можно <a href="https://vk.com/ubezz?w=page-65702593_51168484"
-                                                                target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Ласковая, болтливая и обжора</li>
-                                <li><strong>Год рождения (примерный):</strong> 2004</li>
-                                <li><strong>В приюте:</strong> с ноября 2016</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 3 -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Руна</h2>
-                            <p class="item-intro text-muted">Самодостаточная и независимая.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/runa.png" alt="">
-                            <p>
-                                Трепетная, уже не юная дева, которая повидала жизнь.
-                                Когда приехала к нам, боялась буквально всего,
-                                но прошло немного времени и адаптировалась к обстановке.
-                                Сейчас мы адаптируемся к людям, но в условиях приюта этот процесс затягивается.
-                                Очень нужен дом, в котором Руна будет чувствовать себя спокойно и под защитой.
-                                Где у нее будет свой небольшой уголок, забота и понимание хозяев. Она из тех кошек,
-                                которая не станет будить, скакать по квартире круглые сутки и требовать внимания.
-                                Руна скромно ляжет с краю и будет за вами наблюдать :)
-                            </p>
-                            <p>
-                                Узнать больше о Руне можно <a href="https://vk.com/page-65702593_50400127"
-                                                              target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Самодостаточная и независимая</li>
-                                <li><strong>Год рождения (примерный):</strong> 2010</li>
-                                <li><strong>В приюте:</strong> с июня 2016</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 4 -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Дарт</h2>
-                            <p class="item-intro text-muted">Джентльмен без галстука.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/dart.png" alt="">
-                            <p>
-                                Дарт - джентльмен без галстука. В меру скромен,
-                                крайне тактичен, всегда элегантен и аристократичен.
-                                Вы хотите, чтобы кот скакал за мышкой по стенам? Не ждите этого от Дарта.
-                                Он будет манерно, словно пархая, заигрывать с этой мышкой
-                                (вероятно затевая интеллектуальную игру). Ест,
-                                ходит по нуждам, спит и моется он так же непревзойденно.
-                                Возможно, это все показное, и он скинет образ, навязанный обществом, как ненужную одежду
-                                и раскроет свою широкую русскую душу именно Вам... Но не узнаем, пока не проверим... :)
-                            </p>
-                            <p>
-                                Узнать больше о Дарте можно <a href="https://vk.com/page-65702593_50341559"
-                                                               target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Мужской</li>
-                                <li><strong>Характер:</strong> Любопытный, игривый, скромный и трус</li>
-                                <li><strong>Год рождения (примерный):</strong> 2012</li>
-                                <li><strong>В приюте:</strong> с 12 декабря 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 5 -->
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Николь</h2>
-                            <p class="item-intro text-muted">Пиковая дама.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/nikol.png" alt="">
-                            <p>
-                                Пиковая дама Николь. "Шельму Бог метит" - это однозначно про нашу Николь))
-                                Метка у нее непростая - на белом плечике черный знак пиковой масти.
-                                Сразу видно - кошечка роковая, ведьмовская, своевольная.
-                                Такая кошечка не будет мурчать и клянчить вкусняшки - она сама себе возьмет)
-                                В полнолуние Николь забирается на верхнюю полку вольера и пытается высмотреть луну в
-                                окошке....
-                                ей бы метлу, да мантию, да хозяйку -колдунью.... да только нет хозяйки. Сударыни ведьмы,
-                                вы кошку не теряли? Теряли, знаем. Она у нас. Приходите за ней скорее!
-                            </p>
-                            <p>
-                                Узнать больше о Николь можно <a href="https://vk.com/page-65702593_50346982"
-                                                                target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Независимая</li>
-                                <li><strong>Год рождения (примерный):</strong> 2013</li>
-                                <li><strong>В приюте:</strong> 14 января 2016</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 6 -->
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Джокер</h2>
-                            <p class="item-intro text-muted">Вожак вольера, защитник слабых.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/djoker.png" alt="">
-                            <p>
-                                Джокер - идеал для дам, и пример для подражания мужчинам. Им хозяин будет гордиться и
-                                хвастаться перед всеми знакомыми.
-                                Наш Джокер - это вам не котик, это КОТЯРА. Ему всего полгода, но он ОГРОМНЫЙ. и еще
-                                сильный, храбрый, боевой.
-                                При этом - благородный и надежный, никогда не обидит слабого, всегда готов прийти на
-                                помощь... КАК он защищает девочек-котеечек нашего приюта от "злых" ветеринаров - это
-                                надо видеть!
-                                Пока не ручной, но к людям потихоньку привыкает (еду с руки берет, на руки - пока нет)
-                            </p>
-                            <p>
-                                Узнать больше о Джокере можно <a href="https://vk.com/page-65702593_50346973"
-                                                                 target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Мужской</li>
-                                <li><strong>Характер:</strong> Вожак вольера, защитник слабых. Игривый и любопытный.
-                                </li>
-                                <li><strong>Год рождения (примерный):</strong> июнь 2015</li>
-                                <li><strong>В приюте:</strong> с 25 октября 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 7 -->
-<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Панда</h2>
-                            <p class="item-intro text-muted">Игрунья и изобретательница.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/panda.png" alt="">
-                            <p>
-                                Панда - игрунья и изобретательница.
-                                Она всегда придумает с чем поиграть, где полежать, какой зонд откусить...
-                                Скука? Забудьте это слово. Она Вам не медленная панда медведь,
-                                она улучшенная и ускоренная ее версия. И этим все сказано :)
-                            </p>
-                            <p>
-                                Узнать больше о Панде можно <a href="https://vk.com/page-65702593_50346967"
-                                                               target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Игривая и любопытная</li>
-                                <li><strong>Год рождения (примерный):</strong> август-сентябрь 2015</li>
-                                <li><strong>В приюте:</strong> с 29 ноября 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 8 -->
-<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Лавиния</h2>
-                            <p class="item-intro text-muted">Игрунья и изобретательница.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/panda.png" alt="">
-                            <p>
-                                Последняя представительница печально знаменитой
-                                Лавины Кошек: огромной толпы зверья,
-                                которая жила в предназначенном под снос здании.
-                                Самая неуловимая из всех, поэтому и последняя
-                                (большинство других давно на диванах мурчат).
-                                Гений маскировки, хитрюга и отличная охотница. Максимум,
-                                что позволяет людям - кормить свое величество;
-                                нормально сидела на руках (и даже ласкалась!)
-                                только в период болезни, вынуждено.
-                            </p>
-                            <p>
-                                Узнать больше о Лавинии можно <a href="https://vk.com/page-65702593_50400126"
-                                                                 target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Самодостаточная и независимая</li>
-                                <li><strong>Год рождения (примерный):</strong> 2014</li>
-                                <li><strong>В приюте:</strong> с июня 2016</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 9 -->
-<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Шанталь</h2>
-                            <p class="item-intro text-muted">Независимая.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/shantal.png" alt="">
-                            <p>
-                                Дама с переменчивым настроением и еще высокомерна.
-                                Думаете, что все Ваши речи могут впечатлить кошку?
-                                На днях решила провести беседу по душам, на что получила взгляд
-                                "что за дура" и была одарена взмахом хвоста, подергиванием кожи
-                                (признак непрязни) и удаляющимися пятками. В другой раз она внимательно выслушала,
-                                медленно поморгала и уснула. В третий, нашипела и отвернулась.
-                                А это только варианты исхода диалога :)
-                                Если Вы слишком самоуверены и это мешает Вам в коммуникациях с людьми, Шанталь приземлит
-                                Вас на землю и поставит на место Вашу самооценку. Никакой психолог не нужен :)
-                            </p>
-                            <p>
-                                Узнать больше о Шанталь можно <a href="https://vk.com/page-65702593_50400126"
-                                                                 target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Независимая</li>
-                                <li><strong>Год рождения (примерный):</strong> 2012</li>
-                                <li><strong>В приюте:</strong> с 13 января 2016</li>
-                                <li><strong>Особый уход:</strong> диета RC Renal</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 10 -->
-<div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Мафия</h2>
-                            <p class="item-intro text-muted">Суровая, но справедливая.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/mafiya.png" alt="">
-                            <p>
-                                Мафия - кошка суровая, но справедливая.
-                                Она защищает "своих" и не боится "чужих".
-                                Стоически взрастила два поколения бандитов,
-                                защищая от сурового мира и обучая навыком выживания.
-                                Мафия не устраивает беспредел, не грабит и не разрушает.
-                                Это Вам не шестерка, а высшее звено в криминальной цепочке.
-                                Ей не до порчи мебели, не до склок и уж тем более не до низменной агрессии.
-                                Она просто популярно объяснит, кто прав, а кто нет .. по ее понятиям.
-                                Хотите справедливости и порядка в своем доме,
-                                но закон не работает? Мафия Вам поможет в этом, но ценой будет уважение и терпение.
-                            </p>
-                            <p>
-                                Узнать больше о Мафии можно <a href="https://vk.com/page-65702593_50342498"
-                                                               target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Независимая, гордая, мать-героиня</li>
-                                <li><strong>Год рождения (примерный):</strong> 2012</li>
-                                <li><strong>В приюте:</strong> с 12 декабря 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 11 -->
-<div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Мариетта</h2>
-                            <p class="item-intro text-muted">Двойной агент.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/marietta.png" alt="">
-                            <p>
-                                Мариетта - кошка скилс. Мы не знаем двойной или тройной она агент,
-                                слишком хорошо она скрывает свое истинное лицо под маской невидимки...
-                                На допросе не раскололась, нервы - сталь. Не устояла даже перед паучем,
-                                а о погладушках вообще молчу (не заинтересовалась - видимо серьезная подготовка,
-                                или мы что то упускаем? )... Если Вы возьметесь за сверх важное задание,
-                                суть которого выяснить всю правду о Мариетте и ее характере,
-                                раскрыть все тонкости ее души, в конце пути Вас ждет бесценная награда....
-                                Но не будем раскрывать все карты, мало ли, она читает...
-                            </p>
-                            <p>
-                                Узнать больше о Мариетте можно <a href="https://vk.com/page-65702593_50342491"
-                                                                  target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Независимая, флегматичная</li>
-                                <li><strong>Год рождения (примерный):</strong> 2013</li>
-                                <li><strong>В приюте:</strong> с 10 августа 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 12 -->
-<div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Китнесс</h2>
-                            <p class="item-intro text-muted">Зеленоглазая блондинка.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/kitness.png" alt="">
-                            <p>
-                                Полюбуйтесь: милейшее создание, зеленоглазая блондинка.
-                                Характер твердый, нордический: на руки не брать, палец в рот не класть. Явные задатки
-                                охотницы. Людей согласна терпеть, до дружбы и любви там еще далеко (хотя на коленки
-                                можно заманить едой). Зато с другими кошками весьма дружелюбна)
-                                Хозяин нужен терпеливый, уважающий в кошке личность.
-                            </p>
-                            <p>
-                                Узнать больше о Китнесс можно <a href="https://vk.com/page-65702593_50342491"
-                                                                 target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Своенравная. Игривая. Любопытная. Виден положительный
-                                    результат адаптации.
-                                </li>
-                                <li><strong>Год рождения (примерный):</strong> август 2015</li>
-                                <li><strong>В приюте:</strong> с 16 ноября 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 13 -->
-<div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Гизма</h2>
-                            <p class="item-intro text-muted">Фантастическая "неведома зверушка" из породы Гремлинов.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/gizma.png" alt="">
-                            <p>
-                                Фантастическая "неведома зверушка" из породы Гремлинов, ловкая,
-                                смелая и очень красивая. Внешностью и характером она удалась в бенгальских кошек:
-                                огромные глаза с "восточным" разрезом, почти леопардовая масть, длинные ноги и хвост,
-                                а также способность сливаться с пейзажем и охотиться из засады.
-                                Возьмите Гизму в семью - и ваша жизнь превратится в незабываемое сафари! </p>
-                            <p>
-                                Узнать больше о Гизме можно <a href="https://vk.com/page-65702593_50346979"
-                                                               target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Своенравная.</li>
-                                <li><strong>Год рождения (примерный):</strong> июль - август 2015</li>
-                                <li><strong>В приюте:</strong> с 28 августа 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 14 -->
-<div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Бриттани</h2>
-                            <p class="item-intro text-muted">Hедоступная красотка, карьеристка.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/bretanni.png" alt="">
-                            <p>
-                                Бриттани - недоступная красотка, карьеристка.
-                                Именно она отдала своих котят в первый же день
-                                на выкармливание своей "няне" Наталье, а потом белоснежке Корнелии.
-                                Это она пожирала нас в первые дни из-за стресса, когда мы хотели навести
-                                свой порядок в ее временном доме. Но именно она со временем начала приходить в себя,
-                                осваиваться и расцветать! Бриттани похожа на метиса британца - прямая мордочка,
-                                шикарная шубка цвета инея и огромные глаза. Вы хотели, чтобы по Вашему
-                                дому размеренно и горделиво вышагивала неписаная красота? Да, да - это она.
-                            </p>
-                            <p>
-                                Узнать больше о Бриттани можно <a href="https://vk.com/page-65702593_50346964"
-                                                                  target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Независимая.</li>
-                                <li><strong>Год рождения (примерный):</strong> 2013-2014</li>
-                                <li><strong>В приюте:</strong> с 22 марта 2016</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 15 -->
-<div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Беата</h2>
-                            <p class="item-intro text-muted">Независимая.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/beata.png" alt="">
-                            <p>
-                                У Беаты не простая жизнь, которая сформировала ее характер
-                                и отношение к людям. Все просто: ей сломали лапу много лет назад.
-                                Сейчас она передвигается на своих троих, не чувствуя дискомфорта и физической боли. Но
-                                что такое физическая боль,
-                                когда раны душевные залечить куда сложнее? Стоит ли говорить о том,
-                                как она боится людей? Не думаю, что слова смогут передать весь ужас,
-                                который Беата испытывает сейчас. И тем более, не смогут передать,
-                                как сильно она нуждается в своем родном и теплом доме, в котором ее будет любить,
-                                уважать и трепетно ждать человек.
-                                Если Вы хотите позаботится о ком то, кто настрадался за свою жизнь...
-                                Если Вы готовы ждать первого контакта, не навязывая себя и не ввергая тем самым в
-                                стресс Беату... Если Вы хотите не диванную кошку, а независимую красотку....
-                                Тогда именно Вас ждет Беата.
-                            </p>
-                            <p>
-                                Узнать больше о Беате можно <a href="https://vk.com/page-65702593_50342501"
-                                                               target="_blank">в группе в vk</a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Независимая.</li>
-                                <li><strong>Год рождения (примерный):</strong> 2011</li>
-                                <li><strong>В приюте:</strong> с 11 апреля 2016</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 16 -->
-<div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Альба</h2>
-                            <p class="item-intro text-muted">Скромница.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/alba.png" alt="">
-                            <p>
-                                Скромница и краса. Нежная, чувственная, скромная,
-                                белоснежная красотка. Мечта для ценителей
-                                гармонии красоты и умиротворения.
-                                Вы не услышите шипения, не найдете разодранные
-                                колготки или носки, не будете просыпаться
-                                от грохота в квартире или скачек по голове.
-                                Вы просто будете просыпаться и засыпать,
-                                зная, что она рядом и она нуждается в Вас.
-                            </p>
-                            <p>
-                                Узнать больше о Альбе можно
-                                <a href="https://vk.com/page-65702593_50346972"
-                                   target="_blank">в группе в vk
-                                </a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Спокойная. Любопытная. Скромная.</li>
-                                <li><strong>Год рождения (примерный):</strong> 2009</li>
-                                <li><strong>В приюте:</strong> с 23 мая 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 17 -->
-<div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Злата</h2>
-                            <p class="item-intro text-muted">Золото и сталь.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/zlata.png" alt="">
-                            <p>
-                                Эта кошечка с золотыми глазами и стальным характером - не для любителей диванных
-                                кошек-плюшек, которых можно тискать с утра до ночи. Она знает себе цену: цена равна
-                                бесконечности) Людям позволяет покормить свое величество с руки, под хорошее настроение
-                                - иногда погладить.
-                                Злата умна, элегантна, поддерживает себя в отличной спортивной форме, имеет явные
-                                задатки охотницы (но это не значит, что место ей на складе мышей ловить - не царское это
-                                дело по заказу охотиться))
-                                Привита, стерилизована, лоток и когтеточка - на уровне продвинутого пользователя. С
-                                другими кошками ладит отлично.
-                            </p>
-                            <p>
-                                Узнать больше о Злате можно
-                                <a href="https://vk.com/page-65702593_50341563"
-                                   target="_blank">в группе в vk
-                                </a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Самодостаточная и независимая, позволит восхищаться ее
-                                    красотой и грацией. И прислуживать конечно :)
-                                </li>
-                                <li><strong>Год рождения (примерный):</strong> 2013</li>
-                                <li><strong>В приюте:</strong> с 14 марта 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 18 -->
-<div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Лиза</h2>
-                            <p class="item-intro text-muted">Мудрая и размеренная кошка.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/liza.png" alt="">
-                            <p>
-                                У нее богатый жизненный опыт, взрослые дети, устоявшийся характер и "немного"
-                                лишнего веса. Лиза очень миролюбивая кошка, немного трусливая и флегматичная.
-                                Она не будет скакать по дому, скорее отдыхать на своей лежанке и наблюдать за Вами.
-                                С ней легко общаться, ведь она всегда выслушает и не станет перебивать.
-                                Без пререканий отойдет в сторону, когда это нужно. Не станет будить,
-                                когда Вы хотите отоспаться. Она просто идеал для тех, кто хочет тишины и спокойствия,
-                                но не хочет быть один.
-                                А много ей за это и не нужно - уютный дом, теплое местечко, еда и Ваша забота.
-                            </p>
-                            <p>
-                                Узнать больше о Лизе можно
-                                <a href="https://vk.com/page-65702593_50346971"
-                                   target="_blank">в группе в vk
-                                </a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Спокойная. Скромная</li>
-                                <li><strong>Год рождения (примерный):</strong> 2008</li>
-                                <li><strong>В приюте:</strong> с апреля 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 19 -->
-<div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Саванна</h2>
-                            <p class="item-intro text-muted">Жгучая красотка.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/savanna.png" alt="">
-                            <p>
-                                Жгучая красотка, трепетная и любопытная.
-                                Малышка еще совсем молода, и ей интересен весь мир!
-                                Саванна скромна и элегантна, как юная леди.
-                                Когда она хлопает своими большими глазками,
-                                хочется весь мир ей подарить :) Так папы тают,
-                                и дарят все все своим дочкам.. Но вот незадача, не пристало юной
-                                леди засиживаться в отцовском доме ...
-                                пора идти во взрослую жизнь, где ее глазки и манеры оценят по достоинству.
-                            </p>
-                            <p>
-                                Узнать больше о Лизе можно
-                                <a href="https://vk.com/page-65702593_50342492"
-                                   target="_blank">в группе в vk
-                                </a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Независимая игрунья, позволит наблюдать и обслуживать...
-                                    А если заслужите ее доверие, то и с руки поест, погладить даст :)
-                                </li>
-                                <li><strong>Год рождения (примерный):</strong> 2015</li>
-                                <li><strong>В приюте:</strong> с 9 марта 2016</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Portfolio Modal 20 -->
-<div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Констанция</h2>
-                            <p class="item-intro text-muted">Знает чего и кого хочет.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/kostya.png" alt="">
-                            <p>
-                                Констанция - знает чего и кого хочет, и берет свое хитростью, напором или красотой.
-                                В данный период жизни, в приюте, ее приоритет - она сама, и ее мужчина Люц.
-                                Как из-за него летели клоки шерсти любой, кто приближался к нему с целью заполучить....
-                                А главное, после каждой стычки она непринужденно занимала позу прекрасной дивы,
-                                которая якобы не дерется и вообще вся такая неземная..
-                                Умеет играть роль, умеет добиваться своего и при этом оставаться прекрасной.
-                                Возможно Вы увидите в ней себя? :)
-                            <p>
-                            <p>
-                                Узнать больше о Констанции можно
-                                <a href="https://vk.com/page-65702593_50346968"
-                                   target="_blank">в группе в vk
-                                </a>
-                            </p>
-                            <ul class="list-inline">
-                                <li><strong>Пол:</strong> Женский</li>
-                                <li><strong>Характер:</strong> Независимая</li>
-                                <li><strong>Год рождения (примерный):</strong> 2012</li>
-                                <li><strong>В приюте:</strong> с 12 декабря 2015</li>
-                                <li><strong>С другими кошками:</strong> Ладит</li>
-                                <li><strong>Особый уход:</strong> Нет</li>
-                                <li><strong>Стерилизована:</strong> Да</li>
-                            </ul>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i>&nbsp;Закрыть
-                            </button>
-                        </div>
-                    </div>
+                        Пока мы не приехали в Петербург, на первую операцию, где я окончательно убедилась, что это
+                        страшная правда. Позже мне пришлось переехать с детьми в Петербург, так как Рагиму назначили
+                        курс капельниц для укрепления костей, на 4 года, по 4 курса в год. Я сняла жилье и осталась
+                        здесь, так как в Перми нам никакого лечения не предложили. Рагимчику нужен постоянный уход,
+                        соответствующая реабилитация после переломов и операций, плавание в бассейне,
+                        санаторно-курортное лечение. Я как могу пытаюсь справиться, работаю, хотя должна находиться с
+                        ним все время. Ухожу на работу, когда старший сын приходит со школы и сидит с братом. ( Сейчас
+                        каникулы и будет немного полегче ). Осознавать этот факт таким мамам как я, в одиночку
+                        воспитывающем детей, очень тяжело. У Рагимчика практически не было детства , бесконечные
+                        переломы и гипс, больницы, операции и снова гипс. Впервые он встал на ноги в три года, две
+                        недели пытался ходить, но снова произошел перелом... и снова гипс и обездвиженность . Несмотря
+                        на боль и страдания, которые он испытал, он веселый и добрый мальчик, жизнерадостный и очень
+                        смышленый. Я безумно его люблю и счастлива, что он у меня есть. Очень надеюсь, что с вашей
+                        помощью, смогу улучшить качество его жизни и очень прошу помочь нам. В свои шесть с половиной
+                        лет Рагим перенес более сорока переломов и восемь операций. Благодаря помощи добрых людей, нам
+                        удалось приобрести коляску, провести два курса массажа и начать обследование, которое сейчас
+                        необходимо завершить. Ему так же рекомендовано лечение за границей. Нам необходима ваша помощь в
+                        борьбе со страшной болезнью, от которой каждый день страдает мой малыш.
+                        С уважением и надеждой Тагилаева М.Г., мама хрустального мальчика.
+                    </p>
+                    <!--<p>-->
+                    <!--Узнать больше о Джеки можно <a href="https://vk.com/page-65702593_50254194"-->
+                    <!--target="_blank">в группе в vk</a>-->
+                    <!--</p>-->
+                    <!--<ul class="list-inline">-->
+                    <!--<li><strong>Пол:</strong> Женский</li>-->
+                    <!--<li><strong>Характер:</strong> Пантера</li>-->
+                    <!--<li><strong>Год рождения (примерный):</strong> сентябрь 2015</li>-->
+                    <!--<li><strong>В приюте:</strong> с 3 января 2016</li>-->
+                    <!--<li><strong>С другими кошками:</strong> Ладит отлично</li>-->
+                    <!--<li><strong>Особый уход:</strong> диета RC Hepatic</li>-->
+                    <!--<li><strong>Стерилизована:</strong> нет</li>-->
+                    <!--</ul>-->
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                            class="fa fa-times"></i>&nbsp;Закрыть
+                    </button>
                 </div>
             </div>
         </div>

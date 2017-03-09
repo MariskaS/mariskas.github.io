@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var less = require('gulp-less');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
@@ -17,20 +16,9 @@ var banner = ['/*!\n',
     ''
 ].join('');
 
-// Compile LESS files from /less into /css
-gulp.task('less', function() {
-    return gulp.src('less/agency.less')
-        .pipe(less())
-        .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
-});
-
 // Minify compiled CSS
-gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/agency.css')
+gulp.task('minify-css', ['scss'], function() {
+    return gulp.src('css/config.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
@@ -71,7 +59,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['scss', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -83,8 +71,8 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
-    gulp.watch('less/*.less', ['less']);
+gulp.task('dev', ['browserSync', 'scss', 'minify-css', 'minify-js'], function() {
+    gulp.watch('scss/*.scss', ['scss']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
@@ -94,8 +82,8 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
 
 // Compiles SCSS files from /scss into /css
 // NOTE: This theme uses LESS by default. To swtich to SCSS you will need to update this gulpfile by changing the 'less' tasks to run 'sass'!
-gulp.task('sass', function() {
-    return gulp.src('scss/agency.scss')
+gulp.task('scss', function() {
+    return gulp.src('scss/config.scss')
         .pipe(sass())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))

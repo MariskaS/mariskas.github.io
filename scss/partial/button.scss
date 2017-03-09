@@ -1,0 +1,49 @@
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: none;
+}
+
+// Social Buttons
+ul.social-buttons {
+    margin-bottom: 0;
+    li {
+        a {
+            display: block;
+            background-color: $color-gray-darker;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            font-size: 20px;
+            line-height: 40px;
+            color: white;
+            outline: none;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $color-primary;
+            }
+        }
+    }
+}
+
+// Color Buttons
+.btn-primary {
+    @include button-variant(white, $color-primary, $color-primary);
+    @include heading-font;
+    font-weight: 700;
+}
+
+// Color Size
+.btn-xl {
+    @include button-variant(white, $color-primary, $color-primary);
+    @include heading-font;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}

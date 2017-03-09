@@ -1,0 +1,34 @@
+/**
+ * Breakpoints
+ */
+$grid-breakpoints: (
+        xs: 0,
+        ss: 320px,
+        sm: 480px,
+        md: 768px,
+        lg: 998px,
+        xl: 1220px
+);
+
+$container-max-widths: (
+        ss: 100%,
+        sm: 100%,
+        md: 100%,
+        lg: 100%,
+        xl: 1220px
+);
+
+/**
+ * Colors
+ */
+//$color-primary:    #e72f7a;
+$color-primary:      #ee6f27;
+$color-danger:       #e74c3c;
+$color-white:        #ffffff;
+
+$color-gray-darker:	 #222222;
+$color-gray-dark:	 #333333;
+$color-gray:         #555555;
+$color-gray-light:   #777777;
+$color-gray-lighter: #eeeeee;
+

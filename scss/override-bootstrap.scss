@@ -1,0 +1,123 @@
+@import "common/variables";
+@import "common/mixins.scss";
+/**
+ * Override Bootstrap styles
+ */
+
+// Custom Navigation Bar
+.today-main-navbar {
+    background-color: $color-gray-darker;
+    border-color: transparent;
+    .navbar-brand {
+        color: $color-primary;
+        @include script-font;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: darken($color-primary, 10%);
+        }
+    }
+    .navbar-collapse {
+        border-color: fade-out(white, .02);
+    }
+    .navbar-toggle {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        @include heading-font;
+        color: white;
+        font-size: 12px;
+        &:hover,
+        &:focus {
+            background-color: $color-primary;
+        }
+    }
+    .nav {
+        li {
+            a {
+                @include heading-font;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: white;
+                &:hover,
+                &:focus {
+                    color: $color-primary;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .navbar-nav > .active > a {
+        border-radius: 0;
+        color: white;
+        background-color: $color-primary;
+    }
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        color: white;
+        background-color: darken($color-primary, 10%);
+    }
+}
+
+@media(min-width: 768px) {
+    .today-main-navbar {
+        background-color: transparent;
+        padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+        .navbar-brand {
+            font-size: 2em;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .navbar-nav > .active > a {
+            border-radius: 3px;
+        }
+    }
+}
+
+// Navbar Change on Scroll
+@media(min-width: 768px) {
+    .today-main-navbar.affix {
+        background-color: $color-gray-darker;
+        padding: 10px 0;
+        .navbar-brand {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.today-main-header {
+    &__brand {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &__toggle {
+        font-size: 21px !important;
+        padding: 2px 10px;
+    }
+
+    // For mobile
+    @media (max-width: map-get($grid-breakpoints, lg)-1) {
+        &__logo {
+            max-width: 150px;
+            margin-top: 10px;
+        }
+
+        &__nav {
+            &.navbar-collapse {
+                border-color: $color-primary;
+            }
+
+            .nav>li>a {
+                padding: 6px 7px;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
