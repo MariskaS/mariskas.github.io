@@ -65,7 +65,8 @@
     }
 }
 
-@media(min-width: 767px) {
+// For desktop
+@media (min-width: map-get($grid-breakpoints, md)-1) {
     #portfolio {
         .portfolio-item {
             margin: 0 0 30px;
