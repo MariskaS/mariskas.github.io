@@ -118,6 +118,9 @@
       .today-about__grid-item a:hover, .today-about__grid-item a:active, .today-about__grid-item a:focus {
         color: #333333;
         text-decoration: none; }
+    @media (max-width: 992px) {
+      .today-about__grid-item:not(:first-child) {
+        margin: 20px 0 0; } }
 
 /**
  * Breakpoints

@@ -21,6 +21,13 @@
                     text-decoration: none;
                 }
             }
+
+            // For tablet & mobile
+            @media(max-width: map-get($grid-breakpoints, lg)) {
+                &:not(:first-child) {
+                    margin: $margin-base 0 0;
+                }
+            }
         }
     }
 }
