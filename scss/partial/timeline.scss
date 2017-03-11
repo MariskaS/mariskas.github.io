@@ -1,3 +1,6 @@
+@import "../common/mixins";
+@import "../common/variables";
+
 .timeline {
     list-style: none;
     padding: 0;
@@ -8,7 +11,7 @@
         position: absolute;
         content: "";
         width: 2px;
-        background-color: #f1f1f1;
+        background-color: $color-brand-gray;
         left: 40px;
         margin-left: -1.5px;
     }
@@ -27,7 +30,7 @@
         .timeline-panel {
             width: 100%;
             float: right;
-            padding: 0 20px 0 100px;
+            padding: 0 $padding-base 0 $padding-large;
             position: relative;
             text-align: left;
             &:before {
@@ -46,21 +49,20 @@
         .timeline-image {
             left: 0;
             margin-left: 0;
-            width: 80px;
-            height: 80px;
+            @include size(80px,80px);
             position: absolute;
             z-index: 100;
-            background-color: $color-primary;
-            color: white;
+            background-color: $color-brand-orange;
+            color: $color-white;
             border-radius: 100%;
-            border: 7px solid #f1f1f1;
+            border: 7px solid $color-brand-gray;
             text-align: center;
         }
 
         &.timeline-inverted > .timeline-panel {
             float: right;
             text-align: left;
-            padding: 0 20px 0 100px;
+            padding: 0 $padding-base 0 $padding-large;
             &:before {
                 border-left-width: 0;
                 border-right-width: 15px;
@@ -122,17 +124,16 @@
             left: 50%;
         }
         > li {
-            margin-bottom: 100px;
+            margin-bottom: $margin-large;
             min-height: 100px;
             .timeline-panel {
                 width: 41%;
                 float: left;
-                padding: 0 20px 20px 30px;
+                padding: 0 $padding-base $padding-base 30px;
                 text-align: right;
             }
             .timeline-image {
-                width: 100px;
-                height: 100px;
+                @include size(100px,100px);
                 left: 50%;
                 margin-left: -50px;
             }
@@ -140,7 +141,7 @@
             &.timeline-inverted > .timeline-panel {
                 float: right;
                 text-align: left;
-                padding: 0 30px 20px 20px;
+                padding: 0 30px $padding-base $padding-base;
             }
         }
     }
@@ -151,11 +152,10 @@
         > li {
             min-height: 150px;
             .timeline-panel {
-                padding: 0 20px 20px;
+                padding: 0 $padding-base $padding-base;
             }
             .timeline-image {
-                width: 150px;
-                height: 150px;
+                @include size(150px,150px);
                 margin-left: -75px;
             }
 
@@ -166,7 +166,7 @@
                     width: 100%;
                     margin: -30px 0 0;
                     padding: 0 5px;
-                    font-size: 14px;
+                    font-size: $font-size-base;
                     line-height: 20px;
                     height: 60px;
                 }
@@ -176,7 +176,7 @@
             }
 
             &.timeline-inverted > .timeline-panel {
-                padding: 0 20px 20px;
+                padding: 0 $padding-base $padding-base;
             }
         }
     }
@@ -187,15 +187,14 @@
         > li {
             min-height: 170px;
             .timeline-panel {
-                padding: 0 20px 20px 100px;
+                padding: 0 $padding-base $padding-base $padding-large;
             }
             .timeline-image {
-                width: 170px;
-                height: 170px;
+                @include size(170px,170px);
                 margin-left: -85px;
             }
             &.timeline-inverted > .timeline-panel {
-                padding: 0 100px 20px 20px;
+                padding: 0 $padding-large $padding-base $padding-base;
             }
         }
     }

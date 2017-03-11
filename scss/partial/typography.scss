@@ -1,0 +1,67 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+// Hr
+.today-hr--large {
+    margin-top: $margin-large;
+    margin-bottom: $margin-large;
+}
+
+// Title
+.today {
+    &-title {
+        &--small {
+            margin: 15px 0;
+            text-transform: none;
+        }
+
+        &--section {
+            font-size: 40px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    &-subtitle {
+        &--section {
+            font-size: 16px;
+            line-height: 22px;
+            @include serif-font;
+            text-transform: none;
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 75px;
+        }
+    }
+}
+
+// Color
+
+.today-color {
+    &--grey-light {
+        color: $color-gray-light;
+    }
+
+    &--primary {
+        color: $color-brand-orange;
+    }
+
+    &-bg {
+        &__light-gray {
+            background-color: $color-gray-lighter;
+        }
+
+        &__darkest-gray {
+            background-color: $color-gray-darker;
+        }
+
+        &__circles-fixed {
+            background-color: $color-brand-gray;
+            background-image: url('../img/bg-circles.jpg');
+            background-attachment: fixed !important;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

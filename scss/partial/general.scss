@@ -4,13 +4,13 @@
 ::-moz-selection {
     text-shadow: none;
     color: $color-white;
-    background: $color-primary;
+    background: $color-brand-orange;
 }
 
 ::selection {
     text-shadow: none;
     color: $color-white;
-    background: $color-primary;
+    background: $color-brand-orange;
 }
 
 img::selection {
@@ -24,12 +24,14 @@ img::-moz-selection {
 body {
     overflow-x: hidden;
     @include body-font;
-    webkit-tap-highlight-color: $color-primary;
+    color: $color-font-base;
+    webkit-tap-highlight-color: $color-brand-orange;
 }
 
 p {
-    font-size: 14px;
+    font-size: $font-size-base;
     line-height: 1.75;
+    color: $color-gray-light;
 }
 
 p.large {
@@ -45,14 +47,27 @@ a.active {
 }
 
 a {
-    color: $color-primary;
+    color: $color-brand-orange;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: darken($color-primary, 10%);
+    color: darken($color-brand-orange, 10%);
+}
+
+.today-link-modal {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+
+    &:focus,
+    &:active,
+    &:hover {
+        text-decoration: none;
+        border-bottom: none;
+        outline: none;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,75 +79,50 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 26px;
 }
 
-.today-hr--large {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.today-title {
-    &--small {
-        margin: 15px 0;
-        text-transform: none;
-    }
-}
-
-.text-muted {
-    color: $color-gray-light;
-}
-
-.text-primary {
-    color: $color-primary;
-}
-
+// Img
 .img-centered {
     margin: 0 auto;
 }
 
-.bg-light-gray {
-    background-color: $color-gray-lighter;
-}
-
-.bg-darkest-gray {
-    background-color: $color-gray-darker;
-}
-
-// Colors
-.today-color {
-    &--grey-light {
-        color: $color-gray-light;
+// For desktop
+@media(min-width: map-get($grid-breakpoints, md)) {
+    .today-hr--large {
+        margin-top: $margin-large-x;
+        margin-bottom: $margin-large-x;
     }
 }
 
-// Global Section Header
+// Global Header
 header {
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('../img/bg-header.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     @include background-cover;
     text-align: center;
-    color: white;
+    color: $color-white;
     .intro-text {
-        padding-top: 100px;
+        padding-top: $padding-large;
         padding-bottom: 50px;
         .intro-lead-in {
             @include serif-font;
             font-style: italic;
             font-size: 22px;
             line-height: 22px;
-            margin-bottom: 25px;
+            margin-bottom: $margin-base;
         }
         .intro-heading {
             @include heading-font;
             font-weight: 700;
             font-size: 50px;
             line-height: 50px;
-            margin-bottom: 25px;
+            margin-bottom: $margin-base;
         }
     }
 }
 
-@media(min-width: 768px) {
+// For desktop
+@media(min-width: map-get($grid-breakpoints, md)) {
     header {
         .intro-text {
             padding-top: 300px;
@@ -142,7 +132,7 @@ header {
                 font-style: italic;
                 font-size: 40px;
                 line-height: 40px;
-                margin-bottom: 25px;
+                margin-bottom: $margin-base;
             }
             .intro-heading {
                 @include heading-font;
@@ -155,33 +145,21 @@ header {
     }
 }
 
-// Global Section Styles
+// Global Section
 section {
-    padding: 100px 0;
-    h2.section-heading {
-        font-size: 40px;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-    h3.section-subheading {
-        font-size: 16px;
-        @include serif-font;
-        text-transform: none;
-        font-style: italic;
-        font-weight: 400;
-        margin-bottom: 75px;
-    }
+    padding: $padding-large 0;
 }
 
-@media(min-width: 768px) {
+// For desktop
+@media(min-width: map-get($grid-breakpoints, md)) {
     section {
-        padding: 150px 0;
+        padding: $padding-large-x 0;
     }
 }
 
-// Global Section Footer
+// Global Footer
 footer {
-    padding: 25px 0;
+    padding: $padding-base 0;
     text-align: center;
     span.copyright {
         line-height: 40px;

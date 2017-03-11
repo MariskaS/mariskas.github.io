@@ -9,27 +9,27 @@
     background-color: $color-gray-darker;
     border-color: transparent;
     .navbar-brand {
-        color: $color-primary;
+        color: $color-brand-orange;
         @include script-font;
         &:hover,
         &:focus,
         &:active,
         &.active {
-            color: darken($color-primary, 10%);
+            color: darken($color-brand-orange, 10%);
         }
     }
     .navbar-collapse {
-        border-color: fade-out(white, .02);
+        border-color: fade-out($color-white, .02);
     }
     .navbar-toggle {
-        background-color: $color-primary;
-        border-color: $color-primary;
+        background-color: $color-brand-orange;
+        border-color: $color-brand-orange;
         @include heading-font;
-        color: white;
+        color: $color-white;
         font-size: 12px;
         &:hover,
         &:focus {
-            background-color: $color-primary;
+            background-color: $color-brand-orange;
         }
     }
     .nav {
@@ -38,10 +38,10 @@
                 @include heading-font;
                 font-weight: 400;
                 letter-spacing: 1px;
-                color: white;
+                color: $color-white;
                 &:hover,
                 &:focus {
-                    color: $color-primary;
+                    color: $color-brand-orange;
                     outline: none;
                 }
             }
@@ -49,13 +49,13 @@
     }
     .navbar-nav > .active > a {
         border-radius: 0;
-        color: white;
-        background-color: $color-primary;
+        color: $color-white;
+        background-color: $color-brand-orange;
     }
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus {
-        color: white;
-        background-color: darken($color-primary, 10%);
+        color: $color-white;
+        background-color: darken($color-brand-orange, 10%);
     }
 }
 
@@ -65,7 +65,7 @@
     // Custom Navigation Bar
     .today-main-navbar {
         background-color: transparent;
-        padding: 25px 0;
+        padding: $padding-base 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -111,7 +111,7 @@
 
         &__nav {
             &.navbar-collapse {
-                border-color: $color-primary;
+                border-color: $color-brand-orange;
             }
 
             .nav>li>a {

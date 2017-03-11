@@ -1,3 +1,6 @@
+@import "../common/mixins";
+@import "../common/variables";
+
 .btn:focus,
 .btn:active,
 .btn.active,
@@ -17,7 +20,7 @@ ul.social-buttons {
             border-radius: 100%;
             font-size: 20px;
             line-height: 40px;
-            color: white;
+            color: $color-white;
             outline: none;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
@@ -25,7 +28,7 @@ ul.social-buttons {
             &:hover,
             &:focus,
             &:active {
-                background-color: $color-primary;
+                background-color: $color-brand-orange;
             }
         }
     }
@@ -33,17 +36,17 @@ ul.social-buttons {
 
 // Color Buttons
 .btn-primary {
-    @include button-variant(white, $color-primary, $color-primary);
+    @include button-variant($color-white, $color-brand-orange, $color-brand-orange);
     @include heading-font;
     font-weight: 700;
 }
 
 // Color Size
 .btn-xl {
-    @include button-variant(white, $color-primary, $color-primary);
+    @include button-variant($color-white, $color-brand-orange, $color-brand-orange);
     @include heading-font;
     font-weight: 700;
     border-radius: 3px;
-    font-size: 18px;
+    font-size: $font-size-x;
     padding: 10px 40px;
 }

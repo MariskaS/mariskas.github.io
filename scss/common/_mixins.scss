@@ -55,7 +55,7 @@
   }
 }
 
-// Background Cover Mixin
+// Background Cover
 
 @mixin background-cover {
   -webkit-background-size: cover;
@@ -64,8 +64,7 @@
   -o-background-size: cover;
 }
 
-// Font Mixins
-
+// Font
 @mixin serif-font {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -81,4 +80,10 @@
 @mixin heading-font {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+}
+
+// Height & Width size
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
 }

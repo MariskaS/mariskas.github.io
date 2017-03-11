@@ -6,6 +6,7 @@
  * Please add prefix 'today-' for all custom class
  */
 // Section
+@import "section/about";
 @import "section/portfolio";
 @import "section/contact";
 @import "section/clients";
@@ -13,6 +14,8 @@
 
 // Partial
 @import "partial/general";
+@import "partial/typography";
 @import "partial/input";
 @import "partial/button";
 @import "partial/timeline";
+@import "partial/modal";

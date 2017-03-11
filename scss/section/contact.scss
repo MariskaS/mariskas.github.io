@@ -4,13 +4,13 @@ section#contact {
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
-        color: white;
+        color: $color-white;
     }
     .form-group {
-        margin-bottom: 25px;
+        margin-bottom: $margin-base;
         input,
         textarea {
-            padding: 20px;
+            padding: $padding-base;
         }
         input.form-control {
             height: auto;
@@ -20,7 +20,7 @@ section#contact {
         }
     }
     .form-control:focus {
-        border-color: $color-primary;
+        border-color: $color-brand-orange;
         box-shadow: none;
     }
     ::-webkit-input-placeholder {
