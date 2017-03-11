@@ -1,17 +1,29 @@
 @import "../common/mixins";
 @import "../common/variables";
 
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-    outline: none;
-}
-
 // Social Buttons
-ul.social-buttons {
-    margin-bottom: 0;
-    li {
+.today-btn {
+    &--close {
+        margin-top: $margin-double;
+    }
+
+    // Size
+    &--xl {
+        @include button-variant($color-white, $color-brand-orange, $color-brand-orange);
+        @include heading-font;
+        font-weight: 700;
+        border-radius: 3px;
+        font-size: $font-size-x;
+        padding: 10px 40px;
+    }
+
+    // Social
+    &-social {
+        &__item {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
         a {
             display: block;
             background-color: $color-gray-darker;
@@ -32,21 +44,4 @@ ul.social-buttons {
             }
         }
     }
-}
-
-// Color Buttons
-.btn-primary {
-    @include button-variant($color-white, $color-brand-orange, $color-brand-orange);
-    @include heading-font;
-    font-weight: 700;
-}
-
-// Color Size
-.btn-xl {
-    @include button-variant($color-white, $color-brand-orange, $color-brand-orange);
-    @include heading-font;
-    font-weight: 700;
-    border-radius: 3px;
-    font-size: $font-size-x;
-    padding: 10px 40px;
 }
