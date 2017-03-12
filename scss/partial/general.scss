@@ -59,6 +59,10 @@ a {
     color: $color-brand;
 }
 
+a, i {
+    transition: all 200ms ease-in;
+}
+
 a:hover,
 a:focus,
 a:active,

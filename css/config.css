@@ -364,6 +364,9 @@ a.active {
 a {
   color: #e72f7a; }
 
+a, i {
+  transition: all 200ms ease-in; }
+
 a:hover,
 a:focus,
 a:active,
@@ -868,9 +871,6 @@ footer {
 /**
  * Font Size
  */
-.today-post a, .today-post i {
-  transition: all 200ms ease-in; }
-
 .today-post__meta {
   color: #9a9a9a;
   font-size: 12px;

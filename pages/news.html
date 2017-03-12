@@ -100,7 +100,8 @@
             <div class="col-sm-8 today-post__content">
                 <div class="today-post__content-item">
                     <figure class="today-post__content-item__image">
-                        <a href="#">
+                        <a href="#postModal1"
+                           data-toggle="modal">
                             <div class="today-post-image__overlay">
                                 <div class="today-post-image__overlay-info"><span>Читать все</span></div>
                             </div>
@@ -109,7 +110,8 @@
                         </a>
                     </figure>
                     <h2 class="today-post__title">
-                        <a href="http://kwoon.tommusdemos.wpengine.com/image-post-type/">Image Post Type</a>
+                        <a href="#postModal1"
+                           data-toggle="modal">Image Post Type</a>
                     </h2>
                     <div class="today-post__meta">
                         <span class="today-post__meta-date"><!--TODO:Generated text-->9 Декабря, 2017</span>
@@ -123,7 +125,8 @@
                         ad illo laboriosam libero,
                         modi nulla reiciendis. Eaque quibusdam rem temporibus.
                         Cupiditate error facilis id impedit laudantium quas recusandae. Quo, sequi!</p>
-                    <a href="http://kwoon.tommusdemos.wpengine.com/image-post-type/"
+                    <a href="#postModal1"
+                       data-toggle="modal"
                        class="today-post__content-item__btn-more">Читать все</a>
                 </div>
                 <div class="today-post__content-item">
@@ -137,7 +140,7 @@
                         </a>
                     </figure>
                     <h2 class="today-post__title">
-                        <a href="http://kwoon.tommusdemos.wpengine.com/image-post-type/">Image Post Type</a>
+                        <a href="#">Image Post Type</a>
                     </h2>
                     <div class="today-post__meta">
                         <span class="today-post__meta-date"><!--TODO:Generated text-->9 Декабря, 2017</span>
@@ -151,7 +154,7 @@
                         ad illo laboriosam libero,
                         modi nulla reiciendis. Eaque quibusdam rem temporibus.
                         Cupiditate error facilis id impedit laudantium quas recusandae. Quo, sequi!</p>
-                    <a href="http://kwoon.tommusdemos.wpengine.com/image-post-type/"
+                    <a href="#"
                        class="today-post__content-item__btn-more">Читать все</a>
                 </div>
                 <div class="today-post__content-item">
@@ -165,7 +168,7 @@
                         </a>
                     </figure>
                     <h2 class="today-post__title">
-                        <a href="http://kwoon.tommusdemos.wpengine.com/image-post-type/">Image Post Type</a>
+                        <a href="#">Image Post Type</a>
                     </h2>
                     <div class="today-post__meta">
                         <span class="today-post__meta-date"><!--TODO:Generated text-->9 Декабря, 2017</span>
@@ -179,7 +182,7 @@
                         ad illo laboriosam libero,
                         modi nulla reiciendis. Eaque quibusdam rem temporibus.
                         Cupiditate error facilis id impedit laudantium quas recusandae. Quo, sequi!</p>
-                    <a href="http://kwoon.tommusdemos.wpengine.com/image-post-type/"
+                    <a href="#"
                        class="today-post__content-item__btn-more">Читать все</a>
                 </div>
             </div>
@@ -294,6 +297,52 @@
         </div>
     </div>
 </footer>
+
+
+<!-- Post Modal 1 -->
+<div class="today-modal-page modal fade"
+     id="postModal1"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2> <!--TODO:Generated text-->Image Post Type</h2>
+                    <img class="img-responsive"
+                         src="http://kwoon.tommusdemos.wpengine.com/wp-content/uploads/sites/13/2015/06/Unknown.jpeg"
+                         alt="">
+                    <div class="today-post__meta">
+                        <span class="today-post__meta-date"><!--TODO:Generated text-->9 Декабря, 2017</span>
+                        <a href="#" class="today-post__meta-like">
+                            <i class="fa fa-heart today-post__meta-icon"></i>&nbsp;<span>0</span>
+                        </a>
+                    </div>
+                    <p>
+                        <!--TODO:Generated text-->
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <button type="button"
+                            class="btn btn-primary today-btn--close"
+                            data-dismiss="modal">Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- jQuery -->
 <script src="../vendor/jquery/jquery.min.js"></script>

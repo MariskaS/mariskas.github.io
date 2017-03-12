@@ -5,10 +5,6 @@ $color-post-border: #e1e1e1;
 $color-post-meta: #9a9a9a;
 
 .today-post {
-    a, i {
-        transition: all 200ms ease-in;
-    }
-
     &__meta {
         color: $color-post-meta;
         font-size: $font-size-s;
