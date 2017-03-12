@@ -1,12 +1,6 @@
 @import "../common/mixins";
 @import "../common/variables";
 
-// Hr
-.today-hr--large {
-    margin-top: $margin-large;
-    margin-bottom: $margin-large;
-}
-
 // Title
 .today {
     &-title {
@@ -37,6 +31,12 @@
 }
 
 // Color
+.today-fixed-bg {
+    background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .today-color {
     &--grey-light {
@@ -44,7 +44,7 @@
     }
 
     &--primary {
-        color: $color-brand-orange;
+        color: $color-brand;
     }
 
     &-bg {
@@ -56,13 +56,43 @@
             background-color: $color-gray-darker;
         }
 
-        &__circles-fixed {
-            background-color: $color-brand-gray;
-            background-image: url('../img/bg-circles.jpg');
-            background-attachment: fixed !important;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        &__fixed {
+            &-header {
+                background-image: url('../img/bg-header.jpg');
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position: center center;
+                @include background-cover;
+                @extend .today-fixed-bg;
+            }
+
+            &-circles {
+                background-color: $color-brand-gray;
+                background-image: url('../img/bg-circles.jpg');
+                @extend .today-fixed-bg;
+            }
+
+            &-pink {
+                background-color: $color-brand-pink;
+                background-image: url('../img/bg-pink.png');
+                @extend .today-fixed-bg;
+                color: $color-white;
+            }
+
+            &-purple {
+                background-color: $color-brand-pink;
+                background-image: url('../img/bg-purple.png');
+                @extend .today-fixed-bg;
+                color: $color-white;
+            }
+
+            &-md {
+                background-color: $color-brand-pink;
+                background-image: url('../img/bg-md.png');
+                @extend .today-fixed-bg;
+                color: $color-white;
+            }
         }
+
     }
 }

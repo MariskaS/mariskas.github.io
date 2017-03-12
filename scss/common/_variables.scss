@@ -25,12 +25,14 @@ $container-max-widths: (
 $margin-base:      20px;
 $margin-half:      $margin-base/2;
 $margin-double:    $margin-base*2;
+$margin-treble:    80px;
 $margin-large:     100px;
 $margin-large-x:   150px;
 
 $padding-base:     20px;
 $padding-half:     $padding-base/2;
 $padding-double:   $padding-base*2;
+$padding-treble:   80px;
 $padding-large:    100px;
 $padding-large-x:  150px;
 
@@ -39,5 +41,12 @@ $padding-large-x:  150px;
  * Font Size
  */
 $font-size-base:   14px;
+$line-height-base: 18px;
+
+$font-size-s:      12px;
 
 $font-size-x:      18px;
+$line-height-x:    24px;
+
+$font-size-xx:     20px;
+$line-height-xx:   26px;

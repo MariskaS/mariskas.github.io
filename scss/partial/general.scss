@@ -4,13 +4,13 @@
 ::-moz-selection {
     text-shadow: none;
     color: $color-white;
-    background: $color-brand-orange;
+    background: $color-brand;
 }
 
 ::selection {
     text-shadow: none;
     color: $color-white;
-    background: $color-brand-orange;
+    background: $color-brand;
 }
 
 img::selection {
@@ -21,17 +21,26 @@ img::-moz-selection {
     background: transparent;
 }
 
+figure {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     overflow-x: hidden;
     @include body-font;
     color: $color-font-base;
-    webkit-tap-highlight-color: $color-brand-orange;
+    webkit-tap-highlight-color: $color-brand;
 }
 
 p {
     font-size: $font-size-base;
     line-height: 1.75;
     color: $color-gray-light;
+    margin: 0 0 $margin-base;
 }
 
 p.large {
@@ -47,14 +56,14 @@ a.active {
 }
 
 a {
-    color: $color-brand-orange;
+    color: $color-brand;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: darken($color-brand-orange, 10%);
+    color: darken($color-brand, 10%);
 }
 
 .today-link-modal {
@@ -93,12 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Global Header
-header {
-    background-image: url('../img/bg-header.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    @include background-cover;
+.today-main-header {
     text-align: center;
     color: $color-white;
     .intro-text {
@@ -119,11 +123,16 @@ header {
             margin-bottom: $margin-base;
         }
     }
-}
 
-// For desktop
-@media(min-width: map-get($grid-breakpoints, md)) {
-    header {
+    &--small {
+        .intro-text {
+            padding-top: 50px;
+            padding-bottom: 25px;
+        }
+    }
+
+    // For desktop
+    @media(min-width: map-get($grid-breakpoints, md)) {
         .intro-text {
             padding-top: 300px;
             padding-bottom: 200px;
@@ -142,17 +151,22 @@ header {
                 margin-bottom: 50px;
             }
         }
+
+        &--small {
+            .intro-text {
+                padding-top: 200px;
+                padding-bottom: $padding-large;
+            }
+        }
     }
 }
 
 // Global Section
 section {
     padding: $padding-large 0;
-}
 
-// For desktop
-@media(min-width: map-get($grid-breakpoints, md)) {
-    section {
+    // For desktop
+    @media(min-width: map-get($grid-breakpoints, md)) {
         padding: $padding-large-x 0;
     }
 }

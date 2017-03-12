@@ -1,3 +1,6 @@
+@import "../common/mixins";
+@import "../common/variables";
+
 .today-modal {
     &-page {
         .modal-dialog {

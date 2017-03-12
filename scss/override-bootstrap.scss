@@ -7,27 +7,27 @@
     background-color: $color-gray-darker;
     border-color: transparent;
     .navbar-brand {
-        color: $color-brand-orange;
+        color: $color-brand;
         @include script-font;
         &:hover,
         &:focus,
         &:active,
         &.active {
-            color: darken($color-brand-orange, 10%);
+            color: darken($color-brand, 10%);
         }
     }
     .navbar-collapse {
         border-color: fade-out($color-white, .02);
     }
     .navbar-toggle {
-        background-color: $color-brand-orange;
-        border-color: $color-brand-orange;
+        background-color: $color-brand;
+        border-color: $color-brand;
         @include heading-font;
         color: $color-white;
         font-size: 12px;
         &:hover,
         &:focus {
-            background-color: $color-brand-orange;
+            background-color: $color-brand;
         }
     }
     .nav {
@@ -39,7 +39,7 @@
                 color: $color-white;
                 &:hover,
                 &:focus {
-                    color: $color-brand-orange;
+                    color: $color-brand;
                     outline: none;
                 }
             }
@@ -48,12 +48,12 @@
     .navbar-nav > .active > a {
         border-radius: 0;
         color: $color-white;
-        background-color: $color-brand-orange;
+        background-color: $color-brand;
     }
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus {
         color: $color-white;
-        background-color: darken($color-brand-orange, 10%);
+        background-color: darken($color-brand, 10%);
     }
 
     // For desktop
@@ -111,7 +111,7 @@
 
         &__nav {
             &.navbar-collapse {
-                border-color: $color-brand-orange;
+                border-color: $color-brand;
             }
 
             .nav>li>a {
@@ -135,7 +135,7 @@
 
 // Color Buttons
 .btn-primary {
-    @include button-variant($color-white, $color-brand-orange, $color-brand-orange);
+    @include button-variant($color-white, $color-brand, $color-brand);
     @include heading-font;
     font-weight: 700;
 }

@@ -1,0 +1,213 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+$color-post-border: #e1e1e1;
+$color-post-meta: #9a9a9a;
+
+.today-post {
+    a, i {
+        transition: all 200ms ease-in;
+    }
+
+    &__meta {
+        color: $color-post-meta;
+        font-size: $font-size-s;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: $margin-half;
+
+        &-like {
+            color: $color-post-meta;
+
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+                color: $color-post-meta;
+
+                .today-post__meta-icon {
+                    color: $color-brand;
+                }
+            }
+
+            &:before {
+                content: "|";
+                padding: 0 $padding-half;
+            }
+        }
+    }
+
+    &__title {
+        a {
+            color: $color-gray-darker;
+            font-weight: 700;
+        }
+        a:hover,
+        a:active,
+        a:focus {
+            color: $color-brand;
+            text-decoration: none;
+        }
+    }
+
+    &__content {
+        &-item {
+            padding: 0 0 $padding-double;
+            margin-bottom: $margin-treble;
+            border-bottom: 2px solid $color-post-border;
+
+            // For desktop
+            @media(min-width: map-get($grid-breakpoints, md)) {
+                &:last-child {
+                    margin-bottom: 0;
+                    border-bottom-color: transparent;
+                }
+            }
+
+            .today-post__title {
+                font-size: $font-size-xx;
+                line-height: $line-height-xx;
+                margin: 0 0 $margin-half;
+            }
+
+            &__image {
+                margin-bottom: $margin-base;
+                a:hover {
+                    .today-post-image__overlay {
+                        opacity: 1;
+                        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+                        -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                    }
+                    img {
+                        -o-transform: scale(1.05);
+                        -ms-transform: scale(1.05);
+                        -moz-transform: scale(1.05);
+                        transform: scale(1.05);
+                    }
+                }
+
+                img {
+                    display: inline;
+                    @include size(100%, auto);
+                    max-width: 100%;
+                    -webkit-backface-visibility: hidden;
+                    transition: all 0.3s ease-out;
+                    vertical-align: middle;
+                }
+
+                .today-post-image__overlay {
+                    opacity: 0;
+                    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+                    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    @include size(100%, 100%);
+                    position: absolute;
+                    text-decoration: none;
+                    z-index: 100;
+                    padding: $padding-double;
+                    background: $color-gray-darker;
+                    background: rgba(38, 43, 47, 0.8);
+                    transition: all 0.4s;
+
+                    &-info {
+                        text-align: center;
+                        top: 50%;
+                        width: 100%;
+                        left: 0;
+                        position: absolute;
+                        margin-top: -12px;
+
+                        span {
+                            padding: $padding-half $padding-base;
+                            font-size: $font-size-xx;
+                            font-weight: 700;
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+
+            &__btn-more {
+                display: inline-block;
+                text-transform: uppercase;
+
+                &,
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $color-post-meta;
+                }
+
+                &::after {
+                    content: "→";
+                    vertical-align: text-bottom;
+                    padding-left: 5px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    &__sidebar {
+        &__title {
+            margin: 0 0 $margin-base;
+            font-size: $font-size-x;
+        }
+
+        &__nav {
+            margin-top: $margin-double;
+            @extend .today-post__title;
+
+            &-item {
+                line-height: 24px;
+                &::before {
+                    content: "●";
+                    margin-right: 10px;
+                    font-weight: normal;
+                    vertical-align: top;
+                    display: inline-block;
+                    color: $color-gray-light;
+                    font-size: 11px;
+                }
+            }
+        }
+
+        &__list {
+            &-item {
+                margin-bottom: $margin-half;
+
+                &__image {
+                    float: left;
+                    @include size(70px, 70px);
+                    overflow: hidden;
+                    position: relative;
+
+                    image {
+                        display: block;
+                        max-width: 100%;
+                    }
+                }
+
+                &__meta {
+                    margin-left: $margin-treble;
+                    color: $color-post-meta;
+                    font-size: $font-size-s;
+                    font-weight: 500;
+                    text-transform: uppercase;
+
+                    h5 {
+                        font-size: $font-size-base;
+                        line-height: $line-height-base;
+                        margin: 0 0 5px;
+                    }
+                }
+
+                @include clear-fix;
+            }
+        }
+
+        // For desktop
+        @media(min-width: map-get($grid-breakpoints, md)) {
+            padding-left: $padding-treble;
+        }
+    }
+}

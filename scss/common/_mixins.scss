@@ -87,3 +87,16 @@
   width: $width;
   height: $height;
 }
+
+// Clear-Fix for floating elements
+@mixin clear-fix {
+&::after {
+  clear: both;
+}
+
+&::after,
+&::before {
+  display: table;
+  content: " ";
+}
+}

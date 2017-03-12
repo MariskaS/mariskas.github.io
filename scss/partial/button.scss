@@ -9,7 +9,7 @@
 
     // Size
     &--xl {
-        @include button-variant($color-white, $color-brand-orange, $color-brand-orange);
+        @include button-variant($color-white, $color-brand, $color-brand);
         @include heading-font;
         font-weight: 700;
         border-radius: 3px;
@@ -40,7 +40,7 @@
             &:hover,
             &:focus,
             &:active {
-                background-color: $color-brand-orange;
+                background-color: $color-brand;
             }
         }
     }
