@@ -2,46 +2,19 @@
 @import "../common/mixins.scss";
 
 // Portfolio Section
-#portfolio {
-    .portfolio-item {
+.today-portfolio {
+    &__item {
         margin: 0 0 15px;
         right: 0;
-        .portfolio-link {
+        &-link {
             display: block;
             position: relative;
             max-width: 400px;
             margin: 0 auto;
-            .portfolio-hover {
-                background: fade-out($color-brand, .9);
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-                transition: all ease 0.5s;
-                -webkit-transition: all ease 0.5s;
-                -moz-transition: all ease 0.5s;
-                &:hover {
-                    opacity: 1;
-                }
-                .portfolio-hover-content {
-                    position: absolute;
-                    @include size(100%, 20px);
-                    font-size: 20px;
-                    text-align: center;
-                    top: 50%;
-                    margin-top: -12px;
-                    color: $color-white;
-                    i {
-                        margin-top: -12px;
-                    }
-                    h3,
-                    h4 {
-                        margin: 0;
-                    }
-                }
-            }
+            border: 0;
         }
-        .portfolio-caption {
+
+        &-caption {
             max-width: 400px;
             margin: 0 auto;
             background-color: $color-white;
@@ -56,6 +29,36 @@
                 font-style: italic;
                 font-size: 16px;
                 margin: 0;
+            }
+        }
+
+        &__hover {
+            background: fade-out($color-brand, .9);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all ease 0.5s;
+            -webkit-transition: all ease 0.5s;
+            -moz-transition: all ease 0.5s;
+            &:hover {
+                opacity: 1;
+            }
+            &-content {
+                position: absolute;
+                @include size(100%, 20px);
+                font-size: 20px;
+                text-align: center;
+                top: 50%;
+                margin-top: -12px;
+                color: $color-white;
+                i {
+                    margin-top: -12px;
+                }
+                h3,
+                h4 {
+                    margin: 0;
+                }
             }
         }
     }
