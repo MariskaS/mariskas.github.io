@@ -47,27 +47,30 @@ p.large {
     font-size: 16px;
 }
 
+a {
+    color: $color-gray-darker;
+    font-weight: 700;
+}
+
 a,
 a:hover,
 a:focus,
 a:active,
 a.active {
+    color: $color-gray-darker;
+    text-decoration: none;
     outline: none;
-}
-
-a {
-    color: $color-brand;
-}
-
-a, i {
-    transition: all 200ms ease-in;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: darken($color-brand, 10%);
+    color: $color-brand;
+}
+
+a, i {
+    transition: all 200ms ease-in;
 }
 
 .today-link-modal {

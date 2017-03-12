@@ -13,13 +13,6 @@
                 font-size: $font-size-x;
                 color: $color-font-base;
                 display: block;
-                text-decoration: underline;
-                &:hover,
-                &:active,
-                &:focus {
-                    color: $color-font-base;
-                    text-decoration: none;
-                }
             }
 
             // For tablet & mobile

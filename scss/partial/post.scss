@@ -33,19 +33,6 @@ $color-post-meta: #9a9a9a;
         }
     }
 
-    &__title {
-        a {
-            color: $color-gray-darker;
-            font-weight: 700;
-        }
-        a:hover,
-        a:active,
-        a:focus {
-            color: $color-brand;
-            text-decoration: none;
-        }
-    }
-
     &__content {
         &-item {
             padding: 0 0 $padding-double;
