@@ -37,6 +37,8 @@
                 font-weight: 400;
                 letter-spacing: 1px;
                 color: $color-white;
+                border: 0;
+
                 &:hover,
                 &:focus {
                     color: $color-brand;

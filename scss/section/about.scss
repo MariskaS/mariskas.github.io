@@ -12,11 +12,12 @@
             a {
                 font-size: $font-size-x;
                 color: $color-font-base;
+                border: none;
                 display: block;
             }
 
             // For tablet & mobile
-            @media(max-width: map-get($grid-breakpoints, lg)) {
+            @media(max-width: map-get($grid-breakpoints, md)) {
                 &:not(:first-child) {
                     margin: $margin-base 0 0;
                 }

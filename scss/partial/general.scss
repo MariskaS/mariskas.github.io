@@ -50,6 +50,8 @@ p.large {
 a {
     color: $color-gray-darker;
     font-weight: 700;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(34, 34, 34,.2);
 }
 
 a,
@@ -57,7 +59,6 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: $color-gray-darker;
     text-decoration: none;
     outline: none;
 }
@@ -67,6 +68,7 @@ a:focus,
 a:active,
 a.active {
     color: $color-brand;
+    border-bottom-color: $color-brand;
 }
 
 a, i {
@@ -75,15 +77,6 @@ a, i {
 
 .today-link-modal {
     border-bottom: 1px dashed;
-    text-decoration: none;
-
-    &:focus,
-    &:active,
-    &:hover {
-        text-decoration: none;
-        border-bottom: none;
-        outline: none;
-    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -112,6 +105,11 @@ h1, h2, h3, h4, h5, h6 {
 .today-main-header {
     text-align: center;
     color: $color-white;
+
+    a {
+        border: none;
+    }
+
     .intro-text {
         padding-top: $padding-large;
         padding-bottom: 50px;

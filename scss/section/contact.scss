@@ -1,8 +1,17 @@
-section#contact {
+.today-contact {
     background-color: $color-gray-darker;
     background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
+
+    &,a,p {
+        color: $color-white;
+    }
+
+    a {
+        border: none;
+    }
+
     .section-heading {
         color: $color-white;
     }

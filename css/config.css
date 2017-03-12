@@ -40,7 +40,8 @@
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #ffffff; }
+    color: #ffffff;
+    border: 0; }
     .today-main-navbar .nav li a:hover, .today-main-navbar .nav li a:focus {
       color: #e72f7a;
       outline: none; }
@@ -165,8 +166,9 @@
     .today-about__grid-item a {
       font-size: 18px;
       color: #333333;
+      border: none;
       display: block; }
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       .today-about__grid-item:not(:first-child) {
         margin: 20px 0 0; } }
 
@@ -234,48 +236,52 @@
   #portfolio .portfolio-item {
     margin: 0 0 30px; } }
 
-section#contact {
+.today-contact {
   background-color: #222222;
   background-image: url("../img/map-image.png");
   background-position: center;
   background-repeat: no-repeat; }
-  section#contact .section-heading {
+  .today-contact, .today-contact a, .today-contact p {
     color: #ffffff; }
-  section#contact .form-group {
+  .today-contact a {
+    border: none; }
+  .today-contact .section-heading {
+    color: #ffffff; }
+  .today-contact .form-group {
     margin-bottom: 20px; }
-    section#contact .form-group input,
-    section#contact .form-group textarea {
+    .today-contact .form-group input,
+    .today-contact .form-group textarea {
       padding: 20px; }
-    section#contact .form-group input.form-control {
+    .today-contact .form-group input.form-control {
       height: auto; }
-    section#contact .form-group textarea.form-control {
+    .today-contact .form-group textarea.form-control {
       height: 236px; }
-  section#contact .form-control:focus {
+  .today-contact .form-control:focus {
     border-color: #e72f7a;
     box-shadow: none; }
-  section#contact ::-webkit-input-placeholder {
+  .today-contact ::-webkit-input-placeholder {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eeeeee; }
-  section#contact :-moz-placeholder {
+  .today-contact :-moz-placeholder {
     /* Firefox 18- */
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eeeeee; }
-  section#contact ::-moz-placeholder {
+  .today-contact ::-moz-placeholder {
     /* Firefox 19+ */
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eeeeee; }
-  section#contact :-ms-input-placeholder {
+  .today-contact :-ms-input-placeholder {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eeeeee; }
-  section#contact .text-danger {
+  .today-contact .text-danger {
     color: #e74c3c; }
 
 .today-clients img {
@@ -352,14 +358,15 @@ p.large {
 
 a {
   color: #222222;
-  font-weight: 700; }
+  font-weight: 700;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(34, 34, 34, 0.2); }
 
 a,
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #222222;
   text-decoration: none;
   outline: none; }
 
@@ -367,18 +374,14 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #e72f7a; }
+  color: #e72f7a;
+  border-bottom-color: #e72f7a; }
 
 a, i {
   transition: all 200ms ease-in; }
 
 .today-link-modal {
-  border-bottom: 1px dashed;
-  text-decoration: none; }
-  .today-link-modal:focus, .today-link-modal:active, .today-link-modal:hover {
-    text-decoration: none;
-    border-bottom: none;
-    outline: none; }
+  border-bottom: 1px dashed; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -399,6 +402,8 @@ h1, h2, h3, h4, h5, h6 {
 .today-main-header {
   text-align: center;
   color: #ffffff; }
+  .today-main-header a {
+    border: none; }
   .today-main-header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px; }
@@ -877,9 +882,10 @@ footer {
   text-transform: uppercase;
   margin-bottom: 10px; }
   .today-post__meta-like {
-    color: #9a9a9a; }
+    color: #9a9a9a;
+    font-weight: 500;
+    border: 0; }
     .today-post__meta-like:hover, .today-post__meta-like:focus, .today-post__meta-like:active {
-      text-decoration: none;
       color: #9a9a9a; }
       .today-post__meta-like:hover .today-post__meta-icon, .today-post__meta-like:focus .today-post__meta-icon, .today-post__meta-like:active .today-post__meta-icon {
         color: #e72f7a; }
@@ -945,7 +951,9 @@ footer {
           color: #ffffff; }
   .today-post__content-item__btn-more {
     display: inline-block;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 0; }
     .today-post__content-item__btn-more, .today-post__content-item__btn-more:hover, .today-post__content-item__btn-more:active, .today-post__content-item__btn-more:focus {
       color: #9a9a9a; }
     .today-post__content-item__btn-more::after {
