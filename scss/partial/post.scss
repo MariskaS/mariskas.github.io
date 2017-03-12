@@ -203,6 +203,11 @@ $color-post-meta: #9a9a9a;
 
         // For desktop
         @media(min-width: map-get($grid-breakpoints, md)) {
+            padding-left: $padding-base;
+        }
+
+        // For desktop
+        @media(min-width: map-get($grid-breakpoints, xl)) {
             padding-left: $padding-treble;
         }
     }

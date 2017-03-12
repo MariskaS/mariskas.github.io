@@ -1011,4 +1011,8 @@ footer {
 
 @media (min-width: 768px) {
   .today-post__sidebar {
+    padding-left: 20px; } }
+
+@media (min-width: 1200px) {
+  .today-post__sidebar {
     padding-left: 80px; } }
