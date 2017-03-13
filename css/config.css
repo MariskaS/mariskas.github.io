@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 @charset "UTF-8";
+@import url(../vendor/bootstrap/css/bootstrap.min.css);
+@import url(../vendor/font-awesome/css/font-awesome.min.css);
 /**
  * Breakpoints
  */
@@ -163,11 +165,6 @@
   padding: 40px 0; }
   .today-about__grid-item {
     text-align: center; }
-    .today-about__grid-item a {
-      font-size: 18px;
-      color: #333333;
-      border: none;
-      display: block; }
     @media (max-width: 768px) {
       .today-about__grid-item:not(:first-child) {
         margin: 20px 0 0; } }
@@ -465,6 +462,10 @@ footer {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none; }
+
+.u-decoration--no {
+  text-decoration: none;
+  border: 0; }
 
 /**
  * Breakpoints

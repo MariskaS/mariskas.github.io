@@ -1,4 +1,6 @@
 // Override
+@import "../vendor/bootstrap/css/bootstrap.min.css";
+@import "../vendor/font-awesome/css/font-awesome.min.css";
 @import "override-bootstrap";
 
 /**
@@ -14,6 +16,7 @@
 
 // Partial
 @import "partial/general";
+@import "partial/utils";
 @import "partial/typography";
 @import "partial/input";
 @import "partial/button";
