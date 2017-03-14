@@ -19,6 +19,10 @@
             }
         }
 
+        &--medium {
+            padding: 60px 0;
+        }
+
         &--small {
             padding: $padding-double 0;
         }
@@ -58,6 +62,13 @@
             &-header {
                 background-image: url('../img/bg-header.jpg');
                 background-attachment: scroll;
+                @include fixed-bg;
+                color: $color-white;
+            }
+
+            &-blue {
+                background-color: #08141d;
+                background-image: url('../img/bg-header.png');
                 @include fixed-bg;
                 color: $color-white;
             }

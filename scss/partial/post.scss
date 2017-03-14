@@ -36,8 +36,8 @@ $color-post-meta: #9a9a9a;
 
     &__content {
         &-item {
-            padding: 0 0 $padding-double;
-            margin-bottom: $margin-treble;
+            padding: 0 0 30px;
+            margin-bottom: 40px;
             border-bottom: 2px solid $color-post-border;
 
             // For desktop
@@ -56,6 +56,9 @@ $color-post-meta: #9a9a9a;
 
             &__image {
                 margin-bottom: $margin-base;
+                max-height: 500px;
+                overflow: hidden;
+
                 a:hover {
                     .today-post-image__overlay {
                         opacity: 1;
@@ -145,6 +148,7 @@ $color-post-meta: #9a9a9a;
 
             &-item {
                 line-height: 24px;
+
                 &::before {
                     content: "●";
                     margin-right: 10px;
