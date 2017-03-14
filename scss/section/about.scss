@@ -2,20 +2,8 @@
 @import "../common/variables";
 
 .today-about {
-
-    &__grid {
-        margin: $margin-large 0;
-        padding: $padding-double 0;
-
-        &-item {
-            text-align: center;
-
-            // For tablet & mobile
-            @media(max-width: map-get($grid-breakpoints, md)) {
-                &:not(:first-child) {
-                    margin: $margin-base 0 0;
-                }
-            }
-        }
-    }
+   &__video {
+       width: 100%;
+       min-height: 300px;
+   }
 }

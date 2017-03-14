@@ -1,6 +1,93 @@
+@import "../common/mixins";
+@import "../common/variables";
+
 .u-decoration {
     &--no {
         text-decoration: none;
         border: 0;
+    }
+}
+
+// Padding & Margin
+.u-padding {
+    &__main-vert {
+        &--big {
+            padding: $padding-large 0;
+            // For desktop
+            @media(min-width: map-get($grid-breakpoints, md)) {
+                padding: $padding-large-x 0;
+            }
+        }
+
+        &--small {
+            padding: $padding-double 0;
+        }
+
+        &--smaller {
+            padding: $padding-base 0;
+        }
+    }
+}
+
+.u-margin {
+    &__top-0 {
+        margin-top: 0;
+    }
+}
+
+// Color
+.u-color {
+    &--danger {
+        color: $color-danger;
+    }
+
+    &--grey-light {
+        color: $color-gray-light;
+    }
+
+    &--primary {
+        color: $color-brand;
+    }
+
+    &-bg {
+        &--light-gray {
+            background-color: $color-gray-lighter;
+        }
+
+        &--fixed {
+            &-header {
+                background-image: url('../img/bg-header.jpg');
+                background-attachment: scroll;
+                @include fixed-bg;
+                color: $color-white;
+            }
+
+            &-circles {
+                background-color: $color-brand-gray;
+                background-image: url('../img/bg-circles.jpg');
+                @include fixed-bg;
+            }
+
+            &-pink {
+                background-color: $color-brand-pink;
+                background-image: url('../img/bg-pink.png');
+                @include fixed-bg;
+                color: $color-white;
+            }
+
+            &-purple {
+                background-color: $color-brand-pink;
+                background-image: url('../img/bg-purple.png');
+                @include fixed-bg;
+                color: $color-white;
+            }
+
+            &-md {
+                background-color: $color-brand-pink;
+                background-image: url('../img/bg-md.png');
+                @include fixed-bg;
+                color: $color-white;
+            }
+        }
     }
 }
