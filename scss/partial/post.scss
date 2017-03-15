@@ -5,6 +5,8 @@ $color-post-border: #e1e1e1;
 $color-post-meta: #9a9a9a;
 
 .today-post {
+    position: relative;
+
     &__meta {
         color: $color-post-meta;
         font-size: $font-size-s;
@@ -34,6 +36,18 @@ $color-post-meta: #9a9a9a;
         }
     }
 
+    &__nav {
+        @extend .today-post__title;
+        position: absolute;
+        top: 20px;
+
+        &-item {
+            line-height: 1;
+            display: inline-block;
+            margin-right: $margin-half;
+        }
+    }
+
     &__content {
         &-item {
             padding: 0 0 30px;
@@ -54,10 +68,14 @@ $color-post-meta: #9a9a9a;
                 margin: 0 0 $margin-half;
             }
 
-            &__image {
+            &__image,
+            &__video {
                 margin-bottom: $margin-base;
-                max-height: 500px;
                 overflow: hidden;
+            }
+
+            &__image {
+                max-height: 500px;
 
                 a:hover {
                     .today-post-image__overlay {
@@ -113,6 +131,13 @@ $color-post-meta: #9a9a9a;
                 }
             }
 
+            &__video {
+                iframe {
+                    width: 100%;
+                    min-height: 400px;
+                }
+            }
+
             &__btn-more {
                 display: inline-block;
                 text-transform: uppercase;
@@ -138,27 +163,12 @@ $color-post-meta: #9a9a9a;
 
     &__sidebar {
         &__title {
-            margin: 0 0 $margin-base;
             font-size: $font-size-x;
+            margin-top: 0;
         }
 
-        &__nav {
-            margin-top: $margin-double;
-            @extend .today-post__title;
-
-            &-item {
-                line-height: 24px;
-
-                &::before {
-                    content: "●";
-                    margin-right: 10px;
-                    font-weight: normal;
-                    vertical-align: top;
-                    display: inline-block;
-                    color: $color-gray-light;
-                    font-size: 11px;
-                }
-            }
+        &__row {
+            margin-top: 30px;
         }
 
         &__list {
@@ -192,6 +202,21 @@ $color-post-meta: #9a9a9a;
                 }
 
                 @include clear-fix;
+            }
+        }
+
+        &__video {
+            &-item {
+                margin-top: $margin-base;
+
+                &__movie {
+                    width: 100%;
+                    min-height: 150px;
+                }
+
+                &__link {
+                    display: inline-block;
+                }
             }
         }
 
