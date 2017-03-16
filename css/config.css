@@ -903,7 +903,14 @@ footer {
  * Font Size
  */
 .today-post {
-  position: relative; }
+  position: relative;
+  padding-bottom: 60px; }
+  .today-post__nav {
+    margin: 20px 0; }
+    .today-post__nav-item {
+      line-height: 1;
+      display: inline-block;
+      margin-right: 10px; }
   .today-post__meta {
     color: #9a9a9a;
     font-size: 12px;
@@ -921,13 +928,6 @@ footer {
       .today-post__meta-like:before {
         content: "|";
         padding: 0 10px; }
-  .today-post__nav {
-    position: absolute;
-    top: 20px; }
-    .today-post__nav-item {
-      line-height: 1;
-      display: inline-block;
-      margin-right: 10px; }
   .today-post__content-item {
     padding: 0 0 30px;
     margin-bottom: 40px;

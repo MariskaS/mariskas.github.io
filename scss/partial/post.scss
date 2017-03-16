@@ -6,6 +6,18 @@ $color-post-meta: #9a9a9a;
 
 .today-post {
     position: relative;
+    padding-bottom: 60px;
+
+    &__nav {
+        @extend .today-post__title;
+        margin: $margin-base 0;
+
+        &-item {
+            line-height: 1;
+            display: inline-block;
+            margin-right: $margin-half;
+        }
+    }
 
     &__meta {
         color: $color-post-meta;
@@ -33,18 +45,6 @@ $color-post-meta: #9a9a9a;
                 content: "|";
                 padding: 0 $padding-half;
             }
-        }
-    }
-
-    &__nav {
-        @extend .today-post__title;
-        position: absolute;
-        top: 20px;
-
-        &-item {
-            line-height: 1;
-            display: inline-block;
-            margin-right: $margin-half;
         }
     }
 
