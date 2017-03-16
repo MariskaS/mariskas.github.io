@@ -1108,8 +1108,8 @@ footer {
   background-size: cover;
   color: #ffffff; }
 
-.u-color-bg--fixed-blue {
-  background-color: #08141d;
+.u-color-bg--fixed-yellow {
+  background-color: #bb8518;
   background-image: url("../img/bg-header.png");
   background-attachment: fixed !important;
   background-position: center center;
