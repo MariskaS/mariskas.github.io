@@ -46,6 +46,7 @@ $color-post-border: #e1e1e1;
 
             &__image {
                 max-height: 500px;
+                max-width: 750px;
 
                 a:hover {
                     .today-post-image__overlay {
@@ -105,6 +106,7 @@ $color-post-border: #e1e1e1;
                 iframe {
                     width: 100%;
                     min-height: 400px;
+                    max-width: 750px;
                 }
             }
         }

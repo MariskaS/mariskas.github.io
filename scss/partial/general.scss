@@ -36,13 +36,14 @@ body {
     webkit-tap-highlight-color: $color-brand;
 }
 
-p {
+p,
+.today-text {
     @include paragraph-font;
-    margin: 0 0 $margin-base;
+
 }
 
-p.large {
-    font-size: 16px;
+p {
+    margin: 0 0 $margin-base;
 }
 
 a {
@@ -107,55 +108,77 @@ h1, h2, h3, h4, h5, h6 {
         border: none;
     }
 
-    .intro-text {
+    &__content {
         padding-top: $padding-large;
         padding-bottom: 50px;
-        .intro-lead-in {
-            @include serif-font;
-            font-style: italic;
-            font-size: 22px;
-            line-height: 22px;
-            margin-bottom: $margin-base;
-        }
-        .intro-heading {
-            @include heading-font;
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 50px;
-            margin-bottom: $margin-base;
+    }
+
+    &__title {
+        @include serif-font;
+        font-style: italic;
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: $margin-base;
+    }
+    &__subtitle {
+        @include heading-font;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: $margin-base;
+
+        a {
+            color: $color-white;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 
     &--small {
-        .intro-text {
+        .today-main-header__content {
             padding-top: 75px;
             padding-bottom: 25px;
         }
     }
 
+    &--breadcrumbs {
+        @extend .today-main-header--small;
+
+        .today-main-header__subtitle {
+            @include heading-font;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 48px;;
+            margin-bottom: $margin-base;
+        }
+    }
+
     // For desktop
     @media(min-width: map-get($grid-breakpoints, md)) {
-        .intro-text {
+        &__content {
             padding-top: 300px;
             padding-bottom: 200px;
-            .intro-lead-in {
-                @include serif-font;
-                font-style: italic;
-                font-size: 40px;
-                line-height: 40px;
-                margin-bottom: $margin-base;
-            }
-            .intro-heading {
-                @include heading-font;
-                font-weight: 700;
-                font-size: 75px;
-                line-height: 75px;
-                margin-bottom: 50px;
-            }
+        }
+        &__title {
+            @include serif-font;
+            font-style: italic;
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: $margin-base;
+        }
+        &__subtitle {
+            @include heading-font;
+            font-weight: 700;
+            font-size: 75px;
+            line-height: 75px;
+            margin-bottom: 50px;
         }
 
         &--small {
-            .intro-text {
+            .today-main-header__content {
                 padding-top: 150px;
                 padding-bottom: 50px;
             }

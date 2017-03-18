@@ -23,6 +23,7 @@
         font-weight: 500;
         border: 0;
         color: $color-meta;
+        margin: $margin-base 0 0;
 
         &:hover,
         &:active,
@@ -65,4 +66,8 @@
             }
         }
     }
+}
+
+p + .today-btn__read-more {
+    margin-top: 0;
 }

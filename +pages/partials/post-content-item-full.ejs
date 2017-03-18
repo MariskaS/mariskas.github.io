@@ -1,10 +1,19 @@
 <div class="today-post__content-item">
-    <div class="today-post__content-item__video">
-        <iframe src="https://www.youtube.com/embed/dzPFAQeF_5A"
-                frameborder="0" allowfullscreen></iframe>
-    </div>
+    <!--<div class="today-post__content-item__video">-->
+        <!--<iframe src="https://www.youtube.com/embed/dzPFAQeF_5A"-->
+                <!--frameborder="0" allowfullscreen></iframe>-->
+    <!--</div>-->
+    <figure class="today-post__content-item__image">
+        <a href="#postModal1" data-toggle="modal">
+            <div class="today-post-image__overlay">
+                <div class="today-post-image__overlay-info"><span>Читать все</span></div>
+            </div>
+            <img src="http://kwoon.tommusdemos.wpengine.com/wp-content/uploads/sites/13/2015/06/Unknown.jpeg"
+                 alt="">
+        </a>
+    </figure>
     <h2 class="today-post__title">
-        <a href="#">Image Post Type</a>
+        <a href="#postModal1" data-toggle="modal">Заголовок статьи</a>
     </h2>
     <%- include('meta.ejs') -%>
     <%- include('txt-with-btn-more.ejs') -%>
