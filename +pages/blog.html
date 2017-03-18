@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs') -%>
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<%- include('partials/nav.ejs') -%>
+
+<!-- Header -->
+<header class="today-main-header today-main-header--small u-color-bg--fixed-yellow">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">БП "Сегодня"</div>
+            <div class="intro-heading">Блог</div>
+            <a href="#services" class="page-scroll btn today-btn--xl">Помочь</a>
+        </div>
+    </div>
+</header>
+
+<!-- Services -->
+<section class="today-post u-color-bg--light-gray">
+    <div class="container">
+        <div class="today-post__nav">
+            <a class="today-post__nav-item" href="news.html">Новости</a>
+            <a class="today-post__nav-item" href="events.html">Мероприятия</a>
+            <a class="today-post__nav-item" href="directory.html">Справочник</a>
+            <a class="today-post__nav-item" href="#">Благодарности</a>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <%- include('partials/post-content-full.ejs') -%>
+            </div>
+            <aside class="col-sm-4">
+                <%- include('partials/post-sidebar.ejs') -%>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<%- include('partials/footer.ejs') -%>
+
+</body>
+
+</html>

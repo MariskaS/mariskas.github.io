@@ -16,6 +16,8 @@ var banner = ['/*!\n',
     ''
 ].join('');
 
+var ejs = require("gulp-ejs")
+
 // Minify compiled CSS
 gulp.task('minify-css', ['scss'], function() {
     return gulp.src('css/config.css')
@@ -91,3 +93,11 @@ gulp.task('scss', function() {
             stream: true
         }))
 });
+
+gulp.task('ejs', function () {
+    return gulp.src("./+pages/**/*.html")
+        .pipe(ejs({
+            msg: "Hello Gulp!"
+        }))
+        .pipe(gulp.dest("./pages"))
+})

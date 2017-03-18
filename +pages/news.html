@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head.ejs') -%>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<%- include('partials/nav.ejs') -%>
+
+<!-- Header -->
+<header class="today-main-header today-main-header--small u-color-bg--fixed-yellow">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">БП "Сегодня"</div>
+            <div class="intro-heading">Новости</div>
+            <a href="#services" class="page-scroll btn today-btn--xl">Помочь</a>
+        </div>
+    </div>
+</header>
+
+<!-- Services -->
+<section class="today-post u-color-bg--light-gray">
+    <div class="container">
+        <div class="today-post__nav">
+            <a class="today-post__nav-item" href="blog.html">Блог</a>
+            <a class="today-post__nav-item" href="events.html">Мероприятия</a>
+            <a class="today-post__nav-item" href="directory.html">Справочник</a>
+            <a class="today-post__nav-item" href="#">Благодарности</a>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <%- include('partials/post-content-full.ejs') -%>
+            </div>
+            <aside class="col-sm-4">
+                <%- include('partials/post-sidebar.ejs') -%>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<%- include('partials/footer.ejs') -%>
+
+<!-- Post Modal 1 -->
+<div class="today-modal-page modal fade"
+     id="postModal1"
+     tabindex="-1"
+     role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <!-- Project Details Go Here -->
+                    <h2> <!--TODO:Generated text-->Image Post Type</h2>
+                    <img class="img-responsive"
+                         src="http://kwoon.tommusdemos.wpengine.com/wp-content/uploads/sites/13/2015/06/Unknown.jpeg"
+                         alt="">
+                    <div class="today-meta">
+                        <span class="today-meta-date"><!--TODO:Generated text-->9 Декабря, 2017</span>
+                        <a href="#" class="today-meta-like">
+                            <i class="fa fa-heart today-meta-icon"></i>&nbsp;<span>0</span>
+                        </a>
+                    </div>
+                    <p>
+                        <!--TODO:Generated text-->
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <button type="button"
+                            class="btn btn-primary today-btn--close"
+                            data-dismiss="modal">Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

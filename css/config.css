@@ -582,6 +582,51 @@ footer {
 /**
  * Font Size
  */
+/***
+ * Example:
+ * <div class="today-meta">
+ *      <span class="today-meta-date">9 Декабря, 2017</span>
+ *      <a href="#" class="today-meta-like">
+ *          <i class="fa fa-heart today-meta-icon"></i>&nbsp;<span>0</span>
+ *       </a>
+ * </div>
+ */
+.today-meta {
+  color: #9a9a9a;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+  .today-meta-like {
+    color: #9a9a9a;
+    font-weight: 500;
+    border: 0; }
+    .today-meta-like:hover, .today-meta-like:focus, .today-meta-like:active {
+      color: #9a9a9a; }
+      .today-meta-like:hover .today__meta-icon, .today-meta-like:focus .today__meta-icon, .today-meta-like:active .today__meta-icon {
+        color: #e72f7a; }
+    .today-meta-like:before {
+      content: "|";
+      padding: 0 10px; }
+
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
 .today-btn--close {
   margin-top: 40px; }
 
@@ -627,6 +672,20 @@ footer {
   .today-btn--xl .badge {
     color: #e72f7a;
     background-color: #ffffff; }
+
+.today-btn__read-more {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: 0;
+  color: #9a9a9a; }
+  .today-btn__read-more:hover, .today-btn__read-more:active, .today-btn__read-more:focus {
+    color: #333333; }
+  .today-btn__read-more::after {
+    content: "→";
+    vertical-align: text-bottom;
+    padding-left: 5px;
+    display: inline-block; }
 
 .today-btn-social__item {
   display: inline-block;
@@ -911,23 +970,6 @@ footer {
       line-height: 1;
       display: inline-block;
       margin-right: 10px; }
-  .today-post__meta {
-    color: #9a9a9a;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 10px; }
-    .today-post__meta-like {
-      color: #9a9a9a;
-      font-weight: 500;
-      border: 0; }
-      .today-post__meta-like:hover, .today-post__meta-like:focus, .today-post__meta-like:active {
-        color: #9a9a9a; }
-        .today-post__meta-like:hover .today-post__meta-icon, .today-post__meta-like:focus .today-post__meta-icon, .today-post__meta-like:active .today-post__meta-icon {
-          color: #e72f7a; }
-      .today-post__meta-like:before {
-        content: "|";
-        padding: 0 10px; }
   .today-post__content-item {
     padding: 0 0 30px;
     margin-bottom: 40px;
@@ -990,19 +1032,6 @@ footer {
     .today-post__content-item__video iframe {
       width: 100%;
       min-height: 400px; }
-    .today-post__content-item__btn-more {
-      display: inline-block;
-      text-transform: uppercase;
-      font-weight: 500;
-      border: 0;
-      color: #9a9a9a; }
-      .today-post__content-item__btn-more:hover, .today-post__content-item__btn-more:active, .today-post__content-item__btn-more:focus {
-        color: #333333; }
-      .today-post__content-item__btn-more::after {
-        content: "→";
-        vertical-align: text-bottom;
-        padding-left: 5px;
-        display: inline-block; }
   .today-post__sidebar__title {
     font-size: 18px;
     margin-top: 0; }

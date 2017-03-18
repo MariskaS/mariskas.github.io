@@ -17,6 +17,27 @@
         padding: 10px 40px;
     }
 
+    &__read-more {
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 500;
+        border: 0;
+        color: $color-meta;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color-font-base;
+        }
+
+        &::after {
+            content: "→";
+            vertical-align: text-bottom;
+            padding-left: 5px;
+            display: inline-block;
+        }
+    }
+
     // Social
     &-social {
         &__item {

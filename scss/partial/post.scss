@@ -2,7 +2,6 @@
 @import "../common/variables";
 
 $color-post-border: #e1e1e1;
-$color-post-meta: #9a9a9a;
 
 .today-post {
     position: relative;
@@ -16,35 +15,6 @@ $color-post-meta: #9a9a9a;
             line-height: 1;
             display: inline-block;
             margin-right: $margin-half;
-        }
-    }
-
-    &__meta {
-        color: $color-post-meta;
-        font-size: $font-size-s;
-        font-weight: 500;
-        text-transform: uppercase;
-        margin-bottom: $margin-half;
-
-        &-like {
-            color: $color-post-meta;
-            font-weight: 500;
-            border: 0;
-
-            &:hover,
-            &:focus,
-            &:active {
-                color: $color-post-meta;
-
-                .today-post__meta-icon {
-                    color: $color-brand;
-                }
-            }
-
-            &:before {
-                content: "|";
-                padding: 0 $padding-half;
-            }
         }
     }
 
@@ -137,27 +107,6 @@ $color-post-meta: #9a9a9a;
                     min-height: 400px;
                 }
             }
-
-            &__btn-more {
-                display: inline-block;
-                text-transform: uppercase;
-                font-weight: 500;
-                border: 0;
-                color: $color-post-meta;
-
-                &:hover,
-                &:active,
-                &:focus {
-                    color: $color-font-base;
-                }
-
-                &::after {
-                    content: "→";
-                    vertical-align: text-bottom;
-                    padding-left: 5px;
-                    display: inline-block;
-                }
-            }
         }
     }
 
@@ -189,7 +138,7 @@ $color-post-meta: #9a9a9a;
 
                 &__meta {
                     margin-left: $margin-treble;
-                    color: $color-post-meta;
+                    color: $color-meta;
                     font-size: $font-size-s;
                     font-weight: 500;
                     text-transform: uppercase;
