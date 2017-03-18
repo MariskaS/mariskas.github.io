@@ -10,7 +10,7 @@ $color-post-meta: #9a9a9a;
 
     &__nav {
         @extend .today-post__title;
-        margin: $margin-base 0;
+        margin: $margin-base 0 $margin-double;
 
         &-item {
             line-height: 1;
@@ -143,12 +143,12 @@ $color-post-meta: #9a9a9a;
                 text-transform: uppercase;
                 font-weight: 500;
                 border: 0;
+                color: $color-post-meta;
 
-                &,
                 &:hover,
                 &:active,
                 &:focus {
-                    color: $color-post-meta;
+                    color: $color-font-base;
                 }
 
                 &::after {
@@ -214,9 +214,7 @@ $color-post-meta: #9a9a9a;
                     min-height: 150px;
                 }
 
-                &__link {
-                    display: inline-block;
-                }
+                &__link { }
             }
         }
 
