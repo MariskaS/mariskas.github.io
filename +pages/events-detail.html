@@ -9,39 +9,40 @@
 <%- include('partials/nav.ejs') -%>
 
 <!-- Header -->
-<header class="today-main-header today-main-header--small u-color-bg-header-inner">
+<header class="today-main-header today-main-header--breadcrumbs u-color-bg-header-inner">
     <div class="container">
         <div class="today-main-header__content">
             <div class="today-main-header__title">БП "Сегодня"</div>
-            <div class="today-main-header__subtitle">Новости</div>
+            <div class="today-main-header__subtitle">
+                <a href="events.html">Мероприятия</a>
+                <span>- Заголовок статьи</span>
+            </div>
             <a href="#services" class="page-scroll btn today-btn--xl">Помочь</a>
         </div>
     </div>
 </header>
 
-<!-- Services -->
-<section class="today-post u-color-bg--light-gray">
+<!-- Directory -->
+<section class="today-post">
     <div class="container">
         <div class="today-post__nav">
+            <a class="today-post__nav-item" href="news.html">Новости</a>
             <a class="today-post__nav-item" href="blog.html">Блог</a>
-            <a class="today-post__nav-item" href="events.html">Мероприятия</a>
             <a class="today-post__nav-item" href="directory.html">Справочник</a>
             <a class="today-post__nav-item" href="#">Благодарности</a>
         </div>
 
         <div class="row">
-            <div class="col-sm-8">
-                <%- include('partials/news-content.ejs') -%>
+            <div class="col-lg-12">
+                <%- include('partials/post-detail.ejs') -%>
             </div>
-            <aside class="col-sm-4">
-                <%- include('partials/post-sidebar.ejs') -%>
-            </aside>
         </div>
     </div>
 </section>
 
 <!-- Footer -->
 <%- include('partials/footer.ejs') -%>
+
 </body>
 
 </html>
