@@ -2,6 +2,8 @@
 @import "../common/mixins.scss";
 
 /***
+ * Meta info (date/like)
+ *
  * Example:
  * <div class="today-meta">
  *      <span class="today-meta-date">9 Декабря, 2017</span>
@@ -17,6 +19,8 @@
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: $margin-half;
+
+    &-date {}
 
     &-like {
         color: $color-meta;

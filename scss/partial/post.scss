@@ -7,17 +7,6 @@ $color-post-border: #e1e1e1;
     position: relative;
     padding-bottom: 60px;
 
-    &__nav {
-        @extend .today-post__title;
-        margin: $margin-base 0 $margin-double;
-
-        &-item {
-            line-height: 1;
-            display: inline-block;
-            margin-right: $margin-half;
-        }
-    }
-
     &__content {
         &-item {
             padding: 0 0 30px;

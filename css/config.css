@@ -354,6 +354,100 @@
 /**
  * Font Size
  */
+.today-thanks {
+  position: relative;
+  padding-bottom: 60px; }
+  @media (min-width: 768px) {
+    .today-thanks .today-timeline [class*='today-timeline__panel'] {
+      width: 41%;
+      padding: 0 20px; }
+    .today-thanks .today-timeline__row {
+      margin-bottom: 100px;
+      min-height: 100px; }
+      .today-thanks .today-timeline__row .today-timeline__panel-heading {
+        float: left;
+        text-align: right; }
+      .today-thanks .today-timeline__row .today-timeline__panel-content {
+        float: right;
+        text-align: left; }
+      .today-thanks .today-timeline__row--inverted .today-timeline__panel-heading {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left; }
+      .today-thanks .today-timeline__row--inverted .today-timeline__panel-content {
+        float: left;
+        padding: 0 20px 20px;
+        text-align: right; }
+      .today-thanks .today-timeline__row:not(:last-child) .today-timeline__image {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px; }
+        .today-thanks .today-timeline__row:not(:last-child) .today-timeline__image .today-timeline__row-text {
+          display: none; }
+        .today-thanks .today-timeline__row:not(:last-child) .today-timeline__image .today-timeline__row-icon {
+          display: block;
+          position: absolute;
+          top: 50%;
+          margin-top: -14px;
+          font-size: 28px;
+          height: 28px;
+          width: 100%; } }
+  @media (min-width: 992px) {
+    .today-thanks .today-timeline [class*='today-timeline__panel'] {
+      width: 41%;
+      padding: 0 20px; }
+    .today-thanks .today-timeline__row {
+      margin-bottom: 100px;
+      min-height: 100px; }
+      .today-thanks .today-timeline__row .today-timeline__panel-heading {
+        float: left;
+        text-align: right; }
+      .today-thanks .today-timeline__row .today-timeline__panel-content {
+        float: right;
+        text-align: left; }
+      .today-thanks .today-timeline__row--inverted .today-timeline__panel-heading {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left; }
+      .today-thanks .today-timeline__row--inverted .today-timeline__panel-content {
+        float: left;
+        padding: 0 20px 20px;
+        text-align: right; }
+      .today-thanks .today-timeline__row:not(:last-child) .today-timeline__image {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px; }
+        .today-thanks .today-timeline__row:not(:last-child) .today-timeline__image .today-timeline__row-text {
+          display: none; }
+        .today-thanks .today-timeline__row:not(:last-child) .today-timeline__image .today-timeline__row-icon {
+          display: block;
+          position: absolute;
+          top: 50%;
+          margin-top: -14px;
+          font-size: 28px;
+          height: 28px;
+          width: 100%; } }
+
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
 ::-moz-selection {
   text-shadow: none;
   color: #ffffff;
@@ -597,6 +691,8 @@ footer {
  * Font Size
  */
 /***
+ * Meta info (date/like)
+ *
  * Example:
  * <div class="today-meta">
  *      <span class="today-meta-date">9 Декабря, 2017</span>
@@ -622,6 +718,40 @@ footer {
     .today-meta-like:before {
       content: "|";
       padding: 0 10px; }
+
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/***
+ * Nav Inner
+ *
+ * Example:
+ *      <div class="today-nav-inner">
+ *          <a class="today-nav-inner__item" href="">...</a>
+ *          <a class="today-nav-inner__item" href="">...</a>
+ *      </div>
+ */
+.today-nav-inner {
+  margin: 20px 0 40px; }
+  .today-nav-inner__item {
+    line-height: 1;
+    display: inline-block;
+    margin-right: 10px; }
 
 /**
  * Breakpoints
@@ -982,12 +1112,6 @@ p + .today-btn__read-more {
 .today-post {
   position: relative;
   padding-bottom: 60px; }
-  .today-post__nav {
-    margin: 20px 0 40px; }
-    .today-post__nav-item {
-      line-height: 1;
-      display: inline-block;
-      margin-right: 10px; }
   .today-post__content-item {
     padding: 0 0 30px;
     margin-bottom: 40px;
@@ -996,7 +1120,7 @@ p + .today-btn__read-more {
       .today-post__content-item:last-child {
         margin-bottom: 0;
         border-bottom-color: transparent; } }
-    .today-post__content-item .today-post__title, .today-post__content-item .today-post__nav {
+    .today-post__content-item .today-post__title, .today-post__content-item .today-nav-inner {
       font-size: 20px;
       line-height: 26px;
       margin: 0 0 10px; }
