@@ -747,6 +747,8 @@ footer {
  *      </div>
  */
 .today-nav-inner {
+  font-size: 20px;
+  line-height: 26px;
   margin: 20px 0 40px; }
   .today-nav-inner__item {
     line-height: 1;
@@ -1120,7 +1122,7 @@ p + .today-btn__read-more {
       .today-post__content-item:last-child {
         margin-bottom: 0;
         border-bottom-color: transparent; } }
-    .today-post__content-item .today-post__title, .today-post__content-item .today-nav-inner {
+    .today-post__content-item .today-post__title {
       font-size: 20px;
       line-height: 26px;
       margin: 0 0 10px; }

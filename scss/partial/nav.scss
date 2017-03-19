@@ -11,7 +11,8 @@
  *      </div>
  */
 .today-nav-inner {
-    @extend .today-post__title;
+    font-size: $font-size-xx;
+    line-height: $line-height-xx;
     margin: $margin-base 0 $margin-double;
 
     &__item {
