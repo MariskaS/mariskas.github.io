@@ -747,8 +747,6 @@ footer {
  *      </div>
  */
 .today-nav-inner {
-  font-size: 20px;
-  line-height: 26px;
   margin: 20px 0 40px; }
   .today-nav-inner__item {
     line-height: 1;
