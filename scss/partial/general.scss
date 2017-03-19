@@ -139,6 +139,12 @@ h1, h2, h3, h4, h5, h6 {
                 text-decoration: none;
             }
         }
+
+        // For mobile
+        @media (max-width: map-get($grid-breakpoints, md)-1) {
+            font-size: 24px !important;
+            line-height: 30px !important;;
+        }
     }
 
     &--small {

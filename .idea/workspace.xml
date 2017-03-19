@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f35d824-3d0f-459a-92a0-c5639a09328b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/thanks.html" afterPath="$PROJECT_DIR$/+pages/thanks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/config.css" afterPath="$PROJECT_DIR$/css/config.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/config.min.css" afterPath="$PROJECT_DIR$/css/config.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/partial/general.scss" afterPath="$PROJECT_DIR$/scss/partial/general.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,75 +26,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="thanks.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/section/thanks.scss">
+      <file leaf-file-name="general.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/partial/general.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+            <state relative-caret-position="1339">
+              <caret line="142" column="21" lean-forward="true" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
               <folding>
-                <element signature="e#147#3952#0" expanded="false" />
-                <element signature="e#313#398#0" expanded="false" />
-                <element signature="e#419#2048#0" expanded="false" />
-                <element signature="e#550#641#0" expanded="false" />
-                <element signature="e#690#781#0" expanded="false" />
-                <element signature="e#811#1273#0" expanded="false" />
-                <element signature="e#1540#1610#0" expanded="false" />
-                <element signature="e#1662#1994#0" expanded="false" />
-                <element signature="e#2200#2285#0" expanded="false" />
-                <element signature="e#2306#3935#0" expanded="false" />
-                <element signature="e#2437#2528#0" expanded="false" />
-                <element signature="e#2577#2668#0" expanded="false" />
-                <element signature="e#2698#3160#0" expanded="false" />
-                <element signature="e#3427#3497#0" expanded="false" />
-                <element signature="e#3549#3881#0" expanded="false" />
+                <element signature="e#656#689#0" expanded="false" />
+                <element signature="e#693#826#0" expanded="false" />
+                <element signature="e#1528#1557#0" expanded="false" />
+                <element signature="e#1744#1897#0" expanded="false" />
+                <element signature="e#2073#2233#0" expanded="false" />
+                <element signature="e#2433#2553#0" expanded="false" />
+                <element signature="e#2574#2841#0" expanded="false" />
+                <element signature="e#2916#3566#0" expanded="false" />
+                <element signature="e#3594#3906#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/partial/nav.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thanks.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/thanks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thanks.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/+pages/thanks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="91" lean-forward="false" selection-start-line="34" selection-start-column="91" selection-end-line="34" selection-end-column="91" />
-              <folding>
-                <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/partial/post.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="45" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -99,8 +49,8 @@
       <file leaf-file-name="timeline.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/partial/timeline.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1322">
-              <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+            <state relative-caret-position="455">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="58" />
               <folding>
                 <element signature="e#2258#3383#0" expanded="false" />
                 <element signature="e#4034#4775#0" expanded="false" />
@@ -172,7 +122,6 @@
         <option value="$PROJECT_DIR$/+pages/post-detail.html" />
         <option value="$PROJECT_DIR$/scss/common/_mixins.scss" />
         <option value="$PROJECT_DIR$/scss/partial/utils.scss" />
-        <option value="$PROJECT_DIR$/scss/partial/general.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/+pages/partials/head.ejs" />
         <option value="$PROJECT_DIR$/+pages/partials/txt-with-btn-more.ejs" />
@@ -202,6 +151,7 @@
         <option value="$PROJECT_DIR$/scss/partial/post.scss" />
         <option value="$PROJECT_DIR$/scss/partial/nav.scss" />
         <option value="$PROJECT_DIR$/+pages/thanks.html" />
+        <option value="$PROJECT_DIR$/scss/partial/general.scss" />
       </list>
     </option>
   </component>
@@ -487,7 +437,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165924000" />
+    <option name="totallyTimeSpent" value="166363000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -723,21 +673,6 @@
     <entry file="file://$PROJECT_DIR$/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/partial/general.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="116" column="33" lean-forward="false" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
-          <folding>
-            <element signature="e#656#689#0" expanded="false" />
-            <element signature="e#693#826#0" expanded="false" />
-            <element signature="e#1528#1557#0" expanded="false" />
-            <element signature="e#1744#1897#0" expanded="false" />
-            <element signature="e#2254#2374#0" expanded="false" />
-            <element signature="e#2737#3387#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/+pages/partials/head.ejs">
@@ -999,22 +934,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/partial/timeline.scss">
+    <entry file="file://$PROJECT_DIR$/pages/thanks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1322">
-          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2258#3383#0" expanded="false" />
-            <element signature="e#4034#4775#0" expanded="false" />
+            <marker date="1489963044239" expanded="true" signature="4499:8631" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="4535:8616" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="4580:8597" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="4634:5379" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="4702:4820" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="4880:5163" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="4947:5047" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="5231:5352" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="5463:6218" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="5531:5653" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="5713:5996" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="5780:5880" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="6064:6191" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="6272:7125" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="6340:6460" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="6520:6803" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="6587:6687" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="6871:7098" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="7209:8150" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="7277:7396" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="7456:7739" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="7523:7623" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="7807:8123" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="8204:8574" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="8264:8547" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="8331:8431" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="8679:9883" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="8707:9873" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="8733:9862" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="8778:8879" ph="..." />
+            <marker date="1489963044239" expanded="false" signature="8830:8836" ph="©" />
+            <marker date="1489963044239" expanded="true" signature="8925:9847" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="8972:9828" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="9029:9255" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="9104:9228" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="9312:9539" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="9387:9512" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="9596:9805" ph="..." />
+            <marker date="1489963044239" expanded="true" signature="9660:9778" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/partial/post.scss">
+    <entry file="file://$PROJECT_DIR$/+pages/thanks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="799">
+          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,25 +1005,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/thanks.html">
+    <entry file="file://$PROJECT_DIR$/scss/partial/post.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-38">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/+pages/thanks.html">
+    <entry file="file://$PROJECT_DIR$/scss/partial/timeline.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="91" lean-forward="false" selection-start-line="34" selection-start-column="91" selection-end-line="34" selection-end-column="91" />
+        <state relative-caret-position="455">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="58" />
           <folding>
-            <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2258#3383#0" expanded="false" />
+            <element signature="e#4034#4775#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/partial/general.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1339">
+          <caret line="142" column="21" lean-forward="true" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
+          <folding>
+            <element signature="e#656#689#0" expanded="false" />
+            <element signature="e#693#826#0" expanded="false" />
+            <element signature="e#1528#1557#0" expanded="false" />
+            <element signature="e#1744#1897#0" expanded="false" />
+            <element signature="e#2073#2233#0" expanded="false" />
+            <element signature="e#2433#2553#0" expanded="false" />
+            <element signature="e#2574#2841#0" expanded="false" />
+            <element signature="e#2916#3566#0" expanded="false" />
+            <element signature="e#3594#3906#0" expanded="false" />
           </folding>
         </state>
       </provider>
