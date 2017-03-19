@@ -39,7 +39,6 @@ body {
 p,
 .today-text {
     @include paragraph-font;
-
 }
 
 p {
@@ -111,6 +110,11 @@ h1, h2, h3, h4, h5, h6 {
     &__content {
         padding-top: $padding-large;
         padding-bottom: 50px;
+    }
+
+    &__title,
+    &__subtitle {
+        text-shadow: 2px 2px 1px #1e170b;
     }
 
     &__title {

@@ -4,13 +4,14 @@
 // Background
 @mixin background-cover {
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 @mixin fixed-bg {
-    background-attachment: fixed !important;
-    background-position: center center;
-    background-repeat: no-repeat;
     @include background-cover;
+    background-attachment: fixed;
 }
 
 // Height & Width size

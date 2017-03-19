@@ -442,6 +442,8 @@ h1, h2, h3, h4, h5, h6 {
   .today-main-header__content {
     padding-top: 100px;
     padding-bottom: 50px; }
+  .today-main-header__title, .today-main-header__subtitle {
+    text-shadow: 2px 2px 1px #1e170b; }
   .today-main-header__title {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
@@ -1145,55 +1147,28 @@ p + .today-btn__read-more {
 .u-color-bg--light-gray {
   background-color: #eeeeee; }
 
-.u-color-bg--fixed-header {
-  background-image: url("../img/bg-header.jpg");
-  background-attachment: scroll;
-  background-attachment: fixed !important;
+.u-color-bg-header-inner {
+  background-image: url("../img/bg-header-inner.jpg");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: scroll;
   color: #ffffff; }
 
-.u-color-bg--fixed-yellow {
-  background-color: #bb8518;
-  background-image: url("../img/bg-header.png");
-  background-attachment: fixed !important;
+.u-color-bg--fixed-header {
+  background-image: url("../img/bg-header.jpg");
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: scroll;
+  background-attachment: fixed;
   color: #ffffff; }
 
 .u-color-bg--fixed-circles {
   background-color: #f1f1f1;
   background-image: url("../img/bg-circles.jpg");
-  background-attachment: fixed !important;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.u-color-bg--fixed-pink {
-  background-color: #e72f7a;
-  background-image: url("../img/bg-pink.png");
-  background-attachment: fixed !important;
-  background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff; }
-
-.u-color-bg--fixed-purple {
-  background-color: #e72f7a;
-  background-image: url("../img/bg-purple.png");
-  background-attachment: fixed !important;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff; }
-
-.u-color-bg--fixed-md {
-  background-color: #e72f7a;
-  background-image: url("../img/bg-md.png");
-  background-attachment: fixed !important;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff; }
+  background-attachment: scroll;
+  background-attachment: fixed; }

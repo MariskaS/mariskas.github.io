@@ -58,17 +58,15 @@
             background-color: $color-gray-lighter;
         }
 
+        &-header-inner {
+            background-image: url('../img/bg-header-inner.jpg');
+            @include background-cover;
+            color: $color-white;
+        }
+
         &--fixed {
             &-header {
                 background-image: url('../img/bg-header.jpg');
-                background-attachment: scroll;
-                @include fixed-bg;
-                color: $color-white;
-            }
-
-            &-yellow {
-                background-color: #bb8518;
-                background-image: url('../img/bg-header.png');
                 @include fixed-bg;
                 color: $color-white;
             }
@@ -77,27 +75,6 @@
                 background-color: $color-brand-gray;
                 background-image: url('../img/bg-circles.jpg');
                 @include fixed-bg;
-            }
-
-            &-pink {
-                background-color: $color-brand-pink;
-                background-image: url('../img/bg-pink.png');
-                @include fixed-bg;
-                color: $color-white;
-            }
-
-            &-purple {
-                background-color: $color-brand-pink;
-                background-image: url('../img/bg-purple.png');
-                @include fixed-bg;
-                color: $color-white;
-            }
-
-            &-md {
-                background-color: $color-brand-pink;
-                background-image: url('../img/bg-md.png');
-                @include fixed-bg;
-                color: $color-white;
             }
         }
     }
