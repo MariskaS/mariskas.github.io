@@ -5,32 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f35d824-3d0f-459a-92a0-c5639a09328b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/+pages/thanks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/partial/nav.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/section/thanks.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/blog-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/blog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/directory-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/directory.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/events-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/news-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/news.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/post-detail.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/blog-detail.html" afterPath="$PROJECT_DIR$/+pages/blog-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/blog.html" afterPath="$PROJECT_DIR$/+pages/blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/directory-detail.html" afterPath="$PROJECT_DIR$/+pages/directory-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/directory.html" afterPath="$PROJECT_DIR$/+pages/directory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/events-detail.html" afterPath="$PROJECT_DIR$/+pages/events-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/events.html" afterPath="$PROJECT_DIR$/+pages/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/news-detail.html" afterPath="$PROJECT_DIR$/+pages/news-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/news.html" afterPath="$PROJECT_DIR$/+pages/news.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/config.css" afterPath="$PROJECT_DIR$/css/config.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/config.min.css" afterPath="$PROJECT_DIR$/css/config.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/config.scss" afterPath="$PROJECT_DIR$/scss/config.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/partial/meta.scss" afterPath="$PROJECT_DIR$/scss/partial/meta.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/partial/post.scss" afterPath="$PROJECT_DIR$/scss/partial/post.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/partial/nav.scss" afterPath="$PROJECT_DIR$/scss/partial/nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/partial/timeline.scss" afterPath="$PROJECT_DIR$/scss/partial/timeline.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/section/thanks.scss" afterPath="$PROJECT_DIR$/scss/section/thanks.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,12 +26,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="thanks.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="thanks.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/section/thanks.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="128" column="1" lean-forward="true" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+            <state relative-caret-position="136">
+              <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
               <folding>
+                <element signature="e#147#3952#0" expanded="false" />
                 <element signature="e#313#398#0" expanded="false" />
                 <element signature="e#419#2048#0" expanded="false" />
                 <element signature="e#550#641#0" expanded="false" />
@@ -73,11 +52,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="nav.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/partial/nav.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="timeline.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/partial/timeline.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="145" selection-end-column="56" />
+            <state relative-caret-position="1390">
+              <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
               <folding>
                 <element signature="e#2258#3383#0" expanded="false" />
                 <element signature="e#4034#4775#0" expanded="false" />
@@ -128,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scss/section/about.scss" />
         <option value="$PROJECT_DIR$/pages/directory-detail.html" />
         <option value="$PROJECT_DIR$/pages/directory.html" />
         <option value="$PROJECT_DIR$/pages/events.html" />
@@ -174,11 +162,12 @@
         <option value="$PROJECT_DIR$/+pages/news-detail.html" />
         <option value="$PROJECT_DIR$/+pages/news.html" />
         <option value="$PROJECT_DIR$/scss/partial/post.scss" />
-        <option value="$PROJECT_DIR$/scss/partial/nav.scss" />
         <option value="$PROJECT_DIR$/scss/partial/meta.scss" />
         <option value="$PROJECT_DIR$/+pages/thanks.html" />
         <option value="$PROJECT_DIR$/scss/config.scss" />
+        <option value="$PROJECT_DIR$/scss/partial/timeline.scss" />
         <option value="$PROJECT_DIR$/scss/section/thanks.scss" />
+        <option value="$PROJECT_DIR$/scss/partial/nav.scss" />
       </list>
     </option>
   </component>
@@ -286,7 +275,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="+pages" />
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mariskas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mariskas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,10 +308,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="+pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -450,7 +453,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165156000" />
+    <option name="totallyTimeSpent" value="165507000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -920,16 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/partial/nav.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="e#289#479#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/+pages/thanks.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -982,8 +975,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/partial/timeline.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="145" selection-end-column="56" />
+        <state relative-caret-position="1390">
+          <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
           <folding>
             <element signature="e#2258#3383#0" expanded="false" />
             <element signature="e#4034#4775#0" expanded="false" />
@@ -993,9 +986,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/section/thanks.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="128" column="1" lean-forward="true" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
+        <state relative-caret-position="136">
+          <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
           <folding>
+            <element signature="e#147#3952#0" expanded="false" />
             <element signature="e#313#398#0" expanded="false" />
             <element signature="e#419#2048#0" expanded="false" />
             <element signature="e#550#641#0" expanded="false" />
@@ -1011,6 +1005,14 @@
             <element signature="e#3427#3497#0" expanded="false" />
             <element signature="e#3549#3881#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/partial/nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
