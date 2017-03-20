@@ -190,18 +190,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Global Footer
-footer {
+.today-main-footer {
     padding: $padding-base 0;
     text-align: center;
-    span.copyright {
+
+    &__copyright {
         line-height: 40px;
         @include heading-font;
         text-transform: none;
     }
-    ul.quicklinks {
-        margin-bottom: 0;
-        line-height: 40px;
-        @include heading-font;
-        text-transform: none;
+
+    &__social {
+        display: inline-block;
+        margin-left: $margin-base;
     }
+
 }

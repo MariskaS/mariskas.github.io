@@ -622,20 +622,17 @@ h1, h2, h3, h4, h5, h6 {
       padding-top: 150px;
       padding-bottom: 50px; } }
 
-footer {
+.today-main-footer {
   padding: 20px 0;
   text-align: center; }
-  footer span.copyright {
+  .today-main-footer__copyright {
     line-height: 40px;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none; }
-  footer ul.quicklinks {
-    margin-bottom: 0;
-    line-height: 40px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    text-transform: none; }
+  .today-main-footer__social {
+    display: inline-block;
+    margin-left: 20px; }
 
 /**
  * Breakpoints
