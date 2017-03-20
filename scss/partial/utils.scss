@@ -21,6 +21,10 @@
 
         &--medium {
             padding: 60px 0;
+
+            &-bottom {
+                padding: 0 0 60px;
+            }
         }
 
         &--small {

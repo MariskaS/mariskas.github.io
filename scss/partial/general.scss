@@ -13,20 +13,9 @@
     background: $color-brand;
 }
 
-img::selection {
-    background: transparent;
-}
-
-img::-moz-selection {
-    background: transparent;
-}
-
-figure {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    margin: 0;
-    padding: 0;
+html,
+body {
+    min-height: 100vh;
 }
 
 body {
@@ -34,6 +23,13 @@ body {
     @include body-font;
     color: $color-font-base;
     webkit-tap-highlight-color: $color-brand;
+    @include flex;
+    @include flex-column;
+
+    .today-main-content {
+        flex: 1;
+        position: relative;
+    }
 }
 
 p,
@@ -85,18 +81,55 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 26px;
 }
 
-// Img
+// Img - Video
 .img-centered {
     margin: 0 auto;
 }
 
-// For desktop
-@media(min-width: map-get($grid-breakpoints, md)) {
-    .today-hr--large {
-        margin-top: $margin-large-x;
-        margin-bottom: $margin-large-x;
+.today-image-inner,
+.today-video-inner {
+    margin-bottom: $margin-base;
+    overflow: hidden;
+}
+
+.today-image-inner {
+    max-height: 500px;
+    max-width: 750px;
+
+    img {
+        display: inline;
+        @include size(100%, auto);
+        max-width: 100%;
+        -webkit-backface-visibility: hidden;
+        transition: all 0.3s ease-out;
+        vertical-align: middle;
     }
 }
+
+.today-video-inner {
+    iframe {
+        width: 100%;
+        min-height: 400px;
+        max-width: 750px;
+    }
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+figure {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
 
 // Global Header
 .today-main-header {
