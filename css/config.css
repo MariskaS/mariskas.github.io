@@ -591,6 +591,10 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: underline; }
       .today-main-header__subtitle a:hover {
         text-decoration: none; }
+    @media (max-width: 767px) {
+      .today-main-header__subtitle {
+        font-size: 35px;
+        line-height: 40px; } }
   .today-main-header--small .today-main-header__content, .today-main-header--breadcrumbs .today-main-header__content {
     padding-top: 75px;
     padding-bottom: 25px; }
