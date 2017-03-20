@@ -632,7 +632,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none; }
   .today-main-footer__social {
     display: inline-block;
-    margin-left: 20px; }
+    margin: 20px; }
 
 /**
  * Breakpoints
