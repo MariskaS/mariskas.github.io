@@ -16,6 +16,9 @@
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -24,6 +27,9 @@
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 /**
  * Navigation Bar
  */
@@ -170,6 +176,9 @@
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -178,6 +187,9 @@
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 .today-about__video {
   width: 100%;
   min-height: 300px; }
@@ -192,6 +204,9 @@
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -200,6 +215,9 @@
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 .today-portfolio__item {
   margin: 0 0 15px;
   right: 0; }
@@ -315,6 +333,9 @@
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -323,6 +344,9 @@
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 .today-team__grid-item {
   text-align: center;
   margin-bottom: 50px; }
@@ -346,6 +370,9 @@
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -354,6 +381,9 @@
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 .today-thanks {
   position: relative;
   padding-bottom: 60px; }
@@ -440,6 +470,9 @@
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -448,6 +481,9 @@
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 ::-moz-selection {
   text-shadow: none;
   color: #ffffff;
@@ -501,7 +537,6 @@ a.active {
   outline: none; }
 
 a:hover,
-a:focus,
 a:active,
 a.active {
   color: #e72f7a;
@@ -556,10 +591,6 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: underline; }
       .today-main-header__subtitle a:hover {
         text-decoration: none; }
-    @media (max-width: 767px) {
-      .today-main-header__subtitle {
-        font-size: 24px !important;
-        line-height: 30px !important; } }
   .today-main-header--small .today-main-header__content, .today-main-header--breadcrumbs .today-main-header__content {
     padding-top: 75px;
     padding-bottom: 25px; }
@@ -616,6 +647,9 @@ footer {
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -624,6 +658,9 @@ footer {
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 .today-title--small {
   margin: 15px 0;
   text-transform: none; }
@@ -653,6 +690,9 @@ footer {
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -661,6 +701,9 @@ footer {
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 ::-webkit-input-placeholder {
   color: #c2c2c2 !important; }
 
@@ -686,6 +729,9 @@ footer {
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -694,6 +740,9 @@ footer {
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 /***
  * Meta info (date/like)
  *
@@ -733,6 +782,9 @@ footer {
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -741,6 +793,9 @@ footer {
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 /***
  * Nav Inner
  *
@@ -767,6 +822,9 @@ footer {
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -775,6 +833,36 @@ footer {
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
+.today-panel-collapse.collapse.in + .today-btn__show {
+  transform: rotate(180deg); }
+
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/**
+ *  Animate
+*/
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/**
+ *  Animate
+*/
 .today-btn--close {
   margin-top: 40px; }
 
@@ -857,6 +945,32 @@ footer {
   .today-btn-social a:hover, .today-btn-social a:focus, .today-btn-social a:active {
     background-color: #e72f7a; }
 
+.today-btn__show {
+  padding: 4px;
+  border: 2px solid #e72f7a;
+  border-radius: 100%;
+  width: 34px;
+  height: 34px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  transition: none; }
+  .today-btn__show-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: #e72f7a;
+    margin: -10px 0 0 -7px;
+    width: 14px;
+    height: 20px;
+    transition: none; }
+  .today-btn__show:hover, .today-btn__show:active {
+    background-color: #e72f7a; }
+    .today-btn__show:hover .today-btn__show-icon, .today-btn__show:active .today-btn__show-icon {
+      color: #ffffff; }
+
 p + .today-btn__read-more {
   margin-top: 0; }
 
@@ -870,6 +984,9 @@ p + .today-btn__read-more {
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -878,6 +995,9 @@ p + .today-btn__read-more {
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 .today-timeline {
   position: relative; }
   .today-timeline:before {
@@ -889,6 +1009,8 @@ p + .today-btn__read-more {
     background-color: #f1f1f1;
     left: 40px;
     margin-left: -1.5px; }
+  .today-timeline ul {
+    padding: 0; }
   .today-timeline__row {
     margin-bottom: 50px;
     position: relative;
@@ -1022,6 +1144,9 @@ p + .today-btn__read-more {
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -1030,6 +1155,9 @@ p + .today-btn__read-more {
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 .today-modal-page .modal-dialog {
   margin: 0;
   height: 100%;
@@ -1105,6 +1233,9 @@ p + .today-btn__read-more {
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -1113,6 +1244,9 @@ p + .today-btn__read-more {
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 .today-post {
   position: relative;
   padding-bottom: 60px; }
@@ -1233,6 +1367,9 @@ p + .today-btn__read-more {
  * Font Size
  */
 /**
+ *  Animate
+*/
+/**
  * Breakpoints
  */
 /**
@@ -1241,6 +1378,9 @@ p + .today-btn__read-more {
 /**
  * Font Size
  */
+/**
+ *  Animate
+*/
 .u-decoration--no {
   text-decoration: none;
   border: 0; }

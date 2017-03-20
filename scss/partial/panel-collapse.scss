@@ -1,0 +1,10 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+.today-panel-collapse {
+
+    // Show More || Less
+    &.collapse.in + .today-btn__show {
+        transform: rotate(180deg);
+    }
+}

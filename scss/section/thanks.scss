@@ -5,8 +5,8 @@
     position: relative;
     padding-bottom: 60px;
 
+    // Timeline - override styles from timline.scss
     .today-timeline {
-
         // For desktop
         @media (min-width: map-get($grid-breakpoints, md)) {
             // Panel Left / Right
@@ -123,6 +123,5 @@
                 }
             }
         }
-
     }
 }

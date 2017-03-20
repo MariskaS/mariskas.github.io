@@ -1,7 +1,6 @@
 @import "../common/mixins";
 @import "../common/variables";
 
-// Social Buttons
 .today-btn {
     &--close {
         margin-top: $margin-double;
@@ -63,6 +62,39 @@
             &:focus,
             &:active {
                 background-color: $color-brand;
+            }
+        }
+    }
+
+    // Show More || Less
+    &__show {
+        padding: 4px;
+        border: 2px solid $color-brand;
+        border-radius: 100%;
+        @include size(34px, 34px);
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        transition: none;
+
+        &-icon {
+            display: block;;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: $font-size-xx;
+            color: $color-brand;
+            margin: -10px 0 0 -7px;
+            @include size(14px, 20px);
+            transition: none;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $color-brand;
+
+            .today-btn__show-icon {
+                color: $color-white;
             }
         }
     }
