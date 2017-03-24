@@ -1,0 +1,45 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+/***
+ * iconbox
+ *
+ * Example:
+ * <a href="" class="today-iconbox-link">
+ *      <span class="fa-stack fa-4x today-iconbox-icon">
+ *          <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
+ *          <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+ *      </span>
+ *      <h4>...</h4>
+ * </a>
+ */
+
+.today-iconbox {
+    &-link {
+        text-decoration: none;
+        border-bottom: 0;
+
+        &:hover {
+            .today-iconbox-icon:after {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+
+    &-icon {
+        &:after {
+            display: block;
+            content: '';
+            padding: 5px;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px $color-brand;
+            opacity: 0;
+            transform: scale(0.8);
+            -webkit-transition: opacity 0.3s;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+    }
+}

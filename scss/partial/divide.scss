@@ -1,0 +1,58 @@
+@import "../common/mixins";
+@import "../common/variables";
+
+/***
+ * iconbox
+ *
+ * Example:
+ * <div class="today-hr">
+ *      <span class="today-hr-line">
+ *          <i class="today-hr-icon fa fa-heart"></i>
+ *      </span>
+ * </div>
+ */
+
+.today-hr {
+    margin: 2% auto;
+    position: relative;
+    font-size: 0;
+    text-align: center;
+    @include size(30%,24px);
+    padding: 2px 0;
+    overflow: hidden;
+    clear: both;
+
+    &-line {
+        &:before,
+        &:after {
+            display: inline-block;
+            content: "";
+            height: 1px;
+            width: 50%;
+            margin-top: 9px;
+            vertical-align: top;
+            position: relative;
+            background-color: $color-divide;
+        }
+
+        &:before {
+            left: -13px;
+            margin-left: -50%;
+        }
+
+        &:after {
+            left: 13px;
+            margin-right: -50%;
+        }
+    }
+
+    &-icon {
+        font-size: 16px;
+        line-height: 20px;
+        @include size(20px,20px);
+        vertical-align: top;
+        text-align: center;
+        color: $color-divide;
+    }
+
+}

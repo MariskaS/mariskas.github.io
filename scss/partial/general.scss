@@ -59,6 +59,7 @@ a.active {
 
 a:hover,
 a:active,
+a:focus,
 a.active {
     color: $color-brand;
     border-bottom-color: $color-brand;

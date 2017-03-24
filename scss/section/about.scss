@@ -2,8 +2,22 @@
 @import "../common/variables";
 
 .today-about {
+    position: relative;
+
    &__video {
        width: 100%;
        min-height: 300px;
    }
+
+    .today-nav-inner {
+        position: absolute;
+        top: 0;
+    }
+
+    // For desktop
+    @media (min-width: map-get($grid-breakpoints, md)-1) {
+        &__video {
+            min-height: 500px;
+        }
+    }
 }

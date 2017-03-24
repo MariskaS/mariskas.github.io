@@ -190,9 +190,17 @@
 /**
  *  Animate
 */
-.today-about__video {
-  width: 100%;
-  min-height: 300px; }
+.today-about {
+  position: relative; }
+  .today-about__video {
+    width: 100%;
+    min-height: 300px; }
+  .today-about .today-nav-inner {
+    position: absolute;
+    top: 0; }
+  @media (min-width: 767px) {
+    .today-about__video {
+      min-height: 500px; } }
 
 /**
  * Breakpoints
@@ -537,6 +545,7 @@ a.active {
 
 a:hover,
 a:active,
+a:focus,
 a.active {
   color: #e72f7a;
   border-bottom-color: #e72f7a; }
@@ -1003,6 +1012,130 @@ figure {
 
 p + .today-btn__read-more {
   margin-top: 0; }
+
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/**
+ *  Animate
+*/
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/**
+ *  Animate
+*/
+/***
+ * iconbox
+ *
+ * Example:
+ * <a href="" class="today-iconbox-link">
+ *      <span class="fa-stack fa-4x today-iconbox-icon">
+ *          <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
+ *          <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+ *      </span>
+ *      <h4>...</h4>
+ * </a>
+ */
+.today-iconbox-link {
+  text-decoration: none;
+  border-bottom: 0; }
+  .today-iconbox-link:hover .today-iconbox-icon:after {
+    opacity: 1;
+    transform: scale(1); }
+
+.today-iconbox-icon:after {
+  display: block;
+  content: '';
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #e72f7a;
+  opacity: 0;
+  transform: scale(0.8);
+  -webkit-transition: opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s; }
+
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/**
+ *  Animate
+*/
+/**
+ * Breakpoints
+ */
+/**
+ * Padding & Margin
+ */
+/**
+ * Font Size
+ */
+/**
+ *  Animate
+*/
+/***
+ * iconbox
+ *
+ * Example:
+ * <div class="today-hr">
+ *      <span class="today-hr-line">
+ *          <i class="today-hr-icon fa fa-heart"></i>
+ *      </span>
+ * </div>
+ */
+.today-hr {
+  margin: 2% auto;
+  position: relative;
+  font-size: 0;
+  text-align: center;
+  width: 30%;
+  height: 24px;
+  padding: 2px 0;
+  overflow: hidden;
+  clear: both; }
+  .today-hr-line:before, .today-hr-line:after {
+    display: inline-block;
+    content: "";
+    height: 1px;
+    width: 50%;
+    margin-top: 9px;
+    vertical-align: top;
+    position: relative;
+    background-color: #e8e8e8; }
+  .today-hr-line:before {
+    left: -13px;
+    margin-left: -50%; }
+  .today-hr-line:after {
+    left: 13px;
+    margin-right: -50%; }
+  .today-hr-icon {
+    font-size: 16px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    text-align: center;
+    color: #e8e8e8; }
 
 /**
  * Breakpoints

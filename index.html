@@ -11,7 +11,7 @@
 
     <title>Сегодня</title>
 
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico"/>
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
@@ -99,9 +99,21 @@
 <!-- About -->
 <section class="u-padding__main-vert--big today-about" id="about">
     <div class="container">
+        <div class="today-nav-inner">
+            <a class="today-nav-inner__item" href="pages/news.html">Новости</a>
+            <a class="today-nav-inner__item" href="pages/events.html">Мероприятия</a>
+            <a class="today-nav-inner__item" href="pages/blog.html">Блог</a>
+            <a class="today-nav-inner__item" href="pages/directory.html">Справочник</a>
+            <a class="today-nav-inner__item" href="pages/thanks.html">Благодарности</a>
+        </div>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="today-title--section">О нас</h2>
+                <div class="today-hr">
+                   <span class="today-hr-line">
+                        <i class="today-hr-icon fa fa-heart"></i>
+                    </span>
+                </div>
                 <h3 class="today-subtitle--section">
                     Программа &laquo;СЕГОДНЯ&raquo; осуществляет благотворительную помощь детям с&nbsp;тяжелыми
                     заболеваниями,
@@ -113,64 +125,59 @@
                     &laquo;Праздник СЕГОДНЯ&raquo; на&nbsp;территории г.Санкт-Петербург.
                 </h3>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5 text-right">
-                <h4 class="u-margin__top-0 today-title--small">Мы ведем работу по следующим направлениям</h4>
-                <p>
-                    <a href="#programModal1"
-                       class="today-link-modal"
-                       data-toggle="modal">«Реабилитация»</a><br/>
-                    <a href="#programModal2"
-                       class="today-link-modal"
-                       data-toggle="modal">«Праздник СЕГОДНЯ»</a><br/>
-                    <a href="#programModal3"
-                       class="today-link-modal"
-                       data-toggle="modal">Психологическая поддержка (в разработке)</a>
-                </p>
-            </div>
-            <div class="col-md-7">
+            <div class="col-lg-12">
                 <iframe class="today-about__video"
                         src="//www.youtube.com/embed/jHM66xYeHxI"
                         frameborder="0"
                         allowfullscreen></iframe>
-
             </div>
         </div>
     </div>
 </section>
 
-<section class="u-padding__main-vert--small u-color-bg--light-gray">
-    <div class="container">
-        <div class="row text-center">
+<!-- What we do? -->
+<section class="u-padding__main-vert--big u-color-bg--light-gray" id="whatWeDo">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <h2 class="today-title--section">Что мы делаем?</h2>
+                <h3 class="today-subtitle--section">
+                    Мы ведем работу по следующим направлениям
+                </h3>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-4">
-                <a href="pages/news.html"
-                   class="u-decoration--no">
-                                        <span class="fa-stack fa-4x">
-                                            <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
-                                            <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
-                                        </span>
-                    <h4 class="today-title--small">Новости</h4>
+                <a href="#programModal1"
+                   data-toggle="modal"
+                   class="today-iconbox-link">
+                    <span class="fa-stack fa-4x today-iconbox-icon">
+                        <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
+                        <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="today-title--small">Реабилитация</h4>
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="pages/events.html"
-                   class="u-decoration--no">
-                                        <span class="fa-stack fa-4x">
-                                            <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
-                                            <i class="fa fa-child fa-stack-1x fa-inverse"></i>
-                                        </span>
-                    <h4 class="today-title--small">Мероприятия</h4>
+                <a href="#programModal2"
+                   data-toggle="modal"
+                   class="today-iconbox-link">
+                    <span class="fa-stack fa-4x today-iconbox-icon">
+                        <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
+                        <i class="fa fa-child fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="today-title--small">Праздник СЕГОДНЯ</h4>
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="pages/blog.html"
-                   class="u-decoration--no">
-                                        <span class="fa-stack fa-4x">
-                                            <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
-                                            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                                        </span>
-                    <h4 class="today-title--small">Блог</h4>
+                <a href="#programModal3"
+                   data-toggle="modal"
+                   class="today-iconbox-link">
+                    <span class="fa-stack fa-4x today-iconbox-icon">
+                        <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
+                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="today-title--small">Психологическая поддержка</h4>
                 </a>
             </div>
         </div>
@@ -184,7 +191,7 @@
             <div class="col-lg-12 text-center">
                 <h2 class="today-title--section">Наша История</h2>
                 <h3 class="today-subtitle--section">
-                    Значимые даты из исории БП «Сегодня» ...
+                    Значимые даты из исории БП «Сегодня»
                 </h3>
             </div>
         </div>
@@ -210,7 +217,8 @@
                         <div class="today-timeline__panel-heading">
                             <div class="today-timeline__title">Январь 2017 год</div>
                             <div class="today-timeline__subtitle">
-                                Новый год в ресторане <a href="https://vk.com/twiggyrestaurant" target="_blank">Twiggy</a>
+                                Новый год в ресторане <a href="https://vk.com/twiggyrestaurant"
+                                                         target="_blank">Twiggy</a>
                             </div>
                         </div>
                         <div class="today-timeline__image">
@@ -237,7 +245,7 @@
                         <div class="today-timeline__panel-heading">
                             <div class="today-timeline__title">Сентябрь 2016 год</div>
                             <div class="today-timeline__subtitle">
-                                Сеть семейных  фитнес клубов
+                                Сеть семейных фитнес клубов
                                 <a href="http://www.fitness-family.ru/" target="_blank">Fitness Family</a>
                                 стали партнерами программы
                             </div>
@@ -246,7 +254,7 @@
                             <img class="img-circle img-responsive" src="img/about/5.jpg" alt="">
                         </div>
                         <div class="today-timeline__panel-content">
-                            с сентября 2016 года сеть семейных  фитнес клубов
+                            с сентября 2016 года сеть семейных фитнес клубов
                             <a href="http://www.fitness-family.ru/" target="_blank">Fitness Family</a>
                             стали партнерами программы. На базе клуба проходят занятия гидрореабилитации для детей
                             с нарушениями опорно-двигательного аппарата, в т.ч. хрустальных детей.
@@ -285,7 +293,8 @@
                             24 октября 2015 года состоялась благотворительная акция фонда «СЕГОДНЯ» в ТРЦ «Питерлэнд».
                             Было много интересного: завораживающее флаг-шоу от команды «Жизнь без страха»,
                             а также показ мод от детского агентства EGOCODE. ANGEL KIDS.Моdel Agency,
-                            выступление творческих коллективов, различные мастерклассы, розыгрыши призов, праздничное представление.
+                            выступление творческих коллективов, различные мастерклассы, розыгрыши призов, праздничное
+                            представление.
                         </div>
                     </div>
                     <div class="today-timeline__row">
@@ -300,7 +309,8 @@
                         </div>
                         <div class="today-timeline__panel-content">
                             «Волшебный день» в музее г.СПб
-                            <a href="http://xn----8sbfkdgbodpn8c6a.xn--p1ai/" target="_blank">«Музей варежки» </a> - 2014-2016гг
+                            <a href="http://xn----8sbfkdgbodpn8c6a.xn--p1ai/" target="_blank">«Музей варежки» </a> -
+                            2014-2016гг
                             организовывали праздники для “хрустальных детей”
                         </div>
                     </div>
@@ -318,7 +328,8 @@
                             07 сентября 2014 года с 14.00 до 18.00 в Петровском парке
                             г. Кронштадта прошел семейный благотворительный праздник «Волшебный день».
                             Организатор праздника- благотворительный фонд «Сегодня».<br>
-                            <a href="http://www.fontanka.ru/2014/09/15/007/" target="_blank">Читайте больше в газете «Фонтанка» </a>
+                            <a href="http://www.fontanka.ru/2014/09/15/007/" target="_blank">Читайте больше в газете
+                                «Фонтанка» </a>
                         </div>
                     </div>
                     <div class="today-timeline__row">
@@ -333,9 +344,11 @@
                             <img class="img-circle img-responsive" src="img/about/10.jpg" alt="">
                         </div>
                         <div class="today-timeline__panel-content">
-                            Был закуплен легочный клапаносодержащий кондуит Gontegra, необходимый для коррекции врожденного порока сердца у 4-х месячной девочки.
+                            Был закуплен легочный клапаносодержащий кондуит Gontegra, необходимый для коррекции
+                            врожденного порока сердца у 4-х месячной девочки.
                             Были приглашены: кардиохирург, заслуженный врач Украины,
-                            директор Научно-практического центра детской кардиологии и кардиохирургии Министерства здравоохранения Украины Емец Илья Николаевич и профессор,
+                            директор Научно-практического центра детской кардиологии и кардиохирургии Министерства
+                            здравоохранения Украины Емец Илья Николаевич и профессор,
                             д.м.н. почётный доктор, кардиохирург Пауль Роберт Фогт из Цюриха
                         </div>
                     </div>
@@ -401,9 +414,9 @@
         <div class="row text-center">
             <div class="col-md-4">
                 <a href="#"
-                   class="u-decoration--no"
+                   class="today-iconbox-link"
                    data-toggle="modal" data-target="#helpModal1">
-                    <span class="fa-stack fa-4x">
+                    <span class="fa-stack fa-4x today-iconbox-icon">
                         <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
                         <i class="fa fa-rub fa-stack-1x fa-inverse"></i>
                     </span>
@@ -416,9 +429,9 @@
             </div>
             <div class="col-md-4">
                 <a href="#"
-                   class="u-decoration--no"
+                   class="today-iconbox-link"
                    data-toggle="modal" data-target="#helpModal2">
-                      <span class="fa-stack fa-4x"
+                      <span class="fa-stack fa-4x today-iconbox-icon"
                             data-toggle="modal" data-target="#helpModal2">
                         <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
                         <i class="fa fa-users fa-stack-1x fa-inverse"></i>
@@ -431,9 +444,9 @@
             </div>
             <div class="col-md-4">
                 <a href="#"
-                   class="u-decoration--no"
+                   class="today-iconbox-link"
                    data-toggle="modal" data-target="#helpModal3">
-                    <span class="fa-stack fa-4x"
+                    <span class="fa-stack fa-4x today-iconbox-icon"
                           data-toggle="modal" data-target="#helpModal3">
                         <i class="fa fa-circle fa-stack-2x u-color--primary"></i>
                         <i class="fa fa-life-ring fa-stack-1x fa-inverse"></i>
