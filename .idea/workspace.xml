@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f35d824-3d0f-459a-92a0-c5639a09328b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/+pages/partials/detail-content.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/blog-detail.html" afterPath="$PROJECT_DIR$/+pages/blog-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/directory-detail.html" afterPath="$PROJECT_DIR$/+pages/directory-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/events-detail.html" afterPath="$PROJECT_DIR$/+pages/events-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/news-detail.html" afterPath="$PROJECT_DIR$/+pages/news-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog-detail.html" afterPath="$PROJECT_DIR$/pages/blog-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/directory-detail.html" afterPath="$PROJECT_DIR$/pages/directory-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/events-detail.html" afterPath="$PROJECT_DIR$/pages/events-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/news-detail.html" afterPath="$PROJECT_DIR$/pages/news-detail.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="433" column="70" lean-forward="true" selection-start-line="433" selection-start-column="70" selection-end-line="433" selection-end-column="70" />
+            <state relative-caret-position="579">
+              <caret line="177" column="45" lean-forward="false" selection-start-line="177" selection-start-column="45" selection-end-line="177" selection-end-column="45" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -45,7 +35,9 @@
                 <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#6;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -71,7 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tim</find>
       <find>Акция “Нужный подарок” в Новый 2017 год</find>
       <find>fit</find>
       <find>еже</find>
@@ -101,6 +92,7 @@
       <find>page-top</find>
       <find>class=&quot;today-text&quot;</find>
       <find>Вы можете оплатить заняти</find>
+      <find>реаб</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -431,12 +423,12 @@
       <workItem from="1490176583837" duration="335000" />
       <workItem from="1490345788247" duration="2667000" />
       <workItem from="1490348826726" duration="1735000" />
-      <workItem from="1490350683225" duration="2943000" />
+      <workItem from="1490350683225" duration="3215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190143000" />
+    <option name="totallyTimeSpent" value="190415000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -857,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="433" column="70" lean-forward="true" selection-start-line="433" selection-start-column="70" selection-end-line="433" selection-end-column="70" />
+        <state relative-caret-position="579">
+          <caret line="177" column="45" lean-forward="false" selection-start-line="177" selection-start-column="45" selection-end-line="177" selection-end-column="45" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -866,7 +858,9 @@
             <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#div#0;n#div#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#6;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
