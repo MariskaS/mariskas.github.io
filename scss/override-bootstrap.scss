@@ -1,5 +1,6 @@
 @import "common/variables";
 @import "common/mixins.scss";
+
 /**
  * Navigation Bar
  */
@@ -13,7 +14,7 @@
         &:focus,
         &:active,
         &.active {
-            color: darken($color-brand, 10%);
+            color: $color-brand;
         }
     }
     .navbar-collapse {
@@ -25,6 +26,10 @@
         @include heading-font;
         color: $color-white;
         font-size: 12px;
+        margin: 0;
+        border-radius: 0;
+        @include size(50px, 50px);
+
         &:hover,
         &:focus {
             background-color: $color-brand;
@@ -55,7 +60,7 @@
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus {
         color: $color-white;
-        background-color: darken($color-brand, 10%);
+        background-color: $color-brand;
     }
 
     // For desktop
@@ -75,13 +80,13 @@
                 transition: all 0.3s;
             }
             .navbar-nav > .active > a {
-                border-radius: 3px;
+                border-radius: 0;
             }
 
             // Navbar Change on Scroll
             &.affix {
                 background-color: $color-gray-darker;
-                padding: 10px 0;
+                padding: 0;
                 .navbar-brand {
                     font-size: 1.5em;
                 }
@@ -93,33 +98,91 @@
 /**
  * Header
  */
-.today-main-header {
-    &__brand {
-        padding-top: 0;
-        padding-bottom: 0;
+
+.today-main-navbar {
+    &__logo {
+        &-brand {
+            text-decoration: none;
+            border: 0;
+        }
+        &-toggle {
+            font-size: 21px !important;
+            padding: 2px 10px;
+        }
+        &-img {
+            height: 40px;
+        }
     }
 
-    &__toggle {
-        font-size: 21px !important;
-        padding: 2px 10px;
-    }
+    // For desktop
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        padding: 0;
 
+        &__logo {
+            &-brand {
+                padding-top: 0;
+                padding-bottom: 0;
+                position: absolute;
+                top: 50%;
+                margin-top: -20px;
+            }
+        }
+
+        &__nav {
+            padding: 0;
+
+            &-item {
+                position: relative;
+
+                &:hover .today-main-navbar__nav-link:before {
+                    height: 100%;
+                }
+            }
+
+            &-link {
+                overflow: hidden;
+
+                &:before {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 0;
+                    -webkit-transition: height 0.3s;
+                    transition: height 0.3s;
+                    background-color: $color-brand;
+                }
+
+                span {
+                    position: relative;
+                    color: $color-white;
+                    z-index: 1;
+                }
+            }
+        }
+    }
     // For mobile
     @media (max-width: map-get($grid-breakpoints, lg)-1) {
         &__logo {
-            max-width: 150px;
-            margin-top: 10px;
+            &-brand {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            &-toggle {
+                font-size: 21px !important;
+                padding: 2px 10px;
+            }
+            &-img {
+                height: 50px;
+                padding: 10px 0;
+            }
         }
 
         &__nav {
             &.navbar-collapse {
                 border-color: $color-brand;
-            }
-
-            .nav>li>a {
-                padding: 6px 7px;
-                font-size: 12px;
-                margin-top: 10px;
             }
         }
     }
