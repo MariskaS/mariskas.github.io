@@ -98,6 +98,90 @@
             }
         }
     }
+
+    // Fab - circle btn
+    &-fab {
+        font-size: $font-size-x;
+        color: $color-white;
+        background: $color-brand;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        align-items: center;
+        text-align: center;
+        user-select: none;
+        outline: none;
+        border: 0;
+        padding: 0 6px;
+        margin: 6px 8px;
+        text-decoration: none;
+        overflow: hidden;
+        line-height: 56px;
+        min-width: 0;
+        width: 56px;
+        height: 56px;
+        vertical-align: middle;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+        border-radius: 50%;
+        background-clip: padding-box;
+        transition: all .3s cubic-bezier(.55, 0, .55, .2);
+        z-index: 20;
+
+        &:hover {
+            background: darken($color-brand, 20%);
+        }
+
+        // Size
+        &--small {
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+        }
+
+        // Colors
+        &--facebook {
+            background: $color-facebook;
+            &:hover {
+                background: darken($color-facebook, 15%);
+            }
+        }
+
+        &--instagram {
+            background: $color-brand $color-instagram;
+            &:hover {
+                background: darken($color-brand, 15%);
+            }
+        }
+
+        &--vk {
+            background: $color-vk;
+            &:hover {
+                background: darken($color-vk, 15%);
+            }
+        }
+
+        &--google-plus {
+            background: $color-google-plus;
+            &:hover {
+                background: darken($color-google-plus, 15%);
+            }
+        }
+
+        &--odnoklassniki {
+            background: $color-odnoklassniki;
+            &:hover {
+                background: darken($color-odnoklassniki, 15%);
+            }
+        }
+
+        &--twitter {
+            background: $color-twitter;
+            &:hover {
+                background: darken($color-twitter, 15%);
+            }
+        }
+
+    }
 }
 
 p + .today-btn__read-more {

@@ -6,12 +6,18 @@
 
 @mixin flex-row {
     @include flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
     flex-direction: row;
     align-items: stretch;
 }
 
 @mixin flex-column {
     @include flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
     flex-direction: column;
 }
 
@@ -30,6 +36,8 @@
 }
 
 @mixin flex-center-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
     align-items: center;
     align-content: center;
     max-width: 100%;

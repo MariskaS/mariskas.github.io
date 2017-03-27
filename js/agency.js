@@ -30,4 +30,15 @@
         }
     })
 
+    // Open Shared buttons
+    $('.jsShare .jsShareTrigger').bind('click', function(event) {
+        event.preventDefault();
+        var share = $('.jsShare');
+        if (share.hasClass('is-open')) {
+            share.removeClass('is-open')
+        } else {
+            $('.jsShare').addClass('is-open');
+        }
+    });
+
 })(jQuery); // End of use strict
