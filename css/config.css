@@ -1105,7 +1105,7 @@ figure {
   transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
   z-index: 20; }
   .today-btn-fab:hover {
-    background: #9e124b; }
+    background: #b51556; }
   .today-btn-fab--small {
     line-height: 40px;
     width: 40px;
@@ -1462,8 +1462,8 @@ p + .today-btn__read-more {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10px;
+  right: 10px;
   z-index: 20; }
   .today-share__trigger {
     -webkit-order: 2;
