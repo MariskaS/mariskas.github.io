@@ -40,41 +40,57 @@
 <nav id="mainNav" class="today-main-navbar navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="today-main-header navbar-header page-scroll">
+        <div class="today-main-navbar__logo navbar-header page-scroll">
             <button type="button"
-                    class="today-main-header__toggle navbar-toggle"
+                    class="today-main-navbar__logo-toggle navbar-toggle"
                     data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
             </button>
-            <a class="today-main-header__brand navbar-brand page-scroll"
+            <a class="today-main-navbar__logo-brand navbar-brand page-scroll"
                href="../index.html">
                 <img src="../img/logos/logo-today.png"
-                     class="today-main-header__logo img-responsive"
+                     class="today-main-navbar__logo-img img-responsive"
                      alt="БП Сегодня">
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="today-main-header__nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="today-main-navbar__nav collapse navbar-collapse"
+             id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="../index.html#about">О нас</a>
+                <li class="today-main-navbar__nav-item">
+                    <a class="page-scroll today-main-navbar__nav-link"
+                       href="../index.html#about">
+                        <span>О нас</span>
+                    </a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="../index.html#portfolio">Наши Подопечные</a>
+                <li class="today-main-navbar__nav-item">
+                    <a class="page-scroll today-main-navbar__nav-link"
+                       href="../index.html#portfolio">
+                        <span>Наши Подопечные</span>
+                    </a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="../index.html#services">Как Помочь?</a>
+                <li class="today-main-navbar__nav-item">
+                    <a class="page-scroll today-main-navbar__nav-link"
+                       href="../index.html#services">
+                        <span>Как Помочь?</span>
+                    </a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="../index.html#team">Наша команда</a>
+                <li class="today-main-navbar__nav-item">
+                    <a class="page-scroll today-main-navbar__nav-link"
+                       href="../index.html#team">
+                        <span>Наша команда</span>
+                    </a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="../index.html#contact">Контакты</a>
+                <li class="today-main-navbar__nav-item">
+                    <a class="page-scroll today-main-navbar__nav-link"
+                       href="../index.html#contact">
+                        <span>Контакты</span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -82,6 +98,7 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+
 <!-- Header -->
 <header class="today-main-header today-main-header--small u-color-bg-header-inner">
     <div class="container">
