@@ -1,6 +1,8 @@
 @import "../common/mixins";
 @import "../common/variables";
 
+$color-odd-li: #f1f1f1;
+
 .today-modal {
     &-page {
         .modal-dialog {
@@ -30,12 +32,22 @@
                 font-style: italic;
                 font-size: 16px;
             }
-            ul.list-inline {
-                margin-bottom: 30px;
-                margin-top: 0;
-            }
+
             img {
                 margin-bottom: 30px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+
+                li {
+                    padding: $padding-half $padding-base;
+
+                    &:nth-child(odd) {
+                        background-color: $color-odd-li;
+                    }
+                }
             }
         }
         .close-modal {

@@ -1544,11 +1544,15 @@ p + .today-btn__read-more {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px; }
-  .today-modal-page .modal-content ul.list-inline {
-    margin-bottom: 30px;
-    margin-top: 0; }
   .today-modal-page .modal-content img {
     margin-bottom: 30px; }
+  .today-modal-page .modal-content ul {
+    list-style-type: none;
+    padding: 0; }
+    .today-modal-page .modal-content ul li {
+      padding: 10px 20px; }
+      .today-modal-page .modal-content ul li:nth-child(odd) {
+        background-color: #f1f1f1; }
 
 .today-modal-page .close-modal {
   position: absolute;
