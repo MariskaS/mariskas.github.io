@@ -367,8 +367,12 @@
       height: auto; }
     .today-contact .form-group textarea.form-control {
       height: 236px; }
+    .today-contact .form-group ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
   .today-contact .form-control:focus {
-    border-color: #e72f7a;
+    border-color: #e74c3c;
     box-shadow: none; }
   .today-contact ::-webkit-input-placeholder {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1768,13 +1772,13 @@ p + .today-btn__read-more {
   margin-top: 0; }
 
 .u-color--danger {
-  color: #e74c3c; }
+  color: #e74c3c !important; }
 
 .u-color--grey-light {
-  color: #777777; }
+  color: #777777 !important; }
 
 .u-color--primary {
-  color: #e72f7a; }
+  color: #e72f7a !important; }
 
 .u-color-bg--light-gray {
   background-color: #eeeeee; }

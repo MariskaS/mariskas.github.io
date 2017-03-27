@@ -27,9 +27,15 @@
         textarea.form-control {
             height: 236px;
         }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
     }
     .form-control:focus {
-        border-color: $color-brand;
+        border-color: $color-danger;
         box-shadow: none;
     }
     ::-webkit-input-placeholder {

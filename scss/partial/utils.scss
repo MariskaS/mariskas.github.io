@@ -46,15 +46,15 @@
 // Color
 .u-color {
     &--danger {
-        color: $color-danger;
+        color: $color-danger !important;
     }
 
     &--grey-light {
-        color: $color-gray-light;
+        color: $color-gray-light !important;
     }
 
     &--primary {
-        color: $color-brand;
+        color: $color-brand !important;
     }
 
     &-bg {
