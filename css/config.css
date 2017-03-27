@@ -38,6 +38,7 @@
   border-color: transparent; }
   .today-main-navbar .navbar-brand {
     color: #e72f7a;
+    transition: none;
     font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
     .today-main-navbar .navbar-brand:hover, .today-main-navbar .navbar-brand:focus, .today-main-navbar .navbar-brand:active, .today-main-navbar .navbar-brand.active {
       color: #e72f7a; }
@@ -56,13 +57,16 @@
     height: 50px; }
     .today-main-navbar .navbar-toggle:hover, .today-main-navbar .navbar-toggle:focus {
       background-color: #e72f7a; }
+  .today-main-navbar.navbar-fixed-top {
+    border-width: 0; }
   .today-main-navbar .nav li a {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
     color: #ffffff;
-    border: 0; }
+    border: 0;
+    transition: none; }
     .today-main-navbar .nav li a:hover, .today-main-navbar .nav li a:focus {
       color: #e72f7a;
       outline: none; }
@@ -74,6 +78,12 @@
   .today-main-navbar .navbar-nav > .active > a:focus {
     color: #ffffff;
     background-color: #e72f7a; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .today-main-navbar .nav li a {
+      font-size: 12px;
+      padding: 0 6px;
+      height: 50px;
+      line-height: 50px; } }
   @media (min-width: 768px) {
     .today-main-navbar {
       background-color: transparent;
@@ -107,7 +117,8 @@
   padding: 2px 10px; }
 
 .today-main-navbar__logo-img {
-  height: 40px; }
+  height: 40px;
+  padding: 5px 0; }
 
 @media (min-width: 768px) {
   .today-main-navbar {
@@ -149,11 +160,12 @@
   .today-main-navbar__logo-toggle {
     font-size: 21px !important;
     padding: 2px 10px; }
-  .today-main-navbar__logo-img {
-    height: 50px;
-    padding: 10px 0; }
   .today-main-navbar__nav.navbar-collapse {
     border-color: #e72f7a; } }
+
+@media (max-width: 767px) {
+  .today-main-navbar__logo-img {
+    margin: 5px 0; } }
 
 /**
  * Button
@@ -203,6 +215,17 @@
   .btn-primary .badge {
     color: #e72f7a;
     background-color: #ffffff; }
+
+/**
+ * Carousel
+ */
+.today-carousel .carousel-control.left, .today-carousel .carousel-control.right {
+  color: #e72f7a;
+  background-image: none;
+  border: 0; }
+
+.today-carousel .carousel-control:focus, .today-carousel .carousel-control:hover {
+  color: #e72d79; }
 
 /**
  * Today Styles
