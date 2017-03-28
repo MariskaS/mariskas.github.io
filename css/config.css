@@ -747,7 +747,8 @@ figure {
     line-height: 40px;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    text-transform: none; }
+    text-transform: none;
+    padding: 0 10px; }
   .today-main-footer__social {
     display: inline-block;
     margin: 20px; }
