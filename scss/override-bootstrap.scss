@@ -212,6 +212,11 @@
 /**
  * Button
  */
+.btn {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+    border-radius: 2px;
+}
+
 .btn:focus,
 .btn:active,
 .btn.active,

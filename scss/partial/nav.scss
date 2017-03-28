@@ -10,12 +10,37 @@
  *          <a class="today-nav-inner__item" href="">...</a>
  *      </div>
  */
-.today-nav-inner {
-    margin: $margin-base 0 $margin-double;
+.today-nav {
+    &-toolbar {
+        @include flex-column;
+        @include flex-start;
+        margin-top: $margin-base;
 
-    &__item {
-        line-height: 1;
-        display: inline-block;
-        margin-right: $margin-half;
+        h2 {
+            margin: 0 0 $margin-half;
+        }
+        .today-share {
+            margin: 0 0 $margin-base;
+            &__trigger button {
+                margin-left: 0;
+            }
+        }
+
+        // For mobile
+        @media(max-width: map-get($grid-breakpoints, md)) {
+            h2 {
+                margin-bottom: $margin-base;
+            }
+        }
+    }
+    &-inner {
+        margin: $margin-base 0 $margin-double;
+
+        &__item {
+            line-height: 1;
+            display: inline-block;
+            margin-right: $margin-half;
+            text-transform: uppercase;
+        }
     }
 }

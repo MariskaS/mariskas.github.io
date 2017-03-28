@@ -12,10 +12,10 @@
 .u-padding {
     &__main-vert {
         &--big {
-            padding: $padding-large 0;
+            padding: 80px 0;
             // For desktop
             @media(min-width: map-get($grid-breakpoints, md)) {
-                padding: $padding-large-x 0;
+                padding: $padding-large 0;
             }
         }
 

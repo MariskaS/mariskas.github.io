@@ -28,9 +28,9 @@
     align-items: stretch;
 }
 
-@mixin flex-start-center {
-    align-items: center;
-    align-content: center;
+@mixin flex-start {
+    align-items: flex-start;
+    align-content: flex-start;
     max-width: 100%;
     justify-content: flex-start;
 }

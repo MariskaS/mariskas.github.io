@@ -2,27 +2,19 @@
 @import "../common/variables";
 
 .today-share {
-    @include flex-column;
+    @include flex-row;
     @include flex-center-center;
     align-items: center;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 20;
 
     &__trigger {
-        -webkit-order: 2;
-        order: 2;
-    }
-    &__action {
-        @include flex;
-        height: auto;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -webkit-flex-direction: column-reverse;
-        flex-direction: column-reverse;
         -webkit-order: 1;
         order: 1;
+    }
+
+    &__action {
+        @include flex-row;
+        -webkit-order: 2;
+        order: 2;
 
         &-item {
             opacity: 0;
@@ -41,6 +33,36 @@
             z-index: 23;
             transform: scale(1);
             transition-delay: 0ms;
+        }
+    }
+
+    // For mobile
+    @media(max-width: map-get($grid-breakpoints, md)) {
+        @include flex-column;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 20;
+        margin: 0 !important;
+
+        &__trigger {
+            -webkit-order: 2;
+            order: 2;
+
+            span {
+                display: none;
+            }
+        }
+
+        &__action {
+            @include flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            -webkit-order: 1;
+            order: 1;
+            height: auto;
         }
     }
 }

@@ -34,12 +34,15 @@
 
         <div class="row">
             <div class="col-lg-12">
+                <%- include('partials/meta.ejs') -%>
+                <div class="today-nav-toolbar">
+                    <h2>ТАГИЛАЕВ РАГИМ</h2>
+                    <%- include('partials/share.ejs') -%>
+                </div>
                 <p class="item-intro">
-                    Родился: <span> <!--TODO:Generated text-->10.08.2007</span>,
-                    Город: <span> <!--TODO:Generated text-->Санкт-Петербург</span>
-                </p>
-                <p class="item-intro">
-                    Диагноз: <span><!--TODO:Generated text--></span>
+                    Родился:&nbsp;<span> <!--TODO:Generated text-->10.08.2007</span>&nbsp;
+                    в городе&nbsp;<span> <!--TODO:Generated text-->Санкт-Петербург</span> <br>
+                    Диагноз:&nbsp;<span><!--TODO:Generated text--></span>
                 </p>
                 <img class="img-responsive" src="../img/portfolio/ragim.jpg" alt="">
                 <h3>История</h3>
@@ -55,7 +58,6 @@
                 </p>
             </div>
         </div>
-        <%- include('partials/share.ejs') -%>
     </div>
 </section>
 

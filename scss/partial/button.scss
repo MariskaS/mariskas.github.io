@@ -40,10 +40,11 @@
 
     // Social
     &-social {
+        margin: -5px;
+
         &__item {
             display: inline-block;
-            padding-right: 5px;
-            padding-left: 5px;
+            padding: 5px;
         }
         a {
             display: block;
@@ -101,6 +102,7 @@
 
     // Fab - circle btn
     &-fab {
+        @include heading-font;
         font-size: $font-size-x;
         color: $color-white;
         background: $color-brand;
@@ -118,8 +120,7 @@
         overflow: hidden;
         line-height: 56px;
         min-width: 0;
-        width: 56px;
-        height: 56px;
+        @include size(56px, 56px);
         vertical-align: middle;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
         border-radius: 50%;
@@ -129,6 +130,27 @@
 
         &:hover {
             background: darken($color-brand, 15%);
+        }
+
+        &-main {
+            white-space: nowrap;
+            border-radius: 2px;
+            background: $color-brand-orange;
+            @include size(auto, auto);
+            text-align: left;
+            line-height: normal;
+            padding: 8px 16px;
+
+            span {
+                padding-left: 8px;
+                font-weight: bold;
+                font-size: $font-size-base;
+                text-transform: uppercase;
+            }
+
+            &:hover {
+                background: darken($color-brand-orange, 10%);
+            }
         }
 
         // Size
