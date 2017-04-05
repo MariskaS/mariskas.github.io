@@ -9,11 +9,22 @@
     // Size
     &--xl {
         @include button-variant($color-white, $color-brand, $color-brand);
-        @include heading-font;
+        text-transform: uppercase;
         font-weight: 700;
         border-radius: 3px;
         font-size: $font-size-x;
         padding: 10px 40px;
+    }
+
+    &--empty {
+        @include button-variant($color-brand, transparent, $color-brand);
+        box-shadow: none;
+        margin-top: $margin-base;
+        font-weight: 600;
+
+        &:hover {
+            @include button-variant($color-white, $color-brand, $color-brand);
+        }
     }
 
     &__read-more {
