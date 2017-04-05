@@ -1,21 +1,16 @@
 @import "../common/mixins";
 @import "../common/variables";
 
-$color-post-border: #e1e1e1;
+$color-post-border: $color-gray-controls-elem;
 
 .today-post {
     &__content {
         &-item {
             padding: 0 0 30px;
-            margin-bottom: 40px;
-            border-bottom: 2px solid $color-post-border;
 
-            // For desktop
-            @media(min-width: map-get($grid-breakpoints, md)) {
-                &:last-child {
-                    margin-bottom: 0;
-                    border-bottom-color: transparent;
-                }
+            &:not(:last-child) {
+                margin-bottom: 40px;
+                border-bottom: 2px solid $color-post-border;
             }
 
             .today-post__title {

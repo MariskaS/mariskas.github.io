@@ -8,7 +8,10 @@
     }
 }
 
-// Padding & Margin
+/**
+ * Padding & Margin
+ */
+
 .u-padding {
     &__main-vert {
         &--big {
@@ -43,7 +46,9 @@
     }
 }
 
-// Color
+/**
+ * Color
+ */
 .u-color {
     &--danger {
         color: $color-danger !important;
@@ -55,6 +60,10 @@
 
     &--primary {
         color: $color-brand !important;
+    }
+
+    &--disabled {
+        color: $color-disabled;
     }
 
     &-bg {
@@ -83,3 +92,26 @@
         }
     }
 }
+
+/**
+ * Size
+ */
+.u-large {
+    &-x {
+        font-size: $font-size-x;
+    }
+    &-xx {
+        font-size: $font-size-xx;
+    }
+}
+
+/**
+ * Show/Hide
+ */
+// For mobile & tablet
+@media (max-width: map-get($grid-breakpoints, md)) {
+    .u-hide-md-ss {
+        display: none;
+    }
+}
+
