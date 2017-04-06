@@ -1999,6 +1999,7 @@ p + .today-btn__read-more {
   color: #ffffff; }
 
 .u-color-bg--fixed-header {
+  background-color: #222222;
   background-image: url("../img/bg-header.jpg");
   background-size: cover;
   background-position: center center;

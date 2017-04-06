@@ -79,6 +79,7 @@
 
         &--fixed {
             &-header {
+                background-color: $color-gray-darker;
                 background-image: url('../img/bg-header.jpg');
                 @include fixed-bg;
                 color: $color-white;
