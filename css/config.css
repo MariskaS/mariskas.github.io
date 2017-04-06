@@ -311,13 +311,13 @@
   position: relative; }
   .today-about__video {
     width: 100%;
-    min-height: 300px; }
+    min-height: 200px; }
   .today-about .today-nav-inner {
     position: absolute;
     top: 0; }
-  @media (min-width: 767px) {
-    .today-about__video {
-      min-height: 500px; } }
+  @media (max-width: 991px) {
+    .today-about .today-btn--empty {
+      margin-top: 0; } }
 
 /**
  * Breakpoints

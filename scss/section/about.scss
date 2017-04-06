@@ -6,7 +6,7 @@
 
    &__video {
        width: 100%;
-       min-height: 300px;
+       min-height: 200px;
    }
 
     .today-nav-inner {
@@ -15,9 +15,9 @@
     }
 
     // For desktop
-    @media (min-width: map-get($grid-breakpoints, md)-1) {
-        &__video {
-            min-height: 500px;
+    @media (max-width: map-get($grid-breakpoints, lg)-1) {
+        .today-btn--empty {
+            margin-top: 0;
         }
     }
 }

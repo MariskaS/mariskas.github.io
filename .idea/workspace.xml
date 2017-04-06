@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/index.html" line="415" />
+    <bookmark url="file://$PROJECT_DIR$/index.html" line="435" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f35d824-3d0f-459a-92a0-c5639a09328b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/partials/post-sidebar.ejs" afterPath="$PROJECT_DIR$/+pages/partials/post-sidebar.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/portfolio-detail.html" afterPath="$PROJECT_DIR$/+pages/portfolio-detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/config.css" afterPath="$PROJECT_DIR$/css/config.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/config.min.css" afterPath="$PROJECT_DIR$/css/config.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog.html" afterPath="$PROJECT_DIR$/pages/blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/events.html" afterPath="$PROJECT_DIR$/pages/events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/news.html" afterPath="$PROJECT_DIR$/pages/news.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/portfolio-detail.html" afterPath="$PROJECT_DIR$/pages/portfolio-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/partial/button.scss" afterPath="$PROJECT_DIR$/scss/partial/button.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/section/about.scss" afterPath="$PROJECT_DIR$/scss/section/about.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,30 +27,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="post-sidebar.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/+pages/partials/post-sidebar.ejs">
+      <file leaf-file-name="config.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/config.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="97" column="31" lean-forward="false" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+            <state relative-caret-position="323">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="929">
+              <caret line="152" column="49" lean-forward="false" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#diw#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="button.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scss/partial/button.scss">
+      <file leaf-file-name="about.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/section/about.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="272">
+              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
-                <element signature="e#694#1138#0" expanded="false" />
-                <element signature="e#1167#1832#0" expanded="false" />
-                <element signature="e#1871#2606#0" expanded="false" />
-                <element signature="e#2642#5217#0" expanded="false" />
+                <element signature="e#112#164#0" expanded="false" />
+                <element signature="e#187#238#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -66,12 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>today-post__nav</find>
-      <find>$color-post-border</find>
-      <find>today-post__title</find>
-      <find>quicklinks</find>
-      <find>today-hr--large</find>
-      <find>today-post</find>
       <find>финансы</find>
       <find>#f1f1f1</find>
       <find>новости</find>
@@ -96,6 +93,12 @@
       <find>Новый год в ресторане Twiggy</find>
       <find>page-scroll btn today-btn--xl</find>
       <find>год ро</find>
+      <find>navbar-vertical-align</find>
+      <find>nav-divider</find>
+      <find>user-select(none)</find>
+      <find>make-row</find>
+      <find>transition-transform</find>
+      <find>Смотреть больше на Youtube</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,38 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/+pages/partials/directory-content-item.ejs" />
-        <option value="$PROJECT_DIR$/+pages/partials/directory-content.ejs" />
-        <option value="$PROJECT_DIR$/+pages/partials/blog-content.ejs" />
-        <option value="$PROJECT_DIR$/+pages/partials/events-content.ejs" />
-        <option value="$PROJECT_DIR$/+pages/partials/news-content.ejs" />
-        <option value="$PROJECT_DIR$/+pages/partials/news-content-item.ejs" />
-        <option value="$PROJECT_DIR$/+pages/partials/events-content-item.ejs" />
-        <option value="$PROJECT_DIR$/+pages/partials/blog-content-item.ejs" />
-        <option value="$PROJECT_DIR$/pages/news-detail.html" />
-        <option value="$PROJECT_DIR$/scss/partial/meta.scss" />
-        <option value="$PROJECT_DIR$/scss/common/_variables.scss" />
-        <option value="$PROJECT_DIR$/scss/partial/timeline.scss" />
-        <option value="$PROJECT_DIR$/scss/partial/panel-collapse.scss" />
-        <option value="$PROJECT_DIR$/scss/section/thanks.scss" />
-        <option value="$PROJECT_DIR$/scss/common/_mixins.scss" />
-        <option value="$PROJECT_DIR$/+pages/thanks.html" />
-        <option value="$PROJECT_DIR$/+pages/partials/post-detail.ejs" />
-        <option value="$PROJECT_DIR$/scss/partial/divide.scss" />
-        <option value="$PROJECT_DIR$/scss/section/about.scss" />
-        <option value="$PROJECT_DIR$/+pages/events-detail.html" />
-        <option value="$PROJECT_DIR$/+pages/blog-detail.html" />
-        <option value="$PROJECT_DIR$/+pages/directory-detail.html" />
-        <option value="$PROJECT_DIR$/scss/partial/carousel.scss" />
-        <option value="$PROJECT_DIR$/+pages/partials/nav.ejs" />
-        <option value="$PROJECT_DIR$/scss/config.scss" />
-        <option value="$PROJECT_DIR$/js/agency.js" />
-        <option value="$PROJECT_DIR$/+pages/partials/footer.ejs" />
-        <option value="$PROJECT_DIR$/scss/section/contact.scss" />
-        <option value="$PROJECT_DIR$/scss/partial/modal.scss" />
-        <option value="$PROJECT_DIR$/+pages/news-detail.html" />
-        <option value="$PROJECT_DIR$/+pages/partials/share.ejs" />
-        <option value="$PROJECT_DIR$/+pages/partials/detail-content.ejs" />
         <option value="$PROJECT_DIR$/scss/common/mixins/flex.scss" />
         <option value="$PROJECT_DIR$/scss/partial/nav.scss" />
         <option value="$PROJECT_DIR$/scss/partial/share.scss" />
@@ -152,9 +123,41 @@
         <option value="$PROJECT_DIR$/+pages/events.html" />
         <option value="$PROJECT_DIR$/scss/partial/post.scss" />
         <option value="$PROJECT_DIR$/+pages/portfolio-detail.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/+pages/partials/post-sidebar.ejs" />
         <option value="$PROJECT_DIR$/scss/partial/button.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/css/_grid.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_grid.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_nav-vertical-align.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_nav-divider.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_buttons.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_forms.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_variables.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_navs.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_pagination.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_pagination.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_vendor-prefixes.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_tab-focus.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_buttons.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_opacity.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_clearfix.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_border-radius.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_image.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_gradients.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_normalize.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_close.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_grid.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_carousel.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_forms.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_navbar.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_modals.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_component-animations.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/config-bootstrap.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_center-block.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_utilities.scss" />
+        <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_hide-text.scss" />
+        <option value="$PROJECT_DIR$/scss/config.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scss/section/about.scss" />
       </list>
     </option>
   </component>
@@ -212,6 +215,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mariskas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mariskas.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="scss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -248,75 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="partial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config.css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="+pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="+pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,19 +282,19 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DEV\mariskas.github.io\vendor\bootstrap\scss" />
+      <recent name="D:\DEV\mariskas.github.io\vendor\bootstrap\css" />
+      <recent name="D:\DEV\mariskas.github.io\scss\partial" />
+      <recent name="D:\DEV\mariskas.github.io\+pages\partials" />
+      <recent name="D:\DEV\mariskas.github.io\+pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DEV\mariskas.github.io\vendor\bootstrap\scss" />
       <recent name="D:\DEV\mariskas.github.io\img" />
       <recent name="D:\DEV\mariskas.github.io" />
       <recent name="D:\DEV\mariskas.github.io\+pages" />
       <recent name="D:\DEV\mariskas.github.io\pages\partials" />
-      <recent name="D:\DEV\mariskas.github.io\pages" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DEV\mariskas.github.io\scss\partial" />
-      <recent name="D:\DEV\mariskas.github.io\+pages\partials" />
-      <recent name="D:\DEV\mariskas.github.io\+pages" />
-      <recent name="D:\DEV\mariskas.github.io\scss\common\mixins" />
-      <recent name="D:\DEV\mariskas.github.io\pages" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
@@ -470,12 +419,18 @@
       <workItem from="1491308614405" duration="599000" />
       <workItem from="1491310747642" duration="2634000" />
       <workItem from="1491383663633" duration="1822000" />
-      <workItem from="1491420791960" duration="2175000" />
+      <workItem from="1491420791960" duration="2898000" />
+      <workItem from="1491468677526" duration="613000" />
+      <workItem from="1491469335688" duration="1628000" />
+      <workItem from="1491471369085" duration="2069000" />
+      <workItem from="1491473532934" duration="1206000" />
+      <workItem from="1491489842251" duration="22000" />
+      <workItem from="1491507558216" duration="1526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242620000" />
+    <option name="totallyTimeSpent" value="250407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -490,14 +445,14 @@
     <frame x="-1088" y="-395" width="1096" height="1896" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31568998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33175802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295519" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24900737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295519" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10153148" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22461712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -537,40 +492,39 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_forms.scss" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#diw#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_grid.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_grid.scss" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#diw#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/override-bootstrap.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="115" column="3" lean-forward="false" selection-start-line="115" selection-start-column="3" selection-end-line="115" selection-end-column="3" />
-          <folding>
-            <element signature="e#104#2831#0" expanded="false" />
-            <element signature="e#425#483#0" expanded="false" />
-            <element signature="e#503#841#0" expanded="false" />
-            <element signature="e#865#897#0" expanded="false" />
-            <element signature="e#907#1321#0" expanded="false" />
-            <element signature="e#1352#1454#0" expanded="false" />
-            <element signature="e#1528#1604#0" expanded="false" />
-            <element signature="e#1708#1955#0" expanded="false" />
-            <element signature="e#1723#1949#0" expanded="false" />
-            <element signature="e#2030#2829#0" expanded="false" />
-            <element signature="e#2870#4985#0" expanded="false" />
-            <element signature="e#2884#3157#0" expanded="false" />
-            <element signature="e#3233#4376#0" expanded="false" />
-            <element signature="e#3272#3483#0" expanded="false" />
-            <element signature="e#3500#4370#0" expanded="false" />
-            <element signature="e#4452#4824#0" expanded="false" />
-            <element signature="e#4717#4818#0" expanded="false" />
-            <element signature="e#4883#4983#0" expanded="false" />
-            <element signature="e#5010#5085#0" expanded="false" />
-            <element signature="e#5197#5320#0" expanded="false" />
-            <element signature="e#5358#5655#0" expanded="false" />
-            <element signature="e#6071#6359#0" expanded="false" />
-            <element signature="e#6285#6353#0" expanded="false" />
-            <element signature="e#6376#6926#0" expanded="false" />
-            <element signature="e#6413#6626#0" expanded="false" />
-            <element signature="e#6453#6550#0" expanded="false" />
-            <element signature="e#6647#6920#0" expanded="false" />
-            <element signature="e#7001#7308#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,7 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,7 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,14 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-          <folding>
-            <element signature="e#74#145#0" expanded="false" />
-            <element signature="e#187#692#0" expanded="false" />
-            <element signature="e#704#751#0" expanded="false" />
-            <element signature="e#779#1707#0" expanded="false" />
-            <element signature="e#863#915#0" expanded="false" />
-            <element signature="e#1734#1837#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,36 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="115" column="3" lean-forward="false" selection-start-line="115" selection-start-column="3" selection-end-line="115" selection-end-column="3" />
-          <folding>
-            <element signature="e#104#2831#0" expanded="false" />
-            <element signature="e#425#483#0" expanded="false" />
-            <element signature="e#503#841#0" expanded="false" />
-            <element signature="e#865#897#0" expanded="false" />
-            <element signature="e#907#1321#0" expanded="false" />
-            <element signature="e#1352#1454#0" expanded="false" />
-            <element signature="e#1528#1604#0" expanded="false" />
-            <element signature="e#1708#1955#0" expanded="false" />
-            <element signature="e#1723#1949#0" expanded="false" />
-            <element signature="e#2030#2829#0" expanded="false" />
-            <element signature="e#2870#4985#0" expanded="false" />
-            <element signature="e#2884#3157#0" expanded="false" />
-            <element signature="e#3233#4376#0" expanded="false" />
-            <element signature="e#3272#3483#0" expanded="false" />
-            <element signature="e#3500#4370#0" expanded="false" />
-            <element signature="e#4452#4824#0" expanded="false" />
-            <element signature="e#4717#4818#0" expanded="false" />
-            <element signature="e#4883#4983#0" expanded="false" />
-            <element signature="e#5010#5085#0" expanded="false" />
-            <element signature="e#5197#5320#0" expanded="false" />
-            <element signature="e#5358#5655#0" expanded="false" />
-            <element signature="e#6071#6359#0" expanded="false" />
-            <element signature="e#6285#6353#0" expanded="false" />
-            <element signature="e#6376#6926#0" expanded="false" />
-            <element signature="e#6413#6626#0" expanded="false" />
-            <element signature="e#6453#6550#0" expanded="false" />
-            <element signature="e#6647#6920#0" expanded="false" />
-            <element signature="e#7001#7308#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -646,7 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,14 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-          <folding>
-            <element signature="e#74#145#0" expanded="false" />
-            <element signature="e#187#692#0" expanded="false" />
-            <element signature="e#704#751#0" expanded="false" />
-            <element signature="e#779#1707#0" expanded="false" />
-            <element signature="e#863#915#0" expanded="false" />
-            <element signature="e#1734#1837#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -677,43 +581,98 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-          <folding>
-            <element signature="e#1591#1597#0" expanded="false" />
-            <element signature="e#1682#1688#0" expanded="false" />
-            <element signature="e#1777#1783#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/scss/partial/button.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="103" column="93" lean-forward="true" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="93" />
+        <state relative-caret-position="459">
+          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/css/_bootstrap.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_nav-vertical-align.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_buttons.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_nav-divider.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_forms.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_pagination.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_tab-focus.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_opacity.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_grid.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_clearfix.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_border-radius.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_image.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_vendor-prefixes.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_gradients.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_carousel.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_forms.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_navbar.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_navs.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_normalize.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_pagination.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_variables.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_grid.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_modals.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_component-animations.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_buttons.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/config-bootstrap.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_center-block.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_close.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_hide-text.scss" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_utilities.scss" />
+    <entry file="file://$PROJECT_DIR$/scss/section/team.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/+pages/partials/post-sidebar.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="97" column="31" lean-forward="false" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+        <state relative-caret-position="1044">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="99" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/common/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="929">
+          <caret line="152" column="49" lean-forward="false" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#diw#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/partial/button.scss">
+    <entry file="file://$PROJECT_DIR$/scss/config.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="323">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/section/about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
-            <element signature="e#694#1138#0" expanded="false" />
-            <element signature="e#1167#1832#0" expanded="false" />
-            <element signature="e#1871#2606#0" expanded="false" />
-            <element signature="e#2642#5217#0" expanded="false" />
+            <element signature="e#112#164#0" expanded="false" />
+            <element signature="e#187#238#0" expanded="false" />
           </folding>
         </state>
       </provider>
