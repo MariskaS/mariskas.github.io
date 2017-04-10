@@ -79,7 +79,7 @@
             }
         }
     }
-    // For desktop
+    // For Desktop
     @media (min-width: map-get($grid-breakpoints, md)) {
         & {
             background-color: transparent;
@@ -108,6 +108,20 @@
                 }
             }
         }
+    }
+    // For Tablet & Mobile
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        & {
+            .nav {
+                li {
+                    a {
+                        padding-top: 14px;
+                        padding-bottom: 14px;
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -194,7 +208,7 @@
 
         &__nav {
             &.navbar-collapse {
-                border-color: $color-brand;
+                border-color: $color-gray-darker;
             }
         }
     }

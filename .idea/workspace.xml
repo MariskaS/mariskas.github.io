@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/index.html" line="435" />
+    <bookmark url="file://$PROJECT_DIR$/index.html" line="447" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f35d824-3d0f-459a-92a0-c5639a09328b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bg-pattern.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/balloons.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-md.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg-purple.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/+pages/partials/footer.ejs" afterPath="$PROJECT_DIR$/+pages/partials/footer.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/config.css" afterPath="$PROJECT_DIR$/css/config.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/config.min.css" afterPath="$PROJECT_DIR$/css/config.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog-detail.html" afterPath="$PROJECT_DIR$/pages/blog-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog.html" afterPath="$PROJECT_DIR$/pages/blog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/directory-detail.html" afterPath="$PROJECT_DIR$/pages/directory-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/directory.html" afterPath="$PROJECT_DIR$/pages/directory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/events-detail.html" afterPath="$PROJECT_DIR$/pages/events-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/events.html" afterPath="$PROJECT_DIR$/pages/events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/news-detail.html" afterPath="$PROJECT_DIR$/pages/news-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/news.html" afterPath="$PROJECT_DIR$/pages/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/portfolio-detail.html" afterPath="$PROJECT_DIR$/pages/portfolio-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/thanks.html" afterPath="$PROJECT_DIR$/pages/thanks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/override-bootstrap.scss" afterPath="$PROJECT_DIR$/scss/override-bootstrap.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/partial/utils.scss" afterPath="$PROJECT_DIR$/scss/partial/utils.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,36 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/config.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="929">
-              <caret line="152" column="49" lean-forward="false" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
-              <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#diw#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="about.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/section/about.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="187">
+              <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="56" />
               <folding>
                 <element signature="e#112#164#0" expanded="false" />
                 <element signature="e#187#238#0" expanded="false" />
@@ -61,12 +57,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scss/partial/utils.scss">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="782">
+              <caret line="145" column="75" lean-forward="false" selection-start-line="145" selection-start-column="75" selection-end-line="145" selection-end-column="75" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="override-bootstrap.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/override-bootstrap.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding>
+                <element signature="e#104#3151#0" expanded="false" />
+                <element signature="e#197#403#0" expanded="false" />
+                <element signature="e#425#483#0" expanded="false" />
+                <element signature="e#503#841#0" expanded="false" />
+                <element signature="e#907#1321#0" expanded="false" />
+                <element signature="e#1708#1955#0" expanded="false" />
+                <element signature="e#2030#2829#0" expanded="false" />
+                <element signature="e#3190#5311#0" expanded="false" />
+                <element signature="e#5336#5411#0" expanded="false" />
+                <element signature="e#5523#5646#0" expanded="false" />
+                <element signature="e#5684#5981#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,12 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>финансы</find>
-      <find>#f1f1f1</find>
-      <find>новости</find>
-      <find>page-top</find>
-      <find>class=&quot;today-text&quot;</find>
-      <find>Вы можете оплатить заняти</find>
       <find>реаб</find>
       <find>...</find>
       <find>помоч</find>
@@ -105,6 +129,12 @@
       <find>make-row</find>
       <find>transition-transform</find>
       <find>Смотреть больше на Youtube</find>
+      <find>diw</find>
+      <find>.navbar-collapse</find>
+      <find>10</find>
+      <find>today-btn-social__item</find>
+      <find>$padding-half</find>
+      <find>margin-right</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,8 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scss/common/mixins/flex.scss" />
-        <option value="$PROJECT_DIR$/scss/partial/nav.scss" />
         <option value="$PROJECT_DIR$/scss/partial/share.scss" />
         <option value="$PROJECT_DIR$/scss/partial/typography.scss" />
         <option value="$PROJECT_DIR$/scss/partial/general.scss" />
@@ -123,7 +151,6 @@
         <option value="$PROJECT_DIR$/scss/partial/icons.scss" />
         <option value="$PROJECT_DIR$/scss/common/_variables-theme.scss" />
         <option value="$PROJECT_DIR$/+pages/partials/pagination.ejs" />
-        <option value="$PROJECT_DIR$/scss/override-bootstrap.scss" />
         <option value="$PROJECT_DIR$/+pages/news.html" />
         <option value="$PROJECT_DIR$/+pages/events.html" />
         <option value="$PROJECT_DIR$/scss/partial/post.scss" />
@@ -161,9 +188,12 @@
         <option value="$PROJECT_DIR$/vendor/bootstrap/scss/_utilities.scss" />
         <option value="$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_hide-text.scss" />
         <option value="$PROJECT_DIR$/scss/config.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/section/about.scss" />
         <option value="$PROJECT_DIR$/scss/partial/utils.scss" />
+        <option value="$USER_HOME$/AppData/Local/Temp/index.html.url" />
+        <option value="$PROJECT_DIR$/+pages/partials/footer.ejs" />
+        <option value="$PROJECT_DIR$/scss/override-bootstrap.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -235,7 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
+              <option name="myItemId" value="+pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -249,47 +279,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
+              <option name="myItemId" value="+pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="section" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mariskas.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -306,19 +300,19 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DEV\mariskas.github.io\img" />
+      <recent name="D:\DEV\mariskas.github.io\vendor\bootstrap\scss" />
+      <recent name="D:\DEV\mariskas.github.io" />
+      <recent name="D:\DEV\mariskas.github.io\+pages" />
+      <recent name="D:\DEV\mariskas.github.io\pages\partials" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\DEV\mariskas.github.io\vendor\bootstrap\scss" />
       <recent name="D:\DEV\mariskas.github.io\vendor\bootstrap\css" />
       <recent name="D:\DEV\mariskas.github.io\scss\partial" />
       <recent name="D:\DEV\mariskas.github.io\+pages\partials" />
       <recent name="D:\DEV\mariskas.github.io\+pages" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\DEV\mariskas.github.io\vendor\bootstrap\scss" />
-      <recent name="D:\DEV\mariskas.github.io\img" />
-      <recent name="D:\DEV\mariskas.github.io" />
-      <recent name="D:\DEV\mariskas.github.io\+pages" />
-      <recent name="D:\DEV\mariskas.github.io\pages\partials" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
@@ -449,12 +443,13 @@
       <workItem from="1491471369085" duration="2069000" />
       <workItem from="1491473532934" duration="1206000" />
       <workItem from="1491489842251" duration="22000" />
-      <workItem from="1491507558216" duration="1764000" />
+      <workItem from="1491507558216" duration="3411000" />
+      <workItem from="1491759748858" duration="4664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250645000" />
+    <option name="totallyTimeSpent" value="256956000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,10 +461,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1088" y="-395" width="1096" height="1896" extended-state="6" />
+    <frame x="-1088" y="-395" width="1096" height="1896" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33175802" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29017013" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295519" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24900737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -516,34 +511,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#diw#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/_grid.scss" />
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/scss/mixins/_grid.scss" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#diw#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/override-bootstrap.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -569,13 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/override-bootstrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="115" column="3" lean-forward="false" selection-start-line="115" selection-start-column="3" selection-end-line="115" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -641,7 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,28 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="99" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/common/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="929">
-          <caret line="152" column="49" lean-forward="false" selection-start-line="152" selection-start-column="49" selection-end-line="152" selection-end-column="49" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#diw#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -682,13 +619,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/section/about.scss">
+    <entry file="file://$PROJECT_DIR$/img/bg-header-inner.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/index.html.url">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/partial/utils.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="104" column="13" lean-forward="false" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
           <folding>
-            <element signature="e#112#164#0" expanded="false" />
-            <element signature="e#187#238#0" expanded="false" />
+            <element signature="e#1047#1809#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,11 +650,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/partial/utils.scss">
+    <entry file="file://$PROJECT_DIR$/scss/common/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+        <state relative-caret-position="544">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/+pages/partials/share.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/+pages/partials/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="42" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/section/about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="56" />
+          <folding>
+            <element signature="e#112#164#0" expanded="false" />
+            <element signature="e#187#238#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/override-bootstrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#104#3151#0" expanded="false" />
+            <element signature="e#197#403#0" expanded="false" />
+            <element signature="e#425#483#0" expanded="false" />
+            <element signature="e#503#841#0" expanded="false" />
+            <element signature="e#907#1321#0" expanded="false" />
+            <element signature="e#1708#1955#0" expanded="false" />
+            <element signature="e#2030#2829#0" expanded="false" />
+            <element signature="e#3190#5311#0" expanded="false" />
+            <element signature="e#5336#5411#0" expanded="false" />
+            <element signature="e#5523#5646#0" expanded="false" />
+            <element signature="e#5684#5981#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="145" column="75" lean-forward="false" selection-start-line="145" selection-start-column="75" selection-end-line="145" selection-end-column="75" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

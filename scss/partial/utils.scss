@@ -72,6 +72,7 @@
         }
 
         &-header-inner {
+            background-color: $color-gray-darker;
             background-image: url('../img/bg-header-inner.jpg');
             @include background-cover;
             color: $color-white;
@@ -89,6 +90,18 @@
                 background-color: $color-brand-gray;
                 background-image: url('../img/bg-circles.jpg');
                 @include fixed-bg;
+            }
+        }
+    }
+
+    // For Mob & Tablet
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        &-bg {
+            &--fixed-header,
+            &-header-inner {
+                background-position: 0 0;
+                background-size: auto auto;
+                background-image: url('../img/bg-pattern.png');
             }
         }
     }
