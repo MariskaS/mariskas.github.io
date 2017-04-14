@@ -1,1 +1,8 @@
 node_modules
+/.idea
+/.idea/mariskas.github.io.iml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/.idea/*.iml
+/.idea/*.xml

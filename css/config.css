@@ -453,8 +453,20 @@
     font-weight: 700;
     color: #eeeeee; }
 
-.today-clients img {
-  margin: 50px auto; }
+.today-clients .today-carousel a {
+  display: inline-block;
+  border-bottom: 0;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  .today-clients .today-carousel a:hover {
+    -webkit-filter: none;
+    transition: 270ms ease-in; }
+  .today-clients .today-carousel a img {
+    max-height: 100px; }
+
+@media (max-width: 768px) {
+  .today-clients {
+    display: none; } }
 
 /**
  * Breakpoints

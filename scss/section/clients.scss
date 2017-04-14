@@ -1,5 +1,23 @@
 .today-clients {
-    img {
-        margin: 50px auto;
+    .today-carousel {
+        a {
+            display: inline-block;
+            border-bottom: 0;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+            &:hover {
+                -webkit-filter: none;
+                transition: 270ms ease-in;
+            }
+
+            img {
+                max-height: 100px;
+            }
+        }
+    }
+    // For Mob & Tablet
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        display: none;
     }
 }
