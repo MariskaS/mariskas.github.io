@@ -461,8 +461,35 @@
   .today-clients .today-carousel a:hover {
     -webkit-filter: none;
     transition: 270ms ease-in; }
-  .today-clients .today-carousel a img {
-    max-height: 100px; }
+
+.today-clients .today-carousel img {
+  max-height: 100px; }
+
+.today-clients .today-carousel__text {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #e72f7a; }
+  .today-clients .today-carousel__text small {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: none; }
+
+.today-clients .today-carousel__flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  align-content: center;
+  max-width: 100%;
+  justify-content: center; }
 
 @media (max-width: 768px) {
   .today-clients {

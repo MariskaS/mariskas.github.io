@@ -10,10 +10,30 @@
                 -webkit-filter: none;
                 transition: 270ms ease-in;
             }
+        }
 
-            img {
-                max-height: 100px;
+        img {
+            max-height: 100px;
+        }
+
+        &__text {
+            display: block;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: $color-brand;
+
+            small {
+                display: block;
+                margin-top: 6px;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: none;
             }
+        }
+
+        &__flex-row {
+            @include flex-row-wrap;
+            @include flex-center-center;
         }
     }
     // For Mob & Tablet
