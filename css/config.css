@@ -478,6 +478,7 @@
     text-transform: none; }
 
 .today-clients .today-carousel__flex-row {
+  min-height: 106px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
