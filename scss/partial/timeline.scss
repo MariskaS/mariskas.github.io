@@ -25,7 +25,7 @@
         min-height: 50px;
         @include clear-fix;
 
-        &:last-child {
+        &.u-last {
             margin-bottom: 0;
         }
     }

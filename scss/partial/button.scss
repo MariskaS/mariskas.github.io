@@ -115,7 +115,7 @@
     &-fab {
         @include heading-font;
         font-size: $font-size-x;
-        color: $color-white;
+        color: $color-white !important;
         background: $color-brand;
         display: inline-block;
         position: relative;

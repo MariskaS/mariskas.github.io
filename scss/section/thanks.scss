@@ -39,7 +39,7 @@
                     }
                 }
 
-                &:not(:last-child) {
+                &:not(.u-last) {
                     .today-timeline__image {
                         @include size(100px, 100px);
                         left: 50%;
@@ -97,7 +97,7 @@
                     }
                 }
 
-                &:not(:last-child) {
+                &:not(.u-last) {
                     .today-timeline__image {
                         @include size(100px, 100px);
                         left: 50%;

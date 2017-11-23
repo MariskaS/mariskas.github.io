@@ -1,0 +1,19 @@
+.today-box {
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -10px;
+
+  &__item {
+    padding: 10px;
+    flex: 1;
+    min-width: 250px;
+
+    img {
+      width: 100%;
+
+    }
+  }
+}

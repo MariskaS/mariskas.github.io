@@ -3,23 +3,40 @@
 
 // Portfolio Section
 .today-portfolio {
+    &__flex-grid {
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     &__item {
         margin: 0 0 15px;
         right: 0;
+        display: flex;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        flex-direction: column;
+
         &-link {
             display: block;
             position: relative;
+            width: 100%;
             max-width: 400px;
             margin: 0 auto;
             border: 0;
         }
 
         &-caption {
+            width: 100%;
             max-width: 400px;
             margin: 0 auto;
             background-color: $color-white;
             text-align: center;
             padding: $padding-base;
+            flex: 1 0 auto;
+
             h4 {
                 text-transform: none;
                 margin: 0;
@@ -60,6 +77,10 @@
                     margin: 0;
                 }
             }
+        }
+
+        img {
+            width: 100%;
         }
     }
     * {

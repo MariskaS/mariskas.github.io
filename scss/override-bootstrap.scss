@@ -268,73 +268,38 @@
  */
 .today-pagination {
 
-    .pagination>li>a,
-    .pagination>li>span {
+    .pagination > li > a,
+    .pagination > li > span {
         color: $color-brand;
-    }
-
-    .pagination>.active>a,
-    .pagination>.active>a:focus,
-    .pagination>.active>a:hover,
-    .pagination>.active>span,
-    .pagination>.active>span:focus,
-    .pagination>.active>span:hover {
-        background-color: $color-brand;
-        color: $color-white;
-    }
-
-    .page-link {
-        min-width: 2.6em;
-        margin-right: .5em;
-        text-align: center;
-        border-radius: 4em !important;
-        background-color: transparent;
         border: 0;
-        &:hover,
-        &:focus {
-            background-color: $color-gray-controls-elem;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .pagination li:not(.today-pagination__control) {
+        span {
+            background-color: $color-brand;
+            color: $color-white;
         }
     }
 
-    .page-item {
-        .today-pagination__control {
-            &-txt,
-            &-icon {
-                font-size: $font-size-xx;
-                vertical-align: middle;
-            }
-
-            &-txt {
-                display: none;
-            }
+    .today-pagination__control {
+        span,
+        a {
+            font-size: 21px;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
         }
 
-        &.disabled {
-            .page-link,
-            .page-link:focus,
-            .page-link:hover {
-                color: $color-disabled;
-                pointer-events: none;
-                cursor: not-allowed;
+        span {
+            color: $color-gray-light !important;
+
+            &:hover,
+            &:focus {
                 background-color: transparent;
-            }
-
-        }
-    }
-
-    // For mobile
-    @media (max-width: map-get($grid-breakpoints, sm)) {
-        .page-item {
-            .today-pagination__control {
-                &-txt {
-                    display: inline-block;
-                    margin: 0 6px;
-                }
-            }
-
-            &:not(.today-pagination__control) {
-                display: none;
+                border-color: transparent;
             }
         }
     }
 }
+

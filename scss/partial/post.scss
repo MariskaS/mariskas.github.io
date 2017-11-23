@@ -140,13 +140,18 @@ $color-post-border: $color-gray-controls-elem;
         &__video {
             &-item {
                 margin-top: $margin-base;
-
+                a {
+                    display: inline-block;
+                }
                 &__movie {
                     width: 100%;
                     min-height: 150px;
+                    border: 0;
                 }
 
-                &__link { }
+                &__link {
+                    padding-top: 8px;
+                }
             }
         }
 
