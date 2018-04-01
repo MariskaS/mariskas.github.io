@@ -1,0 +1,17 @@
+<aside class="dh-sidebar">
+  <div class="dh-sidebar__head"></div>
+  <div class="dh-sidebar__body">
+    <a routerLink="/dashboard"
+       routerLinkActive="is-active"
+       title="Dashboard">
+      <span>Dashboard</span>
+    </a>
+    <ng-container *ngFor="let theme of themes; let idx = index">
+      <a routerLink="/theme"
+         routerLinkActive="is-active"
+         title="{{theme.name}}">
+        <span>{{theme.name}}</span>
+      </a>
+    </ng-container>
+  </div>
+</aside>
