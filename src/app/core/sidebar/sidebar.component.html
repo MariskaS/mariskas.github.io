@@ -1,9 +1,12 @@
 <aside class="dh-sidebar">
-  <div class="dh-sidebar__head"></div>
+  <div class="dh-sidebar__head">
+    <span>HelpDev</span>
+  </div>
   <div class="dh-sidebar__body">
     <a routerLink="/dashboard"
        routerLinkActive="is-active"
        title="Dashboard">
+      <mat-icon class="dh-icon" svgIcon="view-dashboard"></mat-icon>
       <span>Dashboard</span>
     </a>
     <ng-container *ngFor="let theme of themes; let idx = index">

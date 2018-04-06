@@ -1,0 +1,24 @@
+.dh-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    td {
+      vertical-align: middle;
+      font-weight: 600;
+    }
+  }
+
+  td {
+    padding: @spacing-small;
+    vertical-align: top;
+  }
+
+  &--zebra {
+    tbody {
+      tr:nth-of-type(odd) {
+        background-color: @color-zebra;
+      }
+    }
+  }
+}
