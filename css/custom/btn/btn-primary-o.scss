@@ -1,0 +1,12 @@
+@import "mixin-btn-variant";
+
+.ld-btn--primary {
+  @include btn-variant(
+      var(--btn-primary-color),
+      var(--btn-primary-border),
+      var(--btn-primary-bg),
+      var(--btn-primary-color--action),
+      var(--btn-primary-border--action),
+      var(--btn-primary-bg--action),
+  );
+}

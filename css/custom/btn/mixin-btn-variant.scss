@@ -1,0 +1,31 @@
+@mixin btn-variant($color, $border, $background, $color-action, $border-action, $background-action) {
+  min-height: $btn-height;
+  overflow: hidden;
+  padding: $btn-spaces;
+  font-size: $btn-font-size;
+  color: $color;
+  border: 2px solid $border;
+  font-family: $font-family-primary;
+  background-color: $background;
+  cursor: pointer;
+  text-transform: capitalize;
+  white-space: nowrap;
+  user-select: none;
+  transition: color $transition-base, background $transition-base;
+  border-radius: $border-radius-base;
+  @include flex-variant(inline-flex, center, center);
+
+  &:active,
+  &:hover {
+    &:enabled {
+      color: $color-action;
+      border-color: $border-action;
+      background-color: $background-action;
+    }
+  }
+
+  span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

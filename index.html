@@ -1,13 +1,441 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <title>AbTest</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/league.css" id="theme">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 </head>
 <body>
-  <app-root></app-root>
-<script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="styles.js" defer></script><script src="vendor.js" defer></script><script src="main.js" defer></script></body>
+<div class="reveal">
+  <div class="slides">
+    <section class="ld-txt-md">
+      <section data-background-image="images/bg_1.jpg" data-background-opacity=".4">
+        <img class="ld-logo" src="images/logo.png"/>
+        <h2>Hi everyone</h2>
+        <p>My name is <a href="https://www.linkedin.com/in/mariskasdev/" target="_blank">Marina</a> and I’m a
+          Front-End Developer.</p>
+        <p>In this course <strong>"Js in brief"</strong> I want to show you what any
+          front-end developer needs to know.</p>
+        <p>
+          <em>
+            All of the topics presented in this course are just a list with brief explanations.
+            <br>
+            Undoubtedly, to become a pro you need to study much deeper, and the links to books
+            and topics at the end of each presentation will help you with that.
+          </em>
+        </p>
+        <p>JavaScript is very interesting!</p>
+        <p class="ld-txt-highlight">Good luck with your studies!</p>
+        <div class="ld-actions">
+          <button class="navigate-down ld-btn--primary">
+            See my BIO
+          </button>
+          <button class="navigate-right ld-btn--primary">
+            Let's go to study
+          </button>
+        </div>
+        <p>
+          <small><em>
+            P.S. the presentation will be updated as I have free time.<br>
+            In the process of preparing this material, I will get better with you :)
+          </em></small>
+        </p>
+      </section>
+      <section>
+        <p>
+          I’m a Front-End Software Developer and software engineer with 8 years of experience with large scale
+          application development
+          for E-Commerce, Pharmaceutical, and Banking industries.</p>
+        <p>
+          I specialize in developing user interfaces using technologies such as Angular, React, Javascript, Typescript,
+          Html and Сss preprocessors.
+          I also have some experience as a backend developer.</p>
+        <div class="ld-list">
+          <a href=https://www.linkedin.com/in/mariskasdev/"
+             target="_blank">My linkedin profile</a>
+          <a href=https://drive.google.com/file/d/1q1Wm1GOb3BCDt_Xq4YBwU4ZKNBTPoC9B/view?usp=sharing"
+             target="_blank">My Resume</a>
+        </div>
+        <button class="navigate-right ld-btn--primary">
+          Let's go to study
+        </button>
+      </section>
+    </section>
+    <section>
+      <section>
+        <h3>Js in brief.</h3>
+        <p><em>Briefly about what every web front end developer should know.</em></p>
+        <div class="ld-list">
+          <span class="ld-list__title">Chapters:</span>
+          <a href="#/js">
+            <span class="ld-list__num">#1.</span>
+            <span>How is js code executed;</span>
+          </a>
+          <a href="#/scope">
+            <span class="ld-list__num">#2.</span>
+            <span>Scope;</span>
+          </a>
+          <!--          <a href="#/hoisting">>#3. Hoisting;</a>-->
+          <!--          <a href="#/hoisting">>#4. What are Сlosures;</a>-->
+          <!--          <a href="#/hoisting">>#5. var vs let vs const and what the different;</a>-->
+        </div>
+      </section>
+    </section>
+    <section id="js">
+      <section>
+        <h2>#1. How is js code executed?</h2>
+        <p>
+          <em>
+            To learn how to write and understand Js code, what is Scope, Hoisting, etc., you need to pay attention to
+            how Js code is executed.
+          </em>
+        </p>
+      </section>
+      <section>
+        <p>2 phases of JS code processing:</p>
+        <img src="images/jsphases_diagram.png"/>
+      </section>
+      <section>
+        <p>#1 Simple Example:</p>
+        <p><em><small>An example to understand what Scope is and how Js works</small></em></p>
+        <pre><code class="hljs" data-trim data-line-numbers="|10-16|17-29|31-37|38-43|45-50"><script
+          type="text/template">
+// #1 Example:
+foo();
+
+function foo() {
+console.log(a);
+
+var a = 2;
+}
+
+// 1. Compilation phase:
+Scope     declaration     value
+------    -----------     -----
+global    foo             function
+
+foo       a               variable
+
+// 2. Execution phase:
+/**
+* 1. Execution foo();
+* 2. Execution console.log(a) // return undefined;
+* 3. Assigning value "2" to the "var a" -> var a = 2;
+*
+* Notice:
+* 1. foo () is not accidentally written on the first line.
+* This is to show you that the first phase ignores
+* any executions & assigning.
+* 2. We got "undefined" because we called console.log(a)
+* before assigning a value to variable "a"
+*/
+
+// #2 Example:
+foo();
+
+function foo() {
+var a = 2;
+console.log( a );
+}
+// 1. Compilation phase:
+Scope     declaration     value
+------    -----------     -----
+global    foo             function
+
+foo       a               variable
+
+// 2. Execution phase:
+/**
+* 1. Execution foo();
+* 2. Assigning value "2" to the "var a" -> var a = 2;
+* 2. Execution console.log(a) // return 2;
+*/
+					</script></code></pre>
+      </section>
+      <section>
+        <p>#2 Simple Example:</p>
+        <pre><code class="hljs" data-trim data-line-numbers="|17-24|26-32|34-49"><script type="text/template">
+var i = 1;
+
+function foo(a) {
+var biz = a + (i++);
+
+function baz() {
+return biz;
+}
+
+return baz;
+}
+
+foo(2)();
+foo(2)();
+foo(2)();
+
+// 1. Compilation phase:
+Scope     declaration     value
+------    -----------     -----
+global    i               variable
+global    foo             function
+
+foo       biz             variable
+foo       baz             function
+
+// 2. Execution phase:
+/**
+* 1. Assigning value to the "var i" // var i = 1;
+* 2. Execution foo (2) // return the value 3;
+* 3. Execution foo (2) // return the value 4;
+* 4. Execution foo (2) // return the value 5;
+*/
+
+/**
+* Good to know:
+* If we write the call of the function "bar"
+* into a variable "bar", further execution of bar()
+* will return the result of the first execution of this function.
+*
+* This is because in the second "Execution phase"
+* the function was
+* execute and the result was record to the variable "bar",
+* and bar() simply return the result of the
+* already executed function.
+*/
+var bar = foo(2)
+bar() //3
+bar() //3
+bar() //3
+					</script></code></pre>
+      </section>
+      <section class="ld-txt-md">
+        <h2>Summary</h2>
+        <p>JavaScript code is processed by the engine of this language in
+          <span class="ld-txt-highlight">2 phases</span>:</p>
+        <ul>
+          <li>
+            <div><span class="ld-txt-highlight">Compilation phase</span>&nbsp;&mdash;&nbsp;
+              there is a process of defining variables and functions <br>
+              (only definition, <span class="ld-txt-highlight-secondary">no value assignment!</span>);
+            </div>
+            <em>P.S.&nbsp;&mdash;&nbsp;this process is also called
+              <span class="ld-txt-highlight-secondary">hoisting</span></em>
+          </li>
+          <li>
+            <span class="ld-txt-highlight">Execution phase</span>&nbsp;&mdash;&nbsp;
+            he process of <span class="ld-txt-highlight-secondary">assigning</span> values to
+            variables and <span class="ld-txt-highlight-secondary">execution</span>.
+          </li>
+        </ul>
+        <div class="ld-list">
+          <span class="ld-list__title">Useful materials:</span>
+          <a
+            href="https://www.amazon.com/JavaScript-Definitive-Most-Used-Programming-Language/dp/1491952024/ref=sr_1_1?dchild=1&keywords=JavaScript%3A+The+Definitive+Guide%2C+6th+Edition+-+by+David+Flanagan&qid=1603251255&sr=8-1"
+            target="_blank">
+            <span class="ld-list__num">1.</span>
+            <span>JavaScript: The Definitive Guide, 6th Edition - by David Flanagan</span>
+          </a>
+        </div>
+      </section>
+    </section>
+    <section id="scope">
+      <section>
+        <h2>#2. Scope</h2>
+        <p>In the programming language defines the visibility and lifetime of variables, parameters and functions.
+          <br>
+          This is an important concept to avoid name collisions and to enable automatic memory management.</p>
+      </section>
+      <section>
+        <p>The concept of Variable Scope in Js can be divided into the following main groups:</p>
+        <img src="images/scope_diagram.png"/>
+      </section>
+      <section>
+        <p><em>P.S. If you declare a local variable or function with the
+          same name as a global variable, you effectively hide the global variable:</em></p>
+        <pre><code class="hljs" data-trim data-line-numbers>
+          // Declare a global variable.
+          var scope = "global";
+
+          function checkScope() {
+
+            // Declare a local variable with the same name.
+            var scope = "local/function";
+
+            return scope;
+          }
+
+          checkScope() // => "local/function"
+        </code></pre>
+      </section>
+      <section>
+        <p>Example of global, block, function scope</p>
+        <pre><code class="hljs" data-trim data-line-numbers="|16-29|">
+          // Global scope.
+          var a = 1;
+          let b = 2;
+          const c = 3;
+
+          if(true) {
+
+            // Local/Block scope - defined by the first curly braces.
+            var a = 3;
+            let b = 4;
+            const c = 5;
+
+            console.log('Block scope: ', a,b,c) // => 3 4 5
+          }
+
+          function checkScope() {
+
+            // Local/Function scope - defined by the
+            // first function curly braces.
+            var a = 6;
+            let b = 7;
+            const c = 8;
+
+            console.log('Function scope: ', a,b,c) // => 6 7 8
+          }
+
+          checkScope() // => 6 7 8
+
+          console.log('Global scope: ', a,b,c) // => 3 2 3
+        </code></pre>
+      </section>
+      <section>
+        <p><em>If we run all the code written on the previous slide, then we get:</em></p>
+        <pre><code class="hljs" data-trim>
+          Block scope:  3 4 5
+          Function scope:  6 7 8
+          Global scope:  3 2 3
+        </code></pre>
+        <div class="ld-txt-md">
+          <p>Why did console.log('Global scope:', a, b, c) return "3 2 3" for us? <br>
+            Ie why the value of "var a" was changed but not let and const?</p>
+          <p>
+            On the 9th line we see that "var a" is in the block scope,
+            but we know that var always has a function scope and in this regard:
+          </p>
+          <ul>
+            <li>At the first <a href="#/js">Compilation phase</a> of Js, the engine will
+              raise "a" in the Global scope
+            </li>
+            <li>In the second <a href="#/js">Execution phase</a>, assign the value "3" to the variable.
+              In other words, it will just overwrite "var a = 1" with "var a = 3"
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <p>Nested Scope</p>
+        <p><em><small>Below is an example of a closure, which we'll talk about a little later.
+          Now we are interested in understanding what the nested scope is.</small></em></p>
+        <pre><code class="hljs" data-trim data-line-numbers="|13-19|21-33|"><script type="text/template">
+          function foo() {
+          var a = 2;
+
+          function bar() {
+          console.log(a);
+          }
+
+          bar();
+          }
+
+          foo(); // => 2
+
+          // 1. Compilation phase:
+          Scope     declaration     value
+          ------    -----------     -----
+          global    foo             function
+
+          foo       a               variable
+          foo       bar             function
+
+          // 2. Execution phase:
+          /**
+          * 1. Execution `foo()` // See line #11;
+          * 2. Assigning value to the `var a` // var a = 2;
+          * 3. Execution `bar()`;
+          * 4. Execution `console.log(a)` // => 2;
+          *   4.1. The JavaScript interpreter works
+          *         from the currently executing scope inside
+          *         function `bar()`;
+          *   4.2. Variable is not found in the scope `bar()`, then
+          *         JS interpreter go to the `foo()` scope and getting value
+          *         of `var a`.
+          */
+        </script>
+        </code></pre>
+        <p><em><small>So, in this example when we put a function inside another function, then we create nested scope. <br>
+          In other words&nbsp;&mdash;&nbsp;the child function has access to the parent variables.</small></em></p>
+      </section>
+      <section class="ld-txt-md">
+        <h2>Summary</h2>
+        <ol>
+          <li>Scope is visibility and lifetime of variables, parameters, and functions.</li>
+          <li>
+            Variable Scope can be <span class="ld-txt-highlight">Local</span> and <span class="ld-txt-highlight">Global</span>:
+            <ul>
+              <li>
+                <div><span class="ld-txt-highlight">Global Scope</span> have
+                  <span class="ld-txt-highlight-secondary">var</span> variables.
+                </div>
+                <em>P.S. The global Scope in the browser is a <span class="ld-txt-highlight">window object</span>
+                  and in node it is a <span class="ld-txt-highlight">global object</span>.</em>
+              </li>
+              <li>
+                <span class="ld-txt-highlight">Local Scope</span> is divided into:
+                <ul>
+                  <li><span class="ld-txt-highlight">function scope</span> - it has the variables
+                    <span class="ld-txt-highlight-secondary">var</span>;
+                  </li>
+                  <li><span class="ld-txt-highlight">block scope</span>
+                    - it has the variables <span class="ld-txt-highlight-secondary">const</span> and
+                    <span class="ld-txt-highlight-secondary">let</span>.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <div class="ld-list">
+          <span class="ld-list__title">Useful materials:</span>
+          <a href="https://blog.bitsrc.io/understanding-scope-and-scope-chain-in-javascript-f6637978cf53"
+             target="_blank">
+            <span class="ld-list__num">1.</span>
+            <span>Understanding Scope and Scope Chain in JavaScript</span>
+          </a>
+          <a
+            href="https://www.amazon.com/You-Dont-Know-JS-Yet/dp/B084DFZ6GW/ref=sr_1_1?dchild=1&keywords=publisher+logoYou+Don%27t+Know+JS%3A+Scope+%26+Closures&qid=1603251352&sr=8-1"
+            target="_blank">
+            <span class="ld-list__num">2.</span>
+            <span>You Don't Know JS: Scope & Closures</span>
+          </a>
+        </div>
+      </section>
+    </section>
+  </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+  // More info about initialization & config:
+  // - https://revealjs.com/initialization/
+  // - https://revealjs.com/config/
+  Reveal.initialize({
+    hash: true,
+    slideNumber: 'c/t',
+
+    // Learn about plugins: https://revealjs.com/plugins/
+    plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+  });
+</script>
+</body>
 </html>

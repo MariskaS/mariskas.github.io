@@ -1,0 +1,35 @@
+/*
+* Spaces.
+*/
+$space-base: 30px;
+$space-base-half: $space-base/2;
+$space-small: $space-base/4;
+
+/*
+* Controls (use for input || selector || buttons).
+*/
+$control-height: 60px;
+$control-spaces: $space-small $space-base;
+
+/*
+* Typography.
+*/
+$font-size-md: 24px;
+$font-family-primary: "League Gothic", Impact, sans-serif;
+
+/*
+* Buttons.
+*/
+$btn-height: $control-height;
+$btn-spaces: $control-spaces;
+$btn-font-size: $font-size-md;
+
+/*
+* Animation.
+*/
+$transition-base: 270ms ease-in-out;
+
+/*
+* Border Radius.
+*/
+$border-radius-base: 2px;

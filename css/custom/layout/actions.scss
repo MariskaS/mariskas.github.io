@@ -1,0 +1,9 @@
+.ld-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >* {
+    margin: $space-base-half;
+  }
+}

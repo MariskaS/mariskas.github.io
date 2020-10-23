@@ -1,0 +1,44 @@
+.ld-txt-left {
+  text-align: left;
+}
+
+.ld-txt-md {
+  font-size: $font-size-md;
+}
+
+.ld-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: $space-base 0;
+  font-size: $font-size-md;
+
+  &__title {
+    padding-bottom: $space-small;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__num {
+    margin-right: 4px;
+  }
+
+  a {
+    display: flex;
+  }
+}
+
+.ld-txt-highlight {
+  color: var(--color-highlight);
+  font-weight: 600;
+}
+
+.ld-txt-highlight-secondary {
+  color: var(--color-highlight-secondary);
+  font-weight: 600;
+}
+
+.ld-logo {
+  height: 60px;
+  margin: 0;
+}

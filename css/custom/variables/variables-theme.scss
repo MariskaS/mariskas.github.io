@@ -1,0 +1,18 @@
+:root {
+  --color-white: #fff;
+  --color-gray-darker: #212121;
+  --color-highlight: #a6e22e;
+  --color-highlight-secondary: #f92672;
+
+  /*
+  * Buttons.
+  */
+  // Primary.
+  --btn-primary-color: var(--color-white);
+  --btn-primary-border: var(--color-white);
+  --btn-primary-bg: transparent;
+
+  --btn-primary-color--action: var(--color-gray-darker);
+  --btn-primary-border--action: var(--color-white);
+  --btn-primary-bg--action: var(--color-white);
+}
