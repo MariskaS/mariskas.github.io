@@ -20,8 +20,8 @@
         <img class="ld-logo" src="images/logo.png"/>
         <h2>Hi everyone</h2>
         <p>My name is <a href="https://www.linkedin.com/in/mariskasdev/" target="_blank">Marina</a> and I’m a
-          Front-End Developer.</p>
-        <p>In this course <strong>"Js in brief"</strong> I want to show you what any
+          Software Engineer.</p>
+        <p>In this course <strong class="ld-txt-highlight">&laquo;Js in brief&raquo;</strong> I want to show you what any
           front-end developer needs to know.</p>
         <p>
           <em>
@@ -34,44 +34,21 @@
         <p>JavaScript is very interesting!</p>
         <p class="ld-txt-highlight">Good luck with your studies!</p>
         <div class="ld-actions">
-          <button class="navigate-down ld-btn--primary">
-            See my BIO
-          </button>
           <button class="navigate-right ld-btn--primary">
             Let's go to study
           </button>
         </div>
         <p>
           <small><em>
-            P.S. the presentation will be updated as I have free time.<br>
-            In the process of preparing this material, I will get better with you :)
+            P.S. In this process, you and I will improve our skills together :)<br>
+            The presentation will be updated as soon as I have free time.
           </em></small>
         </p>
       </section>
-      <section>
-        <p>
-          I’m a Software engineer with 8 years of experience with large scale
-          application development
-          for E-Commerce, Pharmaceutical, and Banking industries.</p>
-        <p>
-          I specialize in developing user interfaces using technologies such as Angular, React, Javascript, Typescript,
-          Html and Сss preprocessors.
-          I also have some experience as a backend developer.</p>
-        <div class="ld-list">
-          <a href=https://www.linkedin.com/in/mariskasdev/"
-             target="_blank">My linkedin profile</a>
-          <a href=https://drive.google.com/file/d/1q1Wm1GOb3BCDt_Xq4YBwU4ZKNBTPoC9B/view?usp=sharing"
-             target="_blank">My Resume</a>
-        </div>
-        <button class="navigate-right ld-btn--primary">
-          Let's go to study
-        </button>
-      </section>
     </section>
     <section>
-      <section>
-        <h3>Js in brief.</h3>
-        <p><em>Briefly about what every web front end developer should know.</em></p>
+      <section class="ld-txt-left">
+        <h1>Js in brief</h1>
         <div class="ld-list">
           <span class="ld-list__title">Chapters:</span>
           <a href="#/js">
@@ -105,94 +82,103 @@
       <section>
         <p>#1 Simple Example:</p>
         <p><em><small>An example to understand what Scope is and how Js works</small></em></p>
-        <pre><code class="hljs" data-trim data-line-numbers="|10-16|17-29|31-37|38-43|45-50|"><script
+        <pre><code class="hljs" data-trim data-line-numbers="|9-16|18-30|32-38|40-47|49-54|"><script
           type="text/template">
-// #1 Example:
-foo();
+            // #1 Example:
+            foo();
 
-function foo() {
-  console.log(a);
+            function foo() {
+              console.log(a);
+              var a = 2;
+            }
 
-  var a = 2;
-}
+            /**
+            * COMPILATION PHASE:
+            * Scope     declaration     value
+            * ------    -----------     --------
+            * global    foo             function
+            *
+            * foo       a               variable
+            */
 
-// 1. Compilation phase:
-Scope     declaration     value
-------    -----------     -----
-global    foo             function
+            /**
+            * EXECUTION PHASE:
+            * 1. Execution foo();
+            * 2. Execution console.log(a) // return undefined;
+            * 3. Assigning value "2" to the "var a" -> var a = 2;
+            *
+            * NOTICE:
+            * 1. foo() is not accidentally written on the first line.
+            * This is to show you that the first phase ignores
+            * any executions & assigning.
+            * 2. We got "undefined" because we called console.log(a)
+            * before assigning a value to variable "a"
+            */
 
-foo       a               variable
+            // #2 Example:
+            foo();
 
-// 2. Execution phase:
-/**
-* 1. Execution foo();
-* 2. Execution console.log(a) // return undefined;
-* 3. Assigning value "2" to the "var a" -> var a = 2;
-*
-* Notice:
-* 1. foo() is not accidentally written on the first line.
-* This is to show you that the first phase ignores
-* any executions & assigning.
-* 2. We got "undefined" because we called console.log(a)
-* before assigning a value to variable "a"
-*/
+            function foo() {
+              var a = 2;
+              console.log( a );
+            }
 
-// #2 Example:
-foo();
+            /**
+            * COMPILATION PHASE:
+            * Scope     declaration     value
+            * ------    -----------     --------
+            * global    foo             function
+            *
+            * foo       a               variable
+            */
 
-function foo() {
-  var a = 2;
-  console.log( a );
-}
-// 1. Compilation phase:
-Scope     declaration     value
-------    -----------     -----
-global    foo             function
-
-foo       a               variable
-
-// 2. Execution phase:
-/**
-* 1. Execution foo();
-* 2. Assigning value "2" to the "var a" -> var a = 2;
-* 2. Execution console.log(a) // return 2;
-*/
+            /**
+            * EXECUTION PHASE:
+            * 1. Execution foo();
+            * 2. Assigning value "2" to the "var a" // var a = 2;
+            * 2. Execution console.log(a) // => 2;
+            */
 					</script></code></pre>
       </section>
       <section>
         <p>#2 Simple Example:</p>
-        <pre><code class="hljs" data-trim data-line-numbers="|13-21|23-31|"><script type="text/template">
-var i = 1;
+<!--TODO:(i++) === (i = i +1)-->
+        <pre><code class="hljs" data-trim data-line-numbers="|13-23|25-33|"><script type="text/template">
 
-function foo(a) {
-  var biz = a + (i++);
+              var i = 1;
 
-  function baz() {
-    return biz;
-  }
-}
+              function foo(a) {
+                var biz = a + (i++);
 
-foo(2)(); // => 4
+                function baz() {
+                  return biz;
+                }
+              }
 
-// 1. Compilation phase:
-Scope     declaration     value
-------    -----------     -----
-global    i               variable
-global    foo             function
+              foo(2)(); // => 4
 
-foo       a               variable
-foo       biz             variable
-foo       baz             function
+              /**
+              * COMPILATION PHASE:
+              * Scope     declaration     value
+              * ------    -----------     --------
+              * global    i               variable
+              * global    foo             function
+              *
+              * foo       a               variable
+              * foo       biz             variable
+              * foo       baz             function
+              */
 
-// 2. Execution phase:
-/**
-* 1. Assigning value to the "var i" // var i = 1;
-* 2. Execution foo(2) // return the value 3;
-*   2.1. Assigning value to the "var a" // var a = 2;
-*   2.2. Assigning value to the "var i" // var i = 1 + 1;
-*   2.3. Assigning value to the "var biz" // var biz = 2 + 2;
-* 3. Execution baz() // return the value 4;
-*/
+              /**
+              * EXECUTION PHASE:
+              * 1. Assigning value to the "var i" // var i = 1;
+              * 2. Execution foo(2) // return the value 3;
+              *   2.1. Assigning value to the "var a" // var a = 2;
+              *   2.2. Assigning value to the "var i" // var i = 1 + 1;
+              *   2.3. Assigning value to the "var biz" // var biz = 2 + 2;
+              * 3. Execution baz() // => 4;
+              */
+
 					</script></code></pre>
       </section>
       <section class="ld-txt-md">
@@ -256,8 +242,8 @@ foo       baz             function
         </code></pre>
       </section>
       <section>
-        <p>Example of global, block, function scope</p>
-        <pre><code class="hljs" data-trim data-line-numbers="|16-29|">
+        <p>Example of Global, Block, and Function scope</p>
+        <pre><code class="hljs" data-trim data-line-numbers>
           // Global scope.
           var a = 1;
           let b = 2;
@@ -290,25 +276,32 @@ foo       baz             function
         </code></pre>
       </section>
       <section>
-        <p><em>If we run all the code written on the previous slide, then we get:</em></p>
+        <p><em>If we run code written on the previous slide, then we get:</em></p>
         <pre><code class="hljs" data-trim>
           Block scope:  3 4 5
           Function scope:  6 7 8
           Global scope:  3 2 3
         </code></pre>
-        <div class="ld-txt-md">
-          <p>Why did console.log('Global scope:', a, b, c) return "3 2 3" for us? <br>
-            Ie why the value of "var a" was changed but not let and const?</p>
+        <div class="ld-txt-md ld-txt-left">
+          <p>Why the value of <span class="ld-txt-highlight-secondary">var a</span> was changed but not
+            <span class="ld-txt-highlight-secondary">let</span> & <span class="ld-txt-highlight-secondary">const</span>
+            values ?</p>
           <p>
-            On the 9th line we see that "var a" is in the block scope,
-            but we know that var always has a function scope and in this regard:
+            On the 9th line we see that
+            <span class="ld-txt-highlight-secondary">var a</span> is in the
+            <span class="ld-txt-highlight">block scope</span>,
+            but we know that <span class="ld-txt-highlight-secondary">var</span> always has a
+            <span class="ld-txt-highlight">function scope</span>:
           </p>
           <ul>
-            <li>At the first <a href="#/js">Compilation phase</a> of Js, the engine will
-              raise "a" in the Global scope
+            <li>At the first <a class="ld-txt-highlight" href="#/js">Compilation phase</a> of Js, the engine will
+              define <span class="ld-txt-highlight-secondary">var a</span> in the Global scope;
             </li>
-            <li>In the second <a href="#/js">Execution phase</a>, assign the value "3" to the variable.
-              In other words, it will just overwrite "var a = 1" with "var a = 3"
+            <li>In the second <a class="ld-txt-highlight" href="#/js">Execution phase</a>,
+              assign the value <span class="ld-txt-highlight-secondary">3</span> to the <span
+                class="ld-txt-highlight-secondary">var a</span>. <br>
+              So, now we have <span class="ld-txt-highlight-secondary">var a = 3</span> instead of
+              <span class="ld-txt-highlight-secondary">var a = 1</span>.
             </li>
           </ul>
         </div>
@@ -317,76 +310,74 @@ foo       baz             function
         <p>Nested Scope</p>
         <p><em><small>Below is an example of a closure, which we'll talk about a little later.
           Now we are interested in understanding what the nested scope is.</small></em></p>
-        <pre><code class="hljs" data-trim data-line-numbers="|13-19|21-33|"><script type="text/template">
+        <pre><code class="hljs" data-trim data-line-numbers="|13-21|23-35"><script type="text/template">
           function foo() {
-          var a = 2;
+            var a = 2;
 
-          function bar() {
-          console.log(a);
-          }
+            function bar() {
+              console.log(a);
+            }
 
-          bar();
+            bar();
           }
 
           foo(); // => 2
 
-          // 1. Compilation phase:
-          Scope     declaration     value
-          ------    -----------     -----
-          global    foo             function
-
-          foo       a               variable
-          foo       bar             function
-
-          // 2. Execution phase:
           /**
-          * 1. Execution `foo()` // See line #11;
-          * 2. Assigning value to the `var a` // var a = 2;
-          * 3. Execution `bar()`;
-          * 4. Execution `console.log(a)` // => 2;
+          * COMPILATION PHASE:
+          * Scope     declaration     value
+          * ------    -----------     --------
+          * global    foo             function
+          *
+          * foo       a               variable
+          * foo       bar             function
+          */
+
+          /**
+          * EXECUTION PHASE:
+          * 1. Execution foo()
+          * 2. Assigning value "2" to the var a // var a = 2;
+          * 3. Execution bar();
+          * 4. Execution console.log(a);
           *   4.1. The JavaScript interpreter works
           *         from the currently executing scope inside
-          *         function `bar()`;
-          *   4.2. Variable is not found in the scope `bar()`, then
-          *         JS interpreter go to the `foo()` scope and getting value
-          *         of `var a`.
+          *         function bar();
+          *   4.2. Variable is not found in the scope bar(), then
+          *         JS interpreter go to the foo() scope and
+          *         getting value of var a.
           */
-        </script>
-        </code></pre>
+        </script></code></pre>
         <p><em><small>So, in this example when we put a function inside another function, then we create nested scope.
           <br>
           In other words&nbsp;&mdash;&nbsp;the child function has access to the parent variables.</small></em></p>
       </section>
       <section class="ld-txt-md">
         <h2>Summary</h2>
-        <ol>
-          <li>Scope is visibility and lifetime of variables, parameters, and functions.</li>
-          <li>
-            Variable Scope can be <span class="ld-txt-highlight">Local</span> and <span
-            class="ld-txt-highlight">Global</span>:
-            <ul>
+        <div class="ld-txt-left">
+          <p>Scope is visibility and lifetime of variables, parameters, and functions.</p>
+          <div>
+            <ol>
               <li>
-                <div><span class="ld-txt-highlight">Global Scope</span> have
-                  <span class="ld-txt-highlight-secondary">var</span> variables.
+                <div>Variable Scope can be <span class="ld-txt-highlight">Local</span> and <span
+                  class="ld-txt-highlight">Global</span>
                 </div>
-                <em>P.S. The global Scope in the browser is a <span class="ld-txt-highlight">window object</span>
-                  and in node it is a <span class="ld-txt-highlight">global object</span>.</em>
               </li>
               <li>
-                <span class="ld-txt-highlight">Local Scope</span> is divided into:
+                <span class="ld-txt-highlight">Local Scope</span> divided by:
                 <ul>
-                  <li><span class="ld-txt-highlight">function scope</span> - it has the variables
+                  <li>
+                    <span class="ld-txt-highlight">Function scope</span>&nbsp;&mdash;&nbsp;
                     <span class="ld-txt-highlight-secondary">var</span>;
                   </li>
-                  <li><span class="ld-txt-highlight">block scope</span>
-                    - it has the variables <span class="ld-txt-highlight-secondary">const</span> and
+                  <li><span class="ld-txt-highlight">Block scope</span>&nbsp;&mdash;&nbsp;
+                    <span class="ld-txt-highlight-secondary">const</span> vs
                     <span class="ld-txt-highlight-secondary">let</span>.
                   </li>
                 </ul>
               </li>
-            </ul>
-          </li>
-        </ol>
+            </ol>
+          </div>
+        </div>
         <div class="ld-list">
           <span class="ld-list__title">Useful materials:</span>
           <a href="https://blog.bitsrc.io/understanding-scope-and-scope-chain-in-javascript-f6637978cf53"
