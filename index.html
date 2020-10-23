@@ -57,7 +57,11 @@
           </a>
           <a href="#/scope">
             <span class="ld-list__num">#2.</span>
-            <span>Scope;</span>
+            <span>Variables Scope;</span>
+          </a>
+          <a href="#/scope">
+            <span class="ld-list__num">#3.</span>
+            <span>Hoisting;</span>
           </a>
           <!--          <a href="#/hoisting">>#3. Hoisting;</a>-->
           <!--          <a href="#/hoisting">>#4. What are Сlosures;</a>-->
@@ -214,8 +218,9 @@
     </section>
     <section id="scope">
       <section>
-        <h2>#2. Scope</h2>
-        <p>In the programming language defines the visibility and lifetime of variables, parameters and functions.
+        <h2>#2. Variables Scope</h2>
+        <p><small><em>Set of rules for storing variables in some location, and for finding them at a later time.</em></small></p>
+        <p>Defines the visibility and lifetime of variables.
           <br>
           This is an important concept to avoid name collisions and to enable automatic memory management.</p>
       </section>
@@ -224,8 +229,9 @@
         <img src="images/scope_diagram.png"/>
       </section>
       <section>
-        <p><em>P.S. If you declare a local variable or function with the
-          same name as a global variable, you effectively ignore the global variable:</em></p>
+        <p>Example of Global Scope</p>
+        <p><em><small>If you declare a local variable or function with the
+          same name as a global variable, you effectively ignore the global variable</small></em></p>
         <pre><code class="hljs" data-trim data-line-numbers>
           // Declare a global variable.
           var scope = "global";
@@ -270,30 +276,30 @@
             console.log('Function scope: ', a,b,c) // => 6 7 8
           }
 
-          checkScope() // => 6 7 8
+          checkScope()
 
           console.log('Global scope: ', a,b,c) // => 3 2 3
         </code></pre>
       </section>
       <section>
-        <p><em>If we run code written on the previous slide, then we get:</em></p>
+        <p>The code above returns:</p>
         <pre><code class="hljs" data-trim>
           Block scope:  3 4 5
           Function scope:  6 7 8
           Global scope:  3 2 3
         </code></pre>
         <div class="ld-txt-md ld-txt-left">
-          <p>Why the value of <span class="ld-txt-highlight-secondary">var a</span> was changed but not
+          <p>Why for <span class="ld-txt-highlight">console.log('Global scope: ', a,b,c)</span> the value of <span class="ld-txt-highlight-secondary">var a</span> was changed but not
             <span class="ld-txt-highlight-secondary">let</span> & <span class="ld-txt-highlight-secondary">const</span>
             values ?</p>
           <p>
             On the 9th line we see that
             <span class="ld-txt-highlight-secondary">var a</span> is in the
-            <span class="ld-txt-highlight">block scope</span>,
+            <span class="ld-txt-highlight">Block scope</span>,
             but we know that <span class="ld-txt-highlight-secondary">var</span> always has a
-            <span class="ld-txt-highlight">function scope</span>:
+            <span class="ld-txt-highlight">Function scope</span>:
           </p>
-          <ul>
+          <ol>
             <li>At the first <a class="ld-txt-highlight" href="#/js">Compilation phase</a> of Js, the engine will
               define <span class="ld-txt-highlight-secondary">var a</span> in the Global scope;
             </li>
@@ -303,58 +309,13 @@
               So, now we have <span class="ld-txt-highlight-secondary">var a = 3</span> instead of
               <span class="ld-txt-highlight-secondary">var a = 1</span>.
             </li>
-          </ul>
+          </ol>
         </div>
-      </section>
-      <section>
-        <p>Nested Scope</p>
-        <p><em><small>Below is an example of a closure, which we'll talk about a little later.
-          Now we are interested in understanding what the nested scope is.</small></em></p>
-        <pre><code class="hljs" data-trim data-line-numbers="|13-21|23-35"><script type="text/template">
-          function foo() {
-            var a = 2;
-
-            function bar() {
-              console.log(a);
-            }
-
-            bar();
-          }
-
-          foo(); // => 2
-
-          /**
-          * COMPILATION PHASE:
-          * Scope     declaration     value
-          * ------    -----------     --------
-          * global    foo             function
-          *
-          * foo       a               variable
-          * foo       bar             function
-          */
-
-          /**
-          * EXECUTION PHASE:
-          * 1. Execution foo()
-          * 2. Assigning value "2" to the var a // var a = 2;
-          * 3. Execution bar();
-          * 4. Execution console.log(a);
-          *   4.1. The JavaScript interpreter works
-          *         from the currently executing scope inside
-          *         function bar();
-          *   4.2. Variable is not found in the scope bar(), then
-          *         JS interpreter go to the foo() scope and
-          *         getting value of var a.
-          */
-        </script></code></pre>
-        <p><em><small>So, in this example when we put a function inside another function, then we create nested scope.
-          <br>
-          In other words&nbsp;&mdash;&nbsp;the child function has access to the parent variables.</small></em></p>
       </section>
       <section class="ld-txt-md">
         <h2>Summary</h2>
         <div class="ld-txt-left">
-          <p>Scope is visibility and lifetime of variables, parameters, and functions.</p>
+          <p>Variable Scope&nbsp;&mdash;&nbsp;defines the visibility and lifetime of variables.</p>
           <div>
             <ol>
               <li>
@@ -394,6 +355,55 @@
         </div>
       </section>
     </section>
+
+<!--    <p>Nested Scope</p>-->
+<!--    <section>-->
+<!--      <section>-->
+<!--        <p>Nested Scope</p>-->
+<!--        <p><em><small>Below is an example of a closure, which we'll talk about a little later.-->
+<!--          Now we are interested in understanding what the nested scope is.</small></em></p>-->
+<!--        <pre><code class="hljs" data-trim data-line-numbers="|13-21|23-35"><script type="text/template">-->
+<!--          function foo() {-->
+<!--          var a = 2;-->
+
+<!--          function bar() {-->
+<!--          console.log(a);-->
+<!--          }-->
+
+<!--          bar();-->
+<!--          }-->
+
+<!--          foo(); // => 2-->
+
+<!--          /**-->
+<!--          * COMPILATION PHASE:-->
+<!--          * Scope     declaration     value-->
+<!--          * &#45;&#45;&#45;&#45;&#45;&#45;    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;     &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--          * global    foo             function-->
+<!--          *-->
+<!--          * foo       a               variable-->
+<!--          * foo       bar             function-->
+<!--          */-->
+
+<!--          /**-->
+<!--          * EXECUTION PHASE:-->
+<!--          * 1. Execution foo()-->
+<!--          * 2. Assigning value "2" to the var a // var a = 2;-->
+<!--          * 3. Execution bar();-->
+<!--          * 4. Execution console.log(a);-->
+<!--          *   4.1. The JavaScript interpreter works-->
+<!--          *         from the currently executing scope inside-->
+<!--          *         function bar();-->
+<!--          *   4.2. Variable is not found in the scope bar(), then-->
+<!--          *         JS interpreter go to the foo() scope and-->
+<!--          *         getting value of var a.-->
+<!--          */-->
+<!--        </script></code></pre>-->
+<!--        <p><em><small>So, in this example when we put a function inside another function, then we create nested scope.-->
+<!--          <br>-->
+<!--          In other words&nbsp;&mdash;&nbsp;the child function has access to the parent variables.</small></em></p>-->
+<!--      </section>-->
+<!--    </section>-->
   </div>
 </div>
 
