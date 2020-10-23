@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>reveal.js</title>
+  <title>Js in brief</title>
 
   <link rel="stylesheet" href="dist/reveal.css">
   <link rel="stylesheet" href="dist/theme/league.css" id="theme">
@@ -111,9 +111,9 @@
 foo();
 
 function foo() {
-console.log(a);
+  console.log(a);
 
-var a = 2;
+  var a = 2;
 }
 
 // 1. Compilation phase:
@@ -130,7 +130,7 @@ foo       a               variable
 * 3. Assigning value "2" to the "var a" -> var a = 2;
 *
 * Notice:
-* 1. foo () is not accidentally written on the first line.
+* 1. foo() is not accidentally written on the first line.
 * This is to show you that the first phase ignores
 * any executions & assigning.
 * 2. We got "undefined" because we called console.log(a)
@@ -141,8 +141,8 @@ foo       a               variable
 foo();
 
 function foo() {
-var a = 2;
-console.log( a );
+  var a = 2;
+  console.log( a );
 }
 // 1. Compilation phase:
 Scope     declaration     value
@@ -161,22 +161,18 @@ foo       a               variable
       </section>
       <section>
         <p>#2 Simple Example:</p>
-        <pre><code class="hljs" data-trim data-line-numbers="|17-24|26-32|34-49"><script type="text/template">
+        <pre><code class="hljs" data-trim data-line-numbers="|13-21|23-31"><script type="text/template">
 var i = 1;
 
 function foo(a) {
-var biz = a + (i++);
+  var biz = a + (i++);
 
-function baz() {
-return biz;
+  function baz() {
+    return biz;
+  }
 }
 
-return baz;
-}
-
-foo(2)();
-foo(2)();
-foo(2)();
+foo(2)(); // => 4
 
 // 1. Compilation phase:
 Scope     declaration     value
@@ -184,54 +180,41 @@ Scope     declaration     value
 global    i               variable
 global    foo             function
 
+foo       a               variable
 foo       biz             variable
 foo       baz             function
 
 // 2. Execution phase:
 /**
 * 1. Assigning value to the "var i" // var i = 1;
-* 2. Execution foo (2) // return the value 3;
-* 3. Execution foo (2) // return the value 4;
-* 4. Execution foo (2) // return the value 5;
+* 2. Execution foo(2) // return the value 3;
+*   2.1. Assigning value to the "var a" // var a = 2;
+*   2.2. Assigning value to the "var i" // var i = 1 + 1;
+*   2.3. Assigning value to the "var biz" // var biz = 2 + 2;
+* 3. Execution baz() // return the value 4;
 */
-
-/**
-* Good to know:
-* If we write the call of the function "bar"
-* into a variable "bar", further execution of bar()
-* will return the result of the first execution of this function.
-*
-* This is because in the second "Execution phase"
-* the function was
-* execute and the result was record to the variable "bar",
-* and bar() simply return the result of the
-* already executed function.
-*/
-var bar = foo(2)
-bar() //3
-bar() //3
-bar() //3
 					</script></code></pre>
       </section>
       <section class="ld-txt-md">
         <h2>Summary</h2>
-        <p>JavaScript code is processed by the engine of this language in
-          <span class="ld-txt-highlight">2 phases</span>:</p>
-        <ul>
-          <li>
-            <div><span class="ld-txt-highlight">Compilation phase</span>&nbsp;&mdash;&nbsp;
+
+        <div class="ld-txt-left">
+          <p>JavaScript code is processed by the engine of this language in
+            <span class="ld-txt-highlight">2 phases</span>:</p>
+          <ol>
+            <li>
+              <span class="ld-txt-highlight">Compilation phase</span>&nbsp;&mdash;&nbsp;
               there is a process of defining variables and functions <br>
               (only definition, <span class="ld-txt-highlight-secondary">no value assignment!</span>);
-            </div>
-            <em>P.S.&nbsp;&mdash;&nbsp;this process is also called
-              <span class="ld-txt-highlight-secondary">hoisting</span></em>
-          </li>
-          <li>
-            <span class="ld-txt-highlight">Execution phase</span>&nbsp;&mdash;&nbsp;
-            he process of <span class="ld-txt-highlight-secondary">assigning</span> values to
-            variables and <span class="ld-txt-highlight-secondary">execution</span>.
-          </li>
-        </ul>
+            </li>
+            <li>
+              <span class="ld-txt-highlight">Execution phase</span>&nbsp;&mdash;&nbsp;
+              the process of <span class="ld-txt-highlight-secondary">assigning</span> values to
+              variables and <span class="ld-txt-highlight-secondary">function execution</span>.
+            </li>
+          </ol>
+        </div>
+
         <div class="ld-list">
           <span class="ld-list__title">Useful materials:</span>
           <a
@@ -256,7 +239,7 @@ bar() //3
       </section>
       <section>
         <p><em>P.S. If you declare a local variable or function with the
-          same name as a global variable, you effectively hide the global variable:</em></p>
+          same name as a global variable, you effectively ignore the global variable:</em></p>
         <pre><code class="hljs" data-trim data-line-numbers>
           // Declare a global variable.
           var scope = "global";
@@ -370,7 +353,8 @@ bar() //3
           */
         </script>
         </code></pre>
-        <p><em><small>So, in this example when we put a function inside another function, then we create nested scope. <br>
+        <p><em><small>So, in this example when we put a function inside another function, then we create nested scope.
+          <br>
           In other words&nbsp;&mdash;&nbsp;the child function has access to the parent variables.</small></em></p>
       </section>
       <section class="ld-txt-md">
@@ -378,7 +362,8 @@ bar() //3
         <ol>
           <li>Scope is visibility and lifetime of variables, parameters, and functions.</li>
           <li>
-            Variable Scope can be <span class="ld-txt-highlight">Local</span> and <span class="ld-txt-highlight">Global</span>:
+            Variable Scope can be <span class="ld-txt-highlight">Local</span> and <span
+            class="ld-txt-highlight">Global</span>:
             <ul>
               <li>
                 <div><span class="ld-txt-highlight">Global Scope</span> have
