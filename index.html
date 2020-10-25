@@ -15,59 +15,55 @@
 <body>
 <div class="reveal">
   <div class="slides">
-    <section class="ld-txt-md">
-      <section data-background-image="images/bg_1.jpg" data-background-opacity=".4">
-        <img class="ld-logo" src="images/logo.png"/>
-        <h2>Hi everyone</h2>
-        <p>My name is <a href="https://www.linkedin.com/in/mariskasdev/" target="_blank">Marina</a> and I’m a
-          Software Engineer.</p>
-        <p>In this course <strong class="ld-txt-highlight">&laquo;Js in brief&raquo;</strong> I want to show you what any
-          front-end developer needs to know.</p>
-        <p>
-          <em>
-            All of the topics presented in this course are just a list with brief explanations.
-            <br>
-            Undoubtedly, to become a pro you need to study much deeper, and the links to books
-            and topics at the end of each presentation will help you with that.
-          </em>
-        </p>
-        <p>JavaScript is very interesting!</p>
-        <p class="ld-txt-highlight">Good luck with your studies!</p>
-        <div class="ld-actions">
-          <button class="navigate-right ld-btn--primary">
-            Let's go to study
-          </button>
-        </div>
-        <p>
-          <small><em>
-            P.S. In this process, you and I will improve our skills together :)<br>
-            The presentation will be updated as soon as I have free time.
-          </em></small>
-        </p>
-      </section>
+    <section class="ld-txt-md" data-background-image="images/bg_1.jpg" data-background-opacity=".4">
+      <img class="ld-logo" src="images/logo.png"/>
+      <h2>Hi everyone</h2>
+      <p>My name is <a href="https://www.linkedin.com/in/mariskasdev/" target="_blank">Marina</a> and I’m a
+        Software Engineer.</p>
+      <p>In this course <strong class="ld-txt-highlight">&laquo;Js in brief&raquo;</strong> I want to show you what any
+        front-end developer needs to know.</p>
+      <p>
+        <em>
+          All of the topics presented in this course are just a list with brief explanations.
+          <br>
+          Undoubtedly, to become a pro you need to study much deeper, and the links to books
+          and topics at the end of each presentation will help you with that.
+        </em>
+      </p>
+      <p>JavaScript is very interesting!</p>
+      <p class="ld-txt-highlight">Good luck with your studies!</p>
+      <div class="ld-actions">
+        <button class="navigate-right ld-btn--primary">
+          Let's go to study
+        </button>
+      </div>
+      <p>
+        <small><em>
+          P.S. In this process, you and I will improve our skills together :)<br>
+          The presentation will be updated as soon as I have free time.
+        </em></small>
+      </p>
     </section>
-    <section>
-      <section class="ld-txt-left">
-        <h1>Js in brief</h1>
-        <div class="ld-list">
-          <span class="ld-list__title">Chapters:</span>
-          <a href="#/js">
-            <span class="ld-list__num">#1.</span>
-            <span>How is js code executed;</span>
-          </a>
-          <a href="#/scope">
-            <span class="ld-list__num">#2.</span>
-            <span>Variables Scope;</span>
-          </a>
-          <a href="#/scope">
-            <span class="ld-list__num">#3.</span>
-            <span>Hoisting;</span>
-          </a>
-          <!--          <a href="#/hoisting">>#3. Hoisting;</a>-->
-          <!--          <a href="#/hoisting">>#4. What are Сlosures;</a>-->
-          <!--          <a href="#/hoisting">>#5. var vs let vs const and what the different;</a>-->
-        </div>
-      </section>
+    <section class="ld-txt-left">
+      <h1>Js in brief</h1>
+      <div class="ld-list">
+        <span class="ld-list__title">Chapters:</span>
+        <a href="#/js">
+          <span class="ld-list__num">#1.</span>
+          <span>How is js code executed;</span>
+        </a>
+        <a href="#/scope">
+          <span class="ld-list__num">#2.</span>
+          <span>Variables Scope;</span>
+        </a>
+        <a href="#/scope">
+          <span class="ld-list__num">#3.</span>
+          <span>Hoisting;</span>
+        </a>
+        <!--          <a href="#/hoisting">>#3. Hoisting;</a>-->
+        <!--          <a href="#/hoisting">>#4. What are Сlosures;</a>-->
+        <!--          <a href="#/hoisting">>#5. var vs let vs const and what the different;</a>-->
+      </div>
     </section>
     <section id="js">
       <section>
@@ -351,6 +347,75 @@
             target="_blank">
             <span class="ld-list__num">2.</span>
             <span>You Don't Know JS: Scope & Closures</span>
+          </a>
+        </div>
+      </section>
+    </section>
+    <section id="hoisting">
+     <section>
+       <h2>#3. Hoisting</h2>
+       <p>
+         It is a mechanism in JavaScript that occurs in the <a href="#/js">Compilation phase</a>,
+         in which variables and function declarations are
+         <em>hoisted</em> to the top <strong>of their scope</strong> before the code is executed.
+       </p>
+     </section>
+      <section>
+        <p>The assignment of values remains where you placed it</p>
+        <pre><code class="hljs" data-trim data-line-numbers>
+        function foo() {
+          console.log(message);
+          let message='Hoisting!'
+        }
+
+        // COMPILATION PHASE:
+        function foo() {
+          let message; // hoisting a variable in the 'foo' scope.
+          console.log(message);
+          message = 'Hoisting!' // assignment in the same place.
+        }
+       </code></pre>
+      </section>
+      <section>
+        <p>To avoid programming errors&nbsp;&mdash;&nbsp;declare variables and function expressions
+          before using them</p>
+        <pre><code class="hljs" data-trim data-line-numbers>
+        // #1 Example:
+        function foo() {
+          console.log(message);
+          const message='Hoisting!'
+        }
+
+        foo(); // => Uncaught ReferenceError: Cannot access 'message'...
+
+        // #2 Example:
+        function foo() {
+          const message='Hoisting!'
+          console.log(message);
+        }
+
+        foo(); // => Hoisting!
+       </code></pre>
+      </section>
+      <section class="ld-txt-md">
+        <h2>Summary</h2>
+        <div class="ld-txt-left">
+          <p>Hoisting&nbsp;&mdash;&nbsp;is JavaScript's default behavior of moving declarations to the top in their scope:</p>
+          <p>To avoid programming errors, it is recommended to follow simple rules:</p>
+          <ul>
+            <li>
+              Don’t use <em>var</em>&nbsp;&mdash;&nbsp;it declares variables whose scope is the entire function,
+              not the enclosing block. That is too broad;
+            </li>
+            <li>Declare variables and function expressions before using them.</li>
+          </ul>
+        </div>
+        <div class="ld-list">
+          <span class="ld-list__title">Useful materials:</span>
+          <a href="https://blog.usejournal.com/awesome-javascript-no-more-var-working-title-999428999994"
+             target="_blank">
+            <span class="ld-list__num">1.</span>
+            <span>Why don’t we use var anymore?</span>
           </a>
         </div>
       </section>
