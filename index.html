@@ -26,12 +26,11 @@
         <em>
           All of the topics presented in this course are just a list with brief explanations.
           <br>
-          Undoubtedly, to become a pro you need to study much deeper, and the links to books
-          and topics at the end of each presentation will help you with that.
+          To become a pro you need to study much deeper, and the links
+          at the end of each presentation will help you with that.
         </em>
       </p>
-      <p>JavaScript is very interesting!</p>
-      <p class="ld-txt-highlight">Good luck with your studies!</p>
+      <p>JavaScript is very interesting, <span class="ld-txt-highlight">good luck with your studies!</span>
       <div class="ld-actions">
         <button class="navigate-right ld-btn--primary">
           Let's go to study
@@ -56,11 +55,10 @@
           <span class="ld-list__num">#2.</span>
           <span>Variables Scope;</span>
         </a>
-        <a href="#/scope">
+        <a href="#/hoisting">
           <span class="ld-list__num">#3.</span>
           <span>Hoisting;</span>
         </a>
-        <!--          <a href="#/hoisting">>#3. Hoisting;</a>-->
         <!--          <a href="#/hoisting">>#4. What are Сlosures;</a>-->
         <!--          <a href="#/hoisting">>#5. var vs let vs const and what the different;</a>-->
       </div>
@@ -285,25 +283,24 @@
           Global scope:  3 2 3
         </code></pre>
         <div class="ld-txt-md ld-txt-left">
-          <p>Why for <span class="ld-txt-highlight">console.log('Global scope: ', a,b,c)</span> the value of <span class="ld-txt-highlight-secondary">var a</span> was changed but not
-            <span class="ld-txt-highlight-secondary">let</span> & <span class="ld-txt-highlight-secondary">const</span>
+          <p>Why for <span class="ld-txt-highlight">console.log('Global scope: ', a,b,c)</span>
+            the value of <em>var a</em> was changed but not
+            <em>let</em> & <em>const</em>
             values ?</p>
           <p>
-            On the 9th line we see that
-            <span class="ld-txt-highlight-secondary">var a</span> is in the
+            On the 9th line&nbsp;&mdash;&nbsp;<em>var a</em> is in the
             <span class="ld-txt-highlight">Block scope</span>,
-            but we know that <span class="ld-txt-highlight-secondary">var</span> always has a
+            but we know that <em>var</em> always has a
             <span class="ld-txt-highlight">Function scope</span>:
           </p>
           <ol>
             <li>At the first <a class="ld-txt-highlight" href="#/js">Compilation phase</a> of Js, the engine will
-              define <span class="ld-txt-highlight-secondary">var a</span> in the Global scope;
+              define <em>var a</em> in the Global scope;
             </li>
             <li>In the second <a class="ld-txt-highlight" href="#/js">Execution phase</a>,
-              assign the value <span class="ld-txt-highlight-secondary">3</span> to the <span
-                class="ld-txt-highlight-secondary">var a</span>. <br>
-              So, now we have <span class="ld-txt-highlight-secondary">var a = 3</span> instead of
-              <span class="ld-txt-highlight-secondary">var a = 1</span>.
+              assign the value <em>3</em> to the <em>var a</em>. <br>
+              So, now we have <em>var a = 3</em> instead of
+              <em>var a = 1</em>.
             </li>
           </ol>
         </div>
@@ -404,8 +401,8 @@
           <p>To avoid programming errors, it is recommended to follow simple rules:</p>
           <ul>
             <li>
-              Don’t use <em>var</em>&nbsp;&mdash;&nbsp;it declares variables whose scope is the entire function,
-              not the enclosing block. That is too broad;
+              Don’t use <em>var</em>&nbsp;&mdash;&nbsp;it declares variables whose scope is the function,
+              not the block. That is too broad;
             </li>
             <li>Declare variables and function expressions before using them.</li>
           </ul>
