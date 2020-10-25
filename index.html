@@ -59,8 +59,11 @@
           <span class="ld-list__num">#3.</span>
           <span>Hoisting;</span>
         </a>
+        <a href="#/differentVarLetConst">
+          <span class="ld-list__num">#4.</span>
+          <span>var, let, const&nbsp;&mdash;&nbsp;what the difference?;</span>
+        </a>
         <!--          <a href="#/hoisting">>#4. What are Сlosures;</a>-->
-        <!--          <a href="#/hoisting">>#5. var vs let vs const and what the different;</a>-->
       </div>
     </section>
     <section id="js">
@@ -413,6 +416,87 @@
              target="_blank">
             <span class="ld-list__num">1.</span>
             <span>Why don’t we use var anymore?</span>
+          </a>
+        </div>
+      </section>
+    </section>
+    <section id="differentVarLetConst">
+      <section>
+        <h2>#4. var, let, const&nbsp;&mdash;&nbsp;what the difference?</h2>
+        <p>This question is related to understanding <em>Scope</em> and the <em>Hoisting</em> mechanism.</p>
+      </section>
+      <section>
+        <table class="ld-txt-md">
+          <thead>
+          <tr>
+            <th>keyword</th>
+            <th>scope</th>
+            <th><a href="#/reassign">reassign</a> a value</th>
+            <th>when accessing a variable <a href="#/beforeDeclared">before it's declared</a></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>var</th>
+            <td>function</td>
+            <td>yes</td>
+            <td>undefined</td>
+          </tr>
+          <tr>
+            <th>let</th>
+            <td>block</td>
+            <td>yes</td>
+            <td>ReferenceError</td>
+          </tr>
+          <tr>
+            <th>const</th>
+            <td>block</td>
+            <td>no</td>
+            <td>ReferenceError</td>
+          </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="reassign">
+        <p>Example: reassign a value</p>
+        <img src="images/letVarConstReass.png">
+      </section>
+      <section>
+        <p>However, if the <em>const</em> value is an
+          <em>object</em> or an <em>array</em>, you can change their contents
+        </p>
+        <img src="images/constReass.png">
+      </section>
+      <section id="beforeDeclared">
+        <p>Example: when accessing a variable before it's declared</p>
+        <img src="images/letVarConstErr.png"/>
+      </section>
+      <section class="ld-txt-md">
+        <h2>Summary</h2>
+        <div class="ld-txt-left">
+          <ul>
+            <li>
+             <em>let, const</em>&nbsp;&mdash;&nbsp;has block scope (introduced in ES6), <em>var</em>&nbsp;&mdash;&nbsp;
+              function scope;
+            </li>
+            <li>
+              <em>const</em>&nbsp;&mdash;&nbsp;read-only.
+              However, if the value is an array or an object you can change their contents.
+            </li>
+          </ul>
+        </div>
+<!--        TODO: подумать про то как поднимается const  и лет - вопрос инициализации-->
+        <div class="ld-list">
+          <span class="ld-list__title">Useful materials:</span>
+          <a href="https://ui.dev/var-let-const/"
+             target="_blank">
+            <span class="ld-list__num">1.</span>
+            <span>var vs let vs const in JavaScript - by Tyler McGinnis</span>
+          </a>
+          <a href="https://blog.bitsrc.io/hoisting-in-modern-javascript-let-const-and-var-b290405adfda"
+             target="_blank">
+            <span class="ld-list__num">2.</span>
+            <span>Hoisting in Modern JavaScript — let, const, and var - by Sukhjinder Arora</span>
           </a>
         </div>
       </section>
