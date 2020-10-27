@@ -72,7 +72,7 @@
           <span>JavaScript Guide;</span>
         </a>
       </div>
-      <h3>What is the purpose of the presentation?</h3>
+      <h3>The purpose of the presentation</h3>
       <p class="ld-txt-md">I want to focus your attention on the important aspects of JavaScript. <br>
         Also, these presentations can be useful for interview preparation for the role of Front-end Developer.</p>
     </section>
@@ -397,12 +397,12 @@
         <pre><code class="hljs" data-trim data-line-numbers>
         function foo() {
           console.log(message);
-          let message='Hoisting!'
+          var message='Hoisting!'
         }
 
         // COMPILATION PHASE:
         function foo() {
-          let message; // hoisting a variable in the 'foo' scope.
+          var message; // hoisting a variable in the 'foo' scope.
           console.log(message);
           message = 'Hoisting!' // assignment in the same place.
         }
@@ -415,14 +415,14 @@
         // #1 Example:
         function foo() {
           console.log(message);
-          const message='Hoisting!'
+          var message='Hoisting!'
         }
 
-        foo(); // => Uncaught ReferenceError: Cannot access 'message'...
+        foo(); // => undefined
 
         // #2 Example:
         function foo() {
-          const message='Hoisting!'
+          var message='Hoisting!'
           console.log(message);
         }
 
@@ -432,7 +432,7 @@
       <section class="ld-txt-md">
         <h2>Summary</h2>
         <div class="ld-txt-left">
-          <p>Hoisting&nbsp;&mdash;&nbsp;is JavaScript's default behavior of moving declarations to the top in their scope:</p>
+          <p><em>Hoisting</em>&nbsp;&mdash;&nbsp;is JavaScript's default behavior of moving declarations to the top in their scope:</p>
           <p>To avoid programming errors, it is recommended to follow simple rules:</p>
           <ul>
             <li>
