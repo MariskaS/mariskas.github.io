@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Js in brief</title>
+  <title>Implementing Code Style for Frontend Teams</title>
 
   <link rel="stylesheet" href="dist/reveal.css">
   <link rel="stylesheet" href="dist/theme/league.css" id="theme">
@@ -15,573 +15,107 @@
 <body>
 <div class="reveal">
   <div class="slides">
-    <section class="ld-txt-md" data-background-image="images/bg_1.jpg" data-background-opacity=".4">
-      <img class="ld-logo" src="images/logo.png"/>
-      <h2>Hi everyone</h2>
-      <p>My name is <a href="https://www.linkedin.com/in/mariskasdev/" target="_blank">Marina</a> and I’m a
-        Software Engineer.</p>
-      <p>In this course <strong class="ld-txt-highlight">&laquo;Js in brief&raquo;</strong> I want to show you what any
-        front-end developer needs to know.</p>
+    <section data-background-image="images/bg_1.jpg" data-background-opacity=".4">
+      <h1>Code Style</h1>
       <p>
-        <em>
-          All of the topics presented in this course are just a list with brief explanations.
-          <br>
-          To become a pro you need to study much deeper, and the links
-          at the end of each presentation will help you with that.
-        </em>
+        Implementing Code Style for Frontend Teams
       </p>
-      <p>JavaScript is very interesting, <span class="ld-txt-highlight">good luck with your studies!</span>
       <div class="ld-actions">
         <button class="navigate-right ld-btn--primary">
-          Let's go to study
+          Let's go
         </button>
       </div>
+    </section>
+    <section class="ld-txt-left">
+      <h2>WHY</h2>
       <p>
-        <small><em>
-          P.S. In this process, you and I will improve our skills together :)<br>
-          The presentation will be updated as soon as I have free time.
-        </em></small>
+        Improve and systematize work processes on projects.
       </p>
+      <ul>
+        <li>Easy switching of developers between projects;</li>
+        <li>Facilitating the process of new developers entering projects;</li>
+        <li>Will speed up the process of creating new projects;</li>
+      </ul>
+      <p><em>These are just some of the main key points.</em></p>
     </section>
     <section class="ld-txt-left">
-      <h3>This presentation is for</h3>
-      <p class="ld-txt-md">
-        This tutorial assumes that you already understand
-        what JavaScript is and the basics.
-      </p>
-      <div class="ld-list">
-        <span class="ld-list__title">If not, then I recommend reading:</span>
-        <a href="https://www.amazon.com/How-JavaScript-Works-Douglas-Crockford/dp/1949815005"
-           target="_blank">
-          <span class="ld-list__num">#1.</span>
-          <span>How JavaScript Works - by Douglas Crockford;</span>
-        </a>
-        <a href="https://eloquentjavascript.net/"
-           target="_blank">
-          <span class="ld-list__num">#1.</span>
-          <span>Eloquent JavaScript;</span>
-        </a>
-        <a href="https://javascript.info/"
-           target="_blank">
-          <span class="ld-list__num">#2.</span>
-          <span>The Modern JavaScript Tutorial;</span>
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-           target="_blank">
-          <span class="ld-list__num">#3.</span>
-          <span>JavaScript Guide;</span>
-        </a>
-      </div>
-      <h3>The purpose of the presentation</h3>
-      <p class="ld-txt-md">I want to focus your attention on the important aspects of JavaScript. <br>
-        Also, these presentations can be useful for interview preparation for the role of Front-end Developer.</p>
+      <h2>HOW</h2>
+      <ul>
+        <li><a href="#/codeStyle">Creating an agreement on a uniform Code Style;</a></li>
+        <li><a href="#/workflow">Implementation of workflows to control the maintenance of Code&nbsp;Style;</a></li>
+      </ul>
+
+      <p>
+        Example of
+        <a href="https://lucid.app/lucidchart/invitations/accept/f8ace9bd-8d6a-48b2-a249-55f2ff552b2f"
+           target="_blank">general workflow.</a></p>
     </section>
-    <section class="ld-txt-left">
-      <h1>Js in brief</h1>
-      <div class="ld-list">
-        <span class="ld-list__title">Chapters:</span>
-        <a href="#/js">
-          <span class="ld-list__num">#1.</span>
-          <span>How is js code executed;</span>
-        </a>
-        <a href="#/scope">
-          <span class="ld-list__num">#2.</span>
-          <span>Variables Scope;</span>
-        </a>
-        <a href="#/hoisting">
-          <span class="ld-list__num">#3.</span>
-          <span>Hoisting;</span>
-        </a>
-        <a href="#/differentVarLetConst">
-          <span class="ld-list__num">#4.</span>
-          <span>var, let, const&nbsp;&mdash;&nbsp;what the difference?;</span>
-        </a>
-      </div>
-    </section>
-    <section id="js">
+    <section id="codeStyle">
       <section>
-        <h2>#1. How is js code executed?</h2>
-        <p>
-          <em>
-            To learn how to write and understand Js code, what is Scope, Hoisting, etc., you need to pay attention to
-            how Js code is executed.
-          </em>
-        </p>
+        <h3>Creating an agreement on a uniform Code Style</h3>
+        <img src="images/codeStyle.png" alt="">
       </section>
-      <section>
-        <p>2 phases of JS code processing:</p>
-        <img src="images/jsphases_diagram.png"/>
-      </section>
-      <section>
-        <p>#1 Simple Example:</p>
-        <p><em><small>An example to understand what Scope is and how Js works</small></em></p>
-        <pre><code class="hljs" data-trim data-line-numbers="|9-16|18-30|32-38|40-47|49-54|"><script
-          type="text/template">
-            // #1 Example:
-            foo();
-
-            function foo() {
-              console.log(a);
-              var a = 2;
-            }
-
-            /**
-            * COMPILATION PHASE:
-            * Scope     declaration     value
-            * ------    -----------     --------
-            * global    foo             function
-            *
-            * foo       a               variable
-            */
-
-            /**
-            * EXECUTION PHASE:
-            * 1. Execution foo();
-            * 2. Execution console.log(a) // return undefined;
-            * 3. Assigning value "2" to the "var a" -> var a = 2;
-            *
-            * NOTICE:
-            * 1. foo() is not accidentally written on the first line.
-            * This is to show you that the first phase ignores
-            * any executions & assigning.
-            * 2. We got "undefined" because we called console.log(a)
-            * before assigning a value to variable "a"
-            */
-
-            // #2 Example:
-            foo();
-
-            function foo() {
-              var a = 2;
-              console.log( a );
-            }
-
-            /**
-            * COMPILATION PHASE:
-            * Scope     declaration     value
-            * ------    -----------     --------
-            * global    foo             function
-            *
-            * foo       a               variable
-            */
-
-            /**
-            * EXECUTION PHASE:
-            * 1. Execution foo();
-            * 2. Assigning value "2" to the "var a" // var a = 2;
-            * 2. Execution console.log(a) // => 2;
-            */
-					</script></code></pre>
-      </section>
-      <section>
-        <p>#2 Simple Example:</p>
-<!--TODO:(i++) === (i = i +1)-->
-        <pre><code class="hljs" data-trim data-line-numbers="|13-23|25-33|"><script type="text/template">
-
-              var i = 1;
-
-              function foo(a) {
-                var biz = a + (i++);
-
-                function baz() {
-                  return biz;
-                }
-              }
-
-              foo(2)(); // => 4
-
-              /**
-              * COMPILATION PHASE:
-              * Scope     declaration     value
-              * ------    -----------     --------
-              * global    i               variable
-              * global    foo             function
-              *
-              * foo       a               variable
-              * foo       biz             variable
-              * foo       baz             function
-              */
-
-              /**
-              * EXECUTION PHASE:
-              * 1. Assigning value to the "var i" // var i = 1;
-              * 2. Execution foo(2) // return the value 3;
-              *   2.1. Assigning value to the "var a" // var a = 2;
-              *   2.2. Assigning value to the "var i" // var i = 1 + 1;
-              *   2.3. Assigning value to the "var biz" // var biz = 2 + 2;
-              * 3. Execution baz() // => 4;
-              */
-
-					</script></code></pre>
-      </section>
-      <section class="ld-txt-md">
-        <h2>Summary</h2>
-
-        <div class="ld-txt-left">
-          <p>JavaScript code is processed by the engine of this language in
-            <span class="ld-txt-highlight">2 phases</span>:</p>
-          <ol>
-            <li>
-              <span class="ld-txt-highlight">Compilation phase</span>&nbsp;&mdash;&nbsp;
-              there is a process of defining variables and functions <br>
-              (only definition, <span class="ld-txt-highlight-secondary">no value assignment!</span>);
-            </li>
-            <li>
-              <span class="ld-txt-highlight">Execution phase</span>&nbsp;&mdash;&nbsp;
-              the process of <span class="ld-txt-highlight-secondary">assigning</span> values to
-              variables and <span class="ld-txt-highlight-secondary">function execution</span>.
-            </li>
-          </ol>
-        </div>
-
-        <div class="ld-list">
-          <span class="ld-list__title">Useful materials:</span>
-          <a
-            href="https://www.amazon.com/JavaScript-Definitive-Most-Used-Programming-Language/dp/1491952024/ref=sr_1_1?dchild=1&keywords=JavaScript%3A+The+Definitive+Guide%2C+6th+Edition+-+by+David+Flanagan&qid=1603251255&sr=8-1"
-            target="_blank">
-            <span class="ld-list__num">1.</span>
-            <span>JavaScript: The Definitive Guide, 6th Edition - by David Flanagan</span>
-          </a>
-        </div>
-      </section>
-    </section>
-    <section id="scope">
-      <section>
-        <h2>#2. Variables Scope</h2>
-        <p><small><em>Set of rules for storing variables in some location, and for finding them at a later time.</em></small></p>
-        <p>Defines the visibility and lifetime of variables.
-          <br>
-          This is an important concept to avoid name collisions and to enable automatic memory management.</p>
-      </section>
-      <section>
-        <p>The concept of Variable Scope in Js can be divided into the following main groups:</p>
-        <img src="images/scope_diagram.png"/>
-      </section>
-      <section>
-        <p>Example of Global Scope</p>
-        <p><em><small>If you declare a local variable or function with the
-          same name as a global variable, you effectively ignore the global variable</small></em></p>
-        <pre><code class="hljs" data-trim data-line-numbers>
-          // Declare a global variable.
-          var scope = "global";
-
-          function checkScope() {
-
-            // Declare a local variable with the same name.
-            var scope = "local/function";
-
-            return scope;
-          }
-
-          checkScope() // => "local/function"
-        </code></pre>
-      </section>
-      <section>
-        <p>Example of Global, Block, and Function scope</p>
-        <pre><code class="hljs" data-trim data-line-numbers>
-          // Global scope.
-          var a = 1;
-          let b = 2;
-          const c = 3;
-
-          if(true) {
-
-            // Local/Block scope - defined by the first curly braces.
-            var a = 3;
-            let b = 4;
-            const c = 5;
-
-            console.log('Block scope: ', a,b,c) // => 3 4 5
-          }
-
-          function checkScope() {
-
-            // Local/Function scope - defined by the
-            // first function curly braces.
-            var a = 6;
-            let b = 7;
-            const c = 8;
-
-            console.log('Function scope: ', a,b,c) // => 6 7 8
-          }
-
-          checkScope()
-
-          console.log('Global scope: ', a,b,c) // => 3 2 3
-        </code></pre>
-      </section>
-      <section>
-        <p>The code above returns:</p>
-        <pre><code class="hljs" data-trim>
-          Block scope:  3 4 5
-          Function scope:  6 7 8
-          Global scope:  3 2 3
-        </code></pre>
-        <div class="ld-txt-md ld-txt-left">
-          <p>Why for <span class="ld-txt-highlight">console.log('Global scope: ', a,b,c)</span>
-            the value of <em>var a</em> was changed but not
-            <em>let</em> & <em>const</em>
-            values ?</p>
-          <p>
-            On the 9th line&nbsp;&mdash;&nbsp;<em>var a</em> is in the
-            <span class="ld-txt-highlight">Block scope</span>,
-            but we know that <em>var</em> always has a
-            <span class="ld-txt-highlight">Function scope</span>:
-          </p>
-          <ol>
-            <li>At the first <a class="ld-txt-highlight" href="#/js">Compilation phase</a> of Js, the engine will
-              define <em>var a</em> in the Global scope;
-            </li>
-            <li>In the second <a class="ld-txt-highlight" href="#/js">Execution phase</a>,
-              assign the value <em>3</em> to the <em>var a</em>. <br>
-              So, now we have <em>var a = 3</em> instead of
-              <em>var a = 1</em>.
-            </li>
-          </ol>
-        </div>
-      </section>
-      <section class="ld-txt-md">
-        <h2>Summary</h2>
-        <div class="ld-txt-left">
-          <p>Variable Scope&nbsp;&mdash;&nbsp;defines the visibility and lifetime of variables.</p>
-          <div>
-            <ol>
-              <li>
-                <div>Variable Scope can be <span class="ld-txt-highlight">Local</span> and <span
-                  class="ld-txt-highlight">Global</span>
-                </div>
-              </li>
-              <li>
-                <span class="ld-txt-highlight">Local Scope</span> divided by:
-                <ul>
-                  <li>
-                    <span class="ld-txt-highlight">Function scope</span>&nbsp;&mdash;&nbsp;
-                    <span class="ld-txt-highlight-secondary">var</span>;
-                  </li>
-                  <li><span class="ld-txt-highlight">Block scope</span>&nbsp;&mdash;&nbsp;
-                    <span class="ld-txt-highlight-secondary">const</span> vs
-                    <span class="ld-txt-highlight-secondary">let</span>.
-                  </li>
-                </ul>
-              </li>
-            </ol>
-          </div>
-        </div>
-        <div class="ld-list">
-          <span class="ld-list__title">Useful materials:</span>
-          <a href="https://blog.bitsrc.io/understanding-scope-and-scope-chain-in-javascript-f6637978cf53"
-             target="_blank">
-            <span class="ld-list__num">1.</span>
-            <span>Understanding Scope and Scope Chain in JavaScript</span>
-          </a>
-          <a
-            href="https://www.amazon.com/You-Dont-Know-JS-Yet/dp/B084DFZ6GW/ref=sr_1_1?dchild=1&keywords=publisher+logoYou+Don%27t+Know+JS%3A+Scope+%26+Closures&qid=1603251352&sr=8-1"
-            target="_blank">
-            <span class="ld-list__num">2.</span>
-            <span>You Don't Know JS: Scope & Closures</span>
-          </a>
-        </div>
-      </section>
-    </section>
-    <section id="hoisting">
-     <section>
-       <h2>#3. Hoisting</h2>
-       <p>
-         It is a mechanism in JavaScript that occurs in the <a href="#/js">Compilation phase</a>,
-         in which variables and function declarations are
-         <em>hoisted</em> to the top <strong>of their scope</strong> before the code is executed.
-       </p>
-     </section>
-      <section>
-        <p>The assignment of values remains where you placed it</p>
-        <pre><code class="hljs" data-trim data-line-numbers>
-        function foo() {
-          console.log(message);
-          var message='Hoisting!'
-        }
-
-        // COMPILATION PHASE:
-        function foo() {
-          var message; // hoisting a variable in the 'foo' scope.
-          console.log(message);
-          message = 'Hoisting!' // assignment in the same place.
-        }
-       </code></pre>
-      </section>
-      <section>
-        <p>To avoid programming errors&nbsp;&mdash;&nbsp;declare variables and function expressions
-          before using them</p>
-        <pre><code class="hljs" data-trim data-line-numbers>
-        // #1 Example:
-        function foo() {
-          console.log(message);
-          var message='Hoisting!'
-        }
-
-        foo(); // => undefined
-
-        // #2 Example:
-        function foo() {
-          var message='Hoisting!'
-          console.log(message);
-        }
-
-        foo(); // => Hoisting!
-       </code></pre>
-      </section>
-      <section class="ld-txt-md">
-        <h2>Summary</h2>
-        <div class="ld-txt-left">
-          <p><em>Hoisting</em>&nbsp;&mdash;&nbsp;is JavaScript's default behavior of moving declarations to the top in their scope:</p>
-          <p>To avoid programming errors, it is recommended to follow simple rules:</p>
-          <ul>
-            <li>
-              Don’t use <em>var</em>&nbsp;&mdash;&nbsp;it declares variables whose scope is the function,
-              not the block. That is too broad;
-            </li>
-            <li>Declare variables and function expressions before using them.</li>
-          </ul>
-        </div>
-        <div class="ld-list">
-          <span class="ld-list__title">Useful materials:</span>
-          <a href="https://blog.usejournal.com/awesome-javascript-no-more-var-working-title-999428999994"
-             target="_blank">
-            <span class="ld-list__num">1.</span>
-            <span>Why don’t we use var anymore?</span>
-          </a>
-        </div>
-      </section>
-    </section>
-    <section id="differentVarLetConst">
-      <section>
-        <h2>#4. var, let, const&nbsp;&mdash;&nbsp;what the difference?</h2>
-        <p>This question is related to understanding <em>Scope</em> and the <em>Hoisting</em> mechanism.</p>
-      </section>
-      <section>
-        <table class="ld-txt-md">
+      <section class="ld-txt-left">
+        <h3>Common Code Style</h3>
+        <p><small>It's a documented common/uniform code style for all projects. Common patterns for all possible
+          projects are described here.</small></p>
+        <table class="ld-table">
           <thead>
           <tr>
-            <th>keyword</th>
-            <th>scope</th>
-            <th><a href="#/reassign">reassign</a> a value</th>
-            <th>when accessing a variable <a href="#/beforeDeclared">before it's declared</a></th>
+            <th>Group&nbsp;Name</th>
+            <th>Page&nbsp;Name</th>
+            <th>Content</th>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <th>var</th>
-            <td>function</td>
-            <td>yes</td>
-            <td>undefined</td>
+            <td rowspan="2">Code Style</td>
+            <td>HTML/CSS</td>
+            <td>
+              <ol>
+                <li>Variable storage system;</li>
+                <li>Class creation rules;</li>
+                <li>Rules for creating file structure;</li>
+                <li>.csslint;</li>
+                <li>Accessibility;</li>
+                <li>Code Commenting;</li>
+                <li>...</li>
+              </ol>
+              <div><strong>Notices:</strong> it is also possible to add a series of short videos of 15 minutes.</div>
+            </td>
           </tr>
           <tr>
-            <th>let</th>
-            <td>block</td>
-            <td>yes</td>
-            <td>ReferenceError</td>
-          </tr>
-          <tr>
-            <th>const</th>
-            <td>block</td>
-            <td>no</td>
-            <td>ReferenceError</td>
+            <td>JS</td>
+            <td>
+              <ol>
+                <li>...</li>
+                <li>.eslint;</li>
+                <li>Code Commenting - JsDoc;</li>
+                <li>...</li>
+              </ol>
+            </td>
           </tr>
           </tbody>
         </table>
       </section>
-      <section id="reassign">
-        <p>Example: reassign a value</p>
-        <img src="images/letVarConstReass.png">
-      </section>
-      <section>
-        <p>However, if the <em>const</em> value is an
-          <em>object</em> or an <em>array</em>, you can change their contents
-        </p>
-        <img src="images/constReass.png">
-      </section>
-      <section id="beforeDeclared">
-        <p>Example: when accessing a variable before it's declared</p>
-        <img src="images/letVarConstErr.png"/>
-      </section>
-      <section class="ld-txt-md">
-        <h2>Summary</h2>
-        <div class="ld-txt-left">
-          <ul>
-            <li>
-             <em>let, const</em>&nbsp;&mdash;&nbsp;has block scope (introduced in ES6), <em>var</em>&nbsp;&mdash;&nbsp;
-              function scope;
-            </li>
-            <li>
-              <em>const</em>&nbsp;&mdash;&nbsp;read-only.
-              However, if the value is an array or an object you can change their contents.
-            </li>
-          </ul>
-        </div>
-<!--        TODO: подумать про то как поднимается const  и лет - вопрос инициализации-->
-        <div class="ld-list">
-          <span class="ld-list__title">Useful materials:</span>
-          <a href="https://ui.dev/var-let-const/"
-             target="_blank">
-            <span class="ld-list__num">1.</span>
-            <span>var vs let vs const in JavaScript - by Tyler McGinnis</span>
-          </a>
-          <a href="https://blog.bitsrc.io/hoisting-in-modern-javascript-let-const-and-var-b290405adfda"
-             target="_blank">
-            <span class="ld-list__num">2.</span>
-            <span>Hoisting in Modern JavaScript — let, const, and var - by Sukhjinder Arora</span>
-          </a>
-        </div>
+      <section class="ld-txt-left">
+        <h3>Project Code Style</h3>
+        <p>! Only if Common Code Style is not enough.</p>
+        <p>It's a Code Style for a specific project. It is an add-on to the Common Code Style.</p>
       </section>
     </section>
-
-<!--    <p>Nested Scope</p>-->
-<!--    <section>-->
-<!--      <section>-->
-<!--        <p>Nested Scope</p>-->
-<!--        <p><em><small>Below is an example of a closure, which we'll talk about a little later.-->
-<!--          Now we are interested in understanding what the nested scope is.</small></em></p>-->
-<!--        <pre><code class="hljs" data-trim data-line-numbers="|13-21|23-35"><script type="text/template">-->
-<!--          function foo() {-->
-<!--          var a = 2;-->
-
-<!--          function bar() {-->
-<!--          console.log(a);-->
-<!--          }-->
-
-<!--          bar();-->
-<!--          }-->
-
-<!--          foo(); // => 2-->
-
-<!--          /**-->
-<!--          * COMPILATION PHASE:-->
-<!--          * Scope     declaration     value-->
-<!--          * &#45;&#45;&#45;&#45;&#45;&#45;    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;     &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-<!--          * global    foo             function-->
-<!--          *-->
-<!--          * foo       a               variable-->
-<!--          * foo       bar             function-->
-<!--          */-->
-
-<!--          /**-->
-<!--          * EXECUTION PHASE:-->
-<!--          * 1. Execution foo()-->
-<!--          * 2. Assigning value "2" to the var a // var a = 2;-->
-<!--          * 3. Execution bar();-->
-<!--          * 4. Execution console.log(a);-->
-<!--          *   4.1. The JavaScript interpreter works-->
-<!--          *         from the currently executing scope inside-->
-<!--          *         function bar();-->
-<!--          *   4.2. Variable is not found in the scope bar(), then-->
-<!--          *         JS interpreter go to the foo() scope and-->
-<!--          *         getting value of var a.-->
-<!--          */-->
-<!--        </script></code></pre>-->
-<!--        <p><em><small>So, in this example when we put a function inside another function, then we create nested scope.-->
-<!--          <br>-->
-<!--          In other words&nbsp;&mdash;&nbsp;the child function has access to the parent variables.</small></em></p>-->
-<!--      </section>-->
-<!--    </section>-->
+    <section id="workflow">
+      <section>
+        <h3>Workflows to control the maintenance of Code&nbsp;Style</h3>
+        <ol>
+          <li>Strict adherence to Agile rules;</li>
+          <li>Every pull request must go through Code Review (The group of people
+            specified in the project documentation in confluence);
+          </li>
+          <li>Merge to main branch only after successfully passing .eslint & .csslint;</li>
+        </ol>
+      </section>
+    </section>
   </div>
 </div>
 
