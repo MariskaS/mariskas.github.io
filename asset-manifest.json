@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.cfc204e0.css",
-    "main.js": "/static/js/main.bc5e2cfe.js",
+    "main.css": "/static/css/main.802de951.css",
+    "main.js": "/static/js/main.795ddc5d.js",
     "static/media/home.jpg": "/static/media/home.5e289c70a3f71e038e14.jpg",
     "static/media/oops.jpg": "/static/media/oops.57f0770ce641235a4977.jpg",
     "static/media/firefighterEntranceExam.jpg": "/static/media/firefighterEntranceExam.f8d687d967da8b839eb0.jpg",
     "static/media/WCFC_logo.png": "/static/media/WCFC_logo.6cdf12f3e0769ab8593f.png",
+    "static/media/lossControl.jpg": "/static/media/lossControl.3163644d5b47a1e7415d.jpg",
     "static/media/Anton-Regular.woff2": "/static/media/Anton-Regular.f2d4dd57785c2c3a4d2b.woff2",
+    "static/media/stub.jpg": "/static/media/stub.44f39f433923ab243b23.jpg",
     "static/media/Poppins-Regular.woff2": "/static/media/Poppins-Regular.9641d5d087bc9e626d4c.woff2",
     "static/media/Poppins-SemiBold.woff2": "/static/media/Poppins-SemiBold.b2be0bf638eacbb24415.woff2",
-    "static/media/lossControl.jpg": "/static/media/lossControl.404e17dbc5c2cae0454a.jpg",
     "index.html": "/index.html",
-    "main.cfc204e0.css.map": "/static/css/main.cfc204e0.css.map",
-    "main.bc5e2cfe.js.map": "/static/js/main.bc5e2cfe.js.map"
+    "main.802de951.css.map": "/static/css/main.802de951.css.map",
+    "main.795ddc5d.js.map": "/static/js/main.795ddc5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfc204e0.css",
-    "static/js/main.bc5e2cfe.js"
+    "static/css/main.802de951.css",
+    "static/js/main.795ddc5d.js"
   ]
 }
