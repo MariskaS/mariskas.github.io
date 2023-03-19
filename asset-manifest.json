@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.08f2cff1.css",
-    "main.js": "/static/js/main.81caad8c.js",
+    "main.css": "/static/css/main.ebe47f7f.css",
+    "main.js": "/static/js/main.10c3f6e7.js",
     "static/media/home.jpg": "/static/media/home.5e289c70a3f71e038e14.jpg",
     "static/media/oops.jpg": "/static/media/oops.57f0770ce641235a4977.jpg",
     "static/media/fireControl.jpg": "/static/media/fireControl.499531acd4424bde9135.jpg",
@@ -10,15 +10,19 @@
     "static/media/lossControl.jpg": "/static/media/lossControl.3163644d5b47a1e7415d.jpg",
     "static/media/Anton-Regular.woff2": "/static/media/Anton-Regular.f2d4dd57785c2c3a4d2b.woff2",
     "static/media/co2.jpg": "/static/media/co2.2b300004fd2c4ef6ddee.jpg",
+    "static/media/stub.jpg": "/static/media/stub.44f39f433923ab243b23.jpg",
+    "static/media/nims-scheme.png": "/static/media/nims-scheme.dcb11fe4c1c46681265d.png",
     "static/media/Poppins-Regular.woff2": "/static/media/Poppins-Regular.9641d5d087bc9e626d4c.woff2",
     "static/media/Poppins-SemiBold.woff2": "/static/media/Poppins-SemiBold.b2be0bf638eacbb24415.woff2",
+    "static/media/ics-sructure.png": "/static/media/ics-sructure.6ed57b3c6bd0f0c203f2.png",
     "static/media/co.jpg": "/static/media/co.133eebf314c97a29d765.jpg",
+    "static/media/delegating-incident-management-responsibilities.png": "/static/media/delegating-incident-management-responsibilities.7b0193a98707b22fb107.png",
     "index.html": "/index.html",
-    "main.08f2cff1.css.map": "/static/css/main.08f2cff1.css.map",
-    "main.81caad8c.js.map": "/static/js/main.81caad8c.js.map"
+    "main.ebe47f7f.css.map": "/static/css/main.ebe47f7f.css.map",
+    "main.10c3f6e7.js.map": "/static/js/main.10c3f6e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.08f2cff1.css",
-    "static/js/main.81caad8c.js"
+    "static/css/main.ebe47f7f.css",
+    "static/js/main.10c3f6e7.js"
   ]
 }
